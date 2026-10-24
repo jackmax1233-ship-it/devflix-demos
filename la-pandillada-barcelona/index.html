@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Pandillada · Cuidado respetuoso 0–3 años en El Born, Barcelona</title>
+<meta name="description" content="La Pandillada: acompañamiento respetuoso para peques de 0 a 3 años en El Born, Barcelona. Grupo reducido de máximo 4, salidas diarias en cargobike, juego libre y movimiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF6EC;
+  --cream-2:#F3EAD8;
+  --ink:#3E2A1E;
+  --ink-soft:#5C4636;
+  --terra:#A84E22;
+  --terra-deep:#7E3517;
+  --olive:#55602E;
+  --line:#E4D5BC;
+  --foot:#2F2117;
+  --radius:18px;
+  --max:1120px;
+  --font-d:'Fraunces',Georgia,serif;
+  --font-b:'Nunito',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{
+  font-family:var(--font-b);
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:1.02rem;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--terra)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+
+/* ---------- header ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,246,236,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(6px);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{font-family:var(--font-d);font-weight:700;font-size:1.45rem;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+.brand small{display:block;font-family:var(--font-b);font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
+.nav-links{display:none;gap:1.4rem;list-style:none}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem}
+.nav-links a:hover{color:var(--terra);text-decoration:underline}
+@media(min-width:760px){.nav-links{display:flex}}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-block;text-decoration:none;font-weight:800;font-size:.98rem;
+  padding:.8rem 1.5rem;border-radius:999px;border:2px solid transparent;
+  transition:transform .18s ease,background .18s ease;
+}
+.btn-primary{background:var(--terra);color:#fff}
+.btn-primary:hover{background:var(--terra-deep);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--terra);color:var(--terra);background:transparent}
+.btn-ghost:hover{background:var(--terra);color:#fff}
+.btn-sm{padding:.55rem 1.1rem;font-size:.9rem}
+
+/* ---------- hero ---------- */
+.hero{padding:2.6rem 0 3rem}
+.hero-grid{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:3rem}.hero{padding:3.6rem 0 4rem}}
+.eyebrow{
+  font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--olive);margin-bottom:1rem;
+}
+h1{
+  font-family:var(--font-d);font-weight:700;line-height:1.06;letter-spacing:-.01em;
+  font-size:clamp(2.5rem,6vw,4.2rem);margin-bottom:1.1rem;color:var(--ink);
+}
+h1 em{font-style:italic;color:var(--terra)}
+.lede{font-size:1.12rem;color:var(--ink-soft);max-width:34rem;margin-bottom:1.6rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.6rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;list-style:none}
+.chips li{
+  background:var(--cream-2);border:1px solid var(--line);border-radius:999px;
+  padding:.4rem .95rem;font-size:.88rem;font-weight:700;color:var(--ink);
+}
+.hero-photo{position:relative}
+.hero-photo figure{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  box-shadow:0 18px 44px -22px rgba(62,42,30,.35);
+  max-width:520px;margin:0 auto;
+}
+.hero-photo img{width:100%;height:auto;aspect-ratio:640/608;object-fit:cover}
+.hero-photo figcaption{
+  text-align:center;font-size:.85rem;color:var(--ink-soft);margin-top:.7rem;font-style:italic;
+}
+.badge-float{
+  position:absolute;top:1rem;left:50%;transform:translateX(-50%) rotate(-3deg);
+  background:var(--terra);color:#fff;font-weight:800;font-size:.85rem;
+  padding:.5rem 1.1rem;border-radius:999px;box-shadow:0 8px 20px -8px rgba(62,42,30,.5);
+  white-space:nowrap;
+}
+
+/* ---------- announcement band ---------- */
+.band{background:var(--terra);color:#fff;padding:1.1rem 0}
+.band .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.8rem}
+.band p{font-weight:700;font-size:1.02rem}
+.band p strong{font-weight:800}
+.band a{color:#fff;font-weight:800}
+.band .btn{border-color:#fff;color:#fff}
+.band .btn:hover{background:#fff;color:var(--terra-deep)}
+
+/* ---------- sections ---------- */
+section.block{padding:3.4rem 0}
+section.alt{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{
+  font-family:var(--font-d);font-weight:700;font-size:clamp(1.8rem,3.6vw,2.6rem);
+  line-height:1.15;margin-bottom:.4rem;color:var(--ink);
+}
+.section-sub{color:var(--ink-soft);max-width:40rem;margin-bottom:2rem;font-size:1.05rem}
+.split{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:3.2rem}.split.flip>.txt{order:2}}
+.photo-card{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  box-shadow:0 14px 34px -20px rgba(62,42,30,.35);background:#fff;
+}
+.photo-card img{width:100%;height:auto}
+.photo-card figcaption{padding:.7rem 1rem;font-size:.88rem;color:var(--ink-soft);font-style:italic;background:#fff}
+.tick{list-style:none;margin-top:1.2rem;display:grid;gap:.7rem}
+.tick li{position:relative;padding-left:2rem;font-weight:600}
+.tick li::before{
+  content:"";position:absolute;left:0;top:.3rem;width:1.15rem;height:1.15rem;border-radius:50%;
+  background:var(--terra);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+.quote{
+  font-family:var(--font-d);font-style:italic;font-size:1.25rem;color:var(--terra-deep);
+  border-left:4px solid var(--terra);padding-left:1.1rem;margin:1.4rem 0;max-width:30rem;
+}
+
+/* ---------- day timeline ---------- */
+.timeline{list-style:none;display:grid;gap:0;margin-top:1.6rem;max-width:34rem}
+.timeline li{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:1rem 0;border-bottom:1px dashed var(--line)}
+.timeline li:last-child{border-bottom:none}
+.timeline time{font-family:var(--font-d);font-weight:700;color:var(--terra);font-size:1.15rem;white-space:nowrap}
+.timeline p{font-size:.98rem}
+.timeline p strong{display:block;color:var(--ink)}
+
+/* ---------- gallery ---------- */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(min-width:760px){.gal{grid-template-columns:repeat(3,1fr);gap:1.25rem}}
+.gal figure{
+  border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;
+  box-shadow:0 10px 26px -18px rgba(62,42,30,.35);
+}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figcaption{padding:.6rem .8rem;font-size:.83rem;color:var(--ink-soft)}
+
+/* ---------- pillars ---------- */
+.pillars{display:grid;gap:1rem}
+@media(min-width:760px){.pillars{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.pillars{grid-template-columns:repeat(4,1fr)}}
+.pillar{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.5rem 1.3rem;
+}
+.pillar h3{font-family:var(--font-d);font-size:1.25rem;color:var(--terra-deep);margin-bottom:.5rem}
+.pillar p{font-size:.95rem;color:var(--ink-soft)}
+
+/* ---------- enrollment ---------- */
+.enroll-grid{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.enroll-grid{grid-template-columns:.9fr 1.1fr;gap:3rem}}
+.poster{max-width:380px;margin:0 auto}
+.poster img{width:100%;height:auto;aspect-ratio:640/798}
+.steps{list-style:none;counter-reset:step;display:grid;gap:1.1rem;margin:1.4rem 0 1.8rem}
+.steps li{counter-increment:step;position:relative;padding-left:3.2rem}
+.steps li::before{
+  content:counter(step);position:absolute;left:0;top:0;
+  width:2.2rem;height:2.2rem;border-radius:50%;background:var(--terra);color:#fff;
+  font-weight:800;display:flex;align-items:center;justify-content:center;
+}
+.steps strong{display:block;font-size:1.05rem}
+.steps p{color:var(--ink-soft);font-size:.97rem}
+.contact-btns{display:flex;flex-wrap:wrap;gap:.8rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--foot);color:var(--cream);padding:2.6rem 0 2rem;margin-top:0}
+.foot-grid{display:grid;gap:1.6rem}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.2fr 1fr 1fr}}
+footer h4{font-family:var(--font-d);font-size:1.3rem;margin-bottom:.6rem;color:var(--cream)}
+footer p,footer li{font-size:.94rem;color:#EDE3D2}
+footer ul{list-style:none;display:grid;gap:.4rem}
+footer a{color:#F6C99B;font-weight:700}
+footer a:hover{color:#fff}
+.foot-note{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #4a382a;font-size:.82rem;color:#C9B99F}
+
+/* ---------- reveal ---------- */
+html.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+html.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.js .reveal{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">La Pandillada<small>El Born · Barcelona</small></a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#pandi">La Pandi</a></li>
+        <li><a href="#cargobike">Cargobike</a></li>
+        <li><a href="#dia">Un día</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#plazas">Plazas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/34678830419" target="_blank" rel="noopener">Escríbenos</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Acompañamiento respetuoso · 0–3 años · El Born, Barcelona</p>
+        <h1>Infancia <em>en movimiento</em></h1>
+        <p class="lede">La Pandillada es un espacio de cuidado respetuoso para peques de 0 a 3 años, en grupo reducido de máximo 4 criaturas. Cada día salimos a descubrir la ciudad en nuestra cargobike: parques, playas, ludotecas y rincones del barrio.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://wa.me/34678830419" target="_blank" rel="noopener">WhatsApp: +34 678 830 419</a>
+          <a class="btn btn-ghost" href="#plazas">Ver plazas libres</a>
+        </div>
+        <ul class="chips" aria-label="Datos clave">
+          <li>Máx. 4 peques</li>
+          <li>0–3 años</li>
+          <li>Salidas diarias en cargobike</li>
+          <li>Juego libre</li>
+        </ul>
+      </div>
+      <div class="hero-photo">
+        <span class="badge-float" aria-hidden="true">2 plazas libres</span>
+        <figure>
+          <img src="img/hero-grupo.webp" alt="Las cuatro criaturas de La Pandillada junto a su acompañante, sentados bajo un gran árbol en el parque" width="640" height="608" fetchpriority="high">
+          <figcaption>«Somos La Pandillada»</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="band" role="note" aria-label="Plazas disponibles">
+    <div class="wrap">
+      <p><strong>Tenemos 2 plazas libres.</strong> Escríbenos por mensaje privado y te enviamos el dossier con toda la información.</p>
+      <a class="btn btn-sm" href="https://wa.me/34678830419" target="_blank" rel="noopener">Pedir el dossier</a>
+    </div>
+  </div>
+
+  <!-- LA PANDI -->
+  <section class="block reveal" id="pandi">
+    <div class="wrap split">
+      <div class="txt">
+        <p class="eyebrow">La Pandi</p>
+        <h2>Un grupo pequeño donde cada peque importa</h2>
+        <p class="section-sub">Acompañamos criaturas de 0 a 3 años con cercanía, calma y respeto por el ritmo de cada una. Creemos que la infancia necesita moverse, jugar libremente y estar al aire libre para crecer con autonomía y seguridad.</p>
+        <ul class="tick">
+          <li><strong>Grupo reducido:</strong> máximo 4 criaturas, acompañamiento cercano y personalizado.</li>
+          <li><strong>Cuidado respetuoso:</strong> miramos, esperamos y respetamos los tiempos de cada peque.</li>
+          <li><strong>Vida al aire libre:</strong> salimos cada día, llueva o haga sol.</li>
+        </ul>
+      </div>
+      <figure class="photo-card">
+        <img src="img/pandi-arbol.webp" alt="Tres peques riendo juntos apoyados en el tronco de un árbol" width="640" height="640" loading="lazy" style="aspect-ratio:1/1;object-fit:cover">
+        <figcaption>Amistad, risas y veranos juntos</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CARGOBIKE -->
+  <section class="block alt reveal" id="cargobike">
+    <div class="wrap">
+      <p class="eyebrow">Salidas diarias</p>
+      <h2>¡Te recogemos en nuestra cargobike!</h2>
+      <p class="section-sub">Nuestra súper cargo bike es «la nave» con la que recorremos la ciudad. Cada mañana es una aventura: un lugar diferente que visitar, juegos espontáneos y descubrimientos por el camino.</p>
+      <div class="split" style="margin-bottom:2rem">
+        <figure class="photo-card">
+          <img src="img/cargobike-parque.webp" alt="La cargobike de La Pandillada aparcada en un parque de Barcelona" width="640" height="640" loading="lazy" style="aspect-ratio:1/1;object-fit:cover">
+          <figcaption>La nave, lista para la aventura</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="img/cargobike-barrio.webp" alt="Tres peques con patinete junto a la cargobike frente a un mural del barrio" width="640" height="480" loading="lazy" style="aspect-ratio:4/3;object-fit:cover">
+          <figcaption>El barrio también forma parte del aprendizaje</figcaption>
+        </figure>
+      </div>
+      <ul class="chips" aria-label="Destinos de las salidas">
+        <li>Parques</li>
+        <li>Playas</li>
+        <li>Ludotecas</li>
+        <li>Espacios del barrio</li>
+      </ul>
+      <p class="quote">«La nave con la que recorremos la ciudad… Parques, playas, ludotecas: hay mucho por disfrutar.»</p>
+    </div>
+  </section>
+
+  <!-- UN DÍA -->
+  <section class="block reveal" id="dia">
+    <div class="wrap split flip">
+      <div class="txt">
+        <p class="eyebrow">Horarios</p>
+        <h2>Un día con La Pandi</h2>
+        <p class="section-sub">Jornada de mañanas, de lunes a viernes, con servicio de recogida para que las familias lo tengan fácil.</p>
+        <ul class="timeline">
+          <li>
+            <time datetime="08:45">8:45 h</time>
+            <p><strong>Acogida temprana</strong>Recogida desde las 8:45 con contratación previa (sujeto a disponibilidad).</p>
+          </li>
+          <li>
+            <time datetime="09:15">9:15 h</time>
+            <p><strong>Recogida en casa</strong>Pasamos a recoger a tu peque en casa con la cargobike.</p>
+          </li>
+          <li>
+            <time datetime="09:30">9:30 – 14:30 h</time>
+            <p><strong>Jornada La Pandillada</strong>Salidas al exterior, juego libre, movimiento y acompañamiento respetuoso.</p>
+          </li>
+        </ul>
+      </div>
+      <figure class="photo-card" style="max-width:440px;margin:0 auto;width:100%">
+        <img src="img/dia-playa.webp" alt="Dos peques jugando con cubos y palas en la arena de la playa" width="640" height="856" loading="lazy" style="aspect-ratio:640/856;object-fit:cover">
+        <figcaption>Días de playa: arena, agua y calma</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="block alt reveal" id="galeria">
+    <div class="wrap">
+      <p class="eyebrow">Nuestro día a día</p>
+      <h2>Juego libre, todos los días</h2>
+      <p class="section-sub">Llueva o haga sol: moverse, explorar, experimentar y disfrutar sin prisa.</p>
+      <div class="gal">
+        <figure>
+          <img src="img/juego-lluvia.webp" alt="Una peque con chubasquero azul bajo la lluvia junto a un paraguas de dibujos" width="640" height="853" loading="lazy" style="aspect-ratio:640/853">
+          <figcaption>«A veces solo hace falta la ropa adecuada»</figcaption>
+        </figure>
+        <figure>
+          <img src="img/juego-tiza.webp" alt="Una niña dibujando con tizas de colores en el suelo de una plaza" width="640" height="640" loading="lazy" style="aspect-ratio:1/1">
+          <figcaption>Salir, explorar, crear</figcaption>
+        </figure>
+        <figure>
+          <img src="img/juego-calle.webp" alt="Dos peques corriendo libres por una calle estrecha del Born" width="640" height="640" loading="lazy" style="aspect-ratio:1/1">
+          <figcaption>Moverse libremente, a su aire</figcaption>
+        </figure>
+        <figure>
+          <img src="img/juego-verano.webp" alt="Tres peques con gafas de sol riendo sentados en un banco" width="640" height="480" loading="lazy" style="aspect-ratio:4/3">
+          <figcaption>Vibras de verano</figcaption>
+        </figure>
+        <figure>
+          <img src="img/juego-skate.webp" alt="Un peque con casco y protecciones aprendiendo a ir en monopatín" width="640" height="800" loading="lazy" style="aspect-ratio:4/5">
+          <figcaption>El monopatín siempre trae alegría</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section class="block reveal" id="pilares">
+    <div class="wrap">
+      <p class="eyebrow">En qué creemos</p>
+      <h2>Nuestros pilares</h2>
+      <p class="section-sub">Cuatro ideas sencillas que guían cada día en La Pandillada.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Juego libre</h3>
+          <p>El juego es la forma natural de aprender. Proponemos materiales y espacios; ellas y ellos deciden cómo jugar.</p>
+        </div>
+        <div class="pillar">
+          <h3>Movimiento</h3>
+          <p>Trepar, correr, saltar, pedalear: el cuerpo en movimiento es la base de un desarrollo sano en la primera infancia.</p>
+        </div>
+        <div class="pillar">
+          <h3>Vida al aire libre</h3>
+          <p>Parques, playa y barrio cada día. La lluvia no nos para: con la ropa adecuada, salir siempre merece la pena.</p>
+        </div>
+        <div class="pillar">
+          <h3>Comunidad</h3>
+          <p>Un grupo pequeño donde nacen amistades de verdad, entre peques y entre familias del barrio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAZAS -->
+  <section class="block alt reveal" id="plazas">
+    <div class="wrap enroll-grid">
+      <figure class="photo-card poster">
+        <img src="img/cartel-plazas.webp" alt="Cartel de La Pandillada: 2 plazas libres de 0 a 3 años, salidas diarias al exterior y horarios" width="640" height="798" loading="lazy" style="aspect-ratio:640/798">
+      </figure>
+      <div>
+        <p class="eyebrow">Inscripción</p>
+        <h2>Plazas e inscripción</h2>
+        <p class="section-sub">Ahora mismo tenemos <strong>2 plazas libres</strong>. Escríbenos y te enviamos el dossier con toda la información, sin compromiso.</p>
+        <ol class="steps">
+          <li>
+            <strong>Escríbenos</strong>
+            <p>Por WhatsApp, correo electrónico o mensaje directo de Instagram, como prefieras.</p>
+          </li>
+          <li>
+            <strong>Recibe el dossier</strong>
+            <p>Te enviamos el dossier con horarios, funcionamiento y todo lo que necesitas saber.</p>
+          </li>
+        </ol>
+        <div class="contact-btns">
+          <a class="btn btn-primary" href="https://wa.me/34678830419" target="_blank" rel="noopener">WhatsApp · +34 678 830 419</a>
+          <a class="btn btn-ghost" href="mailto:adarecupero@gmail.com">adarecupero@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/la_pandillada/" target="_blank" rel="noopener">Instagram · @la_pandillada</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>La Pandillada</h4>
+        <p>Acompañamiento respetuoso · 0–3 años<br>El Born, Barcelona (Ciutat Vella)</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/34678830419" target="_blank" rel="noopener">WhatsApp · +34 678 830 419</a></li>
+          <li><a href="mailto:adarecupero@gmail.com">adarecupero@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/la_pandillada/" target="_blank" rel="noopener">Instagram · @la_pandillada</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <ul>
+          <li>9:30 – 14:30 h</li>
+          <li>Recogida en casa desde las 9:15 h</li>
+          <li>Acogida temprana desde las 8:45 h</li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-note">Vista previa preparada por Devflix · Fotos: @la_pandillada en Instagram</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window) || !els.length){return;}
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

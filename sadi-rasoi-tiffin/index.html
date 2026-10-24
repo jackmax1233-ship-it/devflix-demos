@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sadi Rasoi Tiffin Service — Homemade Punjabi Tiffin · Walsall, Wolverhampton, Birmingham</title>
+<meta name="description" content="Sadi Rasoi Tiffin Service — fresh, homemade vegetarian Punjabi tiffins with a new menu every week. Takeout and delivery across Walsall, Wolverhampton and Birmingham. Call 07367281459 or DM @sadirasoi_.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF3E3;
+    --paper:#FFFDF6;
+    --ink:#3B2D1F;
+    --green:#1C5B38;
+    --green-dark:#13432a;
+    --mustard:#E9B949;
+    --line:#E2D1A8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--cream);color:var(--ink);
+    line-height:1.6;font-size:1rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;height:auto;display:block}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;color:var(--green);line-height:1.15;font-weight:700}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+
+  /* ---------- nav ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,243,227,.97);
+    border-bottom:2px solid var(--line);
+    backdrop-filter:blur(4px);
+  }
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.8rem;padding-bottom:.8rem}
+  .brand{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.3rem;color:var(--green);text-decoration:none}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+  .nav-links{display:none;gap:1.4rem;list-style:none}
+  .nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+  .nav-links a:hover{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+  .btn{
+    display:inline-block;background:var(--green);color:#fff;text-decoration:none;
+    font-weight:700;padding:.75rem 1.4rem;border-radius:999px;border:2px solid var(--green);
+    transition:background .2s,transform .15s;
+  }
+  .btn:hover{background:var(--green-dark);transform:translateY(-1px)}
+  .btn-ghost{background:transparent;color:var(--green);border:2px solid var(--green)}
+  .btn-ghost:hover{background:var(--green);color:#fff}
+  .nav .btn{padding:.55rem 1.1rem;font-size:.9rem;white-space:nowrap}
+  @media(min-width:820px){.nav-links{display:flex}}
+
+  /* ---------- hero ---------- */
+  .hero{padding:2.5rem 0 3rem;position:relative;overflow:hidden}
+  .hero-grid{display:grid;gap:2rem;align-items:center}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:3rem}}
+  .eyebrow{
+    display:inline-block;background:var(--mustard);color:#2C2117;
+    font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+    padding:.4rem .9rem;border-radius:999px;margin-bottom:1.1rem;
+  }
+  .hero h1{font-size:clamp(2.4rem,5.5vw,3.6rem);margin-bottom:.6rem}
+  .tagline{font-family:'Fraunces',Georgia,serif;font-size:1.25rem;color:var(--ink);margin-bottom:.9rem}
+  .hero p.lead{font-size:1.05rem;margin-bottom:1.6rem;max-width:34rem}
+  .cta-row{display:flex;flex-wrap:wrap;gap:.8rem}
+  .hero-fig{
+    justify-self:center;width:100%;max-width:340px;
+    background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);
+    padding:.6rem;box-shadow:0 10px 28px rgba(59,45,31,.12);
+  }
+  .hero-fig img{border-radius:9px;width:100%;height:auto}
+  .hero-fig figcaption{font-size:.8rem;color:var(--ink);padding:.55rem .3rem .2rem;text-align:center}
+  @media(min-width:900px){.hero-fig{max-width:380px}}
+
+  /* ---------- sections ---------- */
+  section{padding:3rem 0}
+  .sec-head{max-width:42rem;margin-bottom:1.8rem}
+  .sec-head h2{font-size:clamp(1.7rem,3.6vw,2.3rem);margin-bottom:.5rem}
+  .sec-kicker{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem;color:var(--green);margin-bottom:.5rem}
+
+  /* what's inside */
+  .inside{background:var(--paper);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+  .inside-grid{display:grid;gap:1rem;list-style:none;margin-top:1.4rem}
+  @media(min-width:700px){.inside-grid{grid-template-columns:1fr 1fr}}
+  .inside-grid li{
+    display:flex;gap:.8rem;align-items:flex-start;
+    background:var(--cream);border:2px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;
+  }
+  .tick{
+    flex:0 0 auto;width:1.7rem;height:1.7rem;border-radius:50%;
+    background:var(--green);color:#fff;font-weight:700;
+    display:flex;align-items:center;justify-content:center;font-size:1rem;line-height:1;
+  }
+  .veg-badge{
+    display:inline-block;margin-top:1.6rem;background:var(--green);color:#fff;
+    font-weight:700;padding:.5rem 1.2rem;border-radius:999px;letter-spacing:.06em;
+  }
+
+  /* menu gallery */
+  .gallery{display:grid;gap:1.4rem;grid-template-columns:1fr}
+  @media(min-width:640px){.gallery{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.gallery{grid-template-columns:1fr 1fr 1fr}}
+  .menu-card{
+    background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:0 6px 18px rgba(59,45,31,.08);
+  }
+  .menu-card img{width:100%;height:auto}
+  .menu-card figcaption{padding:.8rem 1rem;font-size:.88rem;font-weight:600;color:var(--ink)}
+  .menu-note{margin-top:1.4rem;font-size:.95rem;background:var(--paper);border-left:5px solid var(--mustard);padding:.9rem 1.1rem;border-radius:0 10px 10px 0}
+  .menu-note a{color:var(--green);font-weight:700}
+
+  /* steps */
+  .steps{display:grid;gap:1.2rem;counter-reset:step}
+  @media(min-width:800px){.steps{grid-template-columns:1fr 1fr 1fr}}
+  .step{
+    background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);
+    padding:1.5rem 1.3rem;position:relative;
+  }
+  .step .num{
+    width:2.4rem;height:2.4rem;border-radius:50%;background:var(--mustard);color:#2C2117;
+    font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.25rem;
+    display:flex;align-items:center;justify-content:center;margin-bottom:.9rem;
+  }
+  .step h3{font-size:1.25rem;margin-bottom:.4rem}
+  .step p{font-size:.96rem}
+  .step a{color:var(--green);font-weight:700}
+
+  /* areas */
+  .areas{background:var(--green);color:#fff;border-radius:0}
+  .areas h2{color:#fff}
+  .areas .sec-kicker{color:var(--mustard)}
+  .areas p.sub{color:#F4EAD2;max-width:40rem;margin-bottom:1.6rem}
+  .area-grid{display:grid;gap:1.2rem}
+  @media(min-width:760px){.area-grid{grid-template-columns:repeat(3,1fr)}}
+  .area-card{
+    background:#13432a;border:2px solid #2f7a4f;border-radius:var(--radius);padding:1.4rem;
+  }
+  .area-card h3{color:var(--mustard);font-size:1.35rem;margin-bottom:.4rem}
+  .area-card p{color:#F4EAD2;font-size:.95rem}
+  .areas a{color:#fff;font-weight:700}
+
+  /* contact */
+  .contact-card{
+    background:var(--paper);border:2px solid var(--line);border-radius:18px;
+    padding:2rem 1.5rem;text-align:center;max-width:44rem;margin:0 auto;
+    box-shadow:0 10px 28px rgba(59,45,31,.1);
+  }
+  @media(min-width:700px){.contact-card{padding:2.6rem 3rem}}
+  .contact-card h2{margin-bottom:.6rem}
+  .phone-big{
+    display:inline-block;font-family:'Fraunces',Georgia,serif;font-size:clamp(1.6rem,4.5vw,2.4rem);
+    color:var(--green);text-decoration:none;font-weight:700;margin:.8rem 0;
+  }
+  .phone-big:hover{text-decoration:underline}
+  .ig-link{display:inline-block;margin-top:.4rem;color:var(--green);font-weight:700;text-decoration:none;font-size:1.05rem}
+  .ig-link:hover{text-decoration:underline}
+  .fine{margin-top:1.2rem;font-size:.88rem;color:var(--ink)}
+
+  /* footer */
+  footer{background:#2C2117;color:#FAF3E3;padding:2.2rem 0;text-align:center}
+  footer p{font-size:.92rem;margin:.25rem 0}
+  footer .devflix{font-size:.8rem;color:#cdbd97}
+  footer a{color:var(--mustard);font-weight:700;text-decoration:none}
+
+  /* reveal motion */
+  .reveal{opacity:1;transform:none}
+  .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    .js .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Sadi Rasoi<small>Tiffin Service</small></a>
+    <ul class="nav-links">
+      <li><a href="#inside">What's Inside</a></li>
+      <li><a href="#menus">Weekly Menus</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+447367281459">Call to Order</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Homemade Punjabi Tiffin · West Midlands</span>
+        <h1 id="hero-h">Sadi Rasoi Tiffin Service</h1>
+        <p class="tagline">Ghar jaisa khana, har din — food like home, every day.</p>
+        <p class="lead">Fresh, homemade vegetarian tiffins cooked to a new menu every week — dal, sabzi, rotis, rice, salad and raita — for takeout and delivery across Walsall, Wolverhampton and Birmingham.</p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+447367281459">Call 07367 281459</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/sadirasoi_/" target="_blank" rel="noopener">@sadirasoi_ on Instagram</a>
+        </div>
+      </div>
+      <figure class="hero-fig reveal">
+        <img src="assets/img/hero.webp" width="1024" height="1360" alt="Sadi Rasoi poster: a steel tiffin carrier filled with dal, mixed sabzi, rice, raita, fresh salad and a stack of rotis, listing everything every tiffin includes" fetchpriority="high">
+        <figcaption>Everything that goes into a Sadi Rasoi tiffin — from their own menu poster</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WHAT'S INSIDE -->
+  <section class="inside" id="inside" aria-labelledby="inside-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-kicker">What's inside</p>
+        <h2 id="inside-h">Every tiffin, the home way</h2>
+        <p>No shortcuts — every tiffin is prepared fresh at home, the way Sadi Rasoi has always made it.</p>
+      </div>
+      <ul class="inside-grid reveal">
+        <li><span class="tick" aria-hidden="true">✓</span><span>Fresh, homemade-style <strong>vegetarian</strong> food</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span>Hygienically prepared meals, made with care</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span>Freshly prepared rotis</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span>Dal or curry with sabzi</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span>Rice, as listed on the weekly menu</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span>Fresh salad, and raita or curd, as listed</span></li>
+      </ul>
+      <p class="reveal"><span class="veg-badge">Veg only</span></p>
+    </div>
+  </section>
+
+  <!-- WEEKLY MENUS -->
+  <section id="menus" aria-labelledby="menus-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-kicker">Weekly menus</p>
+        <h2 id="menus-h">A new menu every week</h2>
+        <p>Each week brings different daals, sabzis, rotis and rice — with a dessert to finish the week. Here are recent menus, exactly as published on Instagram.</p>
+      </div>
+      <div class="gallery">
+        <figure class="menu-card reveal">
+          <img src="assets/img/menu-1.webp" width="1100" height="1467" loading="lazy" alt="Sadi Rasoi weekly menu poster for 18–23 October 2026: Sunday to Friday dishes including black channe, mix daal, matar paneer, with a Friday dessert of sweet yellow rice (jarda) with dahi bhalla">
+          <figcaption>Week of 18–23 October 2026</figcaption>
+        </figure>
+        <figure class="menu-card reveal">
+          <img src="assets/img/menu-2.webp" width="1100" height="1375" loading="lazy" alt="Sadi Rasoi weekly menu poster for 11–16 October 2026: Sunday to Friday dishes including white channe with aloo gobhi, aloo pakode with saag, rajma with rice, and seviya for dessert">
+          <figcaption>Week of 11–16 October 2026</figcaption>
+        </figure>
+        <figure class="menu-card reveal">
+          <img src="assets/img/menu-3.webp" width="1100" height="1467" loading="lazy" alt="Sadi Rasoi weekly menu poster for 4–9 October 2026: Sunday to Friday dishes including moongi masri with bhindi, matar paneer, and kheer for dessert">
+          <figcaption>Week of 4–9 October 2026</figcaption>
+        </figure>
+        <figure class="menu-card reveal">
+          <img src="assets/img/menu-4.webp" width="1100" height="1467" loading="lazy" alt="Sadi Rasoi weekly tiffin menu poster: Sunday to Friday dishes including moongi masar di daal, palak paneer, kofta, with moong daal halwa for dessert">
+          <figcaption>An earlier week's menu</figcaption>
+        </figure>
+        <figure class="menu-card reveal">
+          <img src="assets/img/menu-5.webp" width="1100" height="1467" loading="lazy" alt="Sadi Rasoi weekly menu poster: Sunday to Friday dishes including mix daal with soyabean nutri, yellow daal with paneer bhurji, rajma, with fruit custard for dessert">
+          <figcaption>An earlier week's menu</figcaption>
+        </figure>
+      </div>
+      <p class="menu-note reveal">The current week's menu is always posted on Instagram first — <a href="https://www.instagram.com/sadirasoi_/" target="_blank" rel="noopener">follow @sadirasoi_</a> to see this week's dishes.</p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" aria-labelledby="how-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-kicker">How it works</p>
+        <h2 id="how-h">Ordering is simple</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="num" aria-hidden="true">1</div>
+          <h3>See the menu</h3>
+          <p>A brand-new weekly menu is posted on <a href="https://www.instagram.com/sadirasoi_/" target="_blank" rel="noopener">Instagram @sadirasoi_</a> every week — pick your days.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num" aria-hidden="true">2</div>
+          <h3>Place your order</h3>
+          <p>Message on Instagram, or call / WhatsApp <a href="tel:+447367281459">07367 281459</a> to order and ask about prices.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num" aria-hidden="true">3</div>
+          <h3>Enjoy at home</h3>
+          <p>Takeout and delivery across Walsall, Wolverhampton and Birmingham — hot, homely food at your door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS -->
+  <section class="areas" id="areas" aria-labelledby="areas-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="sec-kicker">Service areas</p>
+        <h2 id="areas-h">Serving the West Midlands</h2>
+        <p class="sub">Takeout and delivery across three areas. Get in touch to arrange your order.</p>
+      </div>
+      <div class="area-grid reveal">
+        <div class="area-card"><h3>Walsall</h3><p>Homemade tiffins for takeout and delivery across Walsall.</p></div>
+        <div class="area-card"><h3>Wolverhampton</h3><p>Homemade tiffins for takeout and delivery across Wolverhampton.</p></div>
+        <div class="area-card"><h3>Birmingham</h3><p>Homemade tiffins for takeout and delivery across Birmingham.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <p class="sec-kicker">Get in touch</p>
+        <h2 id="contact-h">Hungry? Order your tiffin</h2>
+        <p>Call or WhatsApp — or send a message on Instagram.</p>
+        <a class="phone-big" href="tel:+447367281459">07367 281459</a><br>
+        <a class="ig-link" href="https://www.instagram.com/sadirasoi_/" target="_blank" rel="noopener">Instagram: @sadirasoi_</a>
+        <p class="fine">Opening hours aren't published — call or message to ask. Prices aren't listed online; they're confirmed when you order.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Sadi Rasoi Tiffin Service</strong> · Walsall · Wolverhampton · Birmingham</p>
+    <p>Ghar jaisa khana, har din · Veg only</p>
+    <p class="devflix">Preview concept by <a href="https://www.instagram.com/devfl_ix/" target="_blank" rel="noopener">Devflix</a></p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

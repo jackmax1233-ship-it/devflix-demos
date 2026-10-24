@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RQ Junk Removal — Western Sydney | Junk Gone, Real Quick</title>
+<meta name="description" content="RQ Junk Removal — Real Quick & Reliable Junk Removal in Western Sydney. Household junk, furniture, rubbish and clean-ups. DM us for a free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#15161A; --deep:#0E0F12; --paper:#FAF8F4; --ink:#1C1D21;
+  --muted:#5B5D64; --brand:#FD176F; --brand-bright:#FF5C9D; --brand-deep:#C20E58; --foot-mut:#C9CBD1;
+  --disp:'Barlow Condensed','Arial Narrow',sans-serif; --body:'Barlow',system-ui,sans-serif;
+  --rad:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--char);color:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+section{scroll-margin-top:76px}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:50;background:rgba(14,15,18,.94);backdrop-filter:blur(8px);border-bottom:1px solid #2A2C33}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brandmark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.rq-badge{font-family:var(--disp);font-weight:700;font-size:1.5rem;letter-spacing:.02em;color:var(--char);background:var(--brand);padding:4px 12px 2px;border-radius:8px;line-height:1}
+.brandmark .nm{font-family:var(--disp);font-weight:600;font-size:1.15rem;letter-spacing:.14em;color:var(--paper)}
+.brandmark .nm small{display:block;font-family:var(--body);font-weight:500;font-size:.68rem;letter-spacing:.22em;color:var(--foot-mut)}
+nav.top{display:flex;gap:22px}
+nav.top a{font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--foot-mut);text-decoration:none}
+nav.top a:hover{color:var(--brand)}
+.btn{display:inline-block;font-family:var(--disp);font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:10px;padding:12px 26px 10px;font-size:1.05rem;transition:transform .15s ease, box-shadow .15s ease}
+.btn-solid{background:var(--brand);color:var(--char);box-shadow:0 4px 18px rgba(253,23,111,.35)}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(253,23,111,.45)}
+.btn-ghost{border:2px solid #3A3D46;color:var(--paper)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.btn-sm{padding:9px 18px 7px;font-size:.95rem}
+.hd .btn-sm{white-space:nowrap}
+
+/* ---------- hero ---------- */
+.hero{padding:56px 0 64px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(-45deg,transparent 0 46px,rgba(253,23,111,.045) 46px 52px);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative}
+.kicker{font-family:var(--disp);font-weight:700;font-size:1rem;letter-spacing:.28em;color:var(--brand);text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-family:var(--disp);font-weight:700;font-size:clamp(3.2rem,7.5vw,5.6rem);line-height:.95;letter-spacing:.01em;text-transform:uppercase}
+.hero h1 .alt{color:var(--brand)}
+.lede{margin:20px 0 8px;font-size:1.08rem;color:var(--foot-mut);max-width:34rem}
+.lede strong{color:var(--paper)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 18px}
+.meta-line{font-size:.85rem;color:var(--foot-mut);letter-spacing:.04em}
+.meta-line b{color:var(--paper)}
+.hero-fig{max-width:420px;margin-left:auto}
+.hero-fig .frame{border-radius:var(--rad);overflow:hidden;border:1px solid #2E3138;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.hero-fig img{aspect-ratio:1086/1448;width:100%;object-fit:cover}
+.hero-fig figcaption{margin-top:10px;font-size:.85rem;color:var(--foot-mut);text-align:center}
+
+/* ---------- fact strip ---------- */
+.strip{background:var(--brand);color:var(--char);padding:18px 0}
+.strip ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.strip li{font-family:var(--disp);font-weight:700;font-size:1.05rem;letter-spacing:.05em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.strip li::before{content:"";flex:0 0 10px;height:10px;background:var(--char);transform:rotate(45deg)}
+
+/* ---------- gallery ---------- */
+.work{background:var(--paper);color:var(--ink);padding:72px 0}
+.sec-kicker{font-family:var(--disp);font-weight:700;font-size:1rem;letter-spacing:.28em;color:var(--brand-deep);text-transform:uppercase;margin-bottom:10px}
+.sec-title{font-family:var(--disp);font-weight:700;font-size:clamp(2.4rem,5vw,3.6rem);line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.sec-sub{color:var(--muted);max-width:40rem;margin:12px 0 34px;font-size:1.05rem}
+.g-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:26px;align-items:start}
+.tile.wide{grid-column:span 4}
+.tile.tall{grid-column:span 2}
+.tile .frame{border-radius:var(--rad);overflow:hidden;background:#E9E4D9;box-shadow:0 10px 30px rgba(28,29,33,.10)}
+.tile img{width:100%;object-fit:cover}
+.tile figcaption{margin-top:10px;font-size:.95rem;color:var(--muted)}
+.tile figcaption strong{color:var(--ink)}
+
+/* ---------- services ---------- */
+.services{background:var(--char);padding:72px 0}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
+.svc{background:#1C1E24;border:1px solid #2C2F37;border-radius:var(--rad);padding:26px 22px;position:relative;overflow:hidden}
+.svc::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--brand)}
+.svc .num{font-family:var(--disp);font-weight:700;font-size:.95rem;letter-spacing:.2em;color:var(--brand-bright)}
+.svc h3{font-family:var(--disp);font-weight:700;font-size:1.5rem;letter-spacing:.04em;text-transform:uppercase;margin:8px 0 8px}
+.svc p{font-size:.94rem;color:var(--foot-mut)}
+
+/* ---------- steps ---------- */
+.steps{background:var(--paper);color:var(--ink);padding:72px 0}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.step{border:2px solid #E5DFD3;border-radius:var(--rad);padding:28px 24px;background:#fff}
+.step .n{font-family:var(--disp);font-weight:700;font-size:2.6rem;color:var(--brand-deep);line-height:1}
+.step h3{font-family:var(--disp);font-weight:700;font-size:1.4rem;letter-spacing:.04em;text-transform:uppercase;margin:10px 0 8px}
+.step p{font-size:.95rem;color:var(--muted)}
+.step a{color:var(--brand-deep);font-weight:700}
+
+/* ---------- CTA band ---------- */
+.cta-band{background:var(--char);padding:76px 0;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(-45deg,transparent 0 60px,rgba(253,23,111,.05) 60px 66px);pointer-events:none}
+.cta-band h2{font-family:var(--disp);font-weight:700;font-size:clamp(2.8rem,6vw,4.6rem);text-transform:uppercase;line-height:1;position:relative}
+.cta-band h2 .alt{color:var(--brand)}
+.cta-band p{color:var(--foot-mut);margin:14px auto 28px;max-width:36rem;position:relative}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--deep);border-top:1px solid #23252C;padding:34px 0}
+.ft{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.ft .l{font-family:var(--disp);font-weight:600;letter-spacing:.12em;font-size:1rem;color:var(--paper)}
+.ft .l small{display:block;font-family:var(--body);font-size:.78rem;letter-spacing:.06em;color:var(--foot-mut);margin-top:4px}
+.ft a.ig{color:var(--brand);font-weight:700;text-decoration:none}
+.ft .note{width:100%;font-size:.78rem;color:#8E9098;margin-top:6px}
+
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .btn-solid:hover{transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero{padding:44px 0 52px}
+  .hero-fig{margin:0 auto;max-width:380px}
+  .strip ul{grid-template-columns:repeat(2,1fr);row-gap:12px}
+  .g-grid{grid-template-columns:1fr}
+  .tile.wide,.tile.tall{grid-column:auto}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .step-grid{grid-template-columns:1fr;max-width:520px}
+  nav.top{display:none}
+}
+@media (max-width:560px){
+  .hd .btn{display:none}
+  .brandmark .nm{white-space:nowrap}
+  .brandmark .nm small{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .strip ul{grid-template-columns:1fr}
+  .cta-row .btn{flex:1 1 100%;text-align:center}
+  .hd .btn-sm{padding:8px 14px 6px;font-size:.85rem}
+  .brandmark .nm{font-size:1rem}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<header class="site">
+  <div class="wrap hd">
+    <a class="brandmark" href="#top" aria-label="RQ Junk Removal — home">
+      <span class="rq-badge">RQ</span>
+      <span class="nm">RQ JUNK REMOVAL<small>WESTERN SYDNEY</small></span>
+    </a>
+    <nav class="top" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-solid btn-sm" href="https://ig.me/m/rq_junk_removal" target="_blank" rel="noopener">DM for a free quote</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Introduction">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <p class="kicker">Western Sydney &bull; Junk Removal</p>
+        <h1>Junk gone.<br><span class="alt">Real quick.</span></h1>
+        <p class="lede"><strong>Real Quick &amp; Reliable Junk Removal</strong> — a brand-new Western Sydney crew making junk removal simple. Household junk, furniture, rubbish and clean-ups, cleared fast.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="https://ig.me/m/rq_junk_removal" target="_blank" rel="noopener">DM for a free quote</a>
+          <a class="btn btn-ghost" href="tel:+61402575777">Call 0402 575 777</a>
+        </div>
+        <p class="meta-line">Launched <b>August 2026</b> &bull; Servicing <b>Western Sydney &amp; surrounding areas</b></p>
+      </div>
+      <figure class="hero-fig rv">
+        <div class="frame">
+          <img src="img/before-after.webp" width="1086" height="1448" alt="Before and after photos of an RQ Junk Removal clear-up: a yard piled with old furniture and appliances, then the same yard cleared clean" fetchpriority="high">
+        </div>
+        <figcaption>Before &rarr; after — a real RQ clear-up.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="Key facts">
+    <div class="wrap">
+      <ul>
+        <li>Junk &bull; Furniture &bull; Rubbish &bull; Clean-ups</li>
+        <li>Western Sydney &amp; surrounds</li>
+        <li>Free quotes by DM</li>
+        <li>Launched August 2026</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="work" id="work" aria-label="Recent work">
+    <div class="wrap">
+      <p class="sec-kicker rv">Recent clears</p>
+      <h2 class="sec-title rv">Real clears.</h2>
+      <p class="sec-sub rv">Every photo below is RQ on the job around Western Sydney — truck loaded, gutters cleared, kerbside piles gone.</p>
+      <div class="g-grid">
+        <figure class="tile wide rv">
+          <div class="frame"><img src="img/truck-loaded.webp" width="1100" height="658" style="aspect-ratio:1100/658" loading="lazy" alt="The RQ truck loaded with a kerbside junk pile on a Western Sydney street"></div>
+          <figcaption><strong>Loaded up and rolling</strong> — a kerbside clear, truck full.</figcaption>
+        </figure>
+        <figure class="tile tall rv">
+          <div class="frame"><img src="img/kerbside-pile.webp" width="640" height="1136" style="aspect-ratio:640/1136" loading="lazy" alt="A large kerbside pile of furniture and junk waiting beside the RQ loaded trailer"></div>
+          <figcaption><strong>Kerbside pile, gone</strong> — trailer loaded, street cleared.</figcaption>
+        </figure>
+        <figure class="tile tall rv">
+          <div class="frame"><img src="img/gutter-clean.webp" width="720" height="1280" style="aspect-ratio:720/1280" loading="lazy" alt="An RQ crew member on a ladder clearing debris from roof gutters"></div>
+          <figcaption><strong>Gutter clean-out</strong> — "boys cleaning out them roof gutters."</figcaption>
+        </figure>
+        <figure class="tile wide rv">
+          <div class="frame"><img src="img/loading-bag.webp" width="720" height="660" style="aspect-ratio:720/660" loading="lazy" alt="An RQ crew member in a branded shirt loading a rubbish bag onto the truck"></div>
+          <figcaption><strong>Loading up</strong> — the crew at work, real quick.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-label="Services">
+    <div class="wrap">
+      <p class="sec-kicker rv" style="color:var(--brand)">What we take</p>
+      <h2 class="sec-title rv" style="color:var(--paper)">One crew. Every mess.</h2>
+      <p class="sec-sub rv" style="color:var(--foot-mut)">If it's junk, we'll shift it. These are the jobs RQ does day in, day out.</p>
+      <div class="svc-grid">
+        <article class="svc rv"><p class="num">01</p><h3>Household Junk</h3><p>Old bits and bobs piling up around the house — cleared in one visit.</p></article>
+        <article class="svc rv"><p class="num">02</p><h3>Furniture</h3><p>Couches, mattresses, tables, whitegoods — the heavy stuff, lifted and gone.</p></article>
+        <article class="svc rv"><p class="num">03</p><h3>General Rubbish</h3><p>Kerbside piles, garage clutter, green waste — sorted and taken away.</p></article>
+        <article class="svc rv"><p class="num">04</p><h3>Clean-ups</h3><p>Property clean-ups and yard clears — left tidy, like we were never there.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" aria-label="How it works">
+    <div class="wrap">
+      <p class="sec-kicker rv">How it works</p>
+      <h2 class="sec-title rv">Gone in three steps.</h2>
+      <div class="step-grid">
+        <article class="step rv"><p class="n">1</p><h3>Message us</h3><p><a href="https://ig.me/m/rq_junk_removal" target="_blank" rel="noopener">DM us on Instagram</a> or email <a href="mailto:rqjunkremoval1@gmail.com">rqjunkremoval1@gmail.com</a> — tell us what needs to go.</p></article>
+        <article class="step rv"><p class="n">2</p><h3>Get a free quote</h3><p>Send a photo of the pile and we'll come back with a free quote — no obligation.</p></article>
+        <article class="step rv"><p class="n">3</p><h3>We clear it</h3><p>We rock up, load it and leave the place clean. Simple, affordable, real quick.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="contact" aria-label="Contact">
+    <div class="wrap">
+      <h2 class="rv">Need it gone?<br><span class="alt">Say the word.</span></h2>
+      <p class="rv">DM us for a free quote — or reach us direct. Western Sydney &amp; surrounding areas.</p>
+      <div class="cta-btns rv">
+        <a class="btn btn-solid" href="https://ig.me/m/rq_junk_removal" target="_blank" rel="noopener">DM on Instagram</a>
+        <a class="btn btn-ghost" href="tel:+61402575777">0402 575 777</a>
+        <a class="btn btn-ghost" href="mailto:rqjunkremoval1@gmail.com">rqjunkremoval1@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap ft">
+    <div class="l">RQ JUNK REMOVAL<small>Western Sydney, NSW &bull; Real Quick &amp; Reliable Junk Removal</small></div>
+    <a class="ig" href="https://www.instagram.com/rq_junk_removal/" target="_blank" rel="noopener">@rq_junk_removal</a>
+    <p class="note">Preview website prepared by Devflix for RQ Junk Removal — photos and facts are the business's own, from their public Instagram.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>

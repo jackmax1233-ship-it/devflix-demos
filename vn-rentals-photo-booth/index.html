@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VN Rentals — Luxury Photo Booth & 360 Video Booth Rentals</title>
+<meta name="description" content="VN Rentals: 360 Video Booth and Luxury Photo Booth rentals with digital & instant prints. Insured. Weddings, quinceañeras, birthdays & celebrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#100C08; --ink:#241B10; --cream:#F6F0E2; --cream-deep:#EFE5CF;
+  --gold:#C9A227; --bronze:#6E5216; --muted:#5E5344; --line:#DCCFA8;
+  --serif:"Playfair Display",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:88px 0}
+.kicker{font-size:12.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--bronze);margin-bottom:18px}
+.on-dark .kicker{color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.14;letter-spacing:.005em}
+h2{font-size:clamp(30px,4vw,46px);margin-bottom:20px}
+.lede{font-size:19px;color:var(--muted);max-width:62ch}
+.on-dark .lede{color:#D9CDB2}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* nav */
+.nav{background:var(--black);color:var(--cream);position:sticky;top:0;z-index:50;border-bottom:1px solid #2b2415}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 28px;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mono{width:40px;height:40px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);color:var(--gold);font-size:18px;flex:0 0 auto}
+.brand-name{font-family:var(--serif);font-size:20px;letter-spacing:.06em}
+.brand-name small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.3em;color:var(--gold);font-weight:600}
+.nav-links{display:flex;gap:30px;font-size:14.5px}
+.nav-links a{text-decoration:none;opacity:.85}
+.nav-links a:hover{opacity:1;color:var(--gold)}
+.nav-call{border:1px solid var(--gold);color:var(--gold);text-decoration:none;padding:9px 20px;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap}
+.nav-call:hover{background:var(--gold);color:var(--black)}
+
+/* hero */
+.hero{background:var(--black);color:var(--cream);padding:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.15fr;max-width:1440px;margin:0 auto;align-items:stretch}
+.hero-copy{padding:52px 44px 52px max(28px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center;max-height:560px;overflow:hidden}
+.hero-copy h1{font-size:clamp(33px,3.9vw,50px);margin:6px 0 18px}
+.hero-copy h1 em{font-style:italic;color:var(--gold)}
+.hero-copy p{color:#D9CDB2;font-size:18px;max-width:44ch}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 34px}
+.hero-badges span{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid #3a3018;color:#E8D9AC;padding:7px 14px;border-radius:999px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15.5px;padding:15px 30px;border-radius:999px;transition:transform .15s ease}
+.btn-gold{background:var(--gold);color:var(--black)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-line{border:1px solid var(--gold);color:var(--gold)}
+.btn-line:hover{background:rgba(201,162,39,.12)}
+.hero-photo{background:#050403;display:flex;align-items:center;justify-content:center;max-height:560px;overflow:hidden}
+.hero-photo img{width:100%;height:100%;max-height:560px;object-fit:contain;object-position:center}
+
+/* strip */
+.strip{background:var(--black);border-top:1px solid #2b2415;color:var(--gold);padding:20px 0;overflow:hidden}
+.strip-row{display:flex;gap:54px;justify-content:center;flex-wrap:wrap;font-size:13px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+
+/* booths */
+.booths-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:56px;align-items:start}
+.booth-card{border-top:2px solid var(--gold);padding-top:26px}
+.booth-card h3{font-size:27px;margin-bottom:12px}
+.booth-card p{color:var(--muted);font-size:16.5px}
+.booth-card .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);margin-bottom:10px}
+.booth-photo{margin-top:22px;background:#0d0a06;border-radius:6px;overflow:hidden}
+.booth-photo img{width:100%;max-height:340px;object-fit:contain;object-position:center;background:#0d0a06}
+.booth-photo figcaption{font-size:13.5px;color:var(--muted);background:var(--cream);padding:12px 4px 0}
+
+/* detail band */
+.band{background:var(--black);color:var(--cream)}
+.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.band-photo{background:#050403;border-radius:6px;overflow:hidden}
+.band-photo img{width:100%;max-height:480px;object-fit:contain;object-position:center;background:#050403}
+.feat{list-style:none;margin-top:28px;display:grid;gap:20px}
+.feat li{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start}
+.feat .dot{width:12px;height:12px;border:2px solid var(--gold);border-radius:50%;margin-top:7px}
+.feat strong{display:block;font-family:var(--serif);font-size:19px;font-weight:600;color:var(--cream)}
+.feat span{color:#D9CDB2;font-size:16px}
+
+/* gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px;margin-top:52px}
+.gal{position:relative;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.gal img{width:100%;object-fit:contain;background:#fff}
+.gal-landscape{grid-column:span 7}.gal-landscape img{aspect-ratio:16/10;max-height:340px}
+.gal-portrait{grid-column:span 5}.gal-portrait img{aspect-ratio:4/5;max-height:340px}
+.gal figcaption{padding:14px 18px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+.gal figcaption strong{display:block;font-family:var(--serif);color:var(--ink);font-size:17px;margin-bottom:2px}
+
+/* occasions */
+.occ{background:var(--cream-deep)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.chips span{border:1px solid var(--bronze);color:var(--ink);border-radius:999px;padding:10px 22px;font-size:15px;font-weight:500}
+
+/* contact */
+.contact{background:var(--black);color:var(--cream);text-align:center}
+.contact h2{max-width:20ch;margin:0 auto 18px}
+.contact .phone{display:inline-block;font-family:var(--serif);font-size:clamp(30px,4.5vw,48px);color:var(--gold);text-decoration:none;margin:18px 0 8px;letter-spacing:.02em}
+.contact .phone:hover{text-decoration:underline}
+.contact p{color:#D9CDB2;max-width:52ch;margin:0 auto}
+.ig-link{display:inline-flex;align-items:center;gap:10px;margin-top:26px;border:1px solid var(--gold);border-radius:999px;padding:13px 28px;color:var(--gold);text-decoration:none;font-weight:600}
+.ig-link:hover{background:rgba(201,162,39,.12)}
+
+/* footer */
+footer{background:#0a0805;color:#8d8269;font-size:13.5px;padding:30px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* responsive */
+@media (max-width:900px){
+  .nav-links{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:56px 28px;max-height:none}
+  .hero-photo{max-height:420px}
+  .hero-photo img{max-height:420px}
+  .booths-grid,.band-grid{grid-template-columns:1fr;gap:40px}
+  .gal-landscape,.gal-portrait{grid-column:span 12}
+  .gal-landscape img{aspect-ratio:auto;max-height:300px}
+  .gal-portrait img{aspect-ratio:auto;max-height:420px}
+  section{padding:64px 0}
+}
+@media (max-width:480px){
+  .wrap{padding:0 20px}
+  .hero-copy{padding:44px 20px}
+  .nav-call{padding:8px 14px;font-size:13px}
+  .hero-cta .btn{width:100%;text-align:center}
+  .gal-grid{gap:16px}
+}
+</style>
+</head>
+<body class="no-js">
+<script>document.body.classList.replace('no-js','js')</script>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="VN Rentals home">
+      <span class="mono" aria-hidden="true">V</span>
+      <span class="brand-name">VN Rentals<small>Photo Booth Co.</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#booths">Booths</a>
+      <a href="#events">Real Events</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-call" href="tel:+16615640906">661-564-0906</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy rv">
+      <p class="kicker">360 &amp; Luxury Photo Booth Rentals</p>
+      <h1>The booth your celebration <em>deserves.</em></h1>
+      <p>VN Rentals brings the 360 Video Booth and the Luxury Photo Booth to weddings and celebrations — digital &amp; instant prints, studio-quality photos, and a setup that looks beautiful in your venue.</p>
+      <div class="hero-badges" aria-label="Highlights">
+        <span>Insured</span><span>Digital &amp; Instant Prints</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="tel:+16615640906">Check Your Date</a>
+        <a class="btn btn-line" href="#booths">See the Booths</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero-glam.webp" width="1100" height="733" alt="Black-and-white glam booth portrait of a wedding couple, captured by VN Rentals" fetchpriority="high">
+    </div>
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-row">
+    <span>360 Video Booth</span><span>Luxury Photo Booth</span><span>Digital &amp; Instant Prints</span><span>Fully Insured</span>
+  </div>
+</div>
+
+<section id="booths">
+  <div class="wrap">
+    <p class="kicker rv">The Booths</p>
+    <h2 class="rv">Two experiences. One unforgettable night.</h2>
+    <p class="lede rv">Every setup arrives clean, styled, and ready to photograph — soft draping, studio lighting, and prints your guests take home the same night.</p>
+    <div class="booths-grid">
+      <article class="booth-card rv">
+        <span class="tag">Signature</span>
+        <h3>Luxury Photo Booth</h3>
+        <p>The ICONIC booth — our newest setup, created for upscale weddings. A sleek white kiosk, studio umbrella light, and an instant printer, styled to complement your décor, not clutter it.</p>
+        <figure class="booth-photo">
+          <img src="img/iconic-booth.webp" width="1100" height="1466" alt="The white ICONIC photo booth kiosk with studio light and instant printer at an outdoor wedding" loading="lazy">
+          <figcaption>The ICONIC booth, set for an outdoor wedding.</figcaption>
+        </figure>
+      </article>
+      <article class="booth-card rv">
+        <span class="tag">Cinematic</span>
+        <h3>360 Video Booth</h3>
+        <p>The crowd favorite. Guests step onto the platform and leave with a slow-motion, red-carpet style video made for sharing — the moment everyone at the party talks about the next day.</p>
+        <figure class="booth-photo">
+          <img src="img/setup-detail.webp" width="1086" height="1086" alt="Luxury photo booth with printer beside a champagne draped backdrop at an evening event" loading="lazy">
+          <figcaption>Clean setup, soft draping, timeless prints.</figcaption>
+        </figure>
+      </article>
+      <article class="booth-card rv">
+        <span class="tag">Timeless</span>
+        <h3>The Glam Booth</h3>
+        <p>Our signature black-and-white experience. Editorial-style portraits with a high-fashion finish — elegant, flattering, and made to be framed.</p>
+        <figure class="booth-photo">
+          <img src="img/custom-prints.webp" width="1100" height="733" alt="Guests posing in front of a white draped backdrop at a birthday celebration" loading="lazy">
+          <figcaption>Styled backdrops, studio-quality photos.</figcaption>
+        </figure>
+      </article>
+      <article class="booth-card rv">
+        <span class="tag">Keepsakes</span>
+        <h3>Digital &amp; Instant Prints</h3>
+        <p>Custom-designed print layouts matched to your event, studio-quality photos, and keepsakes your guests take home that same night — plus digital copies to share.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="detail">
+  <div class="wrap band-grid">
+    <figure class="band-photo rv">
+      <img src="img/senior-sunrise.webp" width="1080" height="1350" alt="Framed Senior Sunrise Class of 2027 photo print made by VN Rentals" loading="lazy">
+    </figure>
+    <div class="rv">
+      <p class="kicker">Every Detail Matters</p>
+      <h2>Designed around your event, not the other way around.</h2>
+      <ul class="feat">
+        <li><span class="dot" aria-hidden="true"></span><div><strong>Custom print design</strong><span>Layouts designed for your theme — names, dates, and colors built in.</span></div></li>
+        <li><span class="dot" aria-hidden="true"></span><div><strong>Studio-quality photos</strong><span>Professional lighting and a setup designed to photograph everyone beautifully.</span></div></li>
+        <li><span class="dot" aria-hidden="true"></span><div><strong>Fits any venue</strong><span>A compact, elegant footprint that fits beautifully into any event space, indoors or out.</span></div></li>
+        <li><span class="dot" aria-hidden="true"></span><div><strong>Fully insured</strong><span>Book with confidence — VN Rentals is an insured vendor.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <div class="wrap">
+    <p class="kicker rv">Real Events</p>
+    <h2 class="rv">Straight from the events.</h2>
+    <p class="lede rv">A few of the celebrations VN Rentals has been part of — weddings, quinceañeras, birthdays, and school events across California.</p>
+    <div class="gal-grid">
+      <figure class="gal gal-landscape rv">
+        <img src="img/rancho-chabela.webp" width="1080" height="593" alt="Quinceañera portrait with a La Princesa sign at Rancho Chabela" loading="lazy">
+        <figcaption><strong>Quinceañera</strong>A booth as beautiful as the celebration itself.</figcaption>
+      </figure>
+      <figure class="gal gal-portrait rv">
+        <img src="img/quinceanera.webp" width="1080" height="1350" alt="Quinceañera photo strip in front of a pink rose wall" loading="lazy">
+        <figcaption><strong>Rose-wall portraits</strong>Studio-quality shots, ready to frame.</figcaption>
+      </figure>
+      <figure class="gal gal-portrait rv">
+        <img src="img/black-gold-50th.webp" width="1080" height="1350" alt="Black-and-gold 50th birthday and retirement photo collage" loading="lazy">
+        <figcaption><strong>Black &amp; gold, 50th &amp; retirement</strong>Custom collage design for milestone nights.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="occ">
+  <div class="wrap">
+    <p class="kicker rv">Occasions</p>
+    <h2 class="rv">Made for your kind of party.</h2>
+    <div class="chips rv">
+      <span>Weddings</span><span>Quinceañeras</span><span>Sweet 16s</span><span>Birthdays</span><span>Retirements</span><span>School Events</span><span>Bridal Parties</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="kicker rv">Check Availability</p>
+    <h2 class="rv">Your date is booking now.</h2>
+    <p class="rv">Tell us about your event and we'll confirm your date, walk through the booths, and design your custom prints.</p>
+    <a class="phone rv" href="tel:+16615640906">661-564-0906</a>
+    <p class="rv">Prefer DMs? Find us on Instagram.</p>
+    <a class="ig-link rv" href="https://www.instagram.com/vnrentals" target="_blank" rel="noopener">@vnrentals on Instagram</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <span>© VN Rentals — 360 Video Booth &amp; Luxury Photo Booth. Insured.</span>
+    <span>Photos from @vnrentals on Instagram.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var els=document.querySelectorAll('.js .rv');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.05,rootMargin:'0px 0px -20px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

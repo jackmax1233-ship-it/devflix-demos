@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Star Cat Boarding — Cage-Free Home Cat Boarding in Doha</title>
+<meta name="description" content="Home-based, cage-free cat boarding in Doha, Qatar since 2019. Clean cozy rooms, quality food, daily care & attention. Vaccinated cats only. Book via Instagram DM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FAF5EC; --sand:#F1E6D2; --ink:#1F3A34; --soft:#57645E;
+  --teal:#16655A; --teal-deep:#14332D; --amber:#8A4515; --amber-deep:#D9A441;
+  --muted-deep:#C9D4C9; --line:#E3D6BC; --white:#FFFFFF;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);
+  line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.15;color:var(--ink);letter-spacing:-0.01em}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+
+/* reveal (gated behind .js so content is visible without JS) */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(250,245,236,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:68px;padding-top:.5rem;padding-bottom:.5rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink)}
+.brand svg{width:30px;height:30px;flex:none}
+.brand b{font-family:'Fraunces',Georgia,serif;font-size:1.15rem;font-weight:700}
+.nav-links{display:none;gap:1.6rem}
+.nav-links a{color:var(--soft);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:var(--teal)}
+@media(min-width:820px){.nav-links{display:flex}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--teal);color:var(--cream);
+  text-decoration:none;font-weight:600;font-size:1rem;padding:.85rem 1.7rem;border-radius:999px;border:none;cursor:pointer;
+  transition:background .2s ease,transform .2s ease}
+.btn:hover{background:var(--teal-deep);transform:translateY(-1px)}
+.btn.nav-cta{padding:.6rem 1.25rem;font-size:.92rem}
+.btn.ghost{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.btn.ghost:hover{background:var(--teal);color:var(--cream)}
+
+/* hero */
+.hero{padding:3.5rem 0 4rem}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.kicker{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.4rem,5.4vw,3.9rem);margin-bottom:1.1rem}
+.hero h1 .roam{color:var(--amber)}
+.lede{font-size:1.12rem;color:var(--soft);max-width:34rem;margin-bottom:1.8rem}
+.hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero-meta{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:1.6rem;font-size:.9rem;color:var(--soft)}
+.hero-meta strong{color:var(--ink);font-weight:700}
+.hero-photo{border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 60px -24px rgba(31,58,52,.35);
+  border:6px solid var(--white);max-height:560px}
+.hero-photo img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;max-height:520px}
+
+/* strip */
+.strip{background:var(--teal-deep);color:var(--muted-deep);padding:1.4rem 0}
+.strip .wrap{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;font-weight:600;font-size:.98rem}
+.strip .wrap span{display:flex;align-items:center;gap:.55rem}
+.strip svg{width:18px;height:18px;flex:none}
+
+/* promise */
+.split{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr}.split.flip>.txt{order:2}}
+.frame{border-radius:var(--radius);overflow:hidden;border:6px solid var(--white);
+  box-shadow:0 20px 50px -22px rgba(31,58,52,.3)}
+.frame.landscape img{aspect-ratio:3/2;object-fit:cover;width:100%;height:auto}
+.frame.portrait img{aspect-ratio:3/4;object-fit:cover;width:100%;height:auto}
+.sec-label{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.8rem;display:block}
+h2.sec{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:1rem}
+.txt p{color:var(--soft);margin-bottom:1.1rem}
+.checks{list-style:none;display:grid;gap:1rem;margin-top:1.4rem}
+.checks li{display:flex;gap:.9rem;align-items:flex-start;background:var(--white);border:1px solid var(--line);
+  border-radius:14px;padding:1rem 1.15rem}
+.checks svg{width:24px;height:24px;flex:none;margin-top:2px}
+.checks b{display:block;color:var(--ink)}
+.checks span{color:var(--soft);font-size:.94rem}
+
+/* requirements (dark) */
+.rules{background:var(--teal-deep);color:var(--muted-deep);border-radius:0}
+.rules h2.sec{color:var(--cream)}
+.rules .txt p{color:var(--muted-deep)}
+.rules .sec-label{color:var(--amber-deep)}
+.rule-cards{display:grid;gap:1.1rem;margin-top:1.8rem}
+@media(min-width:700px){.rule-cards{grid-template-columns:repeat(3,1fr)}}
+.rule-card{background:rgba(250,245,236,.06);border:1px solid rgba(250,245,236,.18);border-radius:14px;padding:1.4rem 1.2rem}
+.rule-card svg{width:30px;height:30px;margin-bottom:.8rem}
+.rule-card b{display:block;color:var(--cream);font-family:'Fraunces',Georgia,serif;font-size:1.25rem;margin-bottom:.4rem}
+.rule-card span{font-size:.93rem}
+.rules .frame img{object-position:40% 50%}
+
+/* gallery */
+.gallery{background:var(--sand)}
+.g-grid{display:grid;gap:1.4rem;margin-top:2.2rem}
+@media(min-width:640px){.g-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.g-grid{grid-template-columns:repeat(4,1fr)}}
+.g-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.g-card img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.g-card figcaption{padding:.9rem 1.1rem;font-size:.92rem;color:var(--soft)}
+.g-card figcaption b{color:var(--ink);display:block;font-size:.98rem}
+
+/* contact */
+.contact{text-align:center}
+.contact .lede{margin-left:auto;margin-right:auto}
+.contact-card{max-width:620px;margin:2.2rem auto 0;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);padding:2.4rem 2rem;box-shadow:0 20px 50px -24px rgba(31,58,52,.25)}
+.contact-card .place{color:var(--soft);font-size:.95rem;margin:1rem 0 1.6rem}
+.contact-card .place strong{color:var(--ink)}
+
+footer{background:var(--teal-deep);color:var(--muted-deep);padding:2.2rem 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+footer a{color:var(--cream);text-decoration:none;font-weight:600}
+footer .dev{opacity:.85}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="All Star Cat Boarding — home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="18.5" r="7.5" fill="#16655A"/>
+        <ellipse cx="8.5" cy="11" rx="3" ry="3.8" fill="#16655A"/>
+        <ellipse cx="15" cy="7.8" rx="3" ry="3.8" fill="#16655A"/>
+        <ellipse cx="21.5" cy="7.8" rx="3" ry="3.8" fill="#16655A"/>
+        <ellipse cx="27" cy="11.5" rx="2.6" ry="3.4" fill="#16655A"/>
+      </svg>
+      <b>All Star Cat Boarding</b>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#why">Why All Star</a>
+      <a href="#rules">Boarding rules</a>
+      <a href="#guests">Happy guests</a>
+      <a href="#book">Book a stay</a>
+    </nav>
+    <a class="btn nav-cta" href="https://www.instagram.com/allstarcatboarding/" target="_blank" rel="noopener">DM to book</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <span class="kicker">Home-based cat boarding · Doha, Qatar</span>
+        <h1>A real home for your cat — <span class="roam">cage free, roam free.</span></h1>
+        <p class="lede">All Star Cat Boarding has looked after Doha's cats from a real home since 2019. No cages, no kennels — just clean cozy rooms, quality food, and daily one-on-one attention from someone who truly understands cat behaviour.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="https://www.instagram.com/allstarcatboarding/" target="_blank" rel="noopener">Message us on Instagram</a>
+          <a class="btn ghost" href="#why">See how it works</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>Since 2019</strong> · home-based in Doha</span>
+          <span><strong>Vaccinated</strong> cats only</span>
+        </div>
+      </div>
+      <figure class="hero-photo rv">
+        <img src="assets/hero.webp" alt="All Star Cat Boarding's own promo graphic: cage-free home boarding in Muntazah, Doha — boarding requirements and contact number" width="1100" height="1100" fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="wrap">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#D9A441" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Cage Free — Roam Free</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#D9A441" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Boarding Doha cats since 2019</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#D9A441" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Cat expert in handling different behaviours</span>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="wrap split">
+      <figure class="frame portrait rv">
+        <img src="assets/cage.webp" alt="A long-haired guest cat relaxing in the boarding home" width="1100" height="1467" loading="lazy" style="object-position:50% 35%">
+      </figure>
+      <div class="txt rv">
+        <span class="sec-label">Why All Star</span>
+        <h2 class="sec">Boarding that feels like home — because it is one.</h2>
+        <p>Your cat stays in a real Doha home, not a facility. With years of experience handling different cat behaviours, every guest gets care shaped around their personality — the shy ones get patience, the playful ones get play.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#16655A" stroke-width="2.2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><div><b>Clean &amp; cozy rooms</b><span>A calm, comfortable home space — never a cage.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#16655A" stroke-width="2.2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><div><b>Quality food</b><span>Good nutrition as part of every stay.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#16655A" stroke-width="2.2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><div><b>Daily care &amp; attention</b><span>One-on-one time, every single day.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#16655A" stroke-width="2.2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><div><b>Safe &amp; secure environment</b><span>A protected home your cat can explore freely.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section id="rules" class="rules">
+    <div class="wrap split flip">
+      <figure class="frame landscape rv">
+        <img src="assets/care.webp" alt="All Star Cat Boarding's own boarding guide graphic: why choose them, what to prepare, what to bring, and a typical day" width="1100" height="738" loading="lazy" style="object-position:center">
+      </figure>
+      <div class="txt rv">
+        <span class="sec-label">Before every stay</span>
+        <h2 class="sec">Three simple rules keep every guest safe.</h2>
+        <p>Because guests share one home, every cat must arrive:</p>
+        <div class="rule-cards">
+          <div class="rule-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D9A441" stroke-width="2" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <b>Vaccinated</b><span>Up-to-date vaccinations are required for every boarder.</span>
+          </div>
+          <div class="rule-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D9A441" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg>
+            <b>Spayed</b><span>All cats must be spayed before their stay.</span>
+          </div>
+          <div class="rule-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D9A441" stroke-width="2" aria-hidden="true"><path d="M12 3v18M5 8l14 8M19 8L5 16"/></svg>
+            <b>Dewormed</b><span>Recent deworming keeps the whole home healthy.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="guests" class="gallery">
+    <div class="wrap">
+      <div class="rv" style="text-align:center;max-width:40rem;margin:0 auto">
+        <span class="sec-label">Happy guests</span>
+        <h2 class="sec">Sunny spots, window seats, and good company.</h2>
+        <p style="color:var(--soft)">A glimpse of the easy, cage-free life boarders enjoy at All Star.</p>
+      </div>
+      <div class="g-grid">
+        <figure class="g-card rv">
+          <img src="assets/guest-doorway.webp" alt="A guest cat being hand-fed a treat" width="640" height="1136" loading="lazy" style="object-position:50% 30%">
+          <figcaption><b>Treat time</b>Daily care and attention, every stay.</figcaption>
+        </figure>
+        <figure class="g-card rv">
+          <img src="assets/guest-window.webp" alt="A relaxed guest cat wearing a knitted hat" width="1215" height="2160" loading="lazy" style="object-position:50% 30%">
+          <figcaption><b>Feeling at home</b>A happy guest, right at home.</figcaption>
+        </figure>
+        <figure class="g-card rv">
+          <img src="assets/guest-cuddle.webp" alt="Guest cat Tommy lounging in the boarding space" width="1100" height="1467" loading="lazy" style="object-position:50% 40%">
+          <figcaption><b>Cage-free lounging</b>Real guests relaxing in the home space.</figcaption>
+        </figure>
+        <figure class="g-card rv">
+          <img src="assets/care.webp" alt="All Star Cat Boarding's welcome guide: what to prepare, what to bring, and plan-ahead notes" width="1100" height="738" loading="lazy" style="object-fit:contain;background:#fff;object-position:center">
+          <figcaption><b>Their welcome guide</b>What to prepare, what to bring.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="book" class="contact">
+    <div class="wrap">
+      <div class="rv">
+        <span class="sec-label">Book a stay</span>
+        <h2 class="sec">Going away? Your cat stays home.</h2>
+        <p class="lede">Send a message with your travel dates and your cat's details — we'll confirm availability and everything your cat needs for a happy stay.</p>
+      </div>
+      <div class="contact-card rv">
+        <a class="btn" href="https://www.instagram.com/allstarcatboarding/" target="_blank" rel="noopener">DM @allstarcatboarding</a>
+        <p class="place"><strong>Muntazah, Doha, Qatar</strong><br>Home-based cat boarding since 2019 · vaccinated cats only</p>
+        <p style="color:var(--soft);font-size:.92rem">Bookings are handled personally through Instagram — one message is all it takes.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 All Star Cat Boarding · Doha, Qatar</span>
+    <span class="dev">Preview concept by <a href="https://www.instagram.com/devfl_ix/" target="_blank" rel="noopener">Devflix</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var els=document.querySelectorAll('.rv');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

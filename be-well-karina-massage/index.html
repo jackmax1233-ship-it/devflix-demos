@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be Well with Karina — Registered Massage Therapist · Etobicoke, ON</title>
+<meta name="description" content="Karina Meidell, Registered Massage Therapist in Etobicoke / Toronto's west end. Personalized, evidence-informed massage for injury recovery, pain management and well-being.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FAF6ED; --cream2:#F3ECDD; --ink:#2A2F2C; --pine:#2F4A3E;
+  --muted:#5B645E; --rust:#8F5326; --slate:#3C4A5E; --line:#E2D8C2;
+  --radius:18px; --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);
+  line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;
+  line-height:1.12;color:var(--pine);letter-spacing:.01em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--rust)}
+a{color:var(--rust)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--rust);outline-offset:3px;border-radius:6px}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(250,246,237,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:.85rem clamp(1.25rem,4vw,2.5rem);
+  display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.brand-mark{width:2.2rem;height:2.2rem;border-radius:50%;background:var(--pine);color:var(--cream);
+  display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600}
+.brand-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--pine);line-height:1.1}
+.brand-name small{display:block;font-family:'Inter',sans-serif;font-size:.62rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--muted);font-weight:500}
+.nav-links{display:flex;gap:1.6rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:500}
+.nav-links a:hover{color:var(--rust)}
+.btn{display:inline-block;background:var(--rust);color:var(--cream);text-decoration:none;
+  font-weight:600;font-size:.95rem;padding:.8rem 1.6rem;border-radius:999px;border:none;cursor:pointer;
+  transition:transform .18s ease,background .18s ease}
+.btn:hover{background:#7c4822;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--pine);border:2px solid var(--pine)}
+.btn.ghost:hover{background:var(--pine);color:var(--cream)}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(2.5rem,6vw,5rem) 0 clamp(2.5rem,5vw,4rem)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.4vw,4.2rem);margin:.9rem 0 1.1rem}
+.hero h1 em{font-style:italic;color:var(--rust)}
+.hero p.lede{font-size:1.1rem;color:var(--muted);max-width:34rem;margin-bottom:1.6rem}
+.hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.hero-note{font-size:.85rem;color:var(--muted)}
+.hero-fig{margin:0;justify-self:end;width:100%;max-width:420px}
+.arch{border-radius:999px 999px var(--radius) var(--radius);overflow:hidden;background:var(--cream2);
+  border:1px solid var(--line);aspect-ratio:3/4;max-height:560px;width:100%}
+.arch img{width:100%;height:100%;object-fit:contain;object-position:center top}
+.fig-cap{font-size:.78rem;color:var(--muted);margin-top:.6rem;text-align:center;font-style:italic}
+
+/* ---------- bands & sections ---------- */
+section{padding:clamp(2.8rem,6vw,4.8rem) 0}
+.alt{background:var(--cream2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{max-width:44rem;margin-bottom:2.2rem}
+.sec-head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:.8rem 0 .7rem}
+.sec-head p{color:var(--muted)}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.about-grid figure{margin:0}
+.card-frame{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;
+  aspect-ratio:3/4;max-height:480px}
+.card-frame img{width:100%;height:100%;object-fit:contain;object-position:center top}
+.about-copy h2{font-size:clamp(2rem,3.6vw,2.8rem);margin:.8rem 0 1rem}
+.about-copy p{margin-bottom:1rem;color:var(--ink)}
+.about-copy p strong{color:var(--pine)}
+.quote{border-left:3px solid var(--rust);padding:.4rem 0 .4rem 1.2rem;margin:1.4rem 0;
+  font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-style:italic;color:var(--pine)}
+
+/* care list — editorial numbered rows */
+.care-list{list-style:none;border-top:1px solid var(--line)}
+.care-list li{display:grid;grid-template-columns:4.5rem 1fr;gap:1.4rem;padding:1.35rem .4rem;
+  border-bottom:1px solid var(--line);align-items:baseline}
+.care-num{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--rust);font-style:italic}
+.care-list h3{font-size:1.55rem;margin-bottom:.2rem}
+.care-list p{color:var(--muted);font-size:.95rem;max-width:38rem}
+
+/* october offer band */
+.offer{background:var(--slate);color:var(--cream)}
+.offer h2{color:var(--cream)}
+.offer .eyebrow{color:#F0C896}
+.offer-grid{display:grid;grid-template-columns:1fr .85fr;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+.offer-copy p{margin-bottom:1rem;color:#EFE7D4}
+.offer-price{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,3.6rem);color:var(--cream);margin:.4rem 0 1rem}
+.offer .btn{background:#E8B44C;color:#2A2118}
+.offer .btn:hover{background:#d9a53a;transform:translateY(-1px)}
+.offer-fine{font-size:.82rem;color:#CFC6B2;margin-top:1.2rem}
+.offer figure{margin:0;justify-self:end;width:100%;max-width:380px}
+.offer .card-frame{background:#46586E;border-color:#5A6E86;max-height:480px}
+
+/* booking steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;list-style:none;margin-top:.4rem}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
+.step .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--rust)}
+.step h3{font-size:1.4rem;margin:.5rem 0}
+.step p{font-size:.94rem;color:var(--muted)}
+.step a{word-break:break-all}
+
+/* footer */
+footer{background:var(--pine);color:var(--cream);padding:2.6rem 0 2rem}
+.foot-grid{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start}
+footer h2{color:var(--cream);font-size:1.8rem}
+footer p,footer a{color:#E7DFCB;font-size:.92rem}
+footer a:hover{color:#fff}
+.foot-fine{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #4a6257;font-size:.78rem;color:#B9C4B5;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .btn:hover{transform:none}
+}
+
+@media (max-width:860px){
+  .hero-grid,.about-grid,.offer-grid{grid-template-columns:1fr}
+  .hero-fig,.offer figure{justify-self:center;max-width:min(420px,100%)}
+  .arch{max-height:520px}
+  .steps{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .care-list li{grid-template-columns:3.2rem 1fr;gap:1rem}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Be Well with Karina — home">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span class="brand-name">Be Well<small>with Karina · RMT</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#care">Care</a></li>
+        <li><a href="#offer">October Offer</a></li>
+        <li><a href="#book">Book</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="https://linktr.ee/wellwithkarina" target="_blank" rel="noopener">Book a Visit</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Registered Massage Therapist · Etobicoke, ON</p>
+        <h1 id="hero-h">Massage therapy that helps you <em>rest, recover &amp; recharge.</em></h1>
+        <p class="lede">Karina Meidell, RMT — a Registered Massage Therapist in Toronto&rsquo;s west end. Personalized, evidence-informed treatments built around your goals, in an inclusive and safe space where you feel heard and supported.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="https://linktr.ee/wellwithkarina" target="_blank" rel="noopener">Book Your Treatment</a>
+          <a class="btn ghost" href="#about">Meet Karina</a>
+        </div>
+        <p class="hero-note">First-time patients: <strong>$20 off</strong> your first visit this October.</p>
+      </div>
+      <figure class="hero-fig reveal" aria-label="Massage treatment photo">
+        <div class="arch">
+          <img src="img/treatment.webp" srcset="img/treatment-640.webp 640w, img/treatment.webp 1080w"
+               sizes="(max-width:860px) 92vw, 420px" width="1080" height="1440" fetchpriority="high"
+               alt="Karina's hands performing a massage treatment on a client's shoulder and upper back">
+        </div>
+        <figcaption class="fig-cap">From Karina&rsquo;s practice — @bewellwithkarina</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="alt" id="about" aria-labelledby="about-h">
+    <div class="wrap about-grid">
+      <figure class="reveal">
+        <div class="card-frame">
+          <img src="img/intro.webp" srcset="img/intro-640.webp 640w, img/intro.webp 1080w"
+               sizes="(max-width:860px) 92vw, 440px" width="1080" height="1440" loading="lazy"
+               alt="Karina's own introduction graphic: her portrait beside the words 'Hi, I'm Karina — Registered Massage Therapist (RMT) based in Toronto's west end'">
+        </div>
+        <figcaption class="fig-cap">Karina Meidell, RMT — Toronto&rsquo;s west end</figcaption>
+      </figure>
+      <div class="about-copy reveal">
+        <p class="eyebrow">Meet Karina</p>
+        <h2 id="about-h">Care that starts with listening.</h2>
+        <p><strong>Karina Meidell</strong> is a <strong>Registered Massage Therapist (RMT)</strong> based in <strong>Toronto&rsquo;s west end</strong>, building a practice grounded in trust and genuine care.</p>
+        <p>Her passion for massage was ignited by her own journey with chronic pain — giving her a personal understanding of how much the right treatment can help.</p>
+        <blockquote class="quote">A quality treatment is built around an inclusive and safe space where you feel heard and supported.</blockquote>
+        <p>Every session is a <strong>personalized, evidence-informed</strong> approach to massage, shaped by your goals — to support injury recovery, pain management, and overall well-being.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARE -->
+  <section id="care" aria-labelledby="care-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What Karina helps with</p>
+        <h2 id="care-h">Treatments shaped around your goals.</h2>
+        <p>Whether you&rsquo;re booking regular maintenance or working through something specific, your treatment plan is created with you — for your needs.</p>
+      </div>
+      <ol class="care-list">
+        <li class="reveal"><span class="care-num">01</span><div><h3>Injury recovery</h3><p>Supportive, personalized care to help you work back from injury — at a pace that suits your body.</p></div></li>
+        <li class="reveal"><span class="care-num">02</span><div><h3>Pain relief &amp; stiffness</h3><p>Focused treatment to help reduce pain and stiffness and manage everyday aches and tension.</p></div></li>
+        <li class="reveal"><span class="care-num">03</span><div><h3>Mobility &amp; flexibility</h3><p>Techniques aimed at improving muscle flexibility and joint mobility, so movement feels easier.</p></div></li>
+        <li class="reveal"><span class="care-num">04</span><div><h3>Circulation &amp; reset</h3><p>Improving circulation while you relax and reset — rest and recharge built into every visit.</p></div></li>
+        <li class="reveal"><span class="care-num">05</span><div><h3>Regular maintenance</h3><p>Ongoing care to keep you feeling your best — consistent, calm, and tailored to your routine.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- OCTOBER OFFER -->
+  <section class="offer" id="offer" aria-labelledby="offer-h">
+    <div class="wrap offer-grid">
+      <div class="offer-copy reveal">
+        <p class="eyebrow">October Special</p>
+        <h2 id="offer-h">New to the practice?</h2>
+        <p class="offer-price">$20 off your first visit</p>
+        <p>For the month of October, first-time patients receive <strong>$20 off their first treatment</strong> with Karina. Take some time for yourself this fall.</p>
+        <a class="btn" href="https://linktr.ee/wellwithkarina" target="_blank" rel="noopener">Claim Your October Visit</a>
+        <p class="offer-fine">Offer applies to first-time patients booking in October 2026, as announced on @bewellwithkarina.</p>
+      </div>
+      <figure class="reveal">
+        <div class="card-frame">
+          <img src="img/october-special.webp" srcset="img/october-special-640.webp 640w, img/october-special.webp 1080w"
+               sizes="(max-width:860px) 92vw, 380px" width="1080" height="1440" loading="lazy"
+               alt="Karina's own October Special graphic: '$20 off your first visit with me — only this October 2026, Toronto ON'">
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Book a treatment</p>
+        <h2 id="book-h">Ready when you are.</h2>
+        <p>Booking is simple — choose whichever way suits you best.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="n">i.</span>
+          <h3>Link in bio</h3>
+          <p>Follow the link in Karina&rsquo;s Instagram bio to book your first visit: <a href="https://linktr.ee/wellwithkarina" target="_blank" rel="noopener">linktr.ee/wellwithkarina</a></p>
+        </li>
+        <li class="step reveal">
+          <span class="n">ii.</span>
+          <h3>Clinic site</h3>
+          <p>You can also book through the clinic website she practices with: <a href="https://kingswaywellnessclinic.com" target="_blank" rel="noopener">kingswaywellnessclinic.com</a></p>
+        </li>
+        <li class="step reveal">
+          <span class="n">iii.</span>
+          <h3>Send a DM</h3>
+          <p>Questions first? Message Karina directly on Instagram: <a href="https://www.instagram.com/bewellwithkarina" target="_blank" rel="noopener">@bewellwithkarina</a></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2 class="serif">Be Well with Karina</h2>
+        <p>Karina Meidell, Registered Massage Therapist<br>Etobicoke / Toronto&rsquo;s west end, Ontario</p>
+      </div>
+      <div>
+        <p><a href="https://www.instagram.com/bewellwithkarina" target="_blank" rel="noopener">Instagram — @bewellwithkarina</a></p>
+        <p><a href="https://linktr.ee/wellwithkarina" target="_blank" rel="noopener">Book — linktr.ee/wellwithkarina</a></p>
+        <p><a href="https://kingswaywellnessclinic.com" target="_blank" rel="noopener">kingswaywellnessclinic.com</a></p>
+      </div>
+    </div>
+    <div class="foot-fine">
+      <span>&copy; 2026 Be Well with Karina. All rights reserved.</span>
+      <span>Concept preview crafted by Devflix</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>

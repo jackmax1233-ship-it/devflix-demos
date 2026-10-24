@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victoria Manor Haunted House — Apple Valley, CA · Halloween Season</title>
+<meta name="description" content="Victoria Manor Haunted House in Apple Valley, California — a seasonal Halloween haunted attraction voted Top 5 of the Inland Empire / High Desert. Open select nights through Halloween.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0605;
+  --bg-deep:#050302;
+  --panel:#140d08;
+  --panel-2:#1a100a;
+  --bone:#f5ead8;
+  --muted:#c9b79e;
+  --pumpkin:#ff8c1a;
+  --pumpkin-deep:#d96f06;
+  --blood:#e5383b;
+  --line:rgba(255,140,26,.16);
+  --radius:14px;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;background:var(--bg);color:var(--bone);
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:1.0625rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.display{font-family:"Creepster",cursive;font-weight:400;letter-spacing:.02em}
+img,svg{display:block;max-width:100%}
+a{color:var(--pumpkin)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.1rem,4vw,2.5rem)}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(5,3,2,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.site-header .wrap{display:flex;align-items:center;gap:1rem;min-height:68px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--bone)}
+.brand-mark{
+  width:40px;height:40px;border-radius:10px;background:radial-gradient(circle at 50% 35%,#2a1506,#0b0605 70%);
+  border:1px solid var(--line);display:grid;place-items:center;flex:none;
+}
+.brand-mark span{font-family:"Creepster",cursive;font-size:1.35rem;color:var(--pumpkin);line-height:1}
+.brand-name{font-weight:700;font-size:1rem;line-height:1.25;color:var(--bone)}
+.brand-name small{display:block;font-weight:500;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.nav{display:flex;gap:1.4rem;margin-left:auto}
+.nav a{color:var(--bone);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav a:hover,.nav a:focus-visible{color:var(--pumpkin)}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--bone);
+  border-radius:10px;padding:.55rem .9rem;font:inherit;cursor:pointer}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:1rem;
+  padding:.85rem 1.6rem;border-radius:999px;border:2px solid transparent;cursor:pointer;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn:focus-visible{outline:3px solid var(--bone);outline-offset:3px}
+.btn-primary{background:var(--pumpkin);color:#1a0d02}
+.btn-primary:hover{background:#ffa245;box-shadow:0 6px 22px rgba(255,140,26,.35)}
+.btn-ghost{border-color:var(--bone);color:var(--bone);background:transparent}
+.btn-ghost:hover{border-color:var(--pumpkin);color:var(--pumpkin)}
+.btn-sm{padding:.55rem 1.1rem;font-size:.9rem}
+.header-cta{margin-left:1.2rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero .wrap{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3rem);
+  align-items:center;padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem);
+  min-height:420px;max-height:560px;
+}
+.kicker{
+  display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--pumpkin);border:1px solid var(--line);border-radius:999px;padding:.45rem 1rem;margin-bottom:1.1rem;
+  background:rgba(255,140,26,.07);
+}
+.hero h1{font-size:clamp(2.9rem,7vw,4.8rem);line-height:1.02;margin:0 0 1rem;color:var(--pumpkin);text-shadow:0 4px 30px rgba(255,140,26,.25)}
+.hero h1 .blood{color:var(--blood)}
+.hero .lede{font-size:clamp(1.05rem,2.4vw,1.25rem);color:var(--bone);max-width:34rem;margin:0 0 1.6rem}
+.hero .lede strong{color:var(--pumpkin)}
+.cta-row{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero-scene{position:relative}
+.hero-scene .scene-frame{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#050302;
+  box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 60px rgba(255,140,26,.08);
+}
+.fog{position:absolute;inset:0;pointer-events:none}
+.fog i{
+  position:absolute;display:block;height:70px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(201,183,158,.16),transparent 70%);
+  filter:blur(6px);animation:drift 14s ease-in-out infinite alternate;
+}
+.fog i:nth-child(1){width:70%;left:5%;top:12%}
+.fog i:nth-child(2){width:60%;left:30%;top:55%;animation-delay:-5s}
+.fog i:nth-child(3){width:55%;left:10%;top:75%;animation-delay:-9s}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(26px)}}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- season strip ---------- */
+.season-strip{background:linear-gradient(90deg,#1a0e05,#241106 50%,#1a0e05);border-bottom:1px solid var(--line)}
+.season-strip .wrap{display:flex;gap:1rem;align-items:center;justify-content:center;flex-wrap:wrap;padding-top:1rem;padding-bottom:1rem;text-align:center}
+.season-strip p{margin:0;font-size:.95rem;color:var(--muted)}
+.season-strip strong{color:var(--pumpkin);font-weight:700}
+
+/* ---------- sections ---------- */
+section.block{padding:clamp(2.6rem,6vw,4.5rem) 0}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--pumpkin);margin:0 0 .6rem}
+h2.section-title{font-size:clamp(2rem,4.6vw,2.9rem);color:var(--pumpkin);margin:0 0 1rem;line-height:1.1}
+.section-sub{color:var(--muted);max-width:44rem;margin:0 0 2rem}
+
+/* info cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.6rem;display:flex;flex-direction:column;gap:.7rem;
+}
+.card:hover{border-color:rgba(255,140,26,.4)}
+.card .glyph{font-size:1.9rem;line-height:1}
+.card h3{font-family:"Creepster",cursive;font-size:1.55rem;color:var(--pumpkin);margin:0;letter-spacing:.03em}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card p strong{color:var(--bone)}
+.card .card-link{margin-top:auto;padding-top:.6rem;font-weight:600}
+
+/* visit */
+.visit{background:var(--bg-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.visit address{font-style:normal;font-size:1.15rem;line-height:1.8;color:var(--bone)}
+.visit address strong{color:var(--pumpkin)}
+.honest-note{
+  background:rgba(255,140,26,.06);border:1px dashed rgba(255,140,26,.4);border-radius:var(--radius);
+  padding:1.3rem 1.4rem;color:var(--muted);font-size:.98rem;
+}
+.honest-note strong{color:var(--bone)}
+
+/* footer */
+footer{padding:2.5rem 0 2rem;color:var(--muted);font-size:.9rem}
+.foot-grid{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-start;justify-content:space-between}
+.foot-brand{font-family:"Creepster",cursive;color:var(--pumpkin);font-size:1.5rem;margin-bottom:.4rem}
+footer a{color:var(--pumpkin)}
+.credit{margin-top:1.5rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;max-height:none}
+  .cards{grid-template-columns:1fr 1fr}
+  .visit-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .menu-btn{display:block}
+  .nav{
+    display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;
+    background:var(--bg-deep);border-bottom:1px solid var(--line);padding:.5rem 1.2rem 1rem;margin:0;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:.7rem 0;border-top:1px solid var(--line)}
+  .header-cta{display:none}
+  .cards{grid-template-columns:1fr}
+  .cta-row .btn{flex:1 1 100%;text-align:center}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Victoria Manor Haunted House — home">
+      <span class="brand-mark" aria-hidden="true"><span>V</span></span>
+      <span class="brand-name">Victoria Manor<small>Haunted House</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#haunt">The Haunt</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="https://www.instagram.com/victoriamanorhauntedhouse/" target="_blank" rel="noopener">Message on Instagram</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-copy reveal in">
+        <span class="kicker">Apple Valley, California · Halloween Season</span>
+        <h1 class="display">Victoria Manor<br><span class="blood">Haunted House</span></h1>
+        <p class="lede">A seasonal Halloween haunted attraction in the High Desert — <strong>voted a Top 5 Haunted House of the Inland Empire / High Desert</strong>. The haunt is in season now, operating select nights through Halloween.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://www.instagram.com/victoriamanorhauntedhouse/" target="_blank" rel="noopener">Message to Plan Your Visit</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=9976+Joshua+Rd+Apple+Valley+CA+92308" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="scene-frame">
+          <svg viewBox="0 0 640 460" role="presentation" aria-hidden="true">
+            <defs>
+              <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ffe9c2"/>
+                <stop offset="55%" stop-color="#f7cf8e"/>
+                <stop offset="100%" stop-color="#f7cf8e" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#160b04"/>
+                <stop offset="60%" stop-color="#0b0605"/>
+                <stop offset="100%" stop-color="#050302"/>
+              </linearGradient>
+              <radialGradient id="windowglow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ff8c1a" stop-opacity=".9"/>
+                <stop offset="100%" stop-color="#ff8c1a" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="640" height="460" fill="url(#sky)"/>
+            <circle cx="480" cy="120" r="95" fill="url(#moon)"/>
+            <circle cx="480" cy="120" r="58" fill="#fbe6bd"/>
+            <g fill="#0b0605" opacity=".92">
+              <path d="M505 70 l14 24 26 3 -19 18 5 26 -26 -14 -26 14 5 -26 -19 -18 26 -3z"/>
+            </g>
+            <g fill="#050302" opacity=".95">
+              <path d="M150 60 q10 -14 24 -16 q-14 -4 -24 2 q-2 -8 -6 -12 q2 6 -4 12 q-10 -2 -18 6 q10 0 20 8 q2 6 8 12 q0 -8 -4 -12 z"/>
+              <path d="M330 110 q8 -11 19 -13 q-11 -3 -19 2 q-2 -6 -5 -10 q2 5 -3 10 q-8 -2 -14 5 q8 0 16 6 q1 5 6 10 q0 -6 -3 -10 z"/>
+              <path d="M560 190 q7 -10 17 -11 q-10 -3 -17 1 q-2 -6 -4 -9 q1 5 -3 9 q-7 -1 -13 5 q7 0 14 6 q1 4 6 9 q0 -6 -3 -9 z"/>
+            </g>
+            <!-- manor silhouette -->
+            <g fill="#030202">
+              <rect x="120" y="230" width="400" height="180"/>
+              <path d="M100 235 L240 130 L380 235 Z"/>
+              <path d="M330 235 L450 150 L560 235 Z"/>
+              <rect x="215" y="70" width="50" height="80"/>
+              <path d="M205 78 L240 40 L275 78 Z"/>
+              <rect x="228" y="48" width="24" height="34" fill="#0b0605"/>
+              <rect x="420" y="110" width="36" height="52"/>
+              <path d="M414 118 L438 88 L462 118 Z"/>
+              <rect x="60" y="200" width="80" height="210"/>
+              <path d="M50 208 L100 160 L150 208 Z"/>
+            </g>
+            <!-- glowing windows -->
+            <g>
+              <rect x="150" y="270" width="26" height="44" fill="#ff8c1a" opacity=".95"/>
+              <rect x="150" y="270" width="26" height="44" fill="#050302" opacity=".25"/>
+              <line x1="163" y1="270" x2="163" y2="314" stroke="#050302" stroke-width="4"/>
+              <rect x="300" y="270" width="26" height="44" fill="#ff8c1a" opacity=".95"/>
+              <line x1="313" y1="270" x2="313" y2="314" stroke="#050302" stroke-width="4"/>
+              <rect x="450" y="270" width="26" height="44" fill="#ff8c1a" opacity=".7"/>
+              <rect x="225" y="170" width="20" height="34" fill="#e5383b" opacity=".9"/>
+              <circle cx="320" cy="192" r="26" fill="url(#windowglow)"/>
+              <circle cx="320" cy="192" r="14" fill="#ff8c1a" opacity=".95"/>
+              <line x1="320" y1="178" x2="320" y2="206" stroke="#050302" stroke-width="3"/>
+              <line x1="306" y1="192" x2="334" y2="192" stroke="#050302" stroke-width="3"/>
+            </g>
+            <!-- twisted trees -->
+            <g stroke="#030202" stroke-width="9" fill="none" stroke-linecap="round">
+              <path d="M30 410 C 34 340, 20 300, 44 250 M40 310 C 55 300, 60 285, 72 275 M38 340 C 26 330, 22 315, 12 308"/>
+              <path d="M610 410 C 606 345, 620 305, 598 255 M602 320 C 588 310, 582 296, 572 288"/>
+            </g>
+            <!-- ground + fog base -->
+            <rect x="0" y="405" width="640" height="55" fill="#030202"/>
+            <ellipse cx="320" cy="420" rx="330" ry="40" fill="#1a100a" opacity=".55"/>
+            <!-- jack-o'-lanterns -->
+            <g>
+              <ellipse cx="120" cy="392" rx="30" ry="24" fill="#d96f06"/>
+              <rect x="114" y="362" width="9" height="10" fill="#2c4a1e"/>
+              <path d="M110 388 l6 6 6-6 z M134 388 l6 6 6-6 z M108 398 q16 10 30 0 l-4 5 q-11 7 -22 0 z" fill="#050302"/>
+              <ellipse cx="530" cy="396" rx="24" ry="19" fill="#d96f06"/>
+              <path d="M522 392 l5 5 5-5 z M536 392 l5 5 5-5 z M520 400 q14 8 26 0 l-3 4 q-10 5 -20 0 z" fill="#050302"/>
+            </g>
+          </svg>
+        </div>
+        <div class="fog" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEASON STRIP -->
+  <div class="season-strip">
+    <div class="wrap">
+      <p><strong>In season now.</strong> Operating select nights through Halloween night — <strong>October 31</strong>.</p>
+    </div>
+  </div>
+
+  <!-- THE HAUNT -->
+  <section class="block" id="haunt" aria-labelledby="haunt-title">
+    <div class="wrap">
+      <p class="eyebrow reveal">The Haunt</p>
+      <h2 class="section-title display reveal" id="haunt-title">Enter if you dare</h2>
+      <p class="section-sub reveal">Victoria Manor Haunted House is a seasonal Halloween attraction in Apple Valley's High Desert — open for the spookiest stretch of the year.</p>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="glyph" aria-hidden="true">🏚️</div>
+          <h3>Seasonal Haunted Attraction</h3>
+          <p>A Halloween-season haunt operating <strong>select nights through October 31</strong> — now deep into its 2026 season. Follow their Instagram for the latest open-night announcements.</p>
+        </article>
+        <article class="card reveal">
+          <div class="glyph" aria-hidden="true">🏆</div>
+          <h3>Voted Top 5</h3>
+          <p>By their own billing: <strong>"Voted Top 5 Haunted House of the Inland Empire / High Desert"</strong> — a High Desert favorite that keeps drawing scare-seekers back each October.</p>
+        </article>
+        <article class="card reveal">
+          <div class="glyph" aria-hidden="true">📍</div>
+          <h3>High Desert Location</h3>
+          <p>Find the manor at <strong>9976 Joshua Rd, Apple Valley, CA 92308</strong> — the High Desert's haunted house, a straight shot up the 15 from the Inland Empire.</p>
+          <a class="card-link" href="https://www.google.com/maps/search/?api=1&amp;query=9976+Joshua+Rd+Apple+Valley+CA+92308" target="_blank" rel="noopener">Open in Maps →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="block visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <p class="eyebrow reveal">Visit</p>
+      <h2 class="section-title display reveal" id="visit-title">Find the manor</h2>
+      <div class="visit-grid">
+        <div class="reveal">
+          <address>
+            <strong>Victoria Manor Haunted House</strong><br>
+            9976 Joshua Rd<br>
+            Apple Valley, CA 92308
+          </address>
+          <div class="cta-row" style="margin-top:1.4rem">
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=9976+Joshua+Rd+Apple+Valley+CA+92308" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/victoriamanorhauntedhouse/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+        <div class="honest-note reveal" id="contact">
+          <p style="margin-top:0"><strong>Dates, hours and tickets</strong> are announced night-by-night on their Instagram — there is no separate ticket website yet. To plan your visit, <a href="https://www.instagram.com/victoriamanorhauntedhouse/" target="_blank" rel="noopener">message @victoriamanorhauntedhouse</a> directly: they answer DMs during haunt season.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Victoria Manor</div>
+        <p style="margin:0">9976 Joshua Rd, Apple Valley, CA 92308<br>
+        <a href="https://www.instagram.com/victoriamanorhauntedhouse/" target="_blank" rel="noopener">@victoriamanorhauntedhouse</a></p>
+      </div>
+      <p style="margin:0;max-width:22rem">A seasonal Halloween haunted attraction of the High Desert — in season now, select nights through October 31.</p>
+    </div>
+    <p class="credit">© 2026 Victoria Manor Haunted House. All facts on this page come from the haunt's own Instagram bio and posts. Preview website crafted by Devflix.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

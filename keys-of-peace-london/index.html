@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keys of Peace — Piano Lessons in London | ABRSM Certified Piano Teacher</title>
+<meta name="description" content="Keys of Peace London — ABRSM Certified Piano Teacher. Private piano lessons for children (ages 4+) and adults, in-person and online. DM to book a trial lesson.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FAF6EE; --ivory2:#F3EAD9; --champagne:#F1E7D2;
+  --ink:#1E1710; --body:#2A2118; --muted:#5D4D3B;
+  --golddeep:#6B4F14; --gold:#C9A24B; --goldlight:#D9B96A;
+  --line:#E2D6BC; --ring:#6B4F14;
+  --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html.reduce-motion{scroll-behavior:auto}
+body{font-family:var(--sans);background:var(--ivory);color:var(--body);line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+a{color:var(--golddeep)}
+:focus-visible{outline:3px solid var(--ring);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--ivory);padding:.6rem 1rem;z-index:50}
+.skip:focus{left:0}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(250,246,238,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;gap:1rem;padding:.85rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--body)}
+.brand .clef{font-size:1.9rem;line-height:1;color:var(--golddeep);font-family:var(--serif)}
+.brand b{font-family:var(--serif);font-weight:600;font-size:1.12rem;letter-spacing:.02em;display:block;line-height:1.15}
+.brand small{display:block;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nav{margin-left:auto;display:none;gap:1.6rem}
+.nav a{color:var(--body);text-decoration:none;font-size:.92rem;font-weight:500}
+.nav a:hover{color:var(--golddeep);text-decoration:underline;text-underline-offset:4px}
+.head-cta{margin-left:auto;background:var(--ink);color:var(--ivory);text-decoration:none;font-weight:600;font-size:.9rem;padding:.62rem 1.15rem;border-radius:999px;white-space:nowrap}
+.nav ~ .head-cta{margin-left:0}
+.head-cta:hover{background:#3a2d1c}
+
+/* hero */
+.hero{padding:3.4rem 0 3rem;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;gap:2.4rem;align-items:center}
+.eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--golddeep);margin-bottom:1.1rem}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,5.2vw,3.9rem);line-height:1.08;letter-spacing:-.01em;margin-bottom:1.2rem}
+h1 em{font-style:italic;color:var(--golddeep)}
+.lede{font-size:1.12rem;color:var(--muted);max-width:34rem;margin-bottom:1rem}
+.cred{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.4rem 0}
+.cred span{font-size:.8rem;font-weight:600;letter-spacing:.06em;border:1px solid var(--line);background:var(--ivory2);color:var(--body);padding:.42rem .85rem;border-radius:999px}
+.btnrow{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.5rem}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.85rem 1.7rem;border-radius:999px;font-size:1rem;transition:background .2s}
+.btn-solid{background:var(--ink);color:var(--ivory)}
+.btn-solid:hover{background:#3a2d1c}
+.btn-ghost{border:2px solid var(--ink);color:var(--body)}
+.btn-ghost:hover{background:var(--ink);color:var(--ivory)}
+.hero-fig{background:var(--ivory2);border:1px solid var(--line);border-radius:14px;padding:1rem;box-shadow:0 18px 40px -24px rgba(30,23,16,.35)}
+.hero-fig img{width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;background:var(--ivory);border-radius:8px;max-height:560px}
+.hero-fig figcaption{font-size:.8rem;color:var(--muted);text-align:center;padding:.7rem .4rem 0;font-style:italic}
+
+/* quote band */
+.band{background:var(--ink);color:#F5F0E4;text-align:center;padding:2.6rem 0}
+.band blockquote{font-family:var(--serif);font-size:clamp(1.35rem,3vw,1.9rem);font-style:italic;line-height:1.4;max-width:44rem;margin:0 auto}
+.band .rule{display:block;width:64px;height:2px;background:var(--gold);margin:1.2rem auto 0}
+
+/* sections */
+.section{padding:4rem 0}
+.sec-head{max-width:40rem;margin-bottom:2.2rem}
+.sec-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.15;margin:.7rem 0 .8rem}
+.sec-head p{color:var(--muted)}
+.about-grid{display:grid;gap:2.4rem;align-items:start}
+.about-fig{background:var(--ink);border-radius:14px;padding:1rem}
+.about-fig img{width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:var(--ink);border-radius:8px;max-height:520px}
+.about-fig figcaption{color:#C9BCA4;font-size:.8rem;text-align:center;padding:.7rem .4rem 0;font-style:italic}
+.about-copy p{margin-bottom:1.05rem;color:var(--muted)}
+.about-copy p strong{color:var(--body)}
+.factlist{list-style:none;margin:1.4rem 0 0;display:grid;gap:.75rem}
+.factlist li{display:flex;gap:.8rem;align-items:flex-start;background:var(--ivory2);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;font-size:.95rem}
+.factlist .tick{color:var(--golddeep);font-weight:700;flex:none}
+
+/* lesson cards */
+.cards{display:grid;gap:1.1rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.6rem 1.5rem}
+.card .num{font-family:var(--serif);color:var(--golddeep);font-size:.95rem;letter-spacing:.2em;margin-bottom:.6rem}
+.card h3{font-family:var(--serif);font-weight:600;font-size:1.35rem;margin-bottom:.55rem}
+.card p{color:var(--muted);font-size:.96rem}
+.modes{margin-top:1.8rem;background:var(--champagne);border:1px solid var(--line);border-radius:14px;padding:1.5rem 1.6rem;display:flex;flex-wrap:wrap;gap:1rem 2.4rem;align-items:center}
+.modes b{font-family:var(--serif);font-size:1.15rem;font-weight:600}
+.modes span{color:var(--body);font-size:.95rem}
+
+/* gallery */
+.gallery{background:var(--ivory2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.g-grid{display:grid;gap:1.1rem}
+.g-item{background:var(--ink);border-radius:12px;padding:.7rem}
+.g-item img{width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:var(--ink);border-radius:7px;max-height:340px}
+.g-item figcaption{color:#C9BCA4;font-size:.78rem;text-align:center;padding:.6rem .3rem .2rem}
+
+/* booking */
+.book{padding:4.5rem 0;text-align:center}
+.book .panel{background:var(--champagne);border:1px solid var(--line);border-radius:18px;padding:3rem 1.5rem;max-width:46rem;margin:0 auto}
+.book h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.6vw,2.6rem);margin:.8rem 0 1rem;line-height:1.15}
+.book p{color:var(--muted);max-width:32rem;margin:0 auto 1.8rem}
+
+/* footer */
+footer{background:var(--ink);color:#C9BCA4;padding:2.6rem 0 2rem;font-size:.9rem}
+.foot-grid{display:grid;gap:1.4rem;margin-bottom:1.6rem}
+.foot-brand{font-family:var(--serif);font-size:1.25rem;color:#F5F0E4;font-weight:600}
+.foot-brand small{display:block;font-family:var(--sans);font-weight:400;font-size:.72rem;letter-spacing:.26em;color:var(--goldlight);margin-top:.3rem}
+footer a{color:var(--goldlight)}
+.foot-note{border-top:1px solid #3a3226;padding-top:1.2rem;font-size:.8rem;color:#a89a80}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+html.reduce-motion .js .rv{opacity:1;transform:none;transition:none}
+
+@media(min-width:720px){
+  .nav{display:flex}
+  .hero{padding:4.4rem 0 3.6rem}
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .about-grid{grid-template-columns:.9fr 1.1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .g-grid{grid-template-columns:repeat(4,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(min-width:1080px){.cards{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#" aria-label="Keys of Peace — home">
+      <span class="clef" aria-hidden="true">&#119070;</span>
+      <span><b>Keys of Peace</b><small>Piano Lessons · London</small></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a><a href="#lessons">Lessons</a><a href="#gallery">Gallery</a><a href="#book">Book</a>
+    </nav>
+    <a class="head-cta" href="https://www.instagram.com/keys_of_peace_london/" rel="noopener">DM to book</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <p class="eyebrow">ABRSM Certified Piano Teacher · London</p>
+        <h1>Your piano journey <em>starts here.</em></h1>
+        <p class="lede">Private piano lessons for children (ages 4+) and adults. All levels welcome — personalised lessons tailored to your goals.</p>
+        <div class="cred" aria-label="Highlights">
+          <span>ABRSM Certified</span><span>Ages 4+</span><span>All levels</span><span>In-person &amp; online</span>
+        </div>
+        <div class="btnrow">
+          <a class="btn btn-solid" href="https://www.instagram.com/keys_of_peace_london/" rel="noopener">DM to book a trial lesson</a>
+          <a class="btn btn-ghost" href="https://youtu.be/0LvnPv4PKjY" rel="noopener">Watch on YouTube</a>
+        </div>
+      </div>
+      <figure class="hero-fig rv">
+        <img src="img/hero.webp" width="1024" height="1360" alt="Keys of Peace poster: the teacher at a grand piano — Private Piano Lessons for Children &amp; Adults, from age 4 and up" fetchpriority="high">
+        <figcaption>Keys of Peace — private piano lessons for children &amp; adults</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap rv">
+      <blockquote>“Music builds a kinder, brighter world.”</blockquote>
+      <span class="rule" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <figure class="about-fig rv">
+        <img src="img/about.webp" width="880" height="1564" alt="The teacher performing at her piano in a warmly lit living room" loading="lazy">
+        <figcaption>At the piano — “Music is my passion, teaching it is my joy.”</figcaption>
+      </figure>
+      <div class="about-copy rv">
+        <div class="sec-head" style="margin-bottom:1.2rem">
+          <p class="eyebrow">About</p>
+          <h2>A pianist and certified teacher in London</h2>
+        </div>
+        <p><strong>Keys of Peace</strong> is led by an <strong>ABRSM Certified Piano Teacher</strong> and pianist based in <strong>London</strong>. Her posts reach a warm, engaged community — recent performances have drawn hundreds of likes and dozens of comments from piano lovers.</p>
+        <p>Lessons are private and personalised, welcoming complete beginners as well as players looking to improve their skills — it is never too late to learn piano.</p>
+        <ul class="factlist">
+          <li><span class="tick" aria-hidden="true">✓</span><span><strong>ABRSM Certified Piano Teacher</strong> — pianist</span></li>
+          <li><span class="tick" aria-hidden="true">✓</span><span><strong>In-person &amp; online</strong> lessons — North &amp; West London and online</span></li>
+          <li><span class="tick" aria-hidden="true">✓</span><span>Piano, music theory and performance</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="lessons" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Lessons</p>
+        <h2>Private piano lessons, shaped around you</h2>
+        <p>For children and adults — every lesson personalised to the student's goals.</p>
+      </div>
+      <div class="cards">
+        <article class="card rv"><p class="num">01</p><h3>Children</h3><p>Private piano lessons for children from age 4 and up — a gentle, encouraging start to music.</p></article>
+        <article class="card rv"><p class="num">02</p><h3>Adults</h3><p>Whether you're a beginner or returning to the keys, it's never too late to learn piano.</p></article>
+        <article class="card rv"><p class="num">03</p><h3>All levels</h3><p>From first notes to advanced playing — lessons meet you where you are.</p></article>
+        <article class="card rv"><p class="num">04</p><h3>Personalised approach</h3><p>One-to-one lessons tailored to your goals, at your pace.</p></article>
+      </div>
+      <div class="modes rv">
+        <b>How lessons happen</b>
+        <span>In-person in North &amp; West London</span>
+        <span>Online lessons available</span>
+        <span>Piano · Music theory · Performance</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery" id="gallery">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Gallery</p>
+        <h2>From the studio</h2>
+        <p>Moments at the piano, from Keys of Peace's own Instagram.</p>
+      </div>
+      <div class="g-grid">
+        <figure class="g-item rv"><img src="img/gallery-1.webp" width="704" height="944" alt="Hands playing the piano keys, photographed in black and white" loading="lazy"><figcaption>Hands on the keys</figcaption></figure>
+        <figure class="g-item rv"><img src="img/gallery-2.webp" width="640" height="1136" alt="Hands playing a grand piano with sheet music on the stand" loading="lazy"><figcaption>Practice time</figcaption></figure>
+        <figure class="g-item rv"><img src="img/gallery-3.webp" width="640" height="1136" alt="Close view of hands moving across the piano keyboard" loading="lazy"><figcaption>At the keyboard</figcaption></figure>
+        <figure class="g-item rv"><img src="img/gallery-4.webp" width="640" height="1136" alt="Piano keyboard beside a bookshelf in the teacher's study" loading="lazy"><figcaption>The studio</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap">
+      <div class="panel rv">
+        <p class="eyebrow">Book a lesson</p>
+        <h2>DM to book a trial lesson today</h2>
+        <p>Message Keys of Peace on Instagram to ask about lessons, availability and getting started.</p>
+        <a class="btn btn-solid" href="https://www.instagram.com/keys_of_peace_london/" rel="noopener">Message on Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">Keys of Peace<small>Piano Lessons · London</small></p>
+      </div>
+      <div>
+        <p>ABRSM Certified Piano Teacher · London, United Kingdom<br>
+        <a href="https://www.instagram.com/keys_of_peace_london/" rel="noopener">@keys_of_peace_london</a> on Instagram · <a href="https://youtu.be/0LvnPv4PKjY" rel="noopener">YouTube</a></p>
+      </div>
+    </div>
+    <p class="foot-note">Concept preview prepared by Devflix — a design idea for Keys of Peace, not an official website. All photographs belong to @keys_of_peace_london.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('reduce-motion');
+    return;
+  }
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(e){e.classList.add('in')}); return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold: 0.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

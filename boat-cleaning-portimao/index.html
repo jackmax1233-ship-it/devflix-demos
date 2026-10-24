@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boat Cleaning — Professional Boat Cleaning &amp; Maintenance · Portimão, Algarve</title>
+<meta name="description" content="Professional boat cleaning and maintenance in Portimão, Algarve. Exterior and interior washing, polishing, teak care and monthly plans. Biodegradable products. Get a quote on WhatsApp: +351 927 311 006.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF6EC;
+    --cream-2:#F3ECDA;
+    --ink:#102E2B;
+    --muted:#43554F;
+    --petrol:#0C3336;
+    --petrol-2:#0F4145;
+    --teal:#0E5B57;
+    --amber:#A95A1A;
+    --gold:#E8B44A;
+    --seafoam:#CFE3DB;
+    --line:#DCD2BC;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--cream);color:var(--ink);
+    line-height:1.65;font-size:1.0625rem;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;margin:0 0 .6em;font-weight:600;letter-spacing:-.01em}
+  h2{font-size:clamp(1.9rem,3.4vw,2.6rem)}
+  h3{font-size:1.25rem}
+  p{margin:0 0 1em}
+  a{color:var(--teal)}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 1.5rem}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--petrol);color:#fff;padding:.75rem 1rem;z-index:200}
+  .skip:focus{left:0}
+
+  /* Header */
+  header.site{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+  .brand{text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:.65rem}
+  .brand-mark{width:38px;height:38px;flex:0 0 38px;border-radius:50%;background:var(--petrol);display:grid;place-items:center}
+  .brand-name{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.2rem;line-height:1.1}
+  .brand-sub{font-size:.72rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  nav.links{display:flex;gap:1.6rem}
+  nav.links a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+  nav.links a:hover{color:var(--teal)}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:.85rem 1.7rem;font-size:1rem;border:2px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--teal);color:#fff}
+  .btn-primary:hover{background:var(--petrol)}
+  .btn-ghost{border-color:var(--teal);color:var(--teal);background:transparent}
+  .btn-ghost:hover{background:var(--teal);color:#fff}
+  .btn-gold{background:var(--gold);color:var(--petrol)}
+  .btn-gold:hover{background:#fff}
+  .btn-sm{padding:.55rem 1.2rem;font-size:.92rem;white-space:nowrap}
+
+  /* Hero */
+  .hero{padding:3.2rem 0 3.4rem}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+  .eyebrow{color:var(--amber);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 1rem}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);margin:0 0 .7rem}
+  .hero .lede{font-size:1.15rem;color:var(--muted);max-width:34rem;margin:0 0 1.8rem}
+  .cta-row{display:flex;gap:.9rem;flex-wrap:wrap;margin:0 0 1.6rem}
+  .fact-row{display:flex;gap:1.4rem;flex-wrap:wrap;list-style:none;margin:0;padding:0;font-size:.9rem;color:var(--muted);font-weight:600}
+  .fact-row li{display:flex;align-items:center;gap:.45rem}
+  .dot{width:.55rem;height:.55rem;border-radius:50%;background:var(--amber);flex:0 0 .55rem}
+  .hero-photo{margin:0}
+  .hero-photo .frame{aspect-ratio:640/1138;max-height:520px;width:auto;max-width:100%;margin:0 auto;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:var(--cream-2)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  figcaption{font-size:.82rem;color:var(--muted);margin-top:.6rem;line-height:1.5}
+  figcaption a{color:var(--teal)}
+
+  /* Included band */
+  .band{background:var(--petrol);color:#fff;padding:2.6rem 0}
+  .band h2{color:#fff;font-size:clamp(1.4rem,2.6vw,1.9rem);margin:0 0 1.4rem}
+  .band h2 .hl{color:var(--gold)}
+  .incl{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;list-style:none;margin:0;padding:0}
+  .incl li{background:var(--petrol-2);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:1rem .95rem;font-size:.92rem;line-height:1.5}
+  .incl li strong{display:block;color:var(--gold);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.35rem}
+
+  /* Sections */
+  section{padding:4rem 0}
+  .sec-head{max-width:44rem;margin-bottom:2.2rem}
+  .sec-head p{color:var(--muted)}
+
+  /* Services */
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  .svc-list{list-style:none;margin:0;padding:0;counter-reset:svc}
+  .svc-list li{counter-increment:svc;padding:1.35rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:3.2rem 1fr;gap:1rem;align-items:start}
+  .svc-list li:first-child{border-top:1px solid var(--line)}
+  .svc-list .n{font-family:'Fraunces',Georgia,serif;font-size:1.6rem;color:var(--amber);font-weight:700;line-height:1.2}
+  .svc-list h3{margin:0 0 .25rem;font-size:1.2rem}
+  .svc-list p{margin:0;color:var(--muted);font-size:.98rem}
+  .svc-photo .frame{aspect-ratio:640/853;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
+  .svc-photo img{width:100%;height:100%;object-fit:contain}
+
+  /* Pricing */
+  #pricing{background:var(--cream-2)}
+  .price-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:3rem;align-items:start}
+  .scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--radius);background:#fff;margin-bottom:1.6rem}
+  table{border-collapse:collapse;width:100%;min-width:560px;font-size:.98rem}
+  caption{text-align:left;font-weight:700;font-family:'Fraunces',Georgia,serif;font-size:1.25rem;padding:1rem 1.1rem .4rem}
+  th,td{text-align:left;padding:.7rem 1.1rem;border-top:1px solid var(--line)}
+  thead th{background:var(--petrol);color:#fff;border-top:none;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+  thead th:first-child{border-radius:0}
+  tbody tr:nth-child(even){background:#FBF8EF}
+  td.num{font-weight:700;color:var(--teal);white-space:nowrap}
+  .note{font-size:.88rem;color:var(--muted);margin:.4rem 0 2rem}
+  .extras{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem;list-style:none;margin:0 0 2rem;padding:0}
+  .extras li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.75rem 1rem;display:flex;justify-content:space-between;gap:1rem;font-size:.95rem}
+  .extras li span:last-child{font-weight:700;color:var(--teal);white-space:nowrap}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin:0 0 2rem}
+  .plan{background:var(--petrol);color:#fff;border-radius:var(--radius);padding:1.2rem;text-align:center}
+  .plan .pct{font-family:'Fraunces',Georgia,serif;font-size:1.7rem;color:var(--gold);font-weight:700}
+  .plan p{margin:.3rem 0 0;font-size:.92rem}
+  .travel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.4rem;font-size:.98rem}
+  .travel strong{color:var(--teal)}
+  .price-photo .frame{aspect-ratio:1/1;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
+  .price-photo img{width:100%;height:100%;object-fit:contain}
+
+  /* Boat care */
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:2.2rem}
+  .tier{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:1.5rem;display:flex;flex-direction:column}
+  .tier.hot{background:var(--petrol);color:#fff;border-color:var(--petrol)}
+  .tier .tag{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:.4rem}
+  .tier.hot .tag{color:var(--gold)}
+  .tier h3{font-size:1.4rem;margin:0 0 .15rem}
+  .tier .sub{font-size:.88rem;color:var(--muted);margin:0 0 1rem}
+  .tier.hot .sub{color:rgba(255,255,255,.78)}
+  .tier ul{list-style:none;margin:0 0 1.2rem;padding:0;font-size:.94rem;flex:1}
+  .tier ul li{padding:.42rem 0 .42rem 1.6rem;position:relative;border-top:1px dashed var(--line)}
+  .tier.hot ul li{border-color:rgba(255,255,255,.2)}
+  .tier ul li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+  .tier.hot ul li::before{color:var(--gold)}
+  .care-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  .care-extra h3{margin:0 0 .8rem}
+  .care-extra ul{list-style:none;margin:0;padding:0}
+  .care-extra ul li{padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.98rem}
+  .care-extra ul li::before{content:"– ";color:var(--amber);font-weight:700}
+  .care-photo .frame{aspect-ratio:640/853;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
+  .care-photo img{width:100%;height:100%;object-fit:contain}
+
+  /* Gallery */
+  #work{background:var(--cream-2)}
+  .gal{display:grid;grid-template-columns:1.05fr .8fr 1.05fr;gap:1.4rem}
+  .gal figure{margin:0}
+  .gal .frame{overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:var(--cream)}
+  .gal .f1{aspect-ratio:640/1138}.gal .f2{aspect-ratio:640/852}.gal .f3{aspect-ratio:640/1136}
+  .gal img{width:100%;height:100%;object-fit:cover}
+  .f2 img{object-position:center 40%}
+  .f1 img{object-position:center 30%}
+  .f3 img{object-position:center 45%}
+
+  /* Contact */
+  .contact{background:var(--petrol);color:#fff;padding:4.5rem 0;text-align:center}
+  .contact h2{color:#fff}
+  .contact .sub{color:rgba(255,255,255,.82);max-width:36rem;margin:0 auto 2rem}
+  .contact .phone{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.6rem,4vw,2.4rem);color:var(--gold);font-weight:700;margin:0 0 1.8rem}
+  .contact .phone a{color:var(--gold);text-decoration:none}
+  .contact .meta{display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;font-size:.92rem;color:rgba(255,255,255,.78)}
+  .contact .meta a{color:#fff}
+
+  footer{padding:2rem 0;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+  footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+  /* Reveal */
+  .js [data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .js [data-reveal].in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js [data-reveal]{opacity:1;transform:none;transition:none}
+  }
+
+  /* Responsive */
+  @media (max-width:960px){
+    .incl{grid-template-columns:repeat(2,1fr)}
+    .incl li:last-child{grid-column:1/-1}
+    .tiers{grid-template-columns:1fr;max-width:34rem}
+    .gal{grid-template-columns:1fr 1fr}
+    .gal figure:last-child{grid-column:1/-1;max-width:28rem;margin:0 auto}
+  }
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:2.2rem}
+    .hero-photo .frame{max-height:440px}
+    .svc-grid,.price-grid,.care-grid{grid-template-columns:1fr;gap:2rem}
+    .plans{grid-template-columns:1fr;max-width:26rem}
+    .extras{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    nav.links{display:none}
+  }
+  @media (max-width:560px){
+    section{padding:3rem 0}
+    .hero{padding:2.2rem 0 2.6rem}
+    .gal{grid-template-columns:1fr;max-width:26rem;margin:0 auto}
+    .gal figure:last-child{max-width:none}
+    .incl{grid-template-columns:1fr}
+    .bar .btn-sm{padding:.5rem 1rem}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Boat Cleaning — home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8B44A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v14"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="2.5"/></svg>
+      </span>
+      <span>
+        <span class="brand-name">Boat Cleaning</span><br>
+        <span class="brand-sub">Portimão · Algarve</span>
+      </span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#boat-care">Boat Care</a>
+      <a href="#work">Our work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/351927311006?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20boat%20cleaning." target="_blank" rel="noopener">Get a quote</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="wrap hero-grid">
+      <div data-reveal>
+        <p class="eyebrow">Portimão — Algarve, Portugal</p>
+        <h1 id="hero-h">Your boat, always ready to sail.</h1>
+        <p class="lede">Professional boat cleaning and maintenance — exterior and interior washing, polishing, wax and teak care — with eco-friendly biodegradable products. One-off services and monthly plans across the Algarve.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/351927311006?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20boat%20cleaning." target="_blank" rel="noopener">WhatsApp us for a quote</a>
+          <a class="btn btn-ghost" href="#pricing">See pricing</a>
+        </div>
+        <ul class="fact-row">
+          <li><span class="dot" aria-hidden="true"></span>Biodegradable products</li>
+          <li><span class="dot" aria-hidden="true"></span>Monthly plans −10% / −15%</li>
+          <li><span class="dot" aria-hidden="true"></span>Travel included: Faro – Lagos</li>
+        </ul>
+      </div>
+      <figure class="hero-photo" data-reveal>
+        <div class="frame">
+          <img src="img/hero-catamaran.webp" alt="Fountaine Pajot 80 catamaran Nana Marie at Marina de Portimão after a Boat Cleaning service" width="640" height="1138" fetchpriority="high">
+        </div>
+        <figcaption>On a Fountaine Pajot 80 — one of their recent service jobs at Marina de Portimão. <a href="https://www.instagram.com/reel/DZLkhVXNm_g/" target="_blank" rel="noopener">See the post</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- INCLUDED BAND -->
+  <div class="band" role="region" aria-label="Included in every cleaning">
+    <div class="wrap">
+      <h2 data-reveal>Included in <span class="hl">every cleaning</span></h2>
+      <ul class="incl">
+        <li data-reveal><strong>01</strong>Wash with biodegradable nautical products</li>
+        <li data-reveal><strong>02</strong>Window and glass cleaning</li>
+        <li data-reveal><strong>03</strong>Cockpit cleaning</li>
+        <li data-reveal><strong>04</strong>Drying with microfibre cloths</li>
+        <li data-reveal><strong>05</strong>Visual inspection of the boat</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" aria-labelledby="svc-h">
+    <div class="wrap svc-grid">
+      <div data-reveal>
+        <div class="sec-head">
+          <p class="eyebrow">What we do</p>
+          <h2 id="svc-h">Cleaning, care and protection for your boat</h2>
+          <p>We take care of your boat as if it were our own — spotless results and premium service, every time.</p>
+        </div>
+        <ol class="svc-list">
+          <li><span class="n" aria-hidden="true">1</span><div><h3>Exterior cleaning</h3><p>Hull, decks, windows and finishes — washed and detailed.</p></div></li>
+          <li><span class="n" aria-hidden="true">2</span><div><h3>Interior cleaning</h3><p>Saloon, cabins, bathrooms and living areas.</p></div></li>
+          <li><span class="n" aria-hidden="true">3</span><div><h3>Treatment &amp; protection</h3><p>Protection for surfaces and finishes — wax, polish and vinyl.</p></div></li>
+          <li><span class="n" aria-hidden="true">4</span><div><h3>Dry wash &amp; detailing</h3><p>Effective, eco-friendly solutions with attention to every detail.</p></div></li>
+          <li><span class="n" aria-hidden="true">5</span><div><h3>Regular maintenance</h3><p>Customised maintenance plans, so your boat is never neglected.</p></div></li>
+        </ol>
+      </div>
+      <figure class="svc-photo" data-reveal>
+        <div class="frame">
+          <img src="img/graphic-ready-to-sail.webp" alt="Boat Cleaning's 'Your boat always ready to sail' services poster" width="640" height="853" loading="lazy">
+        </div>
+        <figcaption>Their services poster — exterior &amp; interior cleaning, treatment &amp; protection, dry wash and regular maintenance. <a href="https://www.instagram.com/p/DZ-GH7XN0fy/" target="_blank" rel="noopener">See the post</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" aria-labelledby="price-h">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">Transparent pricing</p>
+        <h2 id="price-h">Priced by boat length, quoted before we start</h2>
+        <p>These are the prices they publish on Instagram — no surprises. Exact figures below, taken from their published price table.</p>
+      </div>
+      <div class="price-grid">
+        <div data-reveal>
+          <div class="scroll-x">
+            <table>
+              <caption>Exterior wash &amp; complete wash</caption>
+              <thead><tr><th scope="col">Boat length</th><th scope="col">Exterior wash</th><th scope="col">Complete wash <span style="font-weight:400;text-transform:none;letter-spacing:0">(exterior + interior)</span></th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Up to 5 m (16 ft)</th><td class="num">€65</td><td class="num">€105</td></tr>
+                <tr><th scope="row">5 – 7 m (17 – 23 ft)</th><td class="num">€85</td><td class="num">€145</td></tr>
+                <tr><th scope="row">7 – 9 m (24 – 30 ft)</th><td class="num">€105</td><td class="num">€185</td></tr>
+                <tr><th scope="row">9 – 12 m (31 – 40 ft)</th><td class="num">€135</td><td class="num">€245</td></tr>
+                <tr><th scope="row">12 – 15 m (41 – 50 ft)</th><td class="num">€185</td><td class="num">€335</td></tr>
+                <tr><th scope="row">Over 15 m</th><td class="num">On quote</td><td class="num">On quote</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Indicative values — the final price may vary with the boat's condition, accessibility and marina.</p>
+
+          <h3 style="font-size:1.35rem">Extra services</h3>
+          <ul class="extras">
+            <li><span>Upholstery cleaning</span><span>from €65</span></li>
+            <li><span>Teak cleaning</span><span>from €95</span></li>
+            <li><span>Stainless &amp; chrome polishing</span><span>from €55</span></li>
+            <li><span>Vinyl treatment</span><span>from €50</span></li>
+            <li><span>Engine compartment cleaning</span><span>from €105</span></li>
+            <li><span>Stain removal</span><span>from €45</span></li>
+            <li><span>Protective wax application</span><span>from €75</span></li>
+            <li><span>Polishing</span><span>from €135</span></li>
+          </ul>
+
+          <h3 style="font-size:1.35rem">Monthly plans</h3>
+          <div class="plans">
+            <div class="plan"><div class="pct">−10%</div><p>2 cleanings per month</p></div>
+            <div class="plan"><div class="pct">−15%</div><p>4 cleanings per month</p></div>
+            <div class="plan"><div class="pct">Tailored</div><p>Annual weekly service — personalised quote</p></div>
+          </div>
+
+          <div class="travel">
+            <strong>Travel included</strong> in Faro, Vilamoura, Albufeira, Portimão and Lagos. Other areas on request.
+          </div>
+        </div>
+        <figure class="price-photo" data-reveal>
+          <div class="frame">
+            <img src="img/graphic-price-table.webp" alt="Boat Cleaning's published price table for boat cleaning in the Algarve" width="640" height="640" loading="lazy">
+          </div>
+          <figcaption>Their published price table, posted 17 July 2026 — every figure on this page matches it. <a href="https://www.instagram.com/p/Da5TEjcNZ8a/" target="_blank" rel="noopener">See the post</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOAT CARE -->
+  <section id="boat-care" aria-labelledby="care-h">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">Boat Care</p>
+        <h2 id="care-h">Away from your boat? We'll look after it.</h2>
+        <p>Scheduled visits while you're gone — inspection, cleaning and upkeep, with a photo report after every visit. Plans are personalised by boat size and number of visits per month.</p>
+      </div>
+      <div class="tiers">
+        <article class="tier" data-reveal>
+          <p class="tag">Tier 1</p>
+          <h3>Essential</h3>
+          <p class="sub">Inspection &amp; peace of mind</p>
+          <ul>
+            <li>Visual inspection, exterior &amp; interior</li>
+            <li>Humidity, infiltration &amp; odour check</li>
+            <li>Ropes, fenders &amp; mooring check</li>
+            <li>Batteries &amp; basic equipment check</li>
+            <li>Water, fuel &amp; levels check (where applicable)</li>
+            <li>Corrosion or damage signs check</li>
+            <li>Photo report after each visit</li>
+          </ul>
+        </article>
+        <article class="tier hot" data-reveal>
+          <p class="tag">Tier 2</p>
+          <h3>Care</h3>
+          <p class="sub">Upkeep &amp; cleaning</p>
+          <ul>
+            <li>Everything in Essential</li>
+            <li>Exterior &amp; interior cleaning</li>
+            <li>Deck &amp; glass washing</li>
+          </ul>
+        </article>
+        <article class="tier" data-reveal>
+          <p class="tag">Tier 3</p>
+          <h3>Premium</h3>
+          <p class="sub">Complete management</p>
+          <ul>
+            <li>Everything in Care</li>
+            <li>Stainless steel treatment</li>
+            <li>Boat prepared before the owner's arrival</li>
+            <li>Coordination with technicians &amp; maintenance</li>
+          </ul>
+        </article>
+      </div>
+      <div class="care-grid">
+        <div class="care-extra" data-reveal>
+          <h3>Extra services</h3>
+          <ul>
+            <li>Deep cleaning — interior &amp; exterior</li>
+            <li>Paint polishing &amp; protection</li>
+            <li>Teak treatment</li>
+            <li>Cruise preparation</li>
+            <li>Repair &amp; maintenance follow-up</li>
+            <li>Post-use / charter cleaning</li>
+          </ul>
+          <p style="margin-top:1.4rem"><a class="btn btn-primary" href="https://wa.me/351927311006?text=Hello%2C%20I%27d%20like%20a%20Boat%20Care%20plan%20for%20my%20boat." target="_blank" rel="noopener">Ask for a Boat Care plan</a></p>
+        </div>
+        <figure class="care-photo" data-reveal>
+          <div class="frame">
+            <img src="img/graphic-boat-care-plans.webp" alt="Boat Cleaning's published Boat Care plan comparison: Essential, Care and Premium tiers" width="640" height="853" loading="lazy">
+          </div>
+          <figcaption>Their Boat Care plan comparison, posted 27 September 2026. <a href="https://www.instagram.com/p/DdzSiMoxoH6/" target="_blank" rel="noopener">See the post</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">From their feed</p>
+        <h2 id="work-h">Recent work, straight from the marina</h2>
+        <p>Real photos from <a href="https://www.instagram.com/boat_cleaning_/" target="_blank" rel="noopener">@boat_cleaning_</a> — cleaned boats, detailed consoles and satisfied customers.</p>
+      </div>
+      <div class="gal">
+        <figure data-reveal>
+          <div class="frame f1"><img src="img/work-motorboat-deck.webp" alt="Spotless white motorboat deck with marina masts behind, after a Boat Cleaning service" width="640" height="1138" loading="lazy"></div>
+          <figcaption>A cleaned motorboat, ready for its owner. <a href="https://www.instagram.com/reel/DMs4iMVtelV/" target="_blank" rel="noopener">Satisfied customer post</a></figcaption>
+        </figure>
+        <figure data-reveal>
+          <div class="frame f2"><img src="img/detail-helm-console.webp" alt="Close-up of a spotless helm console with navigation instruments and radio" width="640" height="852" loading="lazy"></div>
+          <figcaption>Detail work on a helm console — every instrument left spotless. <a href="https://www.instagram.com/p/DLH_wKdttHY/" target="_blank" rel="noopener">See the post</a></figcaption>
+        </figure>
+        <figure data-reveal>
+          <div class="frame f3"><img src="img/work-stern-marina.webp" alt="Clean white boat stern and deck alongside the marina pontoon" width="640" height="1136" loading="lazy"></div>
+          <figcaption>Deck and stern detailing at the marina. <a href="https://www.instagram.com/reel/DUwWtLijTrZ/" target="_blank" rel="noopener">See the post</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--gold)" data-reveal>Get a free quote</p>
+      <h2 id="contact-h" data-reveal>Message us on WhatsApp</h2>
+      <p class="sub" data-reveal>Tell us your boat's length and where she's moored — we'll send a personalised quote, fast.</p>
+      <p class="phone" data-reveal><a href="https://wa.me/351927311006?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20boat%20cleaning." target="_blank" rel="noopener">+351 927 311 006</a></p>
+      <p data-reveal><a class="btn btn-gold" href="https://wa.me/351927311006?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20boat%20cleaning." target="_blank" rel="noopener">Open WhatsApp chat</a></p>
+      <div class="meta" data-reveal>
+        <span>📍 Portimão – Algarve, Portugal</span>
+        <span>⚓ Serving Faro · Vilamoura · Albufeira · Portimão · Lagos</span>
+        <span>📸 <a href="https://www.instagram.com/boat_cleaning_/" target="_blank" rel="noopener">@boat_cleaning_</a></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Boat Cleaning — Portimão, Algarve. Photos and prices from @boat_cleaning_ on Instagram.</span>
+    <span>Preview site crafted by <strong>Devflix</strong> · devflix demo</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var els = document.querySelectorAll('[data-reveal]');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

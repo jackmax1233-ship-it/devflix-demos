@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOFA Vet Care — Veterinary Clinic in Doha, Qatar</title>
+<meta name="description" content="SOFA Vet Care in Doha, Qatar — checkups & surgeries, ultrasound & x-rays, vaccination & deworming, grooming, pet hotel and pick & drop service. Call 4411 0178.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FDFBF6;
+    --paper-warm:#F7F2E8;
+    --ink:#1F2A24;
+    --green:#16402C;
+    --green-deep:#12291D;
+    --coral:#B4431F;
+    --coral-btn:#A83D1B;
+    --tint:#EAF1EC;
+    --muted:#4C5A52;
+    --line:#DCE5DC;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+  html.js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    html.js .reveal{opacity:1;transform:none;transition:none}
+  }
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--paper);color:var(--ink);
+    line-height:1.6;font-size:1.02rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:var(--green);text-underline-offset:3px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--green);color:#fff;padding:10px 16px;z-index:200}
+  .skip:focus{left:8px;top:8px}
+
+  /* ---- nav ---- */
+  header.site{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:18px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;color:var(--green);text-decoration:none;letter-spacing:.2px;margin-right:auto}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .nav nav{display:flex;gap:18px;flex-wrap:wrap}
+  .nav nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+  .nav nav a:hover{color:var(--coral);text-decoration:underline}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;text-decoration:none;border-radius:999px;padding:13px 26px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .15s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-green{background:var(--green);color:#fff}
+  .btn-green:hover{background:#0F3121}
+  .btn-coral{background:var(--coral-btn);color:#fff}
+  .btn-coral:hover{background:#8C3215}
+  .btn-outline{background:transparent;color:var(--green);border-color:var(--green)}
+  .btn-outline:hover{background:var(--tint)}
+  .btn-sm{padding:9px 18px;font-size:.9rem}
+
+  /* ---- hero ---- */
+  .hero{padding:52px 0 64px;background:linear-gradient(180deg,var(--paper) 0%,var(--paper-warm) 100%)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);margin-bottom:14px}
+  h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.12;color:var(--green-deep);margin-bottom:18px;letter-spacing:-.01em}
+  .lede{font-size:1.12rem;color:var(--muted);max-width:34rem;margin-bottom:26px}
+  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+  .hero-note{font-size:.9rem;color:var(--muted)}
+  .hero-note a{color:var(--coral);font-weight:600}
+  .hero-fig{margin:0}
+  .hero-fig img{width:100%;height:auto;aspect-ratio:5/6;object-fit:contain;object-position:center;background:var(--tint);border-radius:var(--radius);max-height:600px}
+  .hero-fig figcaption{font-size:.82rem;color:var(--muted);margin-top:8px}
+  .hero-list{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;list-style:none}
+  .hero-list li{background:var(--tint);color:var(--green-deep);font-size:.85rem;font-weight:600;padding:7px 14px;border-radius:999px}
+
+  /* ---- sections ---- */
+  section.block{padding:70px 0}
+  .kicker{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);margin-bottom:10px}
+  h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.15;color:var(--green-deep);margin-bottom:14px}
+  .section-intro{color:var(--muted);max-width:40rem;margin-bottom:40px;font-size:1.05rem}
+
+  /* services editorial */
+  .svc-row{display:grid;gap:34px;align-items:center;margin-bottom:64px}
+  .svc-row:last-child{margin-bottom:0}
+  .svc-row.a{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+  .svc-row.b{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+  .svc-photo{margin:0}
+  .svc-photo img{width:100%;border-radius:var(--radius);object-fit:contain;background:var(--tint)}
+  .svc-photo.portrait img{aspect-ratio:4/5;max-height:480px}
+  .svc-photo.wide img{aspect-ratio:4/5;max-height:480px}
+  .svc-photo.tall img{aspect-ratio:9/16;max-height:480px}
+  .svc-photo figcaption{font-size:.82rem;color:var(--muted);margin-top:8px}
+  .svc-item{margin-bottom:30px}
+  .svc-item:last-child{margin-bottom:0}
+  .svc-item h3{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:600;color:var(--green);margin-bottom:6px}
+  .svc-item p{color:var(--muted);max-width:30rem}
+  .svc-tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:6px}
+
+  /* why */
+  .why{background:var(--tint)}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .why-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+  .why-card h3{font-family:'Fraunces',serif;font-size:1.28rem;color:var(--green);margin-bottom:8px}
+  .why-card p{color:var(--muted);font-size:.97rem}
+  .why-card p a{color:var(--coral);font-weight:600}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:26px}
+  .contact-card{border:2px solid var(--green);border-radius:var(--radius);padding:30px 28px;background:#fff}
+  .contact-card h3{font-family:'Fraunces',serif;font-size:1.4rem;color:var(--green-deep);margin-bottom:6px}
+  .contact-card p{color:var(--muted);margin-bottom:16px}
+  .contact-card .phone{font-size:1.6rem;font-weight:700;color:var(--ink);text-decoration:none;display:block;margin-bottom:14px;letter-spacing:.02em}
+  .contact-card .phone:hover{color:var(--coral)}
+  .contact-meta{display:flex;flex-wrap:wrap;gap:16px 34px;color:var(--muted);font-size:.98rem}
+  .contact-meta strong{color:var(--ink)}
+  .contact-meta a{color:var(--green);font-weight:600}
+
+  footer{background:var(--green-deep);color:var(--paper);padding:34px 0;margin-top:20px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+  footer p{font-size:.88rem;color:#D8E2D8}
+  footer a{color:#fff;font-weight:600}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:30px}
+    .hero{padding:36px 0 48px}
+    .hero-fig img{max-height:70vh;aspect-ratio:5/6}
+    .svc-row.a,.svc-row.b{grid-template-columns:1fr}
+    .svc-row.b .svc-photo{order:-1}
+    .why-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:420px){
+    .nav{gap:12px}
+    .nav nav{gap:12px}
+    .btn{padding:12px 20px;font-size:.95rem}
+    section.block{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">SOFA Vet Care<small>Veterinary Clinic · Doha</small></a>
+    <nav aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why SOFA</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-green btn-sm" href="tel:+97444110178">Call 4411 0178</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Veterinary clinic · Doha, Qatar</span>
+        <h1>Complete vet care for your pets — all under one roof.</h1>
+        <p class="lede">Checkups, surgeries, grooming, a pet hotel and pick &amp; drop — one caring clinic in Doha looking after your dogs and cats.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-coral" href="tel:+97444110178">Call 4411 0178</a>
+          <a class="btn btn-outline" href="https://wa.me/97430783337" target="_blank" rel="noopener">WhatsApp 3078 3337</a>
+        </div>
+        <ul class="hero-list" aria-label="Services at a glance">
+          <li>Checkups</li><li>Surgeries</li><li>Ultrasound &amp; X-rays</li>
+          <li>Vaccination</li><li>Grooming</li><li>Pet Hotel</li><li>Pick &amp; Drop</li>
+        </ul>
+      </div>
+      <figure class="hero-fig reveal">
+        <img src="assets/hero.webp" alt="SOFA Vet Care winter-care post: a golden retriever and a tabby cat in knitted winter clothes holding clinic shopping bags" width="1440" height="1728" fetchpriority="high">
+      </figure>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="block" id="services">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="kicker">Services</p>
+        <h2>Everything your pet needs, in one place</h2>
+        <p class="section-intro">From routine checkups to a stay at our pet hotel, SOFA Vet Care keeps medical care, grooming and boarding under the same roof.</p>
+      </div>
+
+      <div class="svc-row a reveal">
+        <figure class="svc-photo portrait">
+          <img src="assets/checkup.webp" alt="SOFA Vet Care vaccination post: a veterinarian in a white coat with a syringe beside a beagle" width="1080" height="1350" loading="lazy">
+        </figure>
+        <div>
+          <div class="svc-item">
+            <span class="svc-tag">Medical care</span>
+            <h3>Checkups &amp; Surgeries</h3>
+            <p>Regular health checkups and surgical care for your pets, handled by the clinic's veterinary team.</p>
+          </div>
+          <div class="svc-item">
+            <span class="svc-tag">Prevention</span>
+            <h3>Vaccination &amp; Deworming</h3>
+            <p>Keep your furry friends safe, healthy and right on schedule with their vaccines and deworming.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-row b reveal">
+        <div>
+          <div class="svc-item">
+            <span class="svc-tag">Comfort</span>
+            <h3>Grooming</h3>
+            <p>Complete grooming sessions for a clean, healthy and comfortable coat — especially as the seasons change.</p>
+          </div>
+          <div class="svc-item">
+            <span class="svc-tag">Boarding</span>
+            <h3>Pet Hotel</h3>
+            <p>A place for your pet to stay while you're away — ask the clinic about availability and stays.</p>
+          </div>
+        </div>
+        <figure class="svc-photo wide groom">
+          <img src="assets/grooming.webp" alt="SOFA Vet Care grooming post: a golden retriever wrapped in a towel beside pet shampoo, conditioner and grooming tools" width="1080" height="1350" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="svc-row a reveal">
+        <figure class="svc-photo portrait">
+          <img src="assets/diagnostics.webp" alt="SOFA Vet Care behaviour post: a golden retriever resting under a sofa" width="1080" height="1350" loading="lazy">
+        </figure>
+        <div>
+          <div class="svc-item">
+            <span class="svc-tag">Diagnostics</span>
+            <h3>Ultrasound &amp; X-rays</h3>
+            <p>Ultrasound and X-ray imaging at the clinic to help diagnose and monitor your pet's health.</p>
+          </div>
+          <div class="svc-item">
+            <span class="svc-tag">Convenience</span>
+            <h3>Pick &amp; Drop Service</h3>
+            <p>Pick-up and drop-off for your pet's visit — call the clinic to arrange it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-row b reveal">
+        <div>
+          <p class="section-intro" style="margin-bottom:0">One call or message covers it all — appointments, grooming bookings, hotel stays and pick-ups.</p>
+        </div>
+        <figure class="svc-photo tall">
+          <img src="assets/hotel.webp" alt="A SOFA Vet Care veterinarian in teal scrubs with the clinic's logo" width="640" height="1136" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="block why" id="why">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="kicker">Why SOFA</p>
+        <h2>A clinic built around your pet's whole routine</h2>
+        <p class="section-intro">No juggling different places — medical care, grooming, boarding and transport in a single visit.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <h3>All facilities under one roof</h3>
+          <p>Checkups, surgeries, ultrasound and X-rays, vaccination, grooming, a pet hotel and pick &amp; drop — everything listed by the clinic itself, in one place.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>Book by phone or WhatsApp</h3>
+          <p>Call <a href="tel:+97444110178">4411 0178</a> or message <a href="https://wa.me/97430783337" target="_blank" rel="noopener">3078 3337 on WhatsApp</a> to book an appointment or arrange a pick-up.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>An active, real clinic</h3>
+          <p>SOFA Vet Care posts regularly on <a href="https://www.instagram.com/sofavetcare_qa/" target="_blank" rel="noopener">@sofavetcare_qa</a> — seasonal care, grooming and clinic updates from the team in Doha.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block" id="contact">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="kicker">Contact</p>
+        <h2>Book your pet's visit</h2>
+        <p class="section-intro">Call or WhatsApp — the clinic books appointments directly.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Call the clinic</h3>
+          <p>For appointments, emergencies and questions.</p>
+          <a class="phone" href="tel:+97444110178">4411 0178</a>
+          <a class="btn btn-green" href="tel:+97444110178">Call now</a>
+        </div>
+        <div class="contact-card reveal">
+          <h3>WhatsApp</h3>
+          <p>Message for bookings, grooming and pet-hotel stays.</p>
+          <a class="phone" href="https://wa.me/97430783337" target="_blank" rel="noopener">3078 3337</a>
+          <a class="btn btn-coral" href="https://wa.me/97430783337" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+      </div>
+      <div class="contact-meta reveal">
+        <span><strong>Location:</strong> Doha, Qatar <span style="color:var(--muted)">(call for directions — street address isn't published online)</span></span>
+        <span><strong>Instagram:</strong> <a href="https://www.instagram.com/sofavetcare_qa/" target="_blank" rel="noopener">@sofavetcare_qa</a></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© SOFA Vet Care, Doha, Qatar · <a href="https://www.instagram.com/sofavetcare_qa/" target="_blank" rel="noopener">@sofavetcare_qa</a></p>
+    <p>Preview concept by Devflix</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Char Celebrates — Civil Wedding Celebrant · Brisbane &amp; Sunshine Coast</title>
+<meta name="description" content="Char Celebrates: Char (Charlotte), civil wedding celebrant in Brisbane, the Sunshine Coast (Gubbi Gubbi) & beyond. LGBTQ+ friendly, Auslan friendly. Real weddings, celebrated your way.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FBF7F0;
+  --sand:#F3EAD9;
+  --green:#2E4B3F;
+  --green-deep:#1F352C;
+  --ink:#3E3429;
+  --ink-soft:#5C5044;
+  --gold:#75571F;
+  --gold-bright:#D9B96A;
+  --terra:#A63D2F;
+  --footer:#4A3423;
+  --radius:18px;
+  --shadow:0 18px 40px -18px rgba(46,75,63,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--ivory);color:var(--ink);
+  font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.12;color:var(--green);letter-spacing:-.01em}
+.eyebrow{
+  font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:14px;display:block;
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* ---------- nav ---------- */
+.site-head{padding:20px 0 8px}
+.nav-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-family:'Fraunces',serif;font-size:26px;font-style:italic;color:var(--green);text-decoration:none}
+.brand b{font-style:normal;font-weight:600}
+.nav-links{display:flex;gap:4px;list-style:none;flex-wrap:wrap}
+.nav-links a{text-decoration:none;font-size:15px;font-weight:500;color:var(--ink);padding:8px 12px;border-radius:999px}
+.nav-links a:hover{background:var(--sand);color:var(--green-deep)}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:600;font-size:16px;
+  background:var(--green-deep);color:var(--ivory);
+  padding:13px 26px;border-radius:999px;border:2px solid var(--green-deep);
+  transition:background .2s,transform .2s;
+}
+.btn:hover{background:var(--green);border-color:var(--green);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--green-deep)}
+.btn-ghost:hover{background:var(--sand);color:var(--green-deep)}
+
+/* ---------- hero ---------- */
+.hero{padding:48px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,5.2vw,72px);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .lede{font-size:19px;color:var(--ink-soft);max-width:46ch;margin-bottom:12px}
+.hero .where{font-size:15px;font-weight:600;color:var(--gold);letter-spacing:.04em;margin-bottom:28px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-fig{margin:0;position:relative;max-width:420px;justify-self:end;width:100%}
+.hero-fig img{
+  width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.hero-fig figcaption{
+  position:absolute;left:18px;bottom:18px;background:var(--green-deep);color:var(--ivory);
+  font-size:14px;padding:10px 16px;border-radius:999px;
+}
+.hero-note{margin-top:14px;font-size:14px;color:var(--ink-soft);font-style:italic}
+
+/* ---------- ribbon band ---------- */
+.band{background:var(--green);color:var(--ivory);padding:56px 0}
+.band blockquote{font-family:'Fraunces',serif;font-size:clamp(26px,3.4vw,44px);line-height:1.25;max-width:22ch;font-style:italic}
+.band blockquote .amp{color:var(--gold-bright);font-style:normal}
+.band p{margin-top:14px;max-width:60ch;color:#EDE4D2;font-size:17px}
+.band .kickers{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.chip{border:1.5px solid var(--gold-bright);color:var(--ivory);border-radius:999px;padding:8px 18px;font-size:14px;font-weight:600;letter-spacing:.03em}
+
+/* ---------- sections ---------- */
+section.block{padding:80px 0}
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(32px,4vw,48px);margin-bottom:14px}
+.sec-head p{color:var(--ink-soft);font-size:18px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{margin:0;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 28px -14px rgba(46,75,63,.22)}
+/* Full-view gate: 3/4 native portraits shown whole via contain in a 340px-high frame */
+.card img{width:100%;height:340px;object-fit:contain;background:#fff}
+.card .cap{padding:18px 20px 20px}
+.card .cap h3{font-size:21px;margin-bottom:4px}
+.card .cap .date{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.card .cap p{font-size:15px;color:var(--ink-soft);margin-top:8px}
+
+/* about */
+.about{background:var(--sand)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.about-fig{margin:0;max-width:380px}
+.about-fig img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.facts{list-style:none;margin-top:26px;display:grid;gap:0}
+.facts li{display:flex;gap:16px;padding:15px 0;border-top:1px solid rgba(46,75,63,.18);font-size:16.5px}
+.facts li:last-child{border-bottom:1px solid rgba(46,75,63,.18)}
+.facts .tick{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--green);color:var(--ivory);
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;margin-top:2px}
+.facts strong{color:var(--green)}
+
+/* inclusive */
+.inclusive{background:var(--green-deep);color:var(--ivory)}
+.inclusive h2{color:var(--ivory)}
+.inclusive .sec-head p{color:#E5D9C2}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.pillar{border:1.5px solid rgba(217,185,106,.45);border-radius:var(--radius);padding:28px 26px}
+.pillar .glyph{font-size:30px;display:block;margin-bottom:12px}
+.pillar h3{color:var(--gold-bright);font-size:23px;margin-bottom:8px}
+.pillar p{font-size:15.5px;color:#EFE6D2}
+
+/* contact */
+.contact{text-align:center}
+.contact h2{font-size:clamp(34px,4.6vw,54px);max-width:18ch;margin:0 auto 18px}
+.contact .mail{display:inline-block;font-family:'Fraunces',serif;font-size:clamp(20px,3vw,30px);color:var(--terra);
+  text-decoration-thickness:2px;text-underline-offset:6px;margin:10px 0 26px;word-break:break-all}
+.contact .mail:hover{color:var(--green-deep)}
+.contact-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+.contact .small{margin-top:26px;font-size:15px;color:var(--ink-soft)}
+
+/* footer */
+footer{background:var(--footer);color:var(--ivory);padding:44px 0 30px}
+.foot{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.foot .brand{color:var(--ivory)}
+.foot p{font-size:14.5px;color:#E3D5BD;max-width:44ch;margin-top:10px}
+.foot nav{display:flex;gap:6px;flex-wrap:wrap}
+.foot nav a{color:#EDE0C8;text-decoration:none;font-size:15px;padding:8px 12px;border-radius:8px}
+.foot nav a:hover{background:rgba(251,247,240,.12);color:var(--ivory)}
+.legal{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:30px;padding-top:20px;
+  border-top:1px solid rgba(251,247,240,.22);font-size:13px}
+.legal span{color:#C9B795}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid,.about-grid{grid-template-columns:1fr;gap:36px}
+  .hero{padding:36px 0 52px}
+  .hero-fig{max-width:440px;justify-self:start}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .pillars{grid-template-columns:1fr}
+  section.block{padding:60px 0}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .site-head{padding-top:16px}
+  .nav-row{gap:12px}
+  .nav-links{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+  .nav-links a{white-space:nowrap}
+  .hero h1{font-size:clamp(38px,11vw,48px)}
+  .hero-ctas .btn{flex:1 1 100%;text-align:center}
+  .gallery{grid-template-columns:1fr}
+  .hero-fig{max-width:100%}
+  .facts li{font-size:15.5px}
+  .foot{flex-direction:column}
+}
+</style>
+</head>
+<body id="top">
+<script>document.body.classList.add('js')</script>
+
+<header class="site-head">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top"><b>Char</b> Celebrates</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#celebrations">Celebrations</a></li>
+        <li><a href="#about">About Char</a></li>
+        <li><a href="#inclusive">Inclusive</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="mailto:charcelebrates@gmail.com?subject=Wedding%20enquiry%20for%20Char%20Celebrates">Check your date</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <span class="eyebrow">Civil wedding celebrant</span>
+        <h1>Your love story, <em>celebrated</em> your way.</h1>
+        <p class="lede">I&rsquo;m Char &mdash; a civil celebrant and professional celebrator of love &amp; life. No stiff scripts, no cookie-cutter ceremonies: just your story, told properly, with all the joy it deserves.</p>
+        <p class="where">Brisbane &middot; Sunshine Coast (Gubbi Gubbi) &amp; beyond &middot; will travel</p>
+        <div class="hero-ctas">
+          <a class="btn" href="mailto:charcelebrates@gmail.com?subject=Wedding%20enquiry%20for%20Char%20Celebrates">Check your date</a>
+          <a class="btn btn-ghost" href="#celebrations">See real weddings</a>
+        </div>
+      </div>
+      <figure class="hero-fig rv">
+        <img src="img/josh-chantae.webp" alt="Newlyweds Josh and Chantae holding hands and laughing on the lawn in front of a Queenslander house" width="1100" height="1467" fetchpriority="high" decoding="async">
+        <figcaption>Josh &amp; Chantae &mdash; a Char Celebrates wedding</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <section class="band" aria-label="A note on inclusivity">
+    <div class="wrap rv">
+      <blockquote>&ldquo;All love is <span class="amp">celebrated</span> here.&rdquo;</blockquote>
+      <p>Come as you are. Love who you love. This is an LGBTQ+ friendly and Auslan friendly space &mdash; ceremonies can be signed, because everyone deserves to feel every word of their wedding day.</p>
+      <div class="kickers">
+        <span class="chip">LGBTQ+ friendly</span>
+        <span class="chip">Auslan friendly</span>
+        <span class="chip">All love celebrated</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELEBRATIONS -->
+  <section class="block" id="celebrations">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">Real celebrations</span>
+        <h2>Recent weddings, real joy</h2>
+        <p>A few of the love stories I&rsquo;ve had the privilege of celebrating lately &mdash; every one its own beautiful kind of chaos.</p>
+      </div>
+      <div class="gallery">
+        <figure class="card rv">
+          <img src="img/jess-lewis.webp" alt="Flat lay of Jess and Lewis's colourful wedding details: an embroidered 'The Wedding' book, bright bouquet, lace shoes and a sparkling bag" width="1100" height="1467" loading="lazy" decoding="async">
+          <div class="cap"><h3>Jess &amp; Lewis</h3><span class="date">The colourful one</span><p>Love, vendors and colour &mdash; plus their two very good French bulldogs.</p></div>
+        </figure>
+        <figure class="card rv">
+          <img src="img/mon-conor.webp" alt="Mon and Conor smiling with their wedding party after the ceremony" width="1100" height="1467" loading="lazy" decoding="async">
+          <div class="cap"><h3>Mon &amp; Conor</h3><span class="date">01.08.2026</span><p>Sent back down the aisle into the rest of their forever.</p></div>
+        </figure>
+        <figure class="card rv">
+          <img src="img/g-scott.webp" alt="G and Scott with their bridal party, bridesmaids in magenta and groomsmen in black" width="1100" height="1467" loading="lazy" decoding="async">
+          <div class="cap"><h3>G &amp; Scott</h3><span class="date">18.07.2026</span><p>A joyful celebration with their favourite humans around them.</p></div>
+        </figure>
+        <figure class="card rv">
+          <img src="img/megan-matt.webp" alt="Megan and Matt, with Megan holding their little one, smiling outdoors among the trees" width="1100" height="1467" loading="lazy" decoding="async">
+          <div class="cap"><h3>Megan &amp; Matt</h3><span class="date">18.07.2026</span><p>Double-header day: Pat Fagan Park and Newstead House, Brisbane.</p></div>
+        </figure>
+        <figure class="card rv">
+          <img src="img/sam-nick.webp" alt="The Char Celebrates ceremony folder resting on a table before the wedding" width="720" height="959" loading="lazy" decoding="async">
+          <div class="cap"><h3>Sam &amp; Nick</h3><span class="date">08.08.2026</span><p>Two families becoming one &mdash; and the vows to prove it.</p></div>
+        </figure>
+        <figure class="card rv">
+          <img src="img/char-portrait.webp" alt="Char in heart-shaped sunglasses and a heart-print blouse, surrounded by disco balls and confetti" width="1080" height="1350" loading="lazy" decoding="async">
+          <div class="cap"><h3>Char</h3><span class="date">Your celebrant</span><p>The professional celebrator behind it all &mdash; meet her below.</p></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block about" id="about">
+    <div class="wrap about-grid">
+      <figure class="about-fig rv">
+        <img src="img/char-portrait.webp" alt="Char, civil celebrant, in heart-shaped sunglasses with disco balls and gold confetti" width="1080" height="1350" loading="lazy" decoding="async">
+      </figure>
+      <div class="rv">
+        <span class="eyebrow">Meet your celebrant</span>
+        <h2>Hi, I&rsquo;m Char.</h2>
+        <p style="margin-top:14px;color:var(--ink-soft)">Charlotte, but everyone calls me Char. My celebrancy journey began in 2024, celebrating some of life&rsquo;s big moments for my nearest and dearest &mdash; and I&rsquo;ve been hooked ever since. It&rsquo;s such a privilege to facilitate celebrations, and I&rsquo;d love to connect if we&rsquo;d be a perfect match.</p>
+        <ul class="facts">
+          <li><span class="tick" aria-hidden="true">&check;</span><span><strong>Civil celebrant</strong> &mdash; professional celebrator of love &amp; life</span></li>
+          <li><span class="tick" aria-hidden="true">&check;</span><span><strong>Born &amp; raised in Brisbane</strong>, living on the Sunshine Coast &mdash; will travel</span></li>
+          <li><span class="tick" aria-hidden="true">&check;</span><span><strong>Lawyer by day</strong> &mdash; the paperwork is in very safe hands</span></li>
+          <li><span class="tick" aria-hidden="true">&check;</span><span><strong>A 2023 bride herself</strong> &mdash; married her hubby in a bar</span></li>
+          <li><span class="tick" aria-hidden="true">&check;</span><span><strong>Diploma in Auslan</strong> &mdash; your ceremony can be signed</span></li>
+          <li><span class="tick" aria-hidden="true">&check;</span><span><strong>Fur-mum</strong> to a deaf French bulldog &mdash; pets at weddings very welcome</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUSIVE -->
+  <section class="block inclusive" id="inclusive">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow" style="color:var(--gold-bright)">Everyone&rsquo;s invited</span>
+        <h2>A friendly space, on purpose</h2>
+        <p>Weddings should feel like <em>you</em>. Char&rsquo;s ceremonies are built around the couple &mdash; your rules, your traditions (or none of them), your people.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar rv">
+          <span class="glyph" aria-hidden="true">&#127752;</span>
+          <h3>LGBTQ+ friendly</h3>
+          <p>All love is celebrated here. Come as you are, love who you love &mdash; the paperwork doesn&rsquo;t care who signs it.</p>
+        </div>
+        <div class="pillar rv">
+          <span class="glyph" aria-hidden="true">&#129306;</span>
+          <h3>Auslan friendly</h3>
+          <p>With a Diploma in Auslan, Char can sign your ceremony so deaf and hard-of-hearing guests feel every moment.</p>
+        </div>
+        <div class="pillar rv">
+          <span class="glyph" aria-hidden="true">&#128144;</span>
+          <h3>Your wedding, your rules</h3>
+          <p>Your ceremony doesn&rsquo;t need to follow every tradition. Personal vows, surprise rituals, dogs in bow ties &mdash; yes to all of it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block contact" id="contact">
+    <div class="wrap rv">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Let&rsquo;s talk about your day.</h2>
+      <p style="color:var(--ink-soft);max-width:52ch;margin:0 auto">Tell Char your date and a little about the two of you &mdash; she&rsquo;d love to hear what you&rsquo;re dreaming up.</p>
+      <br>
+      <a class="mail" href="mailto:charcelebrates@gmail.com?subject=Wedding%20enquiry%20for%20Char%20Celebrates">charcelebrates@gmail.com</a>
+      <div class="contact-row">
+        <a class="btn" href="mailto:charcelebrates@gmail.com?subject=Wedding%20enquiry%20for%20Char%20Celebrates">Email Char</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/charcelebrates" target="_blank" rel="noopener">Instagram &mdash; @charcelebrates</a>
+      </div>
+      <p class="small">Based on the Sunshine Coast &middot; Brisbane, Gubbi Gubbi &amp; beyond &middot; happy to travel</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top"><b>Char</b> Celebrates</a>
+        <p>Civil wedding celebrant. Brisbane, Sunshine Coast (Gubbi Gubbi) &amp; beyond. Enquiries: charcelebrates@gmail.com</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#celebrations">Celebrations</a>
+        <a href="#about">About</a>
+        <a href="#inclusive">Inclusive</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.instagram.com/charcelebrates" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <span>Photos: Char Celebrates (@charcelebrates), from her public Instagram.</span>
+      <span>Preview concept by Devflix.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

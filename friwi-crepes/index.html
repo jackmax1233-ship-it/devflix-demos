@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friwi Crêpes &amp; Co — French Crêpes &amp; Galettes, Adelaide</title>
+<meta name="description" content="Friwi Crêpes & Co — a French crêperie on wheels in Adelaide, SA. Sweet crêpes and savoury buckwheat galettes, spun fresh at markets, events, festivals and private events.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FAF4E8;
+  --cream-2:#F3EAD6;
+  --navy:#20344B;
+  --navy-deep:#182739;
+  --red:#B5341F;
+  --red-deep:#932813;
+  --butter:#F4BE49;
+  --ink:#3D2E17;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Karla',system-ui,-apple-system,sans-serif;
+  background:var(--cream);color:var(--navy);
+  line-height:1.65;font-size:1.0625rem;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;font-weight:700;letter-spacing:-0.01em}
+.eyebrow{
+  font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--red);
+}
+/* ---------- header ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;background:rgba(250,244,232,.96);
+  backdrop-filter:blur(6px);border-bottom:2px solid var(--cream-2);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 1.25rem;max-width:var(--max);margin:0 auto;flex-wrap:wrap}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;color:var(--navy);text-decoration:none}
+.brand em{font-style:italic;color:var(--red)}
+.nav-links{display:flex;gap:1.4rem;flex-wrap:wrap;align-items:center}
+.nav-links a{color:var(--navy);text-decoration:none;font-weight:600;font-size:.95rem}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--red);text-decoration:underline;text-underline-offset:4px}
+.btn{
+  display:inline-block;font-weight:700;text-decoration:none;border-radius:999px;
+  padding:.8rem 1.6rem;font-size:1rem;border:2px solid transparent;
+  transition:transform .15s ease,background .15s ease,color .15s ease,border-color .15s ease;
+}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover,.btn-red:focus-visible{background:var(--red-deep);transform:translateY(-1px)}
+.btn-navy{background:var(--navy);color:var(--cream)}
+.btn-navy:hover,.btn-navy:focus-visible{background:var(--navy-deep);transform:translateY(-1px)}
+.btn-butter{background:var(--butter);color:var(--navy)}
+.btn-butter:hover,.btn-butter:focus-visible{filter:brightness(.94);transform:translateY(-1px)}
+.btn-outline{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-outline:hover,.btn-outline:focus-visible{background:var(--navy);color:var(--cream)}
+/* ---------- hero ---------- */
+.hero{padding:3.5rem 0 3rem;position:relative}
+.tricolor{display:flex;height:6px;border-radius:3px;overflow:hidden;max-width:200px;margin-bottom:1.4rem}
+.tricolor span{flex:1}.tricolor .b{background:#25406B}.tricolor .w{background:#fff}.tricolor .r{background:var(--red)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5vw,3.9rem);margin:.7rem 0 1.1rem}
+.hero h1 .it{font-style:italic;color:var(--red)}
+.hero p.lede{font-size:1.2rem;max-width:34rem}
+.hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin:1.7rem 0 1.1rem}
+.hero-note{font-size:.95rem;color:var(--ink);max-width:32rem}
+.hero-photo{position:relative}
+.hero-photo img{
+  width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;background:#fff;
+  border-radius:18px;border:2px solid var(--cream-2);max-height:520px;margin-left:auto;
+}
+.hero-photo figcaption{margin-top:.7rem;font-size:.9rem;color:var(--ink);text-align:center}
+/* ---------- navy band ---------- */
+.band-navy{background:var(--navy);color:var(--cream);padding:2.6rem 0}
+.band-navy .row{display:flex;gap:1.2rem 3rem;flex-wrap:wrap;align-items:baseline;justify-content:center;text-align:center}
+.band-navy .item{font-family:'Fraunces',serif;font-size:clamp(1.1rem,2.4vw,1.5rem)}
+.band-navy .item span{color:var(--butter);margin-right:.6rem}
+.band-navy p{max-width:56rem;margin:1.3rem auto 0;color:#E9DFC9;font-size:1.02rem}
+/* ---------- two sides ---------- */
+.section{padding:4rem 0}
+.section h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:.6rem 0 .9rem}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:2rem}
+.card{
+  background:#fff;border:2px solid var(--cream-2);border-radius:18px;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#FBF8EF;max-height:340px}
+.card-body{padding:1.6rem 1.6rem 1.8rem}
+.card-body h3{font-size:1.45rem;margin-bottom:.5rem}
+.card-body p{color:var(--navy)}
+/* ---------- truck ---------- */
+.truck{background:var(--cream-2);border-top:2px solid #E7D9BC;border-bottom:2px solid #E7D9BC}
+.truck-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:3rem;align-items:center}
+.truck-grid img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;background:#fff;border-radius:18px;border:2px solid #E2D2AE;max-height:520px}
+.tick{list-style:none;margin:1.4rem 0 0;display:grid;gap:.8rem}
+.tick li{padding-left:2rem;position:relative;font-weight:500}
+.tick li::before{content:"✓";position:absolute;left:0;top:0;font-weight:700;color:var(--red)}
+/* ---------- gallery ---------- */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.gallery-grid figure{background:#fff;border:2px solid var(--cream-2);border-radius:14px;overflow:hidden}
+.gallery-grid img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;background:#FBF8EF;max-height:340px}
+.gallery-grid figcaption{padding:.9rem 1.1rem 1.1rem;font-size:.95rem;color:var(--ink)}
+/* ---------- find us ---------- */
+.findus{background:var(--navy);color:var(--cream);text-align:center;padding:4rem 0}
+.findus h2{color:var(--cream)}
+.findus .eyebrow{color:var(--butter)}
+.findus p{max-width:44rem;margin:1rem auto 1.8rem;color:#E9DFC9}
+.findus a{color:#fff}
+/* ---------- book ---------- */
+.book{padding:4rem 0}
+.book-card{
+  background:var(--red);color:#fff;border-radius:22px;padding:2.8rem 2.2rem;text-align:center;
+  max-width:54rem;margin:0 auto;
+}
+.book-card h2{color:#fff;margin:.6rem 0 1rem}
+.book-card p{max-width:40rem;margin:0 auto 1.8rem;color:#FFF4EC}
+.btn-white{background:#fff;color:var(--red-deep)}
+.btn-white:hover,.btn-white:focus-visible{background:var(--cream);transform:translateY(-1px)}
+/* ---------- footer ---------- */
+footer{background:var(--navy-deep);color:#CBD3DD;padding:2.2rem 0;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;align-items:center}
+footer a{color:var(--butter);text-decoration:none;font-weight:600}
+footer a:hover{text-decoration:underline}
+/* ---------- reveal (gated: visible without JS) ---------- */
+html.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+html.js .reveal.in{opacity:1;transform:none}
+html.no-js .reveal{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid,.truck-grid{grid-template-columns:1fr;gap:2rem}
+  .hero{padding:2.4rem 0 2.2rem}
+  .hero-photo img{max-height:420px}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .nav{gap:.6rem;padding:.7rem 1rem}
+  .nav-links{gap:1rem;font-size:.9rem}
+  .cards{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr}
+  .gallery-grid img,.card img{max-height:300px}
+  .section{padding:2.8rem 0}
+  .book-card{padding:2rem 1.4rem}
+  .btn{padding:.75rem 1.3rem}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+
+<header class="site">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#top">Friwi <em>Crêpes</em> &amp; Co</a>
+    <div class="nav-links">
+      <a href="#crepes">Crêpes &amp; Galettes</a>
+      <a href="#truck">The Truck</a>
+      <a href="#find">Find Us</a>
+      <a href="https://www.instagram.com/friwicrepesandco" class="btn btn-red" style="padding:.55rem 1.2rem">Book the Truck</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="tricolor" aria-hidden="true"><span class="b"></span><span class="w"></span><span class="r"></span></div>
+        <p class="eyebrow">Adélaïde · French Crêperie on Wheels</p>
+        <h1>Crêpes &amp; galettes, <span class="it">spun fresh</span> at your market.</h1>
+        <p class="lede">Sweet crêpes and savoury buckwheat galettes — made to order on the iron, straight from our little tricolour truck at markets, events and festivals across South Australia.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-navy" href="#find">Where to find us this week</a>
+          <a class="btn btn-outline" href="#truck">Meet the truck</a>
+        </div>
+        <p class="hero-note">Follow along on Instagram — every week we post exactly where the truck will be.</p>
+      </div>
+      <figure class="hero-photo reveal">
+        <img src="img/hero-galettes.webp" width="720" height="720" alt="Freshly made savoury galette in a paper sleeve, served outdoors at a festival" fetchpriority="high" decoding="async">
+        <figcaption>Fresh off the iron — galettes to go</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band-navy" aria-label="Where we serve">
+    <div class="wrap">
+      <div class="row">
+        <span class="item"><span>✦</span>Markets</span>
+        <span class="item"><span>✦</span>Events</span>
+        <span class="item"><span>✦</span>Festivals</span>
+        <span class="item"><span>✦</span>Private events</span>
+      </div>
+      <p>You may have seen us at CheeseFest, the Adelaide Hills farmers markets or Gilles at the Grounds — we love a good festival crowd and a busy market morning.</p>
+    </div>
+  </section>
+
+  <section class="section" id="crepes">
+    <div class="wrap">
+      <p class="eyebrow">Made to order, on the iron</p>
+      <h2>Two sides of the crêpe</h2>
+      <p style="max-width:44rem">Crisp edges, soft centres, honest ingredients. Sweet or savoury — every crêpe and galette is cooked right in front of you.</p>
+      <div class="cards">
+        <article class="card reveal">
+          <img src="img/strawberry-crepe.webp" width="720" height="720" alt="Fresh strawberries being folded into a sweet crêpe on the hot plate" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3>Sweet crêpes</h3>
+            <p>Classic French crêpes with fresh fruit, chocolate and all the favourites — finished to order and folded by hand.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img src="img/savoury-galettes.webp" width="720" height="720" alt="Two savoury buckwheat galettes folded with spinach and ham" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3>Savoury galettes</h3>
+            <p>Buckwheat galettes — crisp, golden and naturally gluten-free-friendly — filled with fresh market ingredients.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section truck" id="truck">
+    <div class="wrap truck-grid">
+      <figure class="reveal">
+        <img src="img/truck.webp" width="1080" height="1085" alt="The Friwi Crêpes & Co crêpe van painted in the colours of the French flag" loading="lazy" decoding="async">
+      </figure>
+      <div>
+        <p class="eyebrow">The little tricolour van</p>
+        <h2>A French crêperie, on wheels</h2>
+        <p>Hard to miss — our van wears the colours of the French flag, and the smell of butter on a hot iron does the rest.</p>
+        <ul class="tick">
+          <li>Handcrafted crêpes &amp; galettes, cooked fresh on the iron</li>
+          <li>At Adelaide markets, events and festivals — and your private event</li>
+          <li>A family-run team that loves a festival crowd</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">From the truck</p>
+      <h2>Fresh, honest, delicious</h2>
+      <div class="gallery-grid">
+        <figure class="reveal">
+          <img src="img/yolk-galettes.webp" width="750" height="750" alt="Savoury galette topped with melted cheese and a golden egg yolk" loading="lazy" decoding="async">
+          <figcaption>Savoury galettes, cooked to order</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="img/sweet-combo.webp" width="1080" height="1253" alt="A savoury galette in a paper sleeve and a sweet crêpe served on the truck counter" loading="lazy" decoding="async">
+          <figcaption>Sweet, savoury — or both</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="img/owners-truck.webp" width="720" height="720" alt="The Friwi team smiling at the serving window of the crêpe truck" loading="lazy" decoding="async">
+          <figcaption>The family behind the van</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="findus" id="find">
+    <div class="wrap">
+      <p class="eyebrow">Where to find us this week</p>
+      <h2>The truck moves — follow the flavour</h2>
+      <p>Markets, festivals and events across Adelaide and South Australia. We announce our full weekly schedule on Instagram every week — follow <a href="https://www.instagram.com/friwicrepesandco">@friwicrepesandco</a> and come hungry.</p>
+      <a class="btn btn-butter" href="https://www.instagram.com/friwicrepesandco">Follow on Instagram</a>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap">
+      <div class="book-card reveal">
+        <p class="eyebrow" style="color:#FFD9C4">Private events · Festivals · Weddings · Corporate</p>
+        <h2>Book the truck for your event</h2>
+        <p>Planning a festival, market stall or private celebration? A live crêpe station keeps the queue happy. Message us on Instagram to check availability and talk details.</p>
+        <a class="btn btn-white" href="https://www.instagram.com/friwicrepesandco">Message us on Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Friwi Crêpes &amp; Co · Adelaide, South Australia · <a href="https://www.instagram.com/friwicrepesandco">@friwicrepesandco</a></span>
+    <span>Preview concept by <a href="https://www.instagram.com/devfl_ix">Devflix</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);} });
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
+</body>
+</html>

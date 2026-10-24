@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bush Halal Meat — Halal Butcher, Shepherd's Bush Market, London</title>
+<meta name="description" content="Bush Halal Meat — halal butcher at 53 East Side, Shepherd's Bush Market, London W12 8DG. £20 tray deals as posted on Instagram. Call 020 8743 5208 or pop in.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF3E6;
+    --cream-dim:#F1E7D3;
+    --ink:#2E0A12;
+    --oxblood:#460D18;
+    --oxblood-deep:#360A13;
+    --brass:#C9973A;
+    --brass-soft:#E4C57C;
+    --muted:#6E3B2A;
+    --rule:rgba(70,13,24,.18);
+    --rule-light:rgba(250,243,230,.22);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;line-height:1.12;letter-spacing:-.01em}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:var(--ink);color:var(--cream);
+    border-bottom:2px solid var(--brass);
+  }
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream)}
+  .brand-mark{
+    width:42px;height:42px;flex:0 0 42px;border-radius:50%;
+    background:var(--oxblood);border:2px solid var(--brass);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Playfair Display',serif;font-weight:800;font-size:20px;color:var(--brass-soft);
+  }
+  .brand-name{font-family:'Playfair Display',serif;font-weight:700;font-size:19px;line-height:1.2}
+  .brand-name small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-soft)}
+  nav.links{display:flex;gap:26px}
+  nav.links a{color:var(--cream);text-decoration:none;font-weight:500;font-size:15px}
+  nav.links a:hover{color:var(--brass-soft);text-decoration:underline;text-underline-offset:4px}
+  .call-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--brass);color:var(--ink);
+    font-weight:700;font-size:15px;text-decoration:none;
+    padding:11px 20px;border-radius:3px;white-space:nowrap;
+  }
+  .call-btn:hover{background:var(--brass-soft)}
+  /* ---------- hero ---------- */
+  .hero{background:var(--oxblood);color:var(--cream);overflow:hidden}
+  .hero-grid{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;
+    padding:72px 0 80px;
+  }
+  .eyebrow{
+    display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--brass-soft);border:1px solid var(--brass);border-radius:3px;padding:8px 14px;margin-bottom:24px;
+  }
+  .hero h1{font-size:clamp(38px,4.6vw,62px);font-weight:800;margin-bottom:22px}
+  .hero h1 em{font-style:italic;color:var(--brass-soft)}
+  .hero p.lede{font-size:19px;color:var(--cream);opacity:.92;max-width:34rem;margin-bottom:14px}
+  .hero p.fine{font-size:14.5px;color:var(--cream);opacity:.72;max-width:34rem;margin-bottom:32px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:16px;
+    padding:15px 28px;border-radius:3px;transition:transform .15s ease;
+  }
+  .btn-brass{background:var(--brass);color:var(--ink)}
+  .btn-brass:hover{background:var(--brass-soft)}
+  .btn-ghost{background:transparent;color:var(--cream);border:2px solid var(--rule-light)}
+  .btn-ghost:hover{border-color:var(--brass-soft);color:var(--brass-soft)}
+  .proof{display:flex;gap:28px;flex-wrap:wrap;border-top:1px solid var(--rule-light);padding-top:24px}
+  .proof div strong{display:block;font-family:'Playfair Display',serif;font-size:26px;color:var(--brass-soft)}
+  .proof div span{font-size:13.5px;color:var(--cream);opacity:.75}
+  .hero-photo{position:relative}
+  .hero-photo figure{margin:0 auto;position:relative;width:fit-content;max-width:100%}
+  .hero-photo img{
+    height:540px;width:auto;max-width:100%;
+    border:6px solid var(--ink);outline:2px solid var(--brass);outline-offset:6px;
+    background:var(--ink);
+  }
+  .photo-tag{
+    position:absolute;left:12px;bottom:12px;background:var(--ink);color:var(--cream);
+    font-size:12.5px;font-weight:600;letter-spacing:.06em;padding:8px 14px;border-left:3px solid var(--brass);
+    max-width:calc(100% - 24px);
+  }
+  /* ---------- sections ---------- */
+  section{padding:84px 0}
+  .sec-head{max-width:720px;margin-bottom:52px}
+  .kicker{font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .sec-head h2{font-size:clamp(30px,3.4vw,44px);font-weight:800;margin-bottom:16px}
+  .sec-head p{font-size:17.5px;color:var(--muted)}
+  .deals{background:var(--cream)}
+  .deal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .deal-card{
+    background:#fff;border:1px solid var(--rule);border-top:6px solid var(--oxblood);
+    padding:26px 22px 30px;text-align:center;
+  }
+  .deal-card img{height:420px;width:auto;max-width:100%;margin:0 auto 22px;background:var(--cream-dim)}
+  .deal-price{font-family:'Playfair Display',serif;font-weight:800;font-size:40px;color:var(--oxblood);line-height:1;margin-bottom:8px}
+  .deal-card h3{font-size:22px;font-weight:700;margin-bottom:10px}
+  .deal-card p{font-size:15px;color:var(--muted)}
+  .deal-note{
+    margin-top:36px;border:1px dashed var(--muted);padding:18px 22px;font-size:14.5px;color:var(--muted);
+    max-width:760px;
+  }
+  /* ---------- counter (dark) ---------- */
+  .counter{background:var(--ink);color:var(--cream)}
+  .counter .kicker{color:var(--brass-soft)}
+  .counter .sec-head h2{color:var(--cream)}
+  .counter .sec-head p{color:var(--cream);opacity:.8}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+  .g-item{margin:0}
+  .g-item img{height:360px;width:auto;max-width:100%;margin:0 auto;background:var(--oxblood-deep);border:1px solid var(--rule-light)}
+  .g-item figcaption{font-size:14px;color:var(--cream);opacity:.85;margin-top:14px;text-align:center;line-height:1.5}
+  .g-item figcaption strong{color:var(--brass-soft);font-weight:700}
+  /* ---------- visit ---------- */
+  .visit{background:var(--cream)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .steps{list-style:none;margin:28px 0 0;counter-reset:step}
+  .steps li{counter-increment:step;display:flex;gap:18px;padding:20px 0;border-top:1px solid var(--rule)}
+  .steps li:last-child{border-bottom:1px solid var(--rule)}
+  .steps li::before{
+    content:counter(step,decimal-leading-zero);
+    font-family:'Playfair Display',serif;font-weight:800;font-size:30px;color:var(--brass);flex:0 0 auto;line-height:1;
+  }
+  .steps strong{display:block;font-size:17px;margin-bottom:4px}
+  .steps p{font-size:15px;color:var(--muted)}
+  .address-card{
+    background:var(--oxblood);color:var(--cream);padding:40px 36px;border-top:6px solid var(--brass);
+  }
+  .address-card h3{font-size:26px;font-weight:800;margin-bottom:18px;color:var(--cream)}
+  .address-card address{font-style:normal;font-size:17.5px;line-height:1.7;margin-bottom:6px}
+  .address-card .dir{font-size:15px;color:var(--cream);opacity:.8;margin-bottom:26px}
+  .address-card .phone-big{
+    display:block;font-family:'Playfair Display',serif;font-weight:800;font-size:30px;
+    color:var(--brass-soft);text-decoration:none;margin:6px 0 26px;
+  }
+  .address-card .phone-big:hover{text-decoration:underline}
+  /* ---------- footer ---------- */
+  footer{background:var(--ink);color:var(--cream);padding:48px 0 40px;border-top:2px solid var(--brass)}
+  .foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+  .foot h4{font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;color:var(--brass-soft)}
+  .foot p,.foot a{font-size:14.5px;color:var(--cream);opacity:.85;line-height:1.8}
+  .foot a{text-decoration:underline;text-underline-offset:3px}
+  .disclaimer{margin-top:32px;padding-top:22px;border-top:1px solid var(--rule-light);font-size:12.5px;color:var(--cream);opacity:.6;max-width:60rem}
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .btn{transition:none}
+  }
+  /* ---------- responsive ---------- */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:44px;padding:56px 0 64px}
+    .hero-photo img{height:460px;margin:0 auto}
+    .deal-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+    .deal-card img{height:440px}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .visit-grid{grid-template-columns:1fr;gap:44px}
+    nav.links{display:none}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    section{padding:60px 0}
+    .brand-name small{display:none}
+    .hero-photo img{height:400px}
+    .deal-card img{height:360px}
+    .g-item img{height:300px}
+    .gallery{grid-template-columns:1fr;max-width:400px;margin:0 auto}
+    .proof{gap:18px}
+    .cta-row .btn{width:100%;justify-content:center}
+    .bar .call-btn{padding:10px 14px;font-size:14px}
+    .address-card{padding:32px 24px}
+    .address-card .phone-big{font-size:26px}
+  }
+</style>
+</head>
+<body>
+<script>document.body.classList.add('js');</script>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Bush Halal Meat — home">
+      <span class="brand-mark" aria-hidden="true">B</span>
+      <span class="brand-name">Bush Halal Meat<small>Shepherd's Bush Market</small></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#deals">£20 Tray Deals</a>
+      <a href="#counter">The Counter</a>
+      <a href="#visit">Find Us</a>
+    </nav>
+    <a class="call-btn" href="tel:02087435208">☎ Call 020 8743 5208</a>
+  </div>
+</header>
+
+<section class="hero" id="top" aria-label="Introduction">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Halal Butcher · Shepherd's Bush Market · London W12</span>
+      <h1>Fresh halal cuts, <em>£20 tray deals</em>, cut to order.</h1>
+      <p class="lede">Bush Halal Meat is the butcher counter inside Shepherd's Bush Market — the one behind the deal reels: 2kg lamb neck for £20, £20 trays of goat back chops, tomahawk steaks back on the block.</p>
+      <p class="fine">Deals below are as posted on Instagram — call ahead to confirm what's on the counter today. Orders run by phone or in person.</p>
+      <div class="cta-row">
+        <a class="btn btn-brass" href="tel:02087435208">☎ Call 020 8743 5208</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/bush_halal_meat/" target="_blank" rel="noopener">See the deals on Instagram</a>
+      </div>
+      <div class="proof">
+        <div><strong>£20</strong><span>tray deals, as posted</span></div>
+        <div><strong>W12 8DG</strong><span>53 East Side, the Market</span></div>
+        <div><strong>@bush_halal_meat</strong><span>1,800+ followers</span></div>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <figure>
+        <img src="assets/photo-2.webp" alt="The Bush Halal Meat butcher at his counter in Shepherd's Bush Market, trays of fresh halal meat with Bush Halal Meat stickers in front" width="640" height="1138" fetchpriority="high">
+        <span class="photo-tag">The counter, Shepherd's Bush Market</span>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="deals" id="deals" aria-label="Deal trays">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">As posted on @bush_halal_meat</p>
+      <h2>The £20 tray deals</h2>
+      <p>The reels say it straight: proper trays, twenty quid. These are the deals they've put on Instagram — when they're gone, they're gone.</p>
+    </div>
+    <div class="deal-grid">
+      <article class="deal-card reveal">
+        <img src="assets/photo-1.webp" alt="Butcher holding a tray of 2kg lamb neck on offer for £20" width="640" height="1138" loading="lazy">
+        <p class="deal-price">£20</p>
+        <h3>2kg Lamb Neck</h3>
+        <p>Full tray of lamb neck, posted 20 Oct 2026. Call to check today's stock.</p>
+      </article>
+      <article class="deal-card reveal">
+        <img src="assets/photo-3.webp" alt="Butcher holding a £20 tray of goat back chops described in the post as the star of the show" width="640" height="1138" loading="lazy">
+        <p class="deal-price">£20</p>
+        <h3>Goat Back Chops Tray</h3>
+        <p>The reel that pulled 189 likes and 40 comments — "this is the star of the show."</p>
+      </article>
+      <article class="deal-card reveal">
+        <img src="assets/photo-4.webp" alt="Butcher holding a new £20 tray of fresh beef chunks" width="640" height="1138" loading="lazy">
+        <p class="deal-price">£20</p>
+        <h3>New £20 Tray</h3>
+        <p>Fresh beef tray deal, announced on the counter. Ring ahead — trays move fast.</p>
+      </article>
+    </div>
+    <p class="deal-note reveal"><strong>A word on prices:</strong> every price on this page comes from Bush Halal Meat's own Instagram posts. Deals rotate, so call <a href="tel:02087435208" style="color:var(--oxblood);font-weight:700">020 8743 5208</a> before you come down to confirm what's on.</p>
+  </div>
+</section>
+
+<section class="counter" id="counter" aria-label="At the counter">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">From the reels</p>
+      <h2>At the counter</h2>
+      <p>Steaks, tomahawks and the trays the regulars come back for — straight off the butcher's own posts.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g-item reveal">
+        <img src="assets/photo-6.webp" alt="Butcher holding a tomahawk steak with the caption Tomahawk is back" width="640" height="1138" loading="lazy">
+        <figcaption><strong>Tomahawk is back.</strong><br>Call for today's price.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/photo-8.webp" alt="Close-up of tomahawk steaks on the counter with Bush Halal Meat stickers" width="640" height="1138" loading="lazy">
+        <figcaption><strong>Tomahawk steaks</strong><br>on the block. Call for today's price.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/photo-7.webp" alt="Butcher with a new £20 tray of goat back chops" width="640" height="1138" loading="lazy">
+        <figcaption><strong>Goat back chops — £20 tray.</strong><br>As posted on Instagram.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="assets/photo-5.webp" alt="Butcher holding a £20 note at the counter" width="640" height="1138" loading="lazy">
+        <figcaption><strong>The £20 deal format.</strong><br>The reels that built the queue.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-label="How to order and find us">
+  <div class="wrap">
+    <div class="visit-grid">
+      <div class="reveal">
+        <p class="kicker">No website, no app — the old way</p>
+        <h2 class="serif" style="font-size:clamp(30px,3.4vw,44px);font-weight:800;margin-bottom:8px">Order like the regulars do</h2>
+        <p style="color:var(--muted)">Everything runs through the phone and the counter. Here's how it works:</p>
+        <ol class="steps">
+          <li>
+            <div><strong>Spot a deal on Instagram</strong><p>Follow <a href="https://www.instagram.com/bush_halal_meat/" target="_blank" rel="noopener" style="color:var(--oxblood);font-weight:600">@bush_halal_meat</a> — the £20 trays get announced in the reels.</p></div>
+          </li>
+          <li>
+            <div><strong>Call 020 8743 5208</strong><p>Ring ahead to reserve a tray or ask what's fresh on the counter today.</p></div>
+          </li>
+          <li>
+            <div><strong>Collect in the market</strong><p>53 East Side, inside Shepherd's Bush Market, London W12 8DG.</p></div>
+          </li>
+        </ol>
+      </div>
+      <div class="address-card reveal">
+        <h3>Find the counter</h3>
+        <address>
+          Bush Halal Meat<br>
+          53 East Side<br>
+          Shepherd's Bush Market<br>
+          London W12 8DG
+        </address>
+        <p class="dir">Inside the market — come in from the Goldhawk Road station side.</p>
+        <a class="phone-big" href="tel:02087435208">020 8743 5208</a>
+        <div class="cta-row" style="margin-bottom:0">
+          <a class="btn btn-brass" href="tel:02087435208">☎ Call now</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/bush_halal_meat/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>Bush Halal Meat</h4>
+        <p>53 East Side, Shepherd's Bush Market,<br>London W12 8DG<br><a href="tel:02087435208">020 8743 5208</a></p>
+      </div>
+      <div>
+        <h4>Follow the deals</h4>
+        <p><a href="https://www.instagram.com/bush_halal_meat/" target="_blank" rel="noopener">@bush_halal_meat on Instagram</a><br>Deal reels, fresh trays, counter news.</p>
+      </div>
+    </div>
+    <p class="disclaimer">Preview concept prepared by Devflix for Bush Halal Meat — not the business's official website. All prices and deals shown are as posted by @bush_halal_meat on Instagram and may change; photos are the business's own Instagram posts. Call ahead to confirm.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)){return;}
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

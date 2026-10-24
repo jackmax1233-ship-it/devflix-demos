@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-NZ" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kererū Farm Stay · Pet-Friendly Farm Stay near Dunedin, Otago</title>
+<meta name="description" content="Kererū Farm Stay — super pet-friendly rural accommodation near Dunedin, Otago. Sea views, 20 hectares of private forest trails, Kererū Cottage and Kererū Guesthouse.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============ KERERU FARM STAY — rustic farm-stay identity ============ */
+:root{
+  --cream:#FAF5EA; --paper:#FFFEF9; --ink:#222B1E; --deep:#2E4633;
+  --footer:#1E2A20; --sage:#43604A; --rust:#A44E28; --gold:#E4B04B;
+  --chip-green:#E9F0E4; --chip-rust:#F6E9DD; --line:#D9CFAE;
+  --radius:14px; --maxw:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html.no-js .reveal{opacity:1;transform:none}
+body{font-family:'Karla',system-ui,sans-serif;background:var(--cream);color:var(--ink);
+  font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;color:var(--ink)}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+
+/* ---- motion ---- */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  *{animation:none!important;transition:none!important}
+}
+
+/* ---- header ---- */
+.site-head{position:sticky;top:0;z-index:50;background:rgba(250,245,234,.97);
+  border-bottom:1px solid var(--line);backdrop-filter:blur(4px)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink)}
+.brand-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;letter-spacing:.01em}
+.brand-name em{font-style:normal;color:var(--deep)}
+nav.main-nav{display:flex;gap:clamp(.7rem,2.5vw,1.6rem)}
+nav.main-nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.98rem;padding:.35rem 0;border-bottom:2px solid transparent}
+nav.main-nav a:hover{color:var(--deep);border-bottom-color:var(--gold)}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;
+  padding:.72rem 1.5rem;font-size:1rem;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-deep{background:var(--deep);color:var(--cream)}
+.btn-rust{background:var(--rust);color:#fff}
+.btn-ghost{border:2px solid var(--deep);color:var(--deep);background:transparent}
+.btn-ghost:hover{background:var(--deep);color:var(--cream)}
+.head-cta{white-space:nowrap}
+@media(max-width:760px){nav.main-nav{display:none}}
+
+/* ---- hero ---- */
+.hero{padding:clamp(2rem,6vw,4.2rem) 0 clamp(2.2rem,6vw,4rem);overflow:hidden}
+.hero-grid{display:grid;gap:2.2rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.eyebrow{display:inline-block;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--deep);background:var(--chip-green);padding:.4rem .9rem;border-radius:999px;margin-bottom:1.1rem}
+.hero h1{font-size:clamp(2.4rem,6.4vw,4.1rem);margin-bottom:1.1rem}
+.hero h1 .leaf{color:var(--deep)}
+.lede{font-size:clamp(1.08rem,2.4vw,1.25rem);color:#33402C;max-width:34rem;margin-bottom:1.6rem}
+.cta-row{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.hero-note{font-size:.95rem;color:var(--sage);max-width:32rem}
+.hero-note a{color:var(--deep);font-weight:700}
+.hero-art{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(.8rem,2.5vw,1.4rem);max-height:560px;overflow:hidden}
+.hero-art figcaption{font-size:.85rem;color:var(--sage);margin-top:.7rem;font-style:italic;text-align:center}
+
+/* ---- photo slots (replace with harvested IG photos) ---- */
+.photo-slot{background:var(--chip-green);border:2px dashed #9DB49A;border-radius:var(--radius);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;
+  text-align:center;padding:1.2rem;color:var(--deep);min-height:180px}
+.photo-slot .slot-icon{font-size:1.8rem}
+.photo-slot strong{font-family:'Fraunces',serif;font-size:1.05rem}
+.photo-slot span{font-size:.86rem;color:var(--sage);max-width:26rem}
+.slot-hero{min-height:280px}
+.slot-wide{width:100%}
+
+/* ---- stats band ---- */
+.stats-band{background:var(--deep);color:var(--cream);padding:2rem 0}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem 1rem;text-align:center}
+@media(min-width:820px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+.stat b{display:block;font-family:'Fraunces',serif;font-size:1.7rem;color:var(--gold);margin-bottom:.2rem}
+.stat span{font-size:.95rem;color:#EFE6D2}
+
+/* ---- sections ---- */
+section{padding:clamp(2.6rem,7vw,4.6rem) 0}
+.sec-eyebrow{color:var(--rust);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;margin-bottom:.7rem}
+.sec-title{font-size:clamp(1.7rem,4.4vw,2.6rem);margin-bottom:.9rem;max-width:20ch}
+.sec-sub{color:#33402C;max-width:44rem;margin-bottom:2rem;font-size:1.08rem}
+
+/* ---- stay cards ---- */
+.stay-grid{display:grid;gap:1.6rem}
+@media(min-width:860px){.stay-grid{grid-template-columns:1fr 1fr}}
+.stay-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column}
+.stay-card .card-photo{max-height:340px;overflow:hidden}
+.stay-body{padding:1.6rem;display:flex;flex-direction:column;gap:.9rem;flex:1}
+.stay-body h3{font-size:1.55rem}
+.tag-row{display:flex;gap:.5rem;flex-wrap:wrap}
+.tag{font-size:.82rem;font-weight:700;padding:.3rem .8rem;border-radius:999px}
+.tag.green{background:var(--chip-green);color:var(--deep)}
+.tag.rust{background:var(--chip-rust);color:var(--rust)}
+.stay-body ul{list-style:none;display:grid;gap:.5rem;font-size:1rem;color:#33402C}
+.stay-body ul li{padding-left:1.5rem;position:relative}
+.stay-body ul li::before{content:"";position:absolute;left:0;top:.55em;width:.6em;height:.6em;border-radius:50%;background:var(--deep)}
+.stay-body .card-cta{margin-top:auto;padding-top:.6rem}
+
+/* ---- train / niche ---- */
+.niche{background:var(--deep);color:var(--cream);border-radius:calc(var(--radius) + 6px);overflow:hidden}
+.niche-in{display:grid;gap:0}
+@media(min-width:900px){.niche-in{grid-template-columns:1fr 1fr}}
+.niche-copy{padding:clamp(1.8rem,5vw,3.2rem)}
+.niche-copy .sec-eyebrow{color:var(--gold)}
+.niche-copy h2{color:var(--cream);font-size:clamp(1.7rem,4.4vw,2.5rem);margin-bottom:1rem}
+.niche-copy p{color:#EFE6D2;margin-bottom:1.1rem}
+.niche-copy a{color:var(--gold);font-weight:700}
+.niche-photo{padding:clamp(1.2rem,3vw,2rem);display:flex;align-items:center}
+.niche .photo-slot{width:100%;min-height:300px;background:#243324;border-color:#5A7A5E;color:var(--cream)}
+.niche .photo-slot span{color:#C9BFA8}
+
+/* ---- guest stories ---- */
+.stories-grid{display:grid;gap:1.4rem}
+@media(min-width:700px){.stories-grid{grid-template-columns:1fr 1fr}}
+.story{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.story .card-photo{max-height:340px;overflow:hidden}
+.story-body{padding:1.3rem 1.4rem 1.5rem}
+.story-body h3{font-size:1.25rem;margin-bottom:.4rem}
+.story-body .who{font-size:.88rem;color:var(--sage);font-weight:700;margin-bottom:.6rem}
+.story-body p{color:#33402C;font-size:1rem}
+.story-body p q{quotes:"“" "”";font-style:italic}
+
+/* ---- seasons ---- */
+.seasons{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.season-grid{display:grid;gap:1.4rem}
+@media(min-width:820px){.season-grid{grid-template-columns:repeat(3,1fr)}}
+.season{text-align:left}
+.season h3{font-size:1.2rem;margin:.9rem 0 .4rem}
+.season p{color:#33402C;font-size:.99rem}
+.season .card-photo{max-height:340px;overflow:hidden}
+
+/* ---- booking CTA ---- */
+.book{background:var(--deep);color:var(--cream);border-radius:calc(var(--radius) + 6px);text-align:center;
+  padding:clamp(2.4rem,6vw,4rem) clamp(1.4rem,4vw,3rem);position:relative;overflow:hidden}
+.book h2{color:var(--cream);font-size:clamp(1.8rem,4.6vw,2.7rem);margin-bottom:.8rem}
+.book .offer{display:inline-block;background:var(--gold);color:var(--footer);font-weight:700;border-radius:999px;
+  padding:.45rem 1.1rem;margin-bottom:1.1rem;font-size:.95rem}
+.book p{color:#EFE6D2;max-width:36rem;margin:0 auto 1.8rem}
+.book .cta-row{justify-content:center}
+
+/* ---- footer ---- */
+footer.site-foot{background:var(--footer);color:var(--cream);padding:2.6rem 0 2rem;margin-top:0}
+.foot-grid{display:flex;flex-direction:column;gap:1.4rem}
+@media(min-width:760px){.foot-grid{flex-direction:row;justify-content:space-between;align-items:flex-start}}
+.foot-brand{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700}
+.foot-grid p{color:#C9BFA8;font-size:.95rem;max-width:30rem}
+.foot-links{display:flex;gap:1.2rem;flex-wrap:wrap}
+.foot-links a{color:var(--gold);font-weight:700;text-decoration:none}
+.foot-links a:hover{text-decoration:underline}
+.foot-fine{border-top:1px solid #3A4A3C;margin-top:1.8rem;padding-top:1.2rem;font-size:.85rem;color:#8FA08C;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+.foot-fine a{color:#C9BFA8}
+
+.hero-photo{width:100%;height:auto;max-height:560px;object-fit:contain;background:#141c12;border-radius:var(--radius);display:block}
+.slot-photo{width:100%;height:340px;object-fit:contain;background:#EFE9DC;display:block}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.replace('no-js','js')</script>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" aria-label="Kererū Farm Stay home">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="#2E4633"/><path d="M17 7c-4 3.5-4 12 0 16 4-4 4-12.5 0-16z" fill="#E4B04B"/><path d="M17 11v14" stroke="#2E4633" stroke-width="1.4"/><circle cx="17" cy="9.5" r="1.6" fill="#2E4633"/></svg>
+      <span class="brand-name">Kererū <em>Farm Stay</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#stay">Stay</a><a href="#train">Stay &amp; Train</a><a href="#guests">Guests</a><a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-deep head-cta" href="#book">Book direct</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-label="Introduction">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Pet-friendly farm stay · Otago, New Zealand</span>
+        <h1>Bring the dog.<br><span class="leaf">Stay in the country.</span></h1>
+        <p class="lede">Kererū Farm Stay is a super pet-friendly rural retreat near Dunedin — sea views, 20 hectares of private forest trails, and a warm cottage waiting at the end of the day. Just 15 minutes&rsquo; drive from Dunedin.</p>
+        <div class="cta-row">
+          <a class="btn btn-deep" href="https://www.airbnb.com/h/cottagekereru" rel="noopener">Kererū Cottage</a>
+          <a class="btn btn-ghost" href="https://www.airbnb.com/h/kereruguesthouse" rel="noopener">Kererū Guesthouse</a>
+        </div>
+        <p class="hero-note">Bookings currently run through Airbnb. Prefer to chat first? Message us on <a href="https://www.instagram.com/kereru_farm_stay_nz/" rel="noopener">@kereru_farm_stay_nz</a>.</p>
+      </div>
+      <figure class="hero-art reveal" aria-label="Kererū Farm Stay landscape illustration">
+          <img src="img/photo-hero-winter-views.webp" width="640" height="853" alt="Wintry view from a Kererū Farm Stay window" loading="eager" class="hero-photo">
+        <figcaption>&ldquo;Wintry scenes from every window.&rdquo;</figcaption>
+        <!-- PHOTO-SLOT:hero-winter-views
+             Real photo: https://www.instagram.com/p/DbnLvKmDs2G/ — "Enjoy the wintry scenes from every window"
+             Slot file: img/photo-hero-winter-views.webp (portrait or landscape — full subject, no crop)
+             Action: replace this <svg> with <img src="img/photo-hero-winter-views.webp" width="1100" height="AUTO" alt="Wintry view from a Kererū Farm Stay window" loading="eager"> -->
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= STATS BAND ================= -->
+  <div class="stats-band" role="region" aria-label="Farm stay highlights">
+    <div class="wrap stats-grid">
+      <div class="stat reveal"><b>20 ha</b><span>private forest trails</span></div>
+      <div class="stat reveal"><b>15 min</b><span>drive to Dunedin</span></div>
+      <div class="stat reveal"><b>Sea views</b><span>from the property</span></div>
+      <div class="stat reveal"><b>100% dog</b><span>super pet-friendly stay</span></div>
+    </div>
+  </div>
+
+  <!-- ================= TWO WAYS TO STAY ================= -->
+  <section id="stay" aria-label="Where to stay">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="sec-eyebrow">Where to stay</p>
+        <h2 class="sec-title">Two places, one farm</h2>
+        <p class="sec-sub">Choose the cosy cottage or the view-filled guesthouse. Both welcome dogs — and both are a short drive from Dunedin&rsquo;s beaches and trails.</p>
+      </div>
+      <div class="stay-grid">
+
+        <article class="stay-card reveal">
+          <div class="card-photo">
+            <img src="img/photo-cottage-eywa.webp" width="640" height="853" alt="Eywa the German Shepherd enjoying her week at Kererū Cottage" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:cottage-eywa
+                 Real photo: https://www.instagram.com/p/Dd-s2SzDoPk/ — "Eywa and her Mum spent the week at Kererū Cottage" (German Shepherd guest)
+                 Slot file: img/photo-cottage-eywa.webp (oEmbed thumbnail, carousel first image)
+                 Action: swap this .photo-slot div for the harvested webp, keep full subject, no crop -->
+          </div>
+          <div class="stay-body">
+            <div class="tag-row"><span class="tag green">Pet friendly</span><span class="tag rust">Log fire</span></div>
+            <h3>Kererū Cottage</h3>
+            <ul>
+              <li>Cosy self-contained cottage with a log fire to come home to</li>
+              <li>A favourite with four-legged guests — Eywa, Solo, Louis and Tato have all stayed here</li>
+              <li>Multi-day discount: book 7 nights and save 20%</li>
+              <li>Perfect base for exploring the farm&rsquo;s forest trails</li>
+            </ul>
+            <div class="card-cta"><a class="btn btn-rust" href="https://www.airbnb.com/h/cottagekereru" rel="noopener">Check availability — Cottage</a></div>
+          </div>
+        </article>
+
+        <article class="stay-card reveal">
+          <div class="card-photo">
+            <img src="img/photo-guesthouse-views.webp" width="640" height="853" alt="Morning views from the Kererū Guesthouse bedrooms" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:guesthouse-views
+                 Real photo: https://www.instagram.com/p/DYiMLB8E5Z-/ — "With views from both bedrooms of Kererū Guesthouse, nobody misses out on waking up to these epic scenes"
+                 Slot file: img/photo-guesthouse-views.webp (oEmbed thumbnail, carousel first image)
+                 Action: swap this .photo-slot div for the harvested webp, keep full subject, no crop -->
+          </div>
+          <div class="stay-body">
+            <div class="tag-row"><span class="tag green">Pet friendly</span><span class="tag green">Epic views</span></div>
+            <h3>Kererū Guesthouse</h3>
+            <ul>
+              <li>Views from both bedrooms — nobody misses the morning scene</li>
+              <li>Fresh daffodils brighten the guesthouse in season</li>
+              <li>Ideal for a weekend break or autumn escape</li>
+              <li>Right on the farm, minutes from Dunedin</li>
+            </ul>
+            <div class="card-cta"><a class="btn btn-rust" href="https://www.airbnb.com/h/kereruguesthouse" rel="noopener">Check availability — Guesthouse</a></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAY & TRAIN ================= -->
+  <section aria-label="Stay and train with your dog">
+    <div class="wrap">
+      <div class="niche reveal">
+        <div class="niche-in">
+          <div class="niche-copy">
+            <p class="sec-eyebrow">Stay &amp; train with your dog</p>
+            <h2>A peaceful rural retreat for dogs who need to decompress</h2>
+            <p>For some dogs the world is very chaotic and stressful — and getting away from it all at a quiet rural retreat is just what the doggy doctor ordered.</p>
+            <p>Solo came for a decompression stay at Kererū Cottage. Louis and Tato explored the trails, then recovered in front of the wood fire. Space, quiet, and room to be a dog.</p>
+            <p>Training support available through our friends at <a href="https://allsortsdogtraining.co.nz" rel="noopener">All Sorts Dog Training</a>.</p>
+          </div>
+          <div class="niche-photo">
+            <img src="img/photo-solo-decompression.webp" width="640" height="853" alt="Solo the dog on a decompression stay at Kererū Cottage" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:solo-decompression
+                 Real photo: https://www.instagram.com/p/DbFegm3jm19/ — "Solo loved his decompression stay at Kererū Cottage"
+                 Slot file: img/photo-solo-decompression.webp (oEmbed thumbnail, carousel first image)
+                 Action: swap this .photo-slot div for the harvested webp, keep full subject, no crop -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GUEST STORIES ================= -->
+  <section id="guests" aria-label="Recent guests">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="sec-eyebrow">Recent guests</p>
+        <h2 class="sec-title">The four-legged regulars</h2>
+        <p class="sec-sub">Real stays, real dogs — straight from the farm&rsquo;s diary.</p>
+      </div>
+      <div class="stories-grid">
+
+        <article class="story reveal">
+          <div class="card-photo">
+            <img src="img/photo-story-eywa.webp" width="640" height="853" alt="Eywa exploring the farm with her mum" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:story-eywa
+                 Real photo: https://www.instagram.com/p/Dd-s2SzDoPk/ — Eywa, German Shepherd, travelled from Bay of Plenty
+                 Slot file: img/photo-story-eywa.webp (carousel image; use a DIFFERENT carousel frame than photo-cottage-eywa.webp if possible) -->
+          </div>
+          <div class="story-body">
+            <h3>Eywa</h3><p class="who">German Shepherd · from the Bay of Plenty</p>
+            <p><q>Despite the changeable Spring weather they got out to explore our trails… Coming back to the log fire in the cottage meant they could warm up and dry out easily.</q></p>
+          </div>
+        </article>
+
+        <article class="story reveal">
+          <div class="card-photo">
+            <img src="img/photo-story-louis-tato.webp" width="640" height="853" alt="Louis and Tato on the farm trails by the wood fire" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:story-louis-tato
+                 Real photo: https://www.instagram.com/p/DaUrouBFjvQ/ — "Louis and Tato are loving their stay at Kererū Cottage with their family"
+                 Slot file: img/photo-story-louis-tato.webp (oEmbed thumbnail, carousel first image) -->
+          </div>
+          <div class="story-body">
+            <h3>Louis &amp; Tato</h3><p class="who">Golden Retrievers · Kererū Cottage</p>
+            <p><q>They explored our trails with lots of enthusiasm and are now recovering in front of the wood fire.</q></p>
+          </div>
+        </article>
+
+        <article class="story reveal">
+          <div class="card-photo">
+            <img src="img/photo-story-booms-marlin.webp" width="640" height="853" alt="Booms and Marlin visiting the farm with family" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:story-booms-marlin
+                 Real photo: https://www.instagram.com/p/DahA3tODuWz/ — "Booms & Marlin are here with their Mum and baby Freda, visiting from our old home town on the North Island"
+                 Slot file: img/photo-story-booms-marlin.webp (oEmbed thumbnail, carousel first image) -->
+          </div>
+          <div class="story-body">
+            <h3>Booms &amp; Marlin</h3><p class="who">Visiting with Mum and baby Freda</p>
+            <p>A pair of irresistible faces, visiting from the farm&rsquo;s old home town on the North Island — and meeting the new addition to the family.</p>
+          </div>
+        </article>
+
+        <article class="story reveal">
+          <div class="card-photo">
+            <img src="img/photo-story-daffodils.webp" width="640" height="853" alt="Daffodils brightening Kererū Guesthouse" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:story-daffodils
+                 Real photo: https://www.instagram.com/p/DckfMOOuL1N/ — "They also brighten up the Guesthouse beautifully for our guests" (Daffodil Day)
+                 Slot file: img/photo-story-daffodils.webp (oEmbed thumbnail) -->
+          </div>
+          <div class="story-body">
+            <h3>Daffodil season</h3><p class="who">Kererū Guesthouse</p>
+            <p><q>The daffodil is a symbol of hope, resilience and new beginnings… They also brighten up the Guesthouse beautifully for our guests.</q></p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SEASONS ================= -->
+  <section class="seasons" aria-label="The seasons at Kererū Farm">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="sec-eyebrow">The seasons</p>
+        <h2 class="sec-title">Every season has its reason</h2>
+        <p class="sec-sub">From frosty windows to spring flowers — there&rsquo;s always a good time to bring the dog.</p>
+      </div>
+      <div class="season-grid">
+        <div class="season reveal">
+          <div class="card-photo">
+            <img src="img/photo-season-winter.webp" width="640" height="853" alt="Winter scenes across the farm" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:season-winter
+                 Real photo: https://www.instagram.com/p/DbnLvKmDs2G/ — "Enjoy the wintry scenes from every window. Book your winter stay and enjoy the views from the warmth of your accommodation."
+                 Slot file: img/photo-season-winter.webp (use a DIFFERENT carousel frame than photo-hero-winter-views.webp if possible) -->
+          </div>
+          <h3>Winter</h3>
+          <p>Wintry scenes from every window — enjoyed from the warmth of your accommodation, dog curled by the fire.</p>
+        </div>
+        <div class="season reveal">
+          <div class="card-photo">
+            <img src="img/photo-season-trails.webp" width="640" height="853" alt="Forest trails on the farm" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:season-trails
+                 Real photo: https://www.instagram.com/p/DY0Fs8XBweo/ — "take advantage of our multi day discount… explore all of the amazing dog friendly beaches and trails in the area"
+                 Slot file: img/photo-season-trails.webp (oEmbed thumbnail) -->
+          </div>
+          <h3>Spring &amp; summer</h3>
+          <p>Plan ahead for the long days: dog-friendly beaches, forest trails, and the multi-day discount — 20% off 7 nights at Kererū Cottage.</p>
+        </div>
+        <div class="season reveal">
+          <div class="card-photo">
+            <img src="img/photo-season-autumn.webp" width="640" height="853" alt="Autumn views from the guesthouse" loading="lazy" class="slot-photo"><!-- PHOTO-SLOT:season-autumn
+                 Real photo: https://www.instagram.com/p/DYiMLB8E5Z-/ — "Autumn is a special time at Kererū Farm. Book a weekend break and come and unwind."
+                 Slot file: img/photo-season-autumn.webp (use a DIFFERENT carousel frame than photo-guesthouse-views.webp if possible) -->
+          </div>
+          <h3>Autumn</h3>
+          <p>A special time at Kererū Farm. Book a weekend break, wake up to epic scenes from the guesthouse bedrooms, and unwind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING ================= -->
+  <section id="book" aria-label="Book your stay">
+    <div class="wrap">
+      <div class="book reveal">
+        <span class="offer">Multi-day discount · 20% off 7 nights at Kererū Cottage</span>
+        <h2>Ready for a farm stay with your dog?</h2>
+        <p>Bookings run through Airbnb for now — pick your stay below, or message us on Instagram and we&rsquo;ll point you the right way.</p>
+        <div class="cta-row">
+          <a class="btn btn-rust" href="https://www.airbnb.com/h/cottagekereru" rel="noopener">Book Kererū Cottage</a>
+          <a class="btn btn-ghost" style="border-color:var(--cream);color:var(--cream)" href="https://www.airbnb.com/h/kereruguesthouse" rel="noopener">Book Kererū Guesthouse</a>
+          <a class="btn" style="background:var(--gold);color:var(--footer)" href="https://www.instagram.com/kereru_farm_stay_nz/" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">Kererū Farm Stay</p>
+        <p>Super pet-friendly rural accommodation near Dunedin, Otago, New Zealand. Sea views, 20 hectares of private forest trails, 15 minutes&rsquo; drive to Dunedin.</p>
+      </div>
+      <div class="foot-links">
+        <a href="https://www.instagram.com/kereru_farm_stay_nz/" rel="noopener">Instagram</a>
+        <a href="https://www.airbnb.com/h/cottagekereru" rel="noopener">Cottage on Airbnb</a>
+        <a href="https://www.airbnb.com/h/kereruguesthouse" rel="noopener">Guesthouse on Airbnb</a>
+      </div>
+    </div>
+    <div class="foot-fine">
+      <span>Concept preview crafted by Devflix — not the business&rsquo;s official site.</span>
+      <span>Photos to be supplied by the business.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

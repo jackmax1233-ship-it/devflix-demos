@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charlie's Hideout Putt &amp; Hit — Mini Golf + Batting Cages · Jeannette / Greensburg PA</title>
+<meta name="description" content="Charlie's Hideout Putt and Hit — a local favorite mini golf + batting cages venue in Jeannette / Greensburg PA, getting a fresh new look. Renovation updates, events, and visit info.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b1730; --deep:#060d1d; --card:#101f3d; --card2:#13263f;
+  --cream:#f8f1e3; --muted:#c3cde0; --green:#4ade80; --pink:#ff6ea9; --amber:#ffb020;
+  --font-d:'Bungee',cursive; --font-b:'Nunito',sans-serif;
+  --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--cream);font-family:var(--font-b);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:var(--green)}
+.wrap{width:min(1120px,92%);margin:0 auto}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:50;background:rgba(6,13,29,.94);backdrop-filter:blur(8px);border-bottom:2px solid rgba(74,222,128,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{font-family:var(--font-d);font-size:1.05rem;color:var(--cream);text-decoration:none;letter-spacing:.02em;line-height:1.25}
+.brand em{font-style:normal;color:var(--green)}
+.navlinks{display:none;gap:1.6rem;list-style:none}
+.navlinks a{color:var(--cream);text-decoration:none;font-weight:700;font-size:.95rem}
+.navlinks a:hover,.navlinks a:focus-visible{color:var(--green)}
+.btn{display:inline-block;font-family:var(--font-d);font-size:.92rem;text-decoration:none;color:var(--navy);background:var(--cream);padding:.8rem 1.4rem;border-radius:999px;border:0;cursor:pointer;transition:background .2s,color .2s,transform .15s}
+.btn:hover,.btn:focus-visible{background:var(--green);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--cream);border:2px solid var(--cream)}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--cream);color:var(--navy)}
+.menu-btn{display:inline-flex;align-items:center;gap:.5rem;background:none;border:2px solid var(--cream);color:var(--cream);border-radius:12px;padding:.55rem .8rem;font-family:var(--font-d);font-size:.85rem;cursor:pointer}
+.menu-btn:hover,.menu-btn:focus-visible{border-color:var(--green);color:var(--green)}
+.mobile-menu{display:none;background:var(--deep);border-top:1px solid rgba(74,222,128,.25);padding:1rem 4%}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;color:var(--cream);text-decoration:none;font-weight:800;padding:.7rem 0;border-bottom:1px solid rgba(195,205,224,.15)}
+.mobile-menu a:last-child{border-bottom:0}
+.mobile-menu a:hover{color:var(--green)}
+@media(min-width:820px){
+  .navlinks{display:flex}
+  .menu-btn,.mobile-menu{display:none!important}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:3.2rem 0 2.6rem;position:relative}
+.hero-grid{display:grid;gap:2.2rem;align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.eyebrow{display:inline-block;font-weight:800;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);border:2px solid var(--green);border-radius:999px;padding:.4rem 1rem;margin-bottom:1.2rem}
+h1{font-family:var(--font-d);font-size:clamp(2.1rem,6.5vw,4.1rem);line-height:1.08;margin-bottom:1.1rem}
+h1 .neon{color:var(--green);text-shadow:0 0 18px rgba(74,222,128,.55)}
+h1 .glow{color:var(--pink);text-shadow:0 0 18px rgba(255,110,169,.5)}
+.lede{color:var(--muted);font-size:1.08rem;max-width:34rem;margin-bottom:1.8rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.4rem}
+.fine{color:var(--muted);font-size:.92rem}
+.fine strong{color:var(--cream)}
+.neon-panel{background:var(--deep);border:3px solid var(--green);border-radius:24px;box-shadow:0 0 34px rgba(74,222,128,.28),inset 0 0 26px rgba(74,222,128,.08);padding:clamp(.8rem,3vw,1.6rem);max-width:520px;justify-self:center;width:100%}
+@media(min-width:960px){.neon-panel{max-height:560px;overflow:hidden}}
+
+/* ---------- marquee ---------- */
+.marquee{background:var(--green);color:var(--navy);overflow:hidden;white-space:nowrap;padding:.85rem 0;border-top:3px solid var(--navy);border-bottom:3px solid var(--navy)}
+.marquee span{font-family:var(--font-d);font-size:1rem;display:inline-block;padding-right:2.2rem;animation:slide 22s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee span{animation:none}html{scroll-behavior:auto}}
+
+/* ---------- sections ---------- */
+section{padding:3.4rem 0}
+.kicker{font-family:var(--font-d);font-size:.85rem;letter-spacing:.2em;color:var(--pink);margin-bottom:.9rem;text-transform:uppercase}
+h2{font-family:var(--font-d);font-size:clamp(1.6rem,4.5vw,2.6rem);line-height:1.15;margin-bottom:1rem}
+h2 .alt{color:var(--amber)}
+.sec-sub{color:var(--muted);max-width:40rem;margin-bottom:2.2rem;font-size:1.05rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.cards.three{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid rgba(195,205,224,.18);border-radius:var(--r);padding:1.6rem;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--green)}
+.card.pink::before{background:var(--pink)}
+.card.amber::before{background:var(--amber)}
+.card h3{font-family:var(--font-d);font-size:1.12rem;margin-bottom:.55rem;color:var(--cream)}
+.card p{color:var(--muted);font-size:.98rem}
+.card .tag{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);background:var(--green);border-radius:999px;padding:.28rem .8rem;margin-bottom:.8rem}
+.card.pink .tag{background:var(--pink)}
+.card.amber .tag{background:var(--amber)}
+
+/* ---------- events ---------- */
+.events{background:var(--deep);border-top:1px solid rgba(255,110,169,.25);border-bottom:1px solid rgba(255,110,169,.25)}
+.event-grid{display:grid;gap:2rem;align-items:start}
+@media(min-width:960px){.event-grid{grid-template-columns:.9fr 1.1fr}}
+.poster{background:var(--card2);border:3px dashed var(--amber);border-radius:var(--r);padding:1.8rem;text-align:center}
+.poster .date{font-family:var(--font-d);font-size:clamp(1.8rem,5vw,2.6rem);color:var(--amber);line-height:1.1;margin:.6rem 0}
+.poster .time{font-family:var(--font-d);color:var(--cream);font-size:1.1rem;margin-bottom:.6rem}
+.poster p{color:var(--muted);font-size:.95rem}
+.expect{list-style:none;display:grid;gap:.85rem;margin-top:1.4rem}
+.expect li{display:flex;gap:.9rem;align-items:flex-start;background:var(--card);border:1px solid rgba(195,205,224,.15);border-radius:14px;padding:.9rem 1.1rem}
+.expect .ico{font-family:var(--font-d);color:var(--green);font-size:1.15rem;line-height:1.4;flex:none}
+.expect p{color:var(--cream);font-size:.98rem}
+.expect p small{display:block;color:var(--muted);font-size:.87rem}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;gap:1.4rem}
+@media(min-width:820px){.visit-grid{grid-template-columns:1fr 1fr;gap:2rem}}
+.visit-card{background:var(--card);border-radius:var(--r);padding:1.8rem;border:1px solid rgba(195,205,224,.18)}
+.visit-card h3{font-family:var(--font-d);font-size:1.15rem;color:var(--green);margin-bottom:1rem}
+.visit-card dl{display:grid;gap:.9rem}
+.visit-card dt{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.visit-card dd{color:var(--cream);font-weight:700;font-size:1.05rem;overflow-wrap:anywhere;word-break:break-word;min-width:0}
+.visit-card dd a{color:var(--cream);text-decoration:none;border-bottom:2px solid var(--green)}
+.visit-card dd a:hover,.visit-card dd a:focus-visible{color:var(--green)}
+.note{margin-top:1.6rem;color:var(--muted);font-size:.95rem;background:var(--deep);border-left:5px solid var(--pink);border-radius:0 14px 14px 0;padding:1.1rem 1.3rem}
+.note strong{color:var(--cream)}
+
+/* ---------- footer ---------- */
+footer{background:var(--deep);border-top:2px solid rgba(74,222,128,.25);padding:2.4rem 0 2rem;color:var(--muted);font-size:.92rem}
+.foot-grid{display:flex;flex-direction:column;gap:1rem}
+@media(min-width:700px){.foot-grid{flex-direction:row;justify-content:space-between;align-items:center}}
+footer .wordmark{font-family:var(--font-d);color:var(--cream);font-size:1rem}
+footer a{color:var(--green)}
+.concept{margin-top:1rem;font-size:.82rem;color:var(--muted);border-top:1px solid rgba(195,205,224,.15);padding-top:1rem}
+
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">CHARLIE'S <em>HIDEOUT</em><br><span style="font-size:.72rem;letter-spacing:.3em">PUTT &amp; HIT</span></a>
+    <ul class="navlinks">
+      <li><a href="#comeback">The Comeback</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div style="display:flex;gap:.7rem;align-items:center">
+      <a class="btn" href="mailto:bookings@charlieshideoutputtandhit.it.com" style="display:none" id="navCta">Book via Email</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">☰ Menu</button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="#comeback">The Comeback</a>
+    <a href="#events">Events</a>
+    <a href="#visit">Visit</a>
+    <a href="mailto:bookings@charlieshideoutputtandhit.it.com">Book via Email</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Jeannette · Greensburg, PA</span>
+        <h1>Mini golf.<br>Batting cages.<br><span class="neon">Back under</span> <span class="glow">the lights.</span></h1>
+        <p class="lede">Charlie's Hideout is a local favorite getting a fresh new look — new night lighting on the course, a renovation in full swing, and a community Trunk-or-Treat on the way. Follow along for sneak peeks and reopening updates.</p>
+        <div class="cta-row">
+          <a class="btn" href="#events">🎃 Trunk-or-Treat · Oct 25</a>
+          <a class="btn ghost" href="#visit">Find the course</a>
+        </div>
+        <p class="fine">⛳️ Mini golf &nbsp;·&nbsp; 🏏 Batting cages &nbsp;·&nbsp; 🚧 Renovating now — <strong>reopening soon</strong></p>
+      </div>
+      <div class="neon-panel" role="img" aria-label="Neon-style sign for Charlie's Hideout Putt and Hit: a mini golf hole with flag under glowing course lights at night">
+        <svg viewBox="0 0 460 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="sky" cx="50%" cy="20%" r="90%">
+              <stop offset="0%" stop-color="#132a52"/><stop offset="100%" stop-color="#060d1d"/>
+            </radialGradient>
+            <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <rect x="4" y="4" width="452" height="472" rx="22" fill="url(#sky)"/>
+          <!-- moon -->
+          <circle cx="378" cy="70" r="30" fill="#f8f1e3" opacity=".92"/>
+          <circle cx="368" cy="62" r="26" fill="#0b1730" opacity=".16"/>
+          <!-- string lights -->
+          <path d="M20 120 Q115 165 230 120 T440 120" fill="none" stroke="#4ade80" stroke-width="2.5" opacity=".7"/>
+          <g fill="#4ade80" filter="url(#neon)">
+            <circle cx="60" cy="133" r="6"/><circle cx="115" cy="140" r="6"/><circle cx="170" cy="137" r="6"/>
+            <circle cx="230" cy="124" r="6"/><circle cx="290" cy="126" r="6"/><circle cx="345" cy="133" r="6"/><circle cx="400" cy="132" r="6"/>
+          </g>
+          <path d="M20 120 Q115 165 230 120 T440 120" fill="none" stroke="#ff6ea9" stroke-width="1.4" opacity=".45"/>
+          <!-- fairway hills -->
+          <path d="M10 400 Q120 330 235 385 T450 375 L450 476 L10 476 Z" fill="#123524"/>
+          <path d="M10 425 Q150 375 300 415 T450 405 L450 476 L10 476 Z" fill="#1a5c36"/>
+          <!-- hole -->
+          <ellipse cx="300" cy="430" rx="26" ry="10" fill="#060d1d"/>
+          <ellipse cx="300" cy="428" rx="26" ry="10" fill="none" stroke="#4ade80" stroke-width="2.5"/>
+          <!-- flagstick + flag -->
+          <rect x="297" y="300" width="6" height="130" fill="#f8f1e3"/>
+          <path d="M303 300 L372 318 L303 340 Z" fill="#ff6ea9" filter="url(#neon)"/>
+          <!-- ball -->
+          <circle cx="120" cy="415" r="14" fill="#f8f1e3"/>
+          <circle cx="115" cy="410" r="4" fill="#c3cde0"/>
+          <!-- putter silhouette -->
+          <rect x="70" y="330" width="7" height="86" fill="#c3cde0" transform="rotate(18 73 373)"/>
+          <rect x="52" y="400" width="44" height="10" rx="4" fill="#c3cde0" transform="rotate(18 74 405)"/>
+          <!-- neon sign text -->
+          <text x="230" y="230" text-anchor="middle" font-family="Bungee, cursive" font-size="34" fill="#4ade80" filter="url(#neon)" letter-spacing="1">CHARLIE'S</text>
+          <text x="230" y="272" text-anchor="middle" font-family="Bungee, cursive" font-size="30" fill="#ff6ea9" filter="url(#neon)" letter-spacing="1">HIDEOUT</text>
+          <text x="230" y="300" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="15" fill="#f8f1e3" letter-spacing="6">PUTT &amp; HIT</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <span>MINI GOLF ⛳ &nbsp;·&nbsp; BATTING CAGES 🏏 &nbsp;·&nbsp; FRESH NEW LOOK ✨ &nbsp;·&nbsp; NIGHT LIGHTS ON 💡 &nbsp;·&nbsp; TRUNK-OR-TREAT OCT 25 🎃 &nbsp;·&nbsp; REOPENING SOON 🚧 &nbsp;·&nbsp; MINI GOLF ⛳ &nbsp;·&nbsp; BATTING CAGES 🏏 &nbsp;·&nbsp; FRESH NEW LOOK ✨ &nbsp;·&nbsp; NIGHT LIGHTS ON 💡 &nbsp;·&nbsp; TRUNK-OR-TREAT OCT 25 🎃 &nbsp;·&nbsp; REOPENING SOON 🚧 &nbsp;·&nbsp;</span>
+  </div>
+
+  <!-- COMEBACK -->
+  <section id="comeback">
+    <div class="wrap">
+      <p class="kicker rv">The comeback</p>
+      <h2 class="rv">A local favorite,<br><span class="alt">getting a fresh new look.</span></h2>
+      <p class="sec-sub rv">The course is mid-renovation — and the glow-up is already showing. Here's what's happening at the Hideout right now.</p>
+      <div class="cards three">
+        <div class="card rv">
+          <span class="tag">Done ✓</span>
+          <h3>The lights are on</h3>
+          <p>Brand-new night lighting now brightens the greens, pads and entrance — the whole course glows from Route 30 after dark.</p>
+        </div>
+        <div class="card pink rv">
+          <span class="tag">In progress</span>
+          <h3>Road to 36 — the rebuild</h3>
+          <p>A full renovation series is rolling: fresh surfaces, a sharper look, and a course being rebuilt for its comeback season. Sneak peeks go up as it happens.</p>
+        </div>
+        <div class="card amber rv">
+          <span class="tag">Every week</span>
+          <h3>Golden golf ball giveaway</h3>
+          <p>A weekly golden-golf-ball draw keeps the community in the game while the renovation wraps. Watch the feed for each week's winner.</p>
+        </div>
+        <div class="card amber rv">
+          <span class="tag">On sale</span>
+          <h3>Hideout merch pre-sale</h3>
+          <p>Rep the comeback early — limited merch is on pre-sale now, so you can wear the Hideout before the first putt drops.</p>
+        </div>
+        <div class="card rv">
+          <span class="tag">Community</span>
+          <h3>Events all season</h3>
+          <p>From Trunk-or-Treat to holiday fun on the course, the Hideout is built for family afternoons, parties and local get-togethers.</p>
+        </div>
+        <div class="card pink rv">
+          <span class="tag">Follow along</span>
+          <h3>Reopening updates</h3>
+          <p>Everything — dates, sneak peeks, opening-day plans — lands on Instagram first. That's where the Hideout talks to its crowd.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="events" id="events">
+    <div class="wrap">
+      <p class="kicker rv">Next up</p>
+      <h2 class="rv">Trunk-or-Treat <span class="alt">at the Hideout</span></h2>
+      <p class="sec-sub rv">A Halloween afternoon on the course — decorated trunks, costumes and family fun. Here's the plan.</p>
+      <div class="event-grid">
+        <div class="poster rv">
+          <div style="font-size:3rem" aria-hidden="true">🎃</div>
+          <p style="font-family:var(--font-d);letter-spacing:.18em;color:var(--cream);font-size:.85rem">CHARLIE'S HIDEOUT PRESENTS</p>
+          <div class="date">SUNDAY<br>OCTOBER 25</div>
+          <div class="time">3 PM – 6 PM</div>
+          <p>Charlie's Hideout Putt &amp; Hit at Oakley Park<br>143 Hartman Road, Greensburg PA 15601</p>
+        </div>
+        <div>
+          <h3 class="rv" style="font-family:var(--font-d);font-size:1.3rem;margin-bottom:1rem;color:var(--cream)">What to expect</h3>
+          <ul class="expect">
+            <li class="rv"><span class="ico">🍬</span><p>Trunk-or-treating<small>Decorated trunks lined up and loaded with treats</small></p></li>
+            <li class="rv"><span class="ico">🔎</span><p>Kid-friendly scavenger hunt<small>A Halloween hunt across the golf course</small></p></li>
+            <li class="rv"><span class="ico">🏆</span><p>Best trunk &amp; best costume contests<small>Decorate the trunk, wear the costume, enter both</small></p></li>
+            <li class="rv"><span class="ico">🎨</span><p>Free face painting + photo booth<small>Walk away painted, posed and grinning</small></p></li>
+            <li class="rv"><span class="ico">🎶</span><p>DJ, music &amp; food trucks<small>Tunes all afternoon, treats from local trucks</small></p></li>
+          </ul>
+          <p class="rv" style="color:var(--muted);margin-top:1.4rem">Bring the kids, wear the costumes, grab the treat bags. <a href="https://www.instagram.com/charlieshideout_puttandhit" style="color:var(--amber)">Tell them on Instagram</a> what your little ones are dressing up as this year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit">
+    <div class="wrap">
+      <p class="kicker rv">Plan your visit</p>
+      <h2 class="rv">Find the <span class="alt">Hideout</span></h2>
+      <p class="sec-sub rv">Right at Oakley Park — minutes from Route 30. Reach out for parties, events and reopening questions.</p>
+      <div class="visit-grid">
+        <div class="visit-card rv">
+          <h3>📍 Where</h3>
+          <dl>
+            <div><dt>Address</dt><dd>143 Hartman Road,<br>Jeannette / Greensburg PA 15601</dd></div>
+            <div><dt>Landmark</dt><dd>Charlie's Hideout Putt &amp; Hit at Oakley Park</dd></div>
+            <div><dt>Directions</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=143+Hartman+Road+Jeannette+PA+15601">Open in Google Maps →</a></dd></div>
+          </dl>
+        </div>
+        <div class="visit-card rv">
+          <h3>📞 Contact</h3>
+          <dl>
+            <div><dt>Phone</dt><dd><a href="tel:+17242130968">+1 (724) 213-0968</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:bookings@charlieshideoutputtandhit.it.com">bookings@charlieshideoutputtandhit.it.com</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/charlieshideout_puttandhit">@charlieshideout_puttandhit</a></dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="note rv">
+        <strong>Hours &amp; pricing:</strong> The Hideout is mid-renovation — hours and prices will be announced on <a href="https://www.instagram.com/charlieshideout_puttandhit">Instagram</a> with the reopening. Follow for the first tee time.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="wordmark">CHARLIE'S HIDEOUT — PUTT &amp; HIT</div>
+        <div style="margin-top:.4rem">143 Hartman Road, Jeannette / Greensburg PA 15601 · <a href="tel:+17242130968">+1 (724) 213-0968</a></div>
+      </div>
+      <div style="display:flex;gap:1.2rem;flex-wrap:wrap">
+        <a href="https://www.instagram.com/charlieshideout_puttandhit">Instagram</a>
+        <a href="mailto:bookings@charlieshideoutputtandhit.it.com">Email</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+    <p class="concept">Concept preview crafted by Devflix — a one-page home for the course's comeback: reopening updates, events and visit info in one place. © 2026 Charlie's Hideout Putt and Hit.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),menu=document.getElementById('mobileMenu');
+  btn.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
+  var navCta=document.getElementById('navCta');
+  function fitNav(){navCta.style.display=window.innerWidth>=820?'inline-block':'none'}
+  fitNav();window.addEventListener('resize',fitNav);
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>

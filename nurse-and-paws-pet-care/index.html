@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nurse &amp; Paws Pet Care — Vet-nurse pet sitting &amp; dog walking, Brisbane</title>
+<meta name="description" content="Nurse & Paws Pet Care — dog walking, pet sitting and home visits across Brisbane & Moreton Bay, QLD, by a qualified vet nurse with 20 years' experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230E5F60'/%3E%3Cg fill='%23FFF9F0'%3E%3Cellipse cx='16' cy='19' rx='6' ry='5'/%3E%3Cellipse cx='8.5' cy='12.5' rx='2.6' ry='3.2'/%3E%3Cellipse cx='13.5' cy='9.5' rx='2.6' ry='3.2'/%3E%3Cellipse cx='18.5' cy='9.5' rx='2.6' ry='3.2'/%3E%3Cellipse cx='23.5' cy='12.5' rx='2.6' ry='3.2'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+:root{
+  --cream:#FFF9F0;
+  --sand:#F4E8D3;
+  --sand-deep:#EBDCBE;
+  --ink:#23282B;
+  --teal:#0E5F60;
+  --teal-dark:#0A4849;
+  --amber:#8A5200;
+  --muted:#4E5A57;
+  --line:#E3D3B4;
+  --radius:18px;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--cream);color:var(--ink);
+  line-height:1.6;font-size:1.0625rem;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-0.01em}
+img{max-width:100%;display:block}
+a{color:var(--teal)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,249,240,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.site-header .wrap{display:flex;align-items:center;gap:1rem;padding-top:.7rem;padding-bottom:.7rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font-family:"Fraunces",serif;font-weight:700;font-size:1.25rem;margin-right:auto}
+.brand svg{width:34px;height:34px;flex:none}
+.nav{display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap}
+.nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem}
+.nav a:hover{color:var(--teal);text-decoration:underline;text-underline-offset:4px}
+.btn{
+  display:inline-block;background:var(--teal);color:#fff;font-weight:800;text-decoration:none;
+  padding:.8rem 1.6rem;border-radius:999px;font-size:1rem;border:2px solid var(--teal);
+  transition:background .18s ease,transform .18s ease;
+}
+.btn:hover{background:var(--teal-dark);border-color:var(--teal-dark);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--teal)}
+.btn.ghost:hover{background:var(--teal);color:#fff}
+.btn.light{background:#fff;color:var(--teal);border-color:#fff}
+.btn.light:hover{background:var(--sand);border-color:var(--sand);color:var(--teal-dark)}
+
+/* ---------- hero ---------- */
+.hero{padding:3.5rem 0 4rem}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+.eyebrow{
+  display:inline-block;font-weight:800;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--amber);margin-bottom:1rem;
+}
+.hero h1{font-size:clamp(2.4rem,5.2vw,3.6rem);margin-bottom:1.1rem}
+.hero h1 em{font-style:italic;color:var(--teal)}
+.hero p.lede{font-size:1.15rem;color:var(--ink);max-width:34rem;margin-bottom:.6rem}
+.hero p.sub{color:var(--muted);max-width:34rem;margin-bottom:1.8rem}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero-media{position:relative;justify-self:center;width:100%;max-width:430px}
+.hero-media figure{
+  margin:0;background:var(--sand);border-radius:26px;overflow:hidden;
+  aspect-ratio:3/4;max-height:560px;width:100%;
+  border:1px solid var(--line);
+  box-shadow:0 24px 50px -28px rgba(14,95,96,.35);
+}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.hero-media figcaption{
+  font-size:.85rem;color:var(--muted);text-align:center;padding:.7rem .5rem 0;
+}
+.chip{
+  position:absolute;left:-.6rem;bottom:3.4rem;background:var(--teal);color:#fff;
+  font-weight:800;font-size:.85rem;padding:.55rem 1rem;border-radius:999px;
+  box-shadow:0 10px 24px -10px rgba(10,72,73,.6);
+}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.6rem 0}
+.trust ul{list-style:none;display:grid;gap:.9rem 1.5rem}
+.trust li{display:flex;gap:.7rem;align-items:flex-start;font-weight:700;font-size:.98rem}
+.trust li svg{flex:none;width:24px;height:24px;margin-top:.15rem}
+
+/* ---------- services ---------- */
+.sec-head{max-width:40rem;margin-bottom:2.6rem}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin:.4rem 0 .7rem}
+.sec-head p{color:var(--muted)}
+.cards{display:grid;gap:1.6rem}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -26px rgba(14,95,96,.4)}
+.card .ph{background:var(--sand);height:320px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:contain;object-position:center}
+.card .tx{padding:1.5rem 1.5rem 1.7rem}
+.card h3{font-size:1.45rem;margin-bottom:.5rem}
+.card p{color:var(--muted);font-size:1rem;margin-bottom:1rem}
+.card a.enq{font-weight:800;text-decoration:none}
+.card a.enq:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* ---------- about ---------- */
+.about{background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;gap:2.5rem;align-items:center}
+.about-media figure{margin:0;background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--line);max-width:420px}
+.about-media .ph{height:440px;display:flex;align-items:center;justify-content:center;background:var(--cream)}
+.about-media img{width:100%;height:100%;object-fit:contain;object-position:center}
+.about-media figcaption{font-size:.85rem;color:var(--muted);padding:.7rem 1.1rem;border-top:1px solid var(--line)}
+.about h2{font-size:clamp(1.9rem,3.6vw,2.5rem);margin:.4rem 0 1rem}
+.about p{margin-bottom:1rem;max-width:32rem}
+.about p strong{color:var(--teal)}
+.ticklist{list-style:none;margin:1.4rem 0 0;display:grid;gap:.7rem}
+.ticklist li{display:flex;gap:.7rem;align-items:flex-start;font-weight:700}
+.ticklist svg{flex:none;width:22px;height:22px;margin-top:.2rem}
+
+/* ---------- clients ---------- */
+.testi{
+  display:grid;gap:2rem;align-items:center;background:#fff;border:1px solid var(--line);
+  border-radius:24px;overflow:hidden;margin-bottom:2.6rem;
+}
+.testi .ph{background:var(--sand);min-height:260px}
+.testi img{width:100%;height:100%;object-fit:cover}
+.testi blockquote{padding:2.2rem 2rem}
+.testi blockquote p{font-family:"Fraunces",serif;font-size:1.25rem;line-height:1.5;margin-bottom:1rem}
+.testi cite{font-style:normal;font-weight:800;color:var(--amber);font-size:.95rem}
+.testi .src{display:block;font-weight:600;color:var(--muted);font-size:.85rem;margin-top:.25rem}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}
+.gallery figure{margin:0;background:var(--sand);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.gallery .ph{height:250px;display:flex;align-items:center;justify-content:center}
+.gallery img{width:100%;height:100%;object-fit:contain;object-position:center}
+.gallery figcaption{font-size:.82rem;color:var(--muted);padding:.55rem .9rem;background:#fff;border-top:1px solid var(--line)}
+.ig-note{text-align:center;margin-top:1.8rem;color:var(--muted)}
+.ig-note a{font-weight:800}
+
+/* ---------- booking ---------- */
+.book{background:var(--teal);color:#fff;border-radius:28px;padding:3.2rem 2rem;text-align:center;position:relative;overflow:hidden}
+.book::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 20% 0%,rgba(255,255,255,.09),transparent 60%);pointer-events:none}
+.book h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:.8rem;color:#fff}
+.book p{max-width:36rem;margin:0 auto 1.6rem;color:#F2EFE6}
+.steps{list-style:none;display:grid;gap:1rem;margin:0 auto 2rem;max-width:40rem;text-align:left}
+.steps li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:14px;padding:1rem 1.2rem;display:flex;gap:1rem;align-items:flex-start}
+.steps .n{flex:none;width:2rem;height:2rem;border-radius:50%;background:#fff;color:var(--teal);font-weight:800;display:flex;align-items:center;justify-content:center}
+.steps strong{display:block}
+.steps span{color:#F2EFE6;font-size:.95rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#EDE7D8;padding:2.6rem 0 2rem;margin-top:4.5rem}
+footer .wrap{display:grid;gap:1.4rem}
+footer a{color:#fff;font-weight:700}
+.f-brand{font-family:"Fraunces",serif;font-size:1.3rem;font-weight:700;color:#fff}
+.f-meta{font-size:.9rem;color:#C9C2B0}
+.f-meta small{display:block;margin-top:.6rem;color:#9b9584}
+
+/* ---------- reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important}
+}
+
+@media(min-width:700px){
+  .trust ul{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .gallery{grid-template-columns:repeat(4,1fr)}
+  .testi{grid-template-columns:1fr 1.1fr}
+  .testi .ph{min-height:100%}
+}
+@media(min-width:960px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .about-grid{grid-template-columns:.9fr 1.1fr}
+  .steps{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:420px){
+  .hero-media figure{max-height:62vh}
+  .chip{left:.4rem}
+  section{padding:3.4rem 0}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Nurse and Paws Pet Care — home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#0E5F60"/><g fill="#FFF9F0"><ellipse cx="16" cy="19" rx="6" ry="5"/><ellipse cx="8.5" cy="12.5" rx="2.6" ry="3.2"/><ellipse cx="13.5" cy="9.5" rx="2.6" ry="3.2"/><ellipse cx="18.5" cy="9.5" rx="2.6" ry="3.2"/><ellipse cx="23.5" cy="12.5" rx="2.6" ry="3.2"/></g></svg>
+      Nurse &amp; Paws
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#clients">Happy clients</a>
+      <a class="btn" href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">Book via Instagram</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Brisbane &amp; Moreton Bay, QLD · Pet care</span>
+        <h1>Care you can trust, <em>from a real vet nurse.</em></h1>
+        <p class="lede">Nurse &amp; Paws Pet Care is run by Jordan — a qualified vet nurse with <strong>20 years&rsquo; experience</strong> — offering professional, reliable, gold-standard care for your pets.</p>
+        <p class="sub">Dog walking, pet sitting and home visits across Brisbane &amp; Moreton Bay Areas, QLD. All bookings happen over on Instagram — one DM and you&rsquo;re sorted.</p>
+        <div class="hero-cta">
+          <a class="btn" href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">Message us on Instagram</a>
+          <a class="btn ghost" href="#services">See services</a>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <figure>
+          <img src="img/teddy-hero.webp" alt="Teddy the Border Collie cross relaxing on a couch while being petted during a pet sit" width="1100" height="1466" fetchpriority="high">
+        </figure>
+        <span class="chip" aria-hidden="true">20 yrs vet-nursing experience</span>
+        <figcaption style="font-size:.85rem;color:var(--muted);text-align:center;padding:.7rem .5rem 0">Teddy (Border Collie X) enjoying a weekend pet sit</figcaption>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap">
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0E5F60" stroke-width="2.2" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          Qualified vet nurse — 20 years&rsquo; experience
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0E5F60" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          Dog walks from 30 minutes to 2 hours, tailored to your pup
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0E5F60" stroke-width="2.2" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
+          Pet sitting &amp; home visits — care in your pet&rsquo;s own home
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0E5F60" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7-5.3-7-11a7 7 0 0114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          Servicing Brisbane &amp; Moreton Bay Areas, QLD
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Services built around your pet&rsquo;s routine</h2>
+        <p>Every booking is personal — your pet, your home, their normal routine, kept exactly as you left it.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ph"><img src="img/calmiko-walk.webp" alt="Calmiko the Husky on a walk, wearing a blue harness and looking up at the camera" width="1100" height="1466" loading="lazy"></div>
+          <div class="tx">
+            <h3>Dog walking</h3>
+            <p>From 30 minutes to 2 hours, tailored to suit your pup&rsquo;s needs — on-lead adventures through local streets and parks.</p>
+            <a class="enq" href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">Enquire on Instagram →</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/ollie-sitting.webp" alt="Ollie the Cockerspaniel curled up in a paw-print blanket on the couch during a pet sit" width="1100" height="1466" loading="lazy"></div>
+          <div class="tx">
+            <h3>Pet sitting</h3>
+            <p>Weekend and holiday sitting in your pet&rsquo;s own home — cuddles, company and calm, just like Ollie&rsquo;s weekends.</p>
+            <a class="enq" href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">Enquire on Instagram →</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/myah-noah.webp" alt="Myah the Rottweiler resting her head on the couch arm, with Noah the Toy poodle behind her" width="1100" height="1466" loading="lazy"></div>
+          <div class="tx">
+            <h3>Home visits</h3>
+            <p>Pop-in visits for feeding, medication and company — including medical-level care like twice-daily eye drops.</p>
+            <a class="enq" href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">Enquire on Instagram →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="wrap about-grid">
+      <div class="about-media reveal">
+        <figure>
+          <div class="ph"><img src="img/calmiko-closeup.webp" alt="Close-up of Calmiko the Husky's face with one blue and one brown eye" width="1100" height="1466" loading="lazy"></div>
+          <figcaption>Calmiko the Husky — one of our regular walking buddies</figcaption>
+        </figure>
+      </div>
+      <div>
+        <span class="eyebrow">Why Nurse &amp; Paws</span>
+        <h2>A nurse for your pets, not just a sitter</h2>
+        <p>Nurse &amp; Paws is run by <strong>Jordan, a qualified vet nurse with 20 years&rsquo; experience</strong>. That means your pet isn&rsquo;t just watched — they&rsquo;re cared for by someone trained to read them.</p>
+        <p>Medication schedules, anxious rescues, senior pets with special needs — the medical-level details other sitters find daunting are simply part of the job here. Professional, reliable, gold-standard care, every visit.</p>
+        <ul class="ticklist">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E5F60" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+            Confident with medication &amp; medical routines
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E5F60" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+            Dogs, cats and even birds — Teddy&rsquo;s weekend included two cockatiels
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0E5F60" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+            Photo updates so you always know how they&rsquo;re doing
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section id="clients">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Happy clients</span>
+        <h2>Pets who&rsquo;d book again in a heartbeat</h2>
+        <p>Real pets, real weekends — follow the daily adventures on Instagram.</p>
+      </div>
+      <div class="testi reveal">
+        <div class="ph"><img src="img/ollie-asleep.webp" alt="Ollie the Cockerspaniel fast asleep on a bed after his pet sit" width="880" height="850" loading="lazy"></div>
+        <blockquote>
+          <p>&ldquo;New to the area and nervous about trusting a new pet sitter, I felt reassured the moment I met Jordan — great communication throughout, helpful walking advice, and I came home to one very relaxed dog. I&rsquo;ll definitely be booking again.&rdquo;</p>
+          <cite>— Ruth, Ollie&rsquo;s mum</cite>
+          <span class="src">Shared on our Instagram · paraphrased with thanks</span>
+        </blockquote>
+      </div>
+      <div class="gallery">
+        <figure class="reveal">
+          <div class="ph"><img src="img/calmiko-park.webp" alt="Calmiko the Husky walking a jacaranda-lined park path on a Sunday morning walk" width="1100" height="1451" loading="lazy"></div>
+          <figcaption>Sunday walks with Calmiko</figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="ph"><img src="img/ollie-sitting.webp" alt="Ollie the Cockerspaniel wrapped in a blanket on the couch" width="1100" height="1466" loading="lazy"></div>
+          <figcaption>Weekend sitting with Ollie</figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="ph"><img src="img/myah-noah.webp" alt="Myah the Rottweiler and Noah the Toy poodle relaxing at home" width="1100" height="1466" loading="lazy"></div>
+          <figcaption>Myah &amp; Noah, home-visit regulars</figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="ph"><img src="img/calmiko-walk.webp" alt="Calmiko the Husky mid-walk in a blue harness" width="1100" height="1466" loading="lazy"></div>
+          <figcaption>Afternoon adventures with Calmiko</figcaption>
+        </figure>
+      </div>
+      <p class="ig-note">See them all at <a href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">@nurseandpawspetcare</a></p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book">
+    <div class="wrap">
+      <div class="book reveal">
+        <span class="eyebrow" style="color:#F4E8D3">Bookings</span>
+        <h2>Ready when your pup is</h2>
+        <p>All bookings happen over on Instagram — send a DM and Jordan will take it from there.</p>
+        <ol class="steps">
+          <li><span class="n">1</span><div><strong>Send a DM</strong><span>Message @nurseandpawspetcare with your dates and your pet&rsquo;s details.</span></div></li>
+          <li><span class="n">2</span><div><strong>Chat it through</strong><span>Talk routine, needs and any medical bits — nothing is too detailed.</span></div></li>
+          <li><span class="n">3</span><div><strong>Lock it in</strong><span>Confirm your booking and relax — updates come straight to your phone.</span></div></li>
+        </ol>
+        <a class="btn light" href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">DM us on Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">Nurse &amp; Paws Pet Care</div>
+    <div class="f-meta">
+      Dog walking · Pet sitting · Home visits — servicing Brisbane &amp; Moreton Bay Areas, QLD, Australia.<br>
+      Bookings: <a href="https://www.instagram.com/nurseandpawspetcare/" target="_blank" rel="noopener">instagram.com/nurseandpawspetcare</a>
+      <small>Concept preview crafted by Devflix — a glimpse of what your business could look like online.</small>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

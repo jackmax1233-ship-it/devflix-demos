@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EarthPro Landscaping &amp; Tree Care — Earthworks &amp; Landscaping, Melbourne VIC</title>
+<meta name="description" content="EarthPro Landscaping & Tree Care — excavation, site preparation, turf installation, garden makeovers and tree care across Melbourne VIC. Free on-site quotes. Call 0481 958 464.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F2E9;
+  --ink:#2E2A22;
+  --ink-soft:#4A443A;
+  --deep:#1E3A2A;
+  --deep-2:#16291E;
+  --moss:#3E6B45;
+  --soil:#6B4F33;
+  --soildark:#3E3226;
+  --amber:#E9A614;
+  --amber-dark:#C98F0E;
+  --line:#DCD4C0;
+  --radius:14px;
+  --font-d:'Zilla Slab',Georgia,serif;
+  --font-b:'Inter',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--paper);color:var(--ink);line-height:1.6;font-size:1rem;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--font-d);line-height:1.15;color:var(--ink);text-wrap:balance}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:var(--deep);color:var(--paper);border-bottom:3px solid var(--amber)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{font-family:var(--font-d);font-weight:700;font-size:1.15rem;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:.6rem;color:var(--paper)}
+.brand-mark{width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:var(--amber);display:grid;place-items:center}
+.brand-mark svg{width:22px;height:22px}
+.nav-links{display:none;gap:1.4rem}
+.nav-links a{color:var(--paper);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--amber);text-decoration:underline}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:.8rem 1.5rem;font-size:1rem;border:2px solid transparent;transition:background .18s ease,transform .18s ease;cursor:pointer}
+.btn-amber{background:var(--amber);color:var(--ink)}
+.btn-amber:hover,.btn-amber:focus-visible{background:var(--amber-dark)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:var(--ink);color:var(--paper)}
+.btn-ghost-light{background:transparent;color:var(--paper);border-color:var(--paper)}
+.btn-ghost-light:hover,.btn-ghost-light:focus-visible{background:var(--paper);color:var(--deep)}
+.btn:focus-visible,.nav-links a:focus-visible,a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.header-cta{padding:.55rem 1.1rem;font-size:.95rem;white-space:nowrap}
+/* ---------- hero ---------- */
+.hero{padding:3rem 0 3.5rem;background:
+  radial-gradient(60rem 30rem at 110% -10%, #EAE2CE 0%, transparent 55%),
+  var(--paper)}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--deep);padding:.45rem .9rem;border-radius:999px;margin-bottom:1.1rem}
+.hero h1{font-size:clamp(2.1rem,5.4vw,3.6rem);margin-bottom:1rem}
+.hero h1 .accent{color:var(--moss)}
+.hero p.lede{font-size:1.12rem;color:var(--ink-soft);max-width:34rem;margin-bottom:1.7rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem}
+.policy-chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none}
+.policy-chips li{display:inline-flex;align-items:center;gap:.45rem;font-size:.9rem;font-weight:600;color:var(--deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:.45rem .95rem}
+.policy-chips svg{width:16px;height:16px;flex:0 0 16px}
+.hero-photo{justify-self:center;width:min(420px,100%)}
+.frame{overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:#E9E2D2;box-shadow:0 18px 40px -22px rgba(30,58,42,.45)}
+.frame.ratio-34{aspect-ratio:3/4}
+.frame.ratio-93{aspect-ratio:977/1051}
+.frame.ratio-916{aspect-ratio:9/16}
+.frame img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{font-size:.85rem;color:var(--ink-soft);margin-top:.6rem;text-align:center}
+/* ---------- trust strip ---------- */
+.trust{background:var(--deep);color:var(--paper);border-block:3px solid var(--amber)}
+.trust .wrap{display:grid;gap:1rem;padding:1.6rem 0}
+.trust-item{display:flex;gap:.9rem;align-items:flex-start}
+.trust-item svg{width:30px;height:30px;flex:0 0 30px;margin-top:.15rem}
+.trust-item h3{color:var(--amber);font-size:1.05rem;margin-bottom:.15rem}
+.trust-item p{color:var(--paper);font-size:.95rem}
+/* ---------- sections ---------- */
+section{padding:3.5rem 0}
+.section-head{max-width:44rem;margin-bottom:2.2rem}
+.section-head .kicker{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--soil);margin-bottom:.6rem}
+.section-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin-bottom:.7rem}
+.section-head p{color:var(--ink-soft);font-size:1.05rem}
+/* services */
+.services-grid{display:grid;gap:1.2rem}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;display:flex;flex-direction:column;gap:.6rem}
+.svc-icon{width:48px;height:48px;border-radius:12px;background:var(--deep);display:grid;place-items:center;margin-bottom:.3rem}
+.svc-icon svg{width:26px;height:26px}
+.svc h3{font-size:1.25rem}
+.svc p{color:var(--ink-soft);font-size:.98rem}
+/* gallery */
+.gallery-section{background:var(--soildark);color:var(--paper)}
+.gallery-section .section-head h2{color:var(--paper)}
+.gallery-section .section-head .kicker{color:var(--amber)}
+.gallery-section .section-head p{color:#EDE6D4}
+.gallery-grid{display:grid;gap:1.4rem}
+.g-item .frame{border-color:#5A4B3C;box-shadow:none}
+.g-item figcaption{margin-top:.7rem;font-size:.92rem;color:#EDE6D4}
+.g-item figcaption strong{color:var(--amber);display:block;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.15rem}
+/* process */
+.steps{display:grid;gap:1.2rem;counter-reset:step}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem;position:relative}
+.step-num{font-family:var(--font-d);font-weight:700;font-size:2.6rem;color:var(--amber);line-height:1;margin-bottom:.5rem}
+.step h3{font-size:1.3rem;margin-bottom:.4rem}
+.step p{color:var(--ink-soft)}
+/* why */
+.why{background:var(--deep);color:var(--paper)}
+.why .section-head h2{color:var(--paper)}
+.why .section-head .kicker{color:var(--amber)}
+.why .section-head p{color:#EDE6D4}
+.why-list{list-style:none;display:grid;gap:1rem;max-width:46rem}
+.why-list li{display:flex;gap:.9rem;align-items:flex-start;background:var(--deep-2);border:1px solid #2E4A38;border-radius:var(--radius);padding:1.1rem 1.3rem}
+.why-list svg{width:24px;height:24px;flex:0 0 24px;margin-top:.15rem}
+.why-list p{color:var(--paper)}
+.why-list strong{color:var(--amber)}
+/* contact */
+.contact{text-align:center}
+.contact .section-head{margin-inline:auto;text-align:center}
+.contact-card{background:var(--deep);color:var(--paper);border-radius:20px;padding:2.5rem 1.8rem;max-width:44rem;margin-inline:auto;border:3px solid var(--amber)}
+.contact-card h2{color:var(--paper);font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:.8rem}
+.contact-card p{color:#EDE6D4;margin-bottom:1.6rem}
+.contact-actions{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-bottom:1.4rem}
+.phone-big{font-family:var(--font-d);font-size:clamp(1.6rem,4.5vw,2.3rem);font-weight:700;color:var(--amber);text-decoration:none;letter-spacing:.02em}
+.phone-big:hover,.phone-big:focus-visible{text-decoration:underline;outline-offset:4px}
+.ig-link{color:var(--paper);font-weight:600}
+.ig-link:hover{color:var(--amber)}
+.service-area{font-size:.95rem;color:#EDE6D4;margin-top:1rem}
+/* footer */
+footer{background:var(--deep-2);color:#CFC7B2;padding:1.8rem 0;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;justify-content:space-between;align-items:center}
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+/* ---------- breakpoints ---------- */
+@media(min-width:640px){
+  .services-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .trust .wrap{grid-template-columns:repeat(3,1fr);gap:1.6rem}
+}
+@media(min-width:900px){
+  .nav-links{display:flex}
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .hero-photo{justify-self:end}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  section{padding:4.5rem 0}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="EarthPro Landscaping and Tree Care — home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3C7 7 4 10.5 4 14a8 8 0 0 0 16 0c0-3.5-3-7-8-11z" fill="#1E3A2A"/><path d="M12 21v-8m0 0c-2 0-3.5-1.2-4-3m4 3c2 0 3.5-1.2 4-3" stroke="#F6F2E9" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      EarthPro
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Recent work</a>
+      <a href="#process">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-amber header-cta" href="tel:+61481958464">Free On-Site Quote</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" style="padding-top:3rem">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Earthmoving &amp; Landscaping · Melbourne VIC</span>
+        <h1>From rough ground to <span class="accent">finished lawn</span>.</h1>
+        <p class="lede">EarthPro Landscaping &amp; Tree Care takes Melbourne backyards from site prep to the finished lawn — excavation, levelling, turf and garden makeovers, all handled by one crew.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-amber" href="tel:+61481958464">Call 0481 958 464</a>
+          <a class="btn btn-ghost" href="#work">See recent work</a>
+        </div>
+        <ul class="policy-chips">
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="#3E6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Free on-site quotes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4z" stroke="#3E6B45" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="#3E6B45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fully insured</li>
+        </ul>
+      </div>
+      <figure class="hero-photo reveal">
+        <div class="frame ratio-34">
+          <img src="img/hero-excavator.webp" width="1100" height="1466" alt="EarthPro's Bobcat E20 mini excavator lifting concrete slabs during an earthworks job in Melbourne" fetchpriority="high">
+        </div>
+        <figcaption>Mini excavator on the tools — concrete removal &amp; site prep.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 17h13l5-6h-5l-2-4H8l-5 6v4z" stroke="#E9A614" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="19" r="1.8" stroke="#E9A614" stroke-width="1.8"/><circle cx="17" cy="19" r="1.8" stroke="#E9A614" stroke-width="1.8"/></svg>
+        <div><h3>One crew, start to finish</h3><p>Site scrape to final clean-up — no juggling subcontractors.</p></div>
+      </div>
+      <div class="trust-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v20M4 6l16 12M20 6 4 18" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="#E9A614" stroke-width="1.8"/></svg>
+        <div><h3>Machines on hand</h3><p>Mini excavator &amp; Kanga loader ready for tight-access jobs.</p></div>
+      </div>
+      <div class="trust-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v3h16v-3" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <div><h3>Free on-site quotes</h3><p>Call <a href="tel:+61481958464" style="color:#E9A614">0481 958 464</a> and get a straight quote at your place.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">What we do</p>
+        <h2>Earthworks to finished gardens</h2>
+        <p>Every service below is work EarthPro does week in, week out across Melbourne — photographed and shared on their Instagram.</p>
+      </div>
+      <div class="services-grid">
+        <article class="svc reveal">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 18h18M6 18v-5h4v5m4 0V8h4v10" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 8V5h6v3" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Site preparation &amp; excavation</h3>
+          <p>Machine scraping, ground levelling, site cuts and full site preparation — the groundwork every good yard starts with.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m13 2 9 9-9 9-9-9 9-9z" stroke="#E9A614" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 9.5l5 5m0-5-5 5" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Concrete cutting &amp; removal</h3>
+          <p>Broken concrete cut out, lifted and carted away — like the slab jobs their excavator handles regularly.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20c2-6 6-9 16-10-2 6-6 9-16 10z" stroke="#E9A614" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 20c0-4 1-8 4-11" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Natural &amp; artificial turf</h3>
+          <p>Topsoil supply, professional levelling and fresh natural turf — or low-maintenance artificial grass, pinned and finished.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21v-9m0 0c-3 0-5-2-5-5 3 0 5 2 5 5zm0 0c3 0 5-2 5-5-3 0-5 2-5 5z" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 21h14" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Garden bed makeovers</h3>
+          <p>Fresh edging, black mulch, tidy-ups and planting — small changes that make a big difference to tired beds.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="1" stroke="#E9A614" stroke-width="1.8"/><path d="M8 5v14M12 5v14M16 5v14" stroke="#E9A614" stroke-width="1.4"/></svg></div>
+          <h3>Decorative privacy screens</h3>
+          <p>Timber edging, paver walkways and decorative metal privacy screens, supplied and installed.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 5 8v5c0 4 3 6.5 7 8 4-1.5 7-4 7-8V8l-7-5z" stroke="#E9A614" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 13c2-3 6-3 8 0" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Tree care &amp; rubbish removal</h3>
+          <p>Safe tree removals close to fences and homes, plus soil and rubbish removal — sites left clean.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT WORK -->
+  <section id="work" class="gallery-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">Recent work</p>
+        <h2>Straight from the job site</h2>
+        <p>Real photos from EarthPro's recent Melbourne jobs — before shots, machines at work, and transformations in progress.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="g-item reveal">
+          <div class="frame ratio-34"><img src="img/work-kanga-scrape.webp" width="1100" height="1466" alt="Kanga loader on site during a machine scrape and ground levelling job" loading="lazy"></div>
+          <figcaption><strong>Site preparation</strong>Machine scrape &amp; levelling with the Kanga loader, topsoil going in next.</figcaption>
+        </figure>
+        <figure class="g-item reveal">
+          <div class="frame ratio-34"><img src="img/work-turf-laying.webp" width="1100" height="1955" alt="Landscaper carrying a roll of fresh turf across levelled ground with stacked turf rolls behind" loading="lazy"></div>
+          <figcaption><strong>Natural turf install</strong>Fresh turf rolls going down on professionally levelled ground.</figcaption>
+        </figure>
+        <figure class="g-item reveal">
+          <div class="frame ratio-34"><img src="img/work-lawn-renovation-before.webp" width="1100" height="1466" alt="Overgrown lawn and site debris before a complete lawn renovation" loading="lazy"></div>
+          <figcaption><strong>Before · Lawn renovation</strong>An overgrown lawn and site debris — this job became a complete natural turf installation.</figcaption>
+        </figure>
+        <figure class="g-item reveal">
+          <div class="frame ratio-34"><img src="img/work-backyard-before.webp" width="1100" height="1466" alt="Blank backyard with pergola before a full landscaping transformation in Melbourne" loading="lazy"></div>
+          <figcaption><strong>Before · Backyard transformation</strong>A blank Melbourne backyard, ready for a full clean, modern and low-maintenance makeover.</figcaption>
+        </figure>
+        <figure class="g-item reveal">
+          <div class="frame ratio-93"><img src="img/work-privacy-screen-before.webp" width="977" height="1051" alt="Side yard before a decorative privacy screen installation" loading="lazy"></div>
+          <figcaption><strong>Before · Privacy screen</strong>Side yard ahead of a decorative metal privacy screen installation.</figcaption>
+        </figure>
+        <figure class="g-item reveal">
+          <div class="frame ratio-916"><img src="img/work-tree-care.webp" width="1066" height="1890" alt="Yucca trees close to a fence before a safe tree removal" loading="lazy"></div>
+          <figcaption><strong>Tree care</strong>Yucca crowding the fence line — safely removed, green waste taken away.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">How it works</p>
+        <h2>Simple as a phone call</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3>Free on-site quote</h3>
+          <p>Call <a href="tel:+61481958464">0481 958 464</a> or send a DM. EarthPro comes to you anywhere in Melbourne and quotes the job on the spot — free.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3>Machines in, work done</h3>
+          <p>Scrape, level, remove and prepare — then turf, beds, edging or screens installed by the same crew, with their own machines.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3>Finished &amp; cleaned</h3>
+          <p>Every job ends the same way: final clean-up and finishing touches, so the yard is ready to enjoy straight away.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">Why EarthPro</p>
+        <h2>Built for Melbourne backyards</h2>
+        <p>What sets the crew apart — all drawn from how they actually work.</p>
+      </div>
+      <ul class="why-list">
+        <li class="reveal"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#E9A614" stroke-width="1.8"/><path d="m8 12.5 2.7 2.7L16 10" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><p><strong>Free on-site quotes.</strong> No guesswork over the phone — they look at your block and price it properly.</p></li>
+        <li class="reveal"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#E9A614" stroke-width="1.8"/><path d="m8 12.5 2.7 2.7L16 10" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><p><strong>Fully insured.</strong> Machines, trees and tight-access work — covered.</p></li>
+        <li class="reveal"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#E9A614" stroke-width="1.8"/><path d="m8 12.5 2.7 2.7L16 10" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><p><strong>Full-scope jobs.</strong> Their posts list the whole job — site clearing, scraping, topsoil, levelling, turf, clean-up — one crew doing it all.</p></li>
+        <li class="reveal"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#E9A614" stroke-width="1.8"/><path d="m8 12.5 2.7 2.7L16 10" stroke="#E9A614" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><p><strong>Before-and-after proof.</strong> Hundreds of project photos document the work, from overgrown and uneven to finished.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <div class="section-head" style="margin-bottom:1.2rem">
+          <p class="kicker" style="color:var(--amber)">Get in touch</p>
+          <h2>Get your free on-site quote</h2>
+        </div>
+        <p>Servicing Melbourne VIC. Call or message — quotes are free and on-site.</p>
+        <div class="contact-actions">
+          <a class="btn btn-amber" href="tel:+61481958464">Call 0481 958 464</a>
+          <a class="btn btn-ghost-light" href="https://www.instagram.com/earthproservices/" target="_blank" rel="noopener">Instagram · @earthproservices</a>
+        </div>
+        <a class="phone-big" href="tel:+61481958464">0481 958 464</a>
+        <p class="service-area">📍 Melbourne, VIC · <a class="ig-link" href="https://www.instagram.com/earthproservices/" target="_blank" rel="noopener">@earthproservices</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 EarthPro Landscaping &amp; Tree Care · Melbourne VIC</span>
+    <span>Concept preview crafted by <strong>Devflix</strong></span>
+  </div>
+</footer>
+
+<script>
+// IntersectionObserver scroll reveal — content visible without JS
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Spin Bin — Launderette in Cork &amp; Bandon | Wash, Dry, Fold &amp; Collection</title>
+<meta name="description" content="The Spin Bin launderette — self-service machines, wash dry & fold, and home laundry collection in Cork (Model Farm Rd) and Bandon. Fresh. Clean. Ready for you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --paper:#FBFAF7;
+  --card:#FFFFFF;
+  --ink:#0B2A4A;
+  --teal:#0B6B6B;
+  --teal-deep:#0A5E5D;
+  --mint:#E7F4F3;
+  --muted:#44515F;
+  --footer-muted:#C9D6E2;
+  --line:#DCE4E8;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  background:var(--paper);color:var(--ink);
+  line-height:1.6;font-size:17px;
+  overflow-x:hidden;
+}
+h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;line-height:1.12;letter-spacing:-0.01em}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--teal-deep)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:84px 0}
+.eyebrow{
+  display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teal-deep);background:var(--mint);border-radius:999px;padding:8px 18px;margin-bottom:22px;
+}
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(251,250,247,.94);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:26px;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--teal-deep)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:16px}
+.nav-links a:hover{color:var(--teal-deep);text-decoration:underline}
+.nav-cta{display:flex;gap:10px;align-items:center}
+.btn{
+  display:inline-block;font-weight:600;font-size:16px;text-decoration:none;border-radius:10px;
+  padding:13px 24px;transition:transform .15s ease,box-shadow .15s ease;line-height:1.3;
+}
+.btn-teal{background:var(--teal);color:#FFFFFF}
+.btn-teal:hover{background:var(--teal-deep)}
+.btn-ink{background:var(--ink);color:#FFFFFF}
+.btn-ink:hover{background:#123a63}
+.btn-ghost{border:2px solid var(--teal-deep);color:var(--teal-deep);background:transparent}
+.btn-ghost:hover{background:var(--mint)}
+.btn-white{background:#FFFFFF;color:var(--teal-deep)}
+.btn-white:hover{background:var(--mint)}
+.btn-outline-white{border:2px solid #FFFFFF;color:#FFFFFF}
+.btn-outline-white:hover{background:rgba(255,255,255,.14)}
+.btn-sm{padding:9px 16px;font-size:15px}
+/* ---------- hero ---------- */
+.hero{padding:64px 0 72px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,5.4vw,68px);margin:0 0 20px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--teal-deep)}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:46ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.hero-note{font-size:14px;color:var(--muted)}
+.hero-photo{border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 44px rgba(11,42,74,.14);border:1px solid var(--line)}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.hero-photo figcaption{font-size:13px;color:var(--muted);padding:10px 16px;background:#fff;border-top:1px solid var(--line)}
+.spin-strip{
+  margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:18px 0;
+  font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:var(--teal-deep);
+}
+.spin-strip span{white-space:nowrap}
+/* ---------- services ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px}
+.svc .num{font-family:'Fraunces',Georgia,serif;font-size:15px;font-weight:700;color:var(--teal-deep);letter-spacing:.1em;margin-bottom:12px}
+.svc h3{font-size:24px;margin-bottom:10px;font-weight:600}
+.svc p{color:var(--muted);font-size:16px}
+.svc .tag{display:inline-block;margin-top:16px;font-size:13px;font-weight:700;color:var(--teal-deep);background:var(--mint);padding:6px 14px;border-radius:999px}
+/* ---------- collection steps ---------- */
+.band{background:var(--teal-deep);color:#FFFFFF;border-radius:22px;padding:56px 48px;margin-top:8px}
+.band h2{font-size:clamp(30px,3.6vw,42px);margin-bottom:8px;font-weight:600}
+.band .band-sub{color:#FFFFFF;opacity:.92;max-width:60ch;margin-bottom:34px;font-size:18px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:36px}
+.step{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);border-radius:12px;padding:22px 18px}
+.step .s{font-family:'Fraunces',Georgia,serif;font-size:30px;font-weight:700;margin-bottom:8px}
+.step p{font-size:15px;line-height:1.55}
+.band-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.band-hours{font-size:15px;opacity:.92;margin-top:18px}
+/* ---------- prices ---------- */
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px}
+.price-card h3{font-size:23px;margin-bottom:4px;font-weight:600}
+.price-card .desc{font-size:15px;color:var(--muted);margin-bottom:18px}
+.price-card table{width:100%;border-collapse:collapse;font-size:16px}
+.price-card th,.price-card td{padding:9px 4px;text-align:left;border-bottom:1px dashed var(--line)}
+.price-card tr:last-child th,.price-card tr:last-child td{border-bottom:none}
+.price-card td:last-child,.price-card th:last-child{text-align:right;font-weight:700;color:var(--teal-deep);white-space:nowrap}
+.price-card th{font-weight:500}
+.price-note{margin-top:26px;font-size:15px;color:var(--muted);background:var(--mint);border-radius:12px;padding:16px 20px}
+.poster-row{display:grid;grid-template-columns:340px 1fr;gap:44px;align-items:center;margin-top:44px}
+.poster-row figure{max-width:340px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 34px rgba(11,42,74,.12)}
+.poster-row img{width:100%;height:auto}
+.poster-row figcaption{font-size:13px;color:var(--muted);padding:10px 16px;background:#fff;border-top:1px solid var(--line)}
+.poster-copy h3{font-size:26px;margin-bottom:12px}
+.poster-copy p{color:var(--muted);margin-bottom:12px}
+/* ---------- pet ---------- */
+.pet-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.pet-grid figure{max-width:390px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 34px rgba(11,42,74,.12)}
+.pet-grid figcaption{font-size:13px;color:var(--muted);padding:10px 16px;background:#fff;border-top:1px solid var(--line)}
+.pet-grid h2{font-size:clamp(30px,3.6vw,42px);margin-bottom:16px;font-weight:600}
+.pet-grid p{color:var(--muted);margin-bottom:14px;font-size:18px}
+.pet-list{list-style:none;margin:20px 0 26px;display:grid;gap:12px}
+.pet-list li{font-size:17px}
+.pet-list li::before{content:"✓ ";color:var(--teal-deep);font-weight:700}
+/* ---------- stores ---------- */
+.store-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center;margin-top:36px}
+.store-grid figure{max-width:360px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 34px rgba(11,42,74,.12)}
+.store-grid figcaption{font-size:13px;color:var(--muted);padding:10px 16px;background:#fff;border-top:1px solid var(--line)}
+.store-cards{display:grid;gap:20px;align-content:center}
+.store-card{background:var(--ink);color:#FFFFFF;border-radius:var(--radius);padding:30px 28px}
+.store-card h3{font-size:24px;margin-bottom:6px}
+.store-card .eircode{font-size:14px;letter-spacing:.08em;color:var(--footer-muted);margin-bottom:14px}
+.store-card p{font-size:16px;color:#FFFFFF;opacity:.94}
+/* ---------- final CTA ---------- */
+.final{background:var(--ink);color:#FFFFFF;border-radius:22px;padding:64px 48px;text-align:center;margin:24px 0 0}
+.final h2{font-size:clamp(30px,3.8vw,44px);margin-bottom:14px;font-weight:600}
+.final p{color:var(--footer-muted);max-width:58ch;margin:0 auto 32px;font-size:18px}
+.final .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.final .alt{margin-top:22px;font-size:16px;color:var(--footer-muted)}
+.final .alt a{color:#FFFFFF;font-weight:600}
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:44px 0 36px;margin-top:84px}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.foot .brand{font-size:22px}
+.foot p{font-size:15px;color:var(--muted);max-width:44ch}
+.foot-links{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+.foot-links a{color:var(--ink);font-size:15px;text-decoration:none;font-weight:500}
+.foot-links a:hover{text-decoration:underline}
+.credit{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .services-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .price-grid{grid-template-columns:1fr}
+  .poster-row{grid-template-columns:1fr;gap:28px}
+  .pet-grid{grid-template-columns:1fr;gap:32px}
+  .pet-grid figure,.store-grid figure{margin:0 auto}
+  .store-grid{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:700px){
+  .nav-links{display:none}
+  section{padding:60px 0}
+  .hero{padding:44px 0 52px}
+  .band{padding:40px 26px}
+  .final{padding:46px 26px}
+  .steps{grid-template-columns:1fr}
+  .spin-strip{font-size:16px;gap:8px}
+  .nav-cta .btn-ghost{display:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Laundry",
+  "name":"The Spin Bin",
+  "description":"Launderette in Cork and Bandon, Ireland. Self-service machines, wash dry & fold, and home laundry collection.",
+  "areaServed":["Cork, Ireland","Bandon, Ireland"],
+  "address":[
+    {"@type":"PostalAddress","streetAddress":"Model Farm Rd","addressLocality":"Cork","postalCode":"T12 AH79","addressCountry":"IE"},
+    {"@type":"PostalAddress","addressLocality":"Bandon","postalCode":"P72 VW21","addressCountry":"IE"}
+  ],
+  "sameAs":["https://www.instagram.com/the.spinbin/"]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">The <span>Spin&nbsp;Bin</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#stores">Stores</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="https://www.instagram.com/the.spinbin/" target="_blank" rel="noopener">DM on Instagram</a>
+      <a class="btn btn-teal btn-sm" href="https://cleancloudapp.com/s3/39601" target="_blank" rel="noopener">Book a collection</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div class="rv">
+        <span class="eyebrow">Launderette · Cork &amp; Bandon</span>
+        <h1>Fresh. Clean. <em>Ready for you.</em></h1>
+        <p class="lead">Self-service machines, drop-off wash &amp; fold, and home laundry collection — from our stores on Model&nbsp;Farm&nbsp;Rd, Cork and in Bandon.</p>
+        <div class="hero-cta">
+          <a class="btn btn-teal" href="https://cleancloudapp.com/s3/39601" target="_blank" rel="noopener">Book a collection</a>
+          <a class="btn btn-ink" href="https://www.instagram.com/the.spinbin/" target="_blank" rel="noopener">DM @the.spinbin</a>
+        </div>
+        <p class="hero-note">Home Collection Service runs 7 days a week, 9am–8pm.</p>
+      </div>
+      <figure class="hero-photo rv">
+        <img src="assets/store-interior.webp" width="640" height="480" alt="Inside The Spin Bin launderette — rows of washing machines and dryers, and a folding table" fetchpriority="high">
+        <figcaption>Inside The Spin Bin — self-service machines ready to go</figcaption>
+      </figure>
+    </div>
+    <div class="spin-strip rv" aria-label="Our services">
+      <span>Wash</span><span>·</span><span>Dry</span><span>·</span><span>Fold</span><span>·</span><span>Collection</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">What we do</span>
+        <h2 class="display" style="font-size:clamp(32px,4vw,46px);font-weight:600;margin-bottom:12px">Three easy ways to do laundry</h2>
+        <p style="color:var(--muted);max-width:62ch;font-size:18px">Do it yourself on our machines, drop your bags off and let us handle the rest, or have it collected from your home and delivered back fresh.</p>
+      </div>
+      <div class="services-grid">
+        <article class="svc rv">
+          <div class="num">01</div>
+          <h3>Self-Service Machines</h3>
+          <p>Wash and dry your own items on our commercial machines — small to large loads, plus a dedicated machine for pet items.</p>
+          <span class="tag">From €6 a wash</span>
+        </article>
+        <article class="svc rv">
+          <div class="num">02</div>
+          <h3>Wash, Dry &amp; Fold</h3>
+          <p>Drop off everyday clothes, mixed bags or duvets. We wash, dry and neatly fold everything for you.</p>
+          <span class="tag">From €12 a bag</span>
+        </article>
+        <article class="svc rv">
+          <div class="num">03</div>
+          <h3>Home Collection</h3>
+          <p>We collect from your home, wash, dry and fold, and return it to you — 7 days a week, 9am–8pm.</p>
+          <span class="tag">From €24 a collection</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION STEPS -->
+  <section id="collection" style="padding-top:0">
+    <div class="wrap">
+      <div class="band rv">
+        <span class="eyebrow" style="background:rgba(255,255,255,.16);color:#FFFFFF">Collection &amp; delivery</span>
+        <h2>Laundry collected from your door, returned fresh</h2>
+        <p class="band-sub">Book online in under a minute. We collect from your home, wash, dry and fold, and deliver it back to you.</p>
+        <div class="steps">
+          <div class="step"><div class="s">1</div><p>Choose the date and time that suits you</p></div>
+          <div class="step"><div class="s">2</div><p>Choose the address for collection</p></div>
+          <div class="step"><div class="s">3</div><p>We collect, wash, dry and fold</p></div>
+          <div class="step"><div class="s">4</div><p>We deliver back to you</p></div>
+        </div>
+        <div class="band-cta">
+          <a class="btn btn-white" href="https://cleancloudapp.com/s3/39601" target="_blank" rel="noopener">Book your collection</a>
+          <a class="btn btn-outline-white" href="https://wa.me/353857222283" target="_blank" rel="noopener">WhatsApp 085 722 2283</a>
+        </div>
+        <p class="band-hours">Collection service runs 7 days a week, 9am–8pm.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICES -->
+  <section id="prices" style="padding-top:8px">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">Prices</span>
+        <h2 class="display" style="font-size:clamp(32px,4vw,46px);font-weight:600;margin-bottom:12px">Simple pricing, no surprises</h2>
+        <p style="color:var(--muted);max-width:62ch;font-size:18px">Our full price list — the same one we share on Instagram.</p>
+      </div>
+      <div class="price-grid">
+        <article class="price-card rv">
+          <h3>Wash, Dry &amp; Fold — Clothing</h3>
+          <p class="desc">Everyday clothes washed, dried and neatly folded.</p>
+          <table>
+            <tr><th scope="row">0 – 6 kg</th><td>€19</td></tr>
+            <tr><th scope="row">6 – 10 kg</th><td>€28</td></tr>
+            <tr><th scope="row">10 – 14 kg</th><td>€40</td></tr>
+            <tr><th scope="row">14 – 18 kg</th><td>€50</td></tr>
+          </table>
+        </article>
+        <article class="price-card rv">
+          <h3>Wash, Dry &amp; Fold — Mixed Bag</h3>
+          <p class="desc">Mixed items: clothes, towels, underwear, etc.</p>
+          <table>
+            <tr><th scope="row">0 – 6 kg</th><td>€24</td></tr>
+            <tr><th scope="row">6 – 10 kg</th><td>€35</td></tr>
+            <tr><th scope="row">10 – 14 kg</th><td>€45</td></tr>
+            <tr><th scope="row">14 – 18 kg</th><td>€54</td></tr>
+          </table>
+        </article>
+        <article class="price-card rv">
+          <h3>Dry &amp; Fold Only</h3>
+          <p class="desc">For items already washed — just dried and folded. Bags weighed when dried.</p>
+          <table>
+            <tr><th scope="row">0 – 6 kg</th><td>€12</td></tr>
+            <tr><th scope="row">6 – 10 kg</th><td>€15</td></tr>
+            <tr><th scope="row">10 – 14 kg</th><td>€20</td></tr>
+          </table>
+        </article>
+        <article class="price-card rv">
+          <h3>Bedding — Duvet / Comforter</h3>
+          <p class="desc">Washed, dried and neatly folded.</p>
+          <table>
+            <tr><th scope="row">Single / Double duvet</th><td>€25</td></tr>
+            <tr><th scope="row">King / Queen duvet</th><td>€30</td></tr>
+          </table>
+        </article>
+        <article class="price-card rv">
+          <h3>Collection &amp; Delivery</h3>
+          <p class="desc">We collect from your home, wash, dry and fold, and return it to you.</p>
+          <table>
+            <tr><th scope="row">0 – 6 kg</th><td>€24</td></tr>
+            <tr><th scope="row">6 – 10 kg</th><td>€35</td></tr>
+            <tr><th scope="row">10 – 14 kg</th><td>€45</td></tr>
+            <tr><th scope="row">14 – 18 kg</th><td>€54</td></tr>
+          </table>
+        </article>
+        <article class="price-card rv">
+          <h3>Self-Service Machines</h3>
+          <p class="desc">Wash and dry your own items.</p>
+          <table>
+            <tr><th scope="row">Wash 10 kg (Small)</th><td>€6</td></tr>
+            <tr><th scope="row">Wash 14 kg (Medium)</th><td>€9</td></tr>
+            <tr><th scope="row">Wash 18 kg (Large)</th><td>€12</td></tr>
+            <tr><th scope="row">Pet machine wash</th><td>€6</td></tr>
+            <tr><th scope="row">Dry 14 kg — 15 / 30 mins</th><td>€3 / €5</td></tr>
+            <tr><th scope="row">Dry 18 kg — 15 / 30 mins</th><td>€4 / €6</td></tr>
+            <tr><th scope="row">Pet machine dry — 45 mins</th><td>€6</td></tr>
+          </table>
+        </article>
+      </div>
+      <p class="price-note rv">Separated loads. Each extra load is charged an additional €10.</p>
+      <div class="poster-row">
+        <figure class="rv">
+          <img src="assets/price-poster.webp" width="640" height="800" alt="The Spin Bin price list poster as shared on Instagram — wash dry &amp; fold, bedding, collection and self-service prices" loading="lazy">
+          <figcaption>Our price list, as shared on Instagram</figcaption>
+        </figure>
+        <div class="poster-copy rv">
+          <h3>The same prices, wherever you find us</h3>
+          <p>These are the exact prices from our own price list — no hidden extras, no surprises at the till. Bags for drop-off services are weighed, and separated loads are charged per load.</p>
+          <p>Ready when you are: <a href="https://cleancloudapp.com/s3/39601" target="_blank" rel="noopener" style="font-weight:600">book a home collection online</a>, message us on <a href="https://www.instagram.com/the.spinbin/" target="_blank" rel="noopener" style="font-weight:600">Instagram</a>, or just walk into either store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PET -->
+  <section id="pet" style="padding-top:8px">
+    <div class="wrap">
+      <div class="pet-grid">
+        <figure class="rv">
+          <img src="assets/pet-wash.webp" width="640" height="790" alt="A small dog in a colourful coat standing in front of The Spin Bin's dedicated pet washing machine" loading="lazy">
+          <figcaption>Our dedicated pet machine — a customer favourite</figcaption>
+        </figure>
+        <div class="rv">
+          <span class="eyebrow">For four-legged customers</span>
+          <h2>Dedicated pet machines</h2>
+          <p>Pet bedding, blankets and coats get their own machines at The Spin Bin — so pet items never share a drum with your everyday laundry.</p>
+          <ul class="pet-list">
+            <li>Pet machine wash — €6</li>
+            <li>Pet machine dry, 45 minutes — €6</li>
+            <li>Detergent and softener added automatically</li>
+          </ul>
+          <a class="btn btn-teal" href="https://www.instagram.com/the.spinbin/" target="_blank" rel="noopener">See more on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORES -->
+  <section id="stores" style="padding-top:8px">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">Find us</span>
+        <h2 class="display" style="font-size:clamp(32px,4vw,46px);font-weight:600;margin-bottom:12px">Two stores in Cork</h2>
+        <p style="color:var(--muted);max-width:62ch;font-size:18px">Visit us at either of our convenient locations — or skip the trip with our Collection &amp; Delivery service.</p>
+      </div>
+      <div class="store-grid">
+        <figure class="rv">
+          <img src="assets/storefront.webp" width="640" height="853" alt="The Spin Bin shopfront with its blue and white signage and an open sign in the window" loading="lazy">
+          <figcaption>The Spin Bin shopfront</figcaption>
+        </figure>
+        <div class="store-cards">
+          <article class="store-card rv">
+            <h3>Cork</h3>
+            <p class="eircode">Model Farm Rd, Cork · T12 AH79</p>
+            <p>Our Cork store on Model Farm Road — self-service machines and full drop-off services.</p>
+          </article>
+          <article class="store-card rv">
+            <h3>Bandon</h3>
+            <p class="eircode">Bandon · P72 VW21</p>
+            <p>Our new Bandon store — now open and ready for your laundry.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="final rv">
+        <h2>Laundry day, handled.</h2>
+        <p>Book a home collection online, send us a DM, or pop into our Cork or Bandon store. Fresh, clean, ready for you.</p>
+        <div class="row">
+          <a class="btn btn-white" href="https://cleancloudapp.com/s3/39601" target="_blank" rel="noopener">Book a collection</a>
+          <a class="btn btn-outline-white" href="https://www.instagram.com/the.spinbin/" target="_blank" rel="noopener">DM @the.spinbin</a>
+        </div>
+        <p class="alt">Prefer WhatsApp? Message <a href="https://wa.me/353857222283" target="_blank" rel="noopener">085 722 2283</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top">The <span>Spin&nbsp;Bin</span></a>
+        <p style="margin-top:10px">Launderette in Cork &amp; Bandon, Ireland. Wash · Dry · Fold · Collection.</p>
+      </div>
+      <ul class="foot-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#stores">Stores</a></li>
+        <li><a href="https://www.instagram.com/the.spinbin/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="credit">
+      <span>Concept preview crafted by Devflix.</span>
+      <span>Prices and details from The Spin Bin's own published price list.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.12});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

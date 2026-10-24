@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetsInc — Pawsitively Yours! · Pet Supplies, Doha Qatar</title>
+<meta name="description" content="PetsInc — Pawsitively Yours! Your furry friend's needs in one place. Pet food, toys, accessories, reptile and aquarium supplies. Two stores in Doha: Lulu Mall – The Pearl and Lulu Mall – Gharaffa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF6EC; --ink:#122A3F; --terra:#C4502E; --terra-dark:#9E3A1F;
+  --muted:#4E5D6C; --card:#F3EAD7; --yellow:#F5B301; --line:#E3D6BC; --white:#FFFFFF;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Nunito Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  background:var(--cream); color:var(--ink);
+  font-size:clamp(1rem,0.95rem+0.25vw,1.125rem); line-height:1.65;
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+h1,h2,h3,.display{font-family:"Baloo 2","Nunito Sans",system-ui,sans-serif;line-height:1.12;letter-spacing:-0.01em}
+section{padding-block:clamp(3rem,7vw,5.5rem)}
+
+/* reveal (gated behind .js) */
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* header */
+.topbar{border-bottom:1px solid var(--line);background:var(--cream);position:sticky;top:0;z-index:20}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-block:.8rem;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink)}
+.brand svg{width:34px;height:34px;flex:none}
+.brand .name{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.45rem}
+.brand .name span{color:var(--terra-dark)}
+.top-links{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.locale{color:var(--muted);font-size:.95rem;font-weight:600}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:.7rem 1.5rem;font-size:1rem;line-height:1.3;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-solid{background:var(--terra);color:var(--white)}
+.btn-ink{background:var(--ink);color:var(--white)}
+.btn-line{border:2px solid var(--ink);color:var(--ink);background:transparent}
+.btn-sm{padding:.55rem 1.15rem;font-size:.95rem}
+
+/* hero */
+.hero{padding-block:clamp(2.5rem,5vw,4rem)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.75rem,4vw,3.5rem);align-items:center}
+.eyebrow{color:var(--terra-dark);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.85rem;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.6rem,5.5vw,4.2rem);font-weight:800;margin-bottom:1.1rem}
+.hero h1 .paw{color:var(--terra-dark)}
+.hero p.lede{color:var(--muted);font-size:clamp(1.05rem,1.4vw,1.25rem);margin-bottom:1.9rem;max-width:34rem}
+.hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero figure{justify-self:end;margin:0}
+.hero figure img{border-radius:var(--radius);max-height:480px;width:auto;max-width:100%;object-fit:contain;box-shadow:0 18px 45px rgba(18,42,63,.14);background:var(--card)}
+.hero figcaption{font-size:.9rem;color:var(--muted);margin-top:.7rem;text-align:center;font-style:italic}
+
+/* categories */
+.cats{background:var(--white);border-block:1px solid var(--line)}
+.sec-head{max-width:44rem;margin-bottom:2.25rem}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;margin-bottom:.7rem}
+.sec-head p{color:var(--muted)}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem 1.3rem}
+.cat .tag{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:.28rem .8rem;margin-bottom:.9rem}
+.cat h3{font-size:1.25rem;margin-bottom:.4rem}
+.cat p{color:var(--muted);font-size:.97rem}
+
+/* gallery */
+.gal-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}
+.gal-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800}
+.gal-head p{color:var(--muted);max-width:32rem}
+.gal-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.25rem;align-items:start}
+.shot{margin:0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.shot img{width:100%;height:auto;object-fit:contain;background:var(--card)}
+.shot figcaption{padding:.9rem 1.1rem;font-size:.93rem;color:var(--muted)}
+.shot figcaption strong{color:var(--ink);display:block;font-size:1rem}
+.span4{grid-column:span 4}.span5{grid-column:span 5}.span6{grid-column:span 6}.span7{grid-column:span 7}
+.offset{margin-top:2.2rem}
+
+/* community */
+.community{background:var(--ink);color:var(--white)}
+.community .sec-head h2{color:var(--white)}
+.community .sec-head p{color:#D9E2EA}
+.comm-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(1.75rem,4vw,3.5rem);align-items:center}
+.comm-grid figure img{border-radius:var(--radius);max-height:480px;width:auto;max-width:100%;object-fit:contain;background:var(--cream)}
+.comm-grid figcaption{font-size:.9rem;color:#D9E2EA;margin-top:.7rem;font-style:italic}
+.comm-list{list-style:none;display:grid;gap:1.2rem}
+.comm-list li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:1.3rem 1.4rem}
+.comm-list h3{color:var(--yellow);font-size:1.2rem;margin-bottom:.35rem}
+.comm-list p{color:#EDEFF3;font-size:.99rem}
+
+/* stores */
+.stores-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:2rem}
+.store{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem}
+.store .pin{display:inline-flex;align-items:center;gap:.5rem;background:var(--ink);color:var(--white);border-radius:999px;padding:.4rem 1rem;font-size:.85rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1rem}
+.store h3{font-size:1.5rem;margin-bottom:.3rem}
+.store p{color:var(--muted)}
+.callout{background:var(--yellow);border-radius:var(--radius);padding:1.6rem 1.8rem;display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap}
+.callout .num{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--ink)}
+.callout p{color:var(--ink);font-weight:600}
+
+/* cta band */
+.cta-band{background:var(--terra);color:var(--white);border-radius:calc(var(--radius) + 6px);padding:clamp(2rem,4.5vw,3.25rem);display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(1.7rem,3.2vw,2.4rem);color:var(--white);margin-bottom:.4rem}
+.cta-band p{color:var(--white);opacity:.95}
+.cta-band .btn-ink{flex:none}
+
+/* footer */
+footer{background:var(--ink);color:#D9E2EA;padding-block:2.5rem;margin-top:clamp(3rem,7vw,5.5rem)}
+.foot{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:start}
+.foot .fname{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.35rem;color:var(--white)}
+.foot a{color:var(--yellow);text-decoration:none;font-weight:600}
+.foot a:hover{text-decoration:underline}
+.foot small{display:block;margin-top:1.4rem;color:#9FB0BE;font-size:.85rem;max-width:60rem}
+
+/* responsive */
+@media (max-width:900px){
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .comm-grid{grid-template-columns:1fr}
+  .comm-grid figure img{margin-inline:auto}
+  .offset{margin-top:0}
+  .span4,.span5,.span6,.span7{grid-column:span 6}
+}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero figure{justify-self:center}
+  .hero figure img{max-height:420px}
+}
+@media (max-width:640px){
+  .cat-grid{grid-template-columns:1fr}
+  .stores-grid{grid-template-columns:1fr}
+  .span4,.span5,.span6,.span7{grid-column:span 12}
+  .locale{display:none}
+  .hero figure img{max-height:380px}
+  .comm-grid figure img{max-height:400px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="PetsInc home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="29" rx="11" ry="9" fill="#122A3F"/><ellipse cx="11" cy="18" rx="5" ry="6.5" fill="#122A3F"/><ellipse cx="20.5" cy="12" rx="5" ry="6.5" fill="#122A3F"/><ellipse cx="30" cy="12" rx="5" ry="6.5" fill="#122A3F"/><ellipse cx="38.5" cy="18" rx="5" ry="6.5" fill="#122A3F"/><ellipse cx="24" cy="29" rx="11" ry="9" fill="none" stroke="#F5B301" stroke-width="0"/><circle cx="24" cy="30" r="4.5" fill="#F5B301"/></svg>
+      <span class="name">Pets<span>Inc</span></span>
+    </a>
+    <nav class="top-links" aria-label="Top">
+      <span class="locale">Doha, Qatar</span>
+      <a class="btn btn-sm btn-ink" href="https://www.instagram.com/petsinc.qatar/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Pet supplies · Doha, Qatar</p>
+        <h1>Pawsitively <span class="paw">Yours!</span></h1>
+        <p class="lede">Your furry friend&rsquo;s needs in one place — pet food, toys, accessories, reptile and aquarium supplies, across two stores in Doha.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" href="#stores">Visit our stores</a>
+          <a class="btn btn-line" href="https://www.instagram.com/petsinc.qatar/" target="_blank" rel="noopener">@petsinc.qatar</a>
+        </div>
+      </div>
+      <figure class="reveal">
+        <img src="assets/photo-2.webp" width="640" height="853" alt="The PetsInc storefront in a Doha mall with an orange cat in front, and a sign offering a QAR 500 voucher for whoever finds Rex">
+        <figcaption>Spotted at our storefront: the &ldquo;find Rex&rdquo; challenge.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="cats" aria-label="What we stock">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Everything for your furry friend</h2>
+        <p>Four shelves of happiness — browse in store and our team will help you find exactly what your pet needs.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat reveal">
+          <span class="tag">Nutrition</span>
+          <h3>Pet Food</h3>
+          <p>Daily meals and treats to keep tails wagging and whiskers happy.</p>
+        </div>
+        <div class="cat reveal">
+          <span class="tag">Playtime</span>
+          <h3>Toys</h3>
+          <p>Feather wands, chew toys and playthings for cats and dogs of every size.</p>
+        </div>
+        <div class="cat reveal">
+          <span class="tag">Everyday</span>
+          <h3>Accessories</h3>
+          <p>Leashes, collars and the little extras that make pet life easier.</p>
+        </div>
+        <div class="cat reveal">
+          <span class="tag">Special</span>
+          <h3>Reptile &amp; Aquarium</h3>
+          <p>Supplies for scaled and finned friends too — not just cats and dogs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section aria-label="Straight from the store">
+    <div class="wrap">
+      <div class="gal-head reveal">
+        <h2>Straight from the store</h2>
+        <p>Real moments from our shelves, our team and our shoppers — as posted on Instagram.</p>
+      </div>
+      <div class="gal-grid">
+        <figure class="shot span7 reveal">
+          <img src="assets/photo-1.webp" width="640" height="1138" loading="lazy" alt="A shopper with a cart browsing a wall of colourful cat toys inside the PetsInc store">
+          <figcaption><strong>The toy wall</strong>Feather teasers, plush toys and more — browsing is half the fun.</figcaption>
+        </figure>
+        <figure class="shot span5 offset reveal">
+          <img src="assets/photo-5.webp" width="640" height="1138" loading="lazy" alt="A PetsInc team member presenting a smart pet product at the in-store counter, with shelves of pet food behind">
+          <figcaption><strong>At the counter</strong>Smart pet tech and a team that knows the shelves inside out.</figcaption>
+        </figure>
+        <figure class="shot span5 reveal">
+          <img src="assets/photo-8.webp" width="640" height="1138" loading="lazy" alt="A display wall of colourful pet leashes, collars and accessories in the PetsInc store">
+          <figcaption><strong>Leashes &amp; collars</strong>Rows of colours and sizes — one call for all your pet needs: 800-PETS.</figcaption>
+        </figure>
+        <figure class="shot span4 offset reveal">
+          <img src="assets/photo-3.webp" width="640" height="1138" loading="lazy" alt="A PetsInc team member in the brand's yellow polo shirt smiling in a Doha mall">
+          <figcaption><strong>Our team</strong>The friendly faces behind the counter.</figcaption>
+        </figure>
+        <figure class="shot span4 reveal">
+          <img src="assets/photo-6.webp" width="640" height="800" loading="lazy" alt="A PetsInc Podcast promotional graphic with cartoon pets gathered around a microphone">
+          <figcaption><strong>PetsInc Podcast</strong>Always listening to your pets — from every bark to every meow.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="community" aria-label="Community">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Part of Doha&rsquo;s pet community</h2>
+        <p>More than a shop — PetsInc shows up for the city&rsquo;s animals and the people who love them.</p>
+      </div>
+      <div class="comm-grid">
+        <figure class="reveal">
+          <img src="assets/photo-7.webp" width="640" height="800" loading="lazy" alt="A golden retriever and a kitten with a pink ribbon on a yellow background, for PetsInc's pink-ribbon charity campaign">
+          <figcaption>&ldquo;For the Pink Ribbon&rdquo; — our charity pink-product campaign.</figcaption>
+        </figure>
+        <ul class="comm-list">
+          <li class="reveal">
+            <h3>Charity pink-product campaign</h3>
+            <p>Special pink products supporting the pink-ribbon cause — because giving back is part of who we are.</p>
+          </li>
+          <li class="reveal">
+            <h3>Lost pets, found hope</h3>
+            <p>We share lost-pet posts with reward offers — like our QAR 500 voucher for anyone who finds Rex. Every share brings a pet closer to home.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORES -->
+  <section id="stores" aria-label="Our stores">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Two stores in Doha</h2>
+        <p>Find us inside Lulu Mall — drop by, say hello, and stock up for your furry friend.</p>
+      </div>
+      <div class="stores-grid">
+        <div class="store reveal">
+          <span class="pin">Store 1</span>
+          <h3>Lulu Mall &ndash; The Pearl</h3>
+          <p>Visit our PetsInc store at Lulu Mall on The Pearl, Doha.</p>
+        </div>
+        <div class="store reveal">
+          <span class="pin">Store 2</span>
+          <h3>Lulu Mall &ndash; Gharaffa</h3>
+          <p>Visit our PetsInc store at Lulu Mall, Gharaffa, Doha.</p>
+        </div>
+      </div>
+      <div class="callout reveal">
+        <div>
+          <p>One call for all your pet needs</p>
+          <div class="num" aria-label="Call 800-PETS">800-PETS</div>
+        </div>
+        <a class="btn btn-ink" href="https://www.instagram.com/petsinc.qatar/" target="_blank" rel="noopener">Message us on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section aria-label="Follow us">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <h2>See what&rsquo;s new every day</h2>
+          <p>New arrivals, community stories and the occasional Rex update — follow @petsinc.qatar.</p>
+        </div>
+        <a class="btn btn-ink" href="https://www.instagram.com/petsinc.qatar/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="fname">PetsInc</div>
+      <p>Pawsitively Yours! · Doha, Qatar</p>
+    </div>
+    <div>
+      <p><strong>800-PETS</strong></p>
+      <p><a href="https://www.instagram.com/petsinc.qatar/" target="_blank" rel="noopener">@petsinc.qatar</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <small>Concept preview prepared by Devflix for illustration — all photos belong to PetsInc and were sourced from their public Instagram posts. Not an official PetsInc website.</small>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){document.documentElement.classList.remove('js');return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E Minor DJ Services — Wedding &amp; Event DJ | Carleton Place &amp; Ottawa Region</title>
+<meta name="description" content="E Minor DJ Services — experienced, professional DJ for weddings and private events across Carleton Place, Lanark County and the Ottawa region. Now booking 2027–2028.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#15120e;
+  --surface:#211b14;
+  --ink:#f6efe0;
+  --muted:#c9b591;
+  --gold:#d9a03c;
+  --gold-soft:#e8b95a;
+  --line:#3a322a;
+  --radius:14px;
+  --maxw:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-size:1rem;line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--gold-soft)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-0.01em}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.1rem;
+}
+.eyebrow::before{content:"";width:2.2rem;height:2px;background:var(--gold)}
+h2{font-size:clamp(1.9rem,4.5vw,2.9rem);margin-bottom:.6rem}
+.lede{color:var(--muted);font-size:1.08rem;max-width:44rem}
+
+/* ---------- nav ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(21,18,14,.94);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1.25rem;max-width:var(--maxw);margin:0 auto}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--gold)}
+.nav-links{display:flex;gap:1.4rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:.95rem;
+  padding:.8rem 1.6rem;border-radius:999px;border:2px solid transparent;
+  transition:transform .18s ease,background .18s ease,color .18s ease;
+}
+.btn-gold{background:var(--gold);color:var(--bg)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-ghost{border-color:var(--gold);color:var(--gold-soft)}
+.btn-ghost:hover{background:rgba(217,160,60,.12)}
+.btn-sm{padding:.55rem 1.15rem;font-size:.85rem}
+
+/* ---------- hero ---------- */
+.hero{padding:3.5rem 0 4rem}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,4.4rem);margin:.2rem 0 1.1rem}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero p.sub{color:var(--muted);font-size:1.12rem;max-width:34rem;margin-bottom:1.8rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem}
+.avail{display:flex;align-items:center;gap:.6rem;font-size:.92rem;color:var(--muted)}
+.avail .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--gold);flex:none}
+.hero figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.hero figure img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center}
+.hero figcaption{font-size:.82rem;color:var(--muted);padding:.7rem 1rem;background:var(--surface)}
+
+/* ---------- trust strip ---------- */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+.strip-grid{display:grid;gap:1.2rem;padding:1.4rem 1.25rem}
+.strip-item{display:flex;align-items:baseline;gap:.8rem}
+.strip-item strong{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--gold-soft);white-space:nowrap}
+.strip-item span{color:var(--muted);font-size:.92rem}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;gap:2.5rem;align-items:start}
+.about-grid figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.about-grid figure img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center}
+.about-grid figcaption{font-size:.82rem;color:var(--muted);padding:.7rem 1rem;background:var(--surface)}
+blockquote.pull{
+  font-family:'Fraunces',serif;font-size:1.35rem;line-height:1.45;font-style:italic;
+  color:var(--gold-soft);border-left:3px solid var(--gold);
+  padding:.2rem 0 .2rem 1.2rem;margin:1.4rem 0;
+}
+.about-grid p{color:var(--muted);margin-bottom:1rem}
+.about-grid p strong{color:var(--ink);font-weight:600}
+.fine{font-size:.85rem;color:var(--muted)}
+
+/* ---------- services ---------- */
+.services{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;gap:0;margin-top:2.2rem;border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:3.2rem 1fr;gap:1.1rem;padding:1.4rem .2rem;border-bottom:1px solid var(--line)}
+.svc-num{font-family:'Fraunces',serif;color:var(--gold);font-size:1.05rem;font-weight:600}
+.svc h3{font-size:1.25rem;margin-bottom:.25rem}
+.svc p{color:var(--muted);font-size:.95rem}
+.svc-collage{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2.2rem}
+.svc-collage figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.svc-collage figure img{width:100%;object-fit:cover;object-position:center}
+.svc-collage .sq img{aspect-ratio:1/1}
+.svc-collage .wide img{aspect-ratio:4/3}
+.svc-collage figcaption{font-size:.82rem;color:var(--muted);padding:.7rem 1rem;background:var(--bg)}
+
+/* ---------- availability band ---------- */
+.band{background:var(--gold);color:var(--bg)}
+.band .wrap{display:grid;gap:1.4rem;align-items:center;padding-top:3rem;padding-bottom:3rem}
+.band h2{font-size:clamp(1.7rem,4vw,2.5rem)}
+.band p{font-weight:500;max-width:40rem}
+.band .btn{background:var(--bg);color:var(--gold-soft)}
+.band .btn:hover{background:#000}
+
+/* ---------- gallery ---------- */
+.g-grid{display:grid;gap:1.4rem;margin-top:2.2rem}
+.g-grid figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.g-grid img{width:100%;object-fit:cover;object-position:center}
+.r43 img{aspect-ratio:4/3}
+.r169 img{aspect-ratio:16/9}
+.r32 img{aspect-ratio:3/2}
+.g-grid figcaption{font-size:.86rem;color:var(--muted);padding:.75rem 1rem}
+.g-grid figcaption strong{color:var(--ink);font-weight:600}
+
+/* ---------- reviews ---------- */
+.reviews-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:2.6rem 2rem;text-align:center;max-width:46rem;margin:2.2rem auto 0;
+}
+.score{font-family:'Fraunces',serif;font-size:4rem;font-weight:700;color:var(--gold-soft);line-height:1}
+.stars{color:var(--gold);font-size:1.4rem;letter-spacing:.3em;margin:.6rem 0}
+.reviews-card p{color:var(--muted)}
+.reviews-card p strong{color:var(--ink)}
+.attr{margin-top:1.4rem;font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1.1rem}
+
+/* ---------- area ---------- */
+.area-chips{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.area-chips li{
+  list-style:none;border:1px solid var(--line);border-radius:999px;
+  padding:.5rem 1.1rem;font-size:.9rem;color:var(--muted);background:var(--surface);
+}
+
+/* ---------- contact ---------- */
+.contact{background:var(--surface);border-top:1px solid var(--line);text-align:center}
+.contact .lede{margin:0 auto 2rem}
+.contact-cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:1.6rem}
+
+/* ---------- footer ---------- */
+footer.site{border-top:1px solid var(--line);padding:2rem 0;font-size:.85rem;color:var(--muted)}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+
+/* ---------- breakpoints ---------- */
+@media (min-width:768px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .strip-grid{grid-template-columns:repeat(3,1fr)}
+  .strip-item{flex-direction:column;gap:.15rem;align-items:flex-start}
+  .about-grid{grid-template-columns:5fr 7fr}
+  .svc-grid{grid-template-columns:1fr 1fr;column-gap:3rem}
+  .band .wrap{grid-template-columns:1fr auto}
+  .g-grid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:1024px){
+  .g-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:767px){
+  .nav-links{display:none}
+  section{padding:3.2rem 0}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top">E Minor <span>DJ Services</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <a class="btn btn-gold btn-sm" href="https://ig.me/m/eminordjservices" target="_blank" rel="noopener">Check your date</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Carleton Place · Ottawa Region</p>
+        <h1>Your day.<br><em>Our sound.</em></h1>
+        <p class="sub">Experienced, professional DJ for weddings and private events — keeping dance floors full across Carleton Place, Lanark County and the Ottawa region.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="https://ig.me/m/eminordjservices" target="_blank" rel="noopener">Message on Instagram</a>
+          <a class="btn btn-ghost" href="#gallery">See recent events</a>
+        </div>
+        <p class="avail"><span class="dot" aria-hidden="true"></span>Now booking 2027–2028 weddings &amp; private events · some holiday party dates still open</p>
+      </div>
+      <figure class="reveal">
+        <img src="img/hero-dancefloor.webp" alt="A packed dance floor at a recent wedding with guests dancing under party lights" width="640" height="360" fetchpriority="high">
+        <figcaption>A packed dance floor at a recent wedding</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="strip">
+    <div class="wrap strip-grid">
+      <div class="strip-item reveal"><strong>5.0 ★</strong><span>from 18 reviews on WeddingWire</span></div>
+      <div class="strip-item reveal"><strong>Owner-operator</strong><span>Emmett Minor — the DJ you book is the DJ you get</span></div>
+      <div class="strip-item reveal"><strong>Lanark County</strong><span>weddings &amp; events across the Ottawa region</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <figure class="reveal">
+        <img src="img/emmett-decks.webp" alt="Emmett Minor at the decks, cueing a first dance at a wedding reception" width="640" height="427" loading="lazy">
+        <figcaption>Emmett cueing a first dance</figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="eyebrow">The DJ behind the decks</p>
+        <h2>One DJ. Every detail.</h2>
+        <blockquote class="pull">“I am an experienced and professional DJ for all your event needs.”</blockquote>
+        <p>E Minor DJ Services is run by <strong>Emmett Minor</strong>, based on the outskirts of the beautiful Ottawa region in <strong>Carleton Place, Ontario</strong>. When you book E Minor, Emmett himself shows up, sets up, reads the room and keeps your night moving.</p>
+        <p>Couples on WeddingWire name Emmett personally and mention both his <strong>wedding DJ and photo booth services</strong> — and the directory holds a 5.0 rating across 18 named reviews.</p>
+        <p class="fine">Recent venues include the locks in Perth, Ecotay, Orchard View, the Oakfield rugby park, Almonte’s Old Town Hall, Timber Run Golf and the Maberly Riverhouse.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <p class="eyebrow reveal">What he does</p>
+      <h2 class="reveal">Every occasion, one standard</h2>
+      <p class="lede reveal">Professional DJ entertainment for every occasion — here’s what’s on offer, in his own words.</p>
+      <div class="svc-grid">
+        <div class="svc reveal">
+          <span class="svc-num">01</span>
+          <div><h3>Weddings &amp; Receptions</h3><p>Your day, our sound — first dance to last song.</p></div>
+        </div>
+        <div class="svc reveal">
+          <span class="svc-num">02</span>
+          <div><h3>Holiday Parties</h3><p>Office parties, family gatherings &amp; more.</p></div>
+        </div>
+        <div class="svc reveal">
+          <span class="svc-num">03</span>
+          <div><h3>Corporate Events</h3><p>Team building, product launches &amp; awards.</p></div>
+        </div>
+        <div class="svc reveal">
+          <span class="svc-num">04</span>
+          <div><h3>Birthdays &amp; Anniversaries</h3><p>Celebrate life’s special moments.</p></div>
+        </div>
+        <div class="svc reveal">
+          <span class="svc-num">05</span>
+          <div><h3>Private Gatherings</h3><p>Reunions, graduations &amp; special events.</p></div>
+        </div>
+        <div class="svc reveal">
+          <span class="svc-num">06</span>
+          <div><h3>Custom Playlists &amp; Lighting</h3><p>Set the perfect mood for your night.</p></div>
+        </div>
+      </div>
+      <div class="svc-collage">
+        <figure class="sq reveal">
+          <img src="img/gear-closeup.webp" alt="Close-up of the DJ booth: speaker, laptop and mixer ready at the Locks in Perth" width="480" height="480" loading="lazy">
+          <figcaption>Ready to go — the Locks, Perth</figcaption>
+        </figure>
+        <figure class="wide reveal">
+          <img src="img/booth-window.webp" alt="DJ booth setup with speakers on a white-clothed table in a bright venue room" width="640" height="480" loading="lazy">
+          <figcaption>Booth set and ready for the celebration</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVAILABILITY BAND -->
+  <section class="band" aria-label="Availability">
+    <div class="wrap">
+      <div class="reveal">
+        <h2>Some holiday party dates are still available.</h2>
+        <p>Now booking 2027–2028 weddings and private events. Dates go first-come — send your date and venue to check availability.</p>
+      </div>
+      <a class="btn reveal" href="https://ig.me/m/eminordjservices" target="_blank" rel="noopener">Check your date</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="wrap">
+      <p class="eyebrow reveal">Recent work</p>
+      <h2 class="reveal">Real setups, real celebrations</h2>
+      <p class="lede reveal">Photos from actual weddings and events — captioned the way they were posted.</p>
+      <div class="g-grid">
+        <figure class="r43 reveal">
+          <img src="img/barn-ecotay.webp" alt="DJ setup with speakers, lighting truss and string lights in a wooden barn venue" width="640" height="480" loading="lazy">
+          <figcaption><strong>Away we go at Ecotay</strong> — barn setup under string lights</figcaption>
+        </figure>
+        <figure class="r169 reveal">
+          <img src="img/elegant-room.webp" alt="DJ booth with black drape and speakers in an elegant candlelit reception room" width="640" height="361" loading="lazy">
+          <figcaption><strong>Teleka and Jonathan’s wedding</strong> — ready to go</figcaption>
+        </figure>
+        <figure class="r169 reveal">
+          <img src="img/head-table.webp" alt="Reception head table with draped fabric and green glass vases in a stone-walled venue" width="640" height="361" loading="lazy">
+          <figcaption><strong>Bridget and Tyler</strong> — reception ready</figcaption>
+        </figure>
+        <figure class="r43 reveal">
+          <img src="img/tent-mississippi.webp" alt="DJ booth and dance floor under a large outdoor event tent on green lawns" width="640" height="480" loading="lazy">
+          <figcaption><strong>Outdoor wedding on the Mississippi</strong> — tented celebration</figcaption>
+        </figure>
+        <figure class="r32 reveal">
+          <img src="img/gazebo-sunset.webp" alt="A white gazebo at sunset reflected in still water at the wedding venue" width="640" height="427" loading="lazy">
+          <figcaption><strong>Orchard View</strong> — ready for Marie and Calvin’s wedding</figcaption>
+        </figure>
+        <figure class="r43 reveal">
+          <img src="img/oakfield-party.webp" alt="DJ equipment set up beside a decorated table at a holiday party venue" width="640" height="480" loading="lazy">
+          <figcaption><strong>Oakfield rugby park</strong> — holiday party setup</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <div class="reviews-card reveal">
+        <p class="eyebrow" style="justify-content:center">Client reviews</p>
+        <div class="score">5.0</div>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p><strong>from 18 reviews on WeddingWire</strong></p>
+        <p style="margin-top:.8rem">Reviewers name Emmett personally and mention his wedding DJ and photo booth services — including April (April 2022) and Tori (June 2025).</p>
+        <p class="attr">Reviews are published on WeddingWire.ca, an independent wedding directory — not collected on this site. Shown here with attribution.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section style="padding-top:0" aria-label="Service area">
+    <div class="wrap">
+      <p class="eyebrow reveal">Where he plays</p>
+      <h2 class="reveal">Serving the Ottawa region</h2>
+      <ul class="area-chips reveal">
+        <li>Carleton Place</li>
+        <li>Smiths Falls</li>
+        <li>Perth</li>
+        <li>Almonte</li>
+        <li>Manotick</li>
+        <li>Ottawa</li>
+        <li>Lanark County</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="eyebrow reveal" style="justify-content:center">Get in touch</p>
+      <h2 class="reveal">Tell him about your event</h2>
+      <p class="lede reveal">Bookings run through Instagram or Facebook — message with your date and venue for availability and pricing.</p>
+      <div class="contact-cta reveal">
+        <a class="btn btn-gold" href="https://ig.me/m/eminordjservices" target="_blank" rel="noopener">Message on Instagram</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/pg/eminordjservices/" target="_blank" rel="noopener">Facebook page</a>
+      </div>
+      <p class="fine reveal">@eminordjservices · Carleton Place, Ontario</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 E Minor DJ Services — preview concept</span>
+    <span>Photos: E Minor DJ Services · Concept by Devflix</span>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) return;
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:0.12});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>

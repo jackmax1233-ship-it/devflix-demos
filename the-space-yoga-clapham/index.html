@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Space — Yoga &amp; Wellness Studio, Clapham London</title>
+<meta name="description" content="The Space is a yoga & wellness studio in Clapham, London SW4. Classes, teacher spotlights, seasonal pop-ups, on-demand practice and special events. New here? Try 3 classes for £30.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F7F3EA; --stone:#EAE2D2; --ink:#22271D; --sage:#48523E;
+    --clay:#A4552C; --clay-deep:#8C421F; --muted:#6E6A5E; --white:#FFFFFF;
+    --max:1120px;
+    --serif:"Cormorant Garamond",Georgia,serif;
+    --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans); background:var(--cream); color:var(--ink);
+    line-height:1.65; font-size:17px; overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 clamp(20px,4vw,48px)}
+  img{max-width:100%; height:auto; display:block}
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(247,243,234,.96); backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(34,39,29,.12);
+  }
+  .bar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0}
+  .brand{display:flex; align-items:baseline; gap:10px; text-decoration:none; color:var(--ink)}
+  .brand .name{font-family:var(--serif); font-size:30px; font-weight:600; letter-spacing:.01em}
+  .brand .place{font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sage); font-weight:600}
+  nav.links{display:flex; gap:26px; align-items:center}
+  nav.links a{color:var(--ink); text-decoration:none; font-size:15px; font-weight:500}
+  nav.links a:hover{color:var(--clay-deep); text-decoration:underline; text-underline-offset:4px}
+  .btn{
+    display:inline-block; text-decoration:none; font-weight:600; font-size:15px;
+    padding:13px 26px; border-radius:999px; line-height:1.2; cursor:pointer;
+  }
+  .btn-solid{background:var(--clay-deep); color:var(--white)}
+  .btn-solid:hover{background:#743515}
+  .btn-ghost{border:2px solid var(--ink); color:var(--ink); background:transparent}
+  .btn-ghost:hover{background:var(--ink); color:var(--cream)}
+  .btn-light{background:var(--cream); color:var(--ink)}
+  .btn-light:hover{background:var(--white)}
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(40px,6vw,84px) 0 clamp(48px,6vw,88px)}
+  .hero-grid{display:grid; grid-template-columns:1.04fr .96fr; gap:clamp(32px,5vw,72px); align-items:center}
+  .eyebrow{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--sage); font-weight:600; margin-bottom:18px}
+  h1{
+    font-family:var(--serif); font-weight:600;
+    font-size:clamp(44px,6vw,76px); line-height:1.06; letter-spacing:-.01em; margin-bottom:22px;
+  }
+  h1 em{font-style:italic; color:var(--clay-deep)}
+  .lede{font-size:clamp(17px,1.6vw,20px); color:#3B4033; max-width:34em; margin-bottom:30px}
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:30px}
+  .facts{display:flex; gap:26px; flex-wrap:wrap; border-top:1px solid rgba(34,39,29,.16); padding-top:22px}
+  .facts div{font-size:14px}
+  .facts strong{display:block; font-family:var(--serif); font-size:21px; font-weight:600; color:var(--clay-deep)}
+  .facts span{color:var(--muted)}
+  .hero-media{display:flex; justify-content:center}
+  .hero-media figure{width:min(340px,100%); }
+  .hero-media img{border-radius:6px; box-shadow:0 24px 60px -24px rgba(34,39,29,.35)}
+  .caption{font-size:13px; color:var(--muted); margin-top:10px; text-align:center}
+
+  /* ---------- sections ---------- */
+  section.block{padding:clamp(48px,7vw,96px) 0}
+  section.band{background:var(--stone)}
+  section.dark{background:var(--sage); color:var(--cream)}
+  .kicker{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--clay-deep); font-weight:600; margin-bottom:14px}
+  .dark .kicker{color:var(--cream)}
+  h2{font-family:var(--serif); font-weight:600; font-size:clamp(32px,4vw,50px); line-height:1.12; margin-bottom:18px; letter-spacing:-.005em}
+  .dark h2, .dark p, .dark li{color:var(--cream)}
+  .intro{font-size:18px; max-width:38em; color:#3B4033; margin-bottom:40px}
+  .dark .intro{color:#EDE7D6}
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,72px); align-items:center; margin-bottom:clamp(40px,5vw,64px)}
+  .split:last-child{margin-bottom:0}
+  .split.flip .media{order:2}
+  .media img{border-radius:6px; width:min(430px,100%); margin:0 auto}
+  .dark .media img{box-shadow:0 24px 60px -28px rgba(0,0,0,.5)}
+  h3{font-family:var(--serif); font-size:clamp(24px,2.6vw,32px); font-weight:600; margin-bottom:10px}
+  .body-copy{color:#3B4033; max-width:36em; margin-bottom:18px}
+  .dark .body-copy{color:#EDE7D6}
+  .note{font-size:14px; color:var(--muted); max-width:36em}
+  .dark .note{color:#DCD3BC}
+  .offer-price{font-family:var(--serif); font-size:clamp(40px,4.5vw,56px); font-weight:600; color:var(--clay-deep); line-height:1; margin:6px 0 14px}
+  .dark .offer-price{color:var(--cream)}
+
+  /* teacher timetable cards */
+  .cards{display:grid; grid-template-columns:repeat(2,1fr); gap:22px; margin-top:8px}
+  .card{border:1px solid rgba(34,39,29,.16); border-radius:8px; padding:26px; background:rgba(255,255,255,.35)}
+  .card h3{font-size:26px}
+  .card .time{font-weight:600; color:var(--clay-deep); font-size:15px; letter-spacing:.04em; margin-bottom:6px}
+  .card p{font-size:15.5px; color:#3B4033}
+  .card .tag{display:inline-block; font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--sage); margin-bottom:10px}
+
+  /* quote */
+  .quote-grid{display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(28px,5vw,64px); align-items:center}
+  .quote-grid img{width:min(300px,100%); margin:0 auto; border-radius:6px}
+  blockquote{font-family:var(--serif); font-size:clamp(26px,3.4vw,40px); font-style:italic; line-height:1.3; margin-bottom:14px}
+  cite{font-style:normal; font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); font-weight:600}
+
+  /* find us */
+  .find-grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,72px)}
+  .find-grid address{font-style:normal; font-size:18px; line-height:1.8}
+  .find-grid address strong{font-family:var(--serif); font-size:26px; display:block; margin-bottom:8px}
+  .find-grid ul{list-style:none; margin-top:18px; display:grid; gap:10px; font-size:16px}
+  .find-grid a{color:var(--cream); text-decoration:underline; text-underline-offset:3px}
+  .find-grid a:hover{color:var(--white)}
+
+  /* footer */
+  footer.site{background:var(--ink); color:#CFC7B4; padding:34px 0; font-size:14px}
+  footer.site .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center}
+  footer.site a{color:#EFE8D6}
+
+  /* reveal */
+  .js .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease}
+  .js .reveal.in{opacity:1; transform:none}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1; transform:none; transition:none}
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-media{order:-1}
+    .hero-media figure{width:min(320px,82%)}
+    .split{grid-template-columns:1fr}
+    .split.flip .media{order:0}
+    .media img{width:min(400px,100%)}
+    .quote-grid{grid-template-columns:1fr}
+    .quote-grid img{width:min(280px,80%)}
+    .find-grid{grid-template-columns:1fr}
+    .cards{grid-template-columns:1fr}
+  }
+  @media (max-width:700px){
+    nav.links{display:none}
+    .facts{gap:18px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="The Space — home">
+      <span class="name">The Space</span><span class="place">Clapham · London</span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#classes">Classes</a>
+      <a href="#teachers">Teachers</a>
+      <a href="#offer">Offers</a>
+      <a href="#events">Events</a>
+      <a href="#find">Find us</a>
+    </nav>
+    <a class="btn btn-solid" href="https://www.instagram.com/the_spacelondon/" target="_blank" rel="noopener">DM to book</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Yoga &amp; wellness studio · Clapham, London SW4</p>
+        <h1>Your neighbourhood space to <em>slow down</em> and breathe.</h1>
+        <p class="lede">The Space is a Clapham yoga &amp; wellness studio with a full week of classes — somatic yoga, slow flow, sound sessions and seasonal pop-ups — plus an on-demand library for practice at home.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#offer">Intro offer — 3 classes for £30</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/the_spacelondon/" target="_blank" rel="noopener">DM @the_spacelondon</a>
+        </div>
+        <div class="facts">
+          <div><strong>Unit 3B, 9 Park Hill</strong><span>Clapham, London</span></div>
+          <div><strong>£30</strong><span>3-class intro offer</span></div>
+          <div><strong>Daily</strong><span>classes &amp; practice posts</span></div>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <figure>
+          <img src="assets/photo-1.webp" width="640" height="853" alt="A teacher at The Space Clapham in a standing yoga stretch, arms raised, in warm light" fetchpriority="high">
+          <figcaption class="caption">Practice at The Space, Clapham — photo via @the_spacelondon</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS / INTRO -->
+  <section class="block band" id="offer">
+    <div class="wrap split reveal">
+      <div class="media">
+        <img src="assets/photo-2.webp" width="640" height="800" loading="lazy" alt="The Space's autumn pop-ups announcement: five 75-minute classes for the price of a drop-in">
+      </div>
+      <div>
+        <p class="kicker">Start here</p>
+        <h2>New to The Space?</h2>
+        <p class="offer-price">3 classes for £30</p>
+        <p class="body-copy">Their own intro offer — three classes for thirty pounds, the simplest way to find your rhythm at the studio.</p>
+        <h3 style="margin-top:26px">Autumn pop-ups</h3>
+        <p class="body-copy">Five 75-minute classes to deepen your practice — all for the price of a drop-in. The Space's seasonal pop-up series, announced in their autumn posts.</p>
+        <p class="body-copy">Class bookings run through their current MomoYoga booking link in their Instagram bio — or just send a DM.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="https://www.instagram.com/the_spacelondon/" target="_blank" rel="noopener">DM to book your first class</a>
+        </div>
+        <p class="note">Intro offer as published by The Space on Instagram. Pop-up dates are limited and announced in their posts — check their latest before booking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section class="block" id="classes">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="kicker">Classes</p>
+        <h2>Practice, your way</h2>
+        <p class="intro">From somatic work to slow flows and sound, The Space publishes its class schedule week by week — here's a taste from recent posts.</p>
+      </div>
+      <div class="split reveal">
+        <div class="media">
+          <img src="assets/photo-7.webp" width="640" height="800" loading="lazy" alt="Close-up of hands in a gentle gesture, announcing new classes at The Space">
+        </div>
+        <div>
+          <h3>New classes land regularly</h3>
+          <p class="body-copy">The studio announces new classes on its feed — recent weeks have added somatic yoga and slow flow to the timetable alongside its regular practice.</p>
+          <p class="body-copy">Schedules, teacher line-ups and pop-up series are posted nearly every day, so the week's classes are never more than a scroll away.</p>
+          <div class="cta-row">
+            <a class="btn btn-ghost" href="https://www.instagram.com/the_spacelondon/" target="_blank" rel="noopener">See this week's classes</a>
+          </div>
+        </div>
+      </div>
+      <div class="split flip reveal">
+        <div class="media">
+          <img src="assets/photo-4.webp" width="640" height="800" loading="lazy" alt="The Space On Demand — the studio's recorded class library shown on a laptop">
+        </div>
+        <div>
+          <p class="kicker">On demand</p>
+          <h3>The Space, on demand</h3>
+          <p class="body-copy">Can't make it to Park Hill? The Space On Demand brings their recorded class library to your living room — practice on your own time, at your own pace.</p>
+          <p class="note">Details and access via their Instagram — link in bio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHERS -->
+  <section class="block band" id="teachers">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="kicker">Teachers</p>
+        <h2>Meet your teachers</h2>
+        <p class="intro">The Space runs regular teacher spotlights — get to know the people guiding each class. One recent spotlight:</p>
+      </div>
+      <div class="cards reveal">
+        <div class="card">
+          <span class="tag">Teacher spotlight</span>
+          <h3>Karen Lane</h3>
+          <p class="time">Somatic Yoga — Wednesdays, 6:15pm</p>
+          <p>A somatic practice to land in your body mid-week. Featured in The Space's 21 October teacher spotlight.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Teacher spotlight</span>
+          <h3>Karen Lane</h3>
+          <p class="time">Slow Flow — Fridays, 9:30am</p>
+          <p>An unhurried Friday-morning flow to close out the week. Also from the 21 October spotlight.</p>
+        </div>
+      </div>
+      <p class="note reveal" style="margin-top:22px">Teacher line-up and class times are published weekly on their Instagram — DM @the_spacelondon to confirm this week's schedule.</p>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="block dark" id="events">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="kicker">Events</p>
+        <h2>Gatherings at The Space</h2>
+        <p class="intro">Beyond the weekly timetable, the studio hosts special evenings — sound, stillness and seasonal celebrations.</p>
+      </div>
+      <div class="split reveal">
+        <div class="media">
+          <img src="assets/photo-5.webp" width="640" height="800" loading="lazy" alt="Sound and Vision Samhain Celebration poster: Friday October 30th, 7 to 9pm, led by Nikki Leader and Charlene Huskinson">
+        </div>
+        <div>
+          <h3>Sound + Vision: Samhain Celebration</h3>
+          <p class="body-copy">Friday 30 October, 7:00–9:00pm. An evening of stillness, insight and sound to honour the changing season — leave feeling grounded, clear and renewed.</p>
+          <p class="body-copy">Led by Nikki Leader and Charlene Huskinson.</p>
+          <div class="cta-row" style="margin-top:18px">
+            <a class="btn btn-light" href="https://www.instagram.com/the_spacelondon/" target="_blank" rel="noopener">Reserve a place by DM</a>
+          </div>
+        </div>
+      </div>
+      <div class="split flip reveal">
+        <div class="media">
+          <img src="assets/photo-3.webp" width="640" height="853" loading="lazy" alt="A sound session being filmed at The Space, with chimes and warm candlelight">
+        </div>
+        <div>
+          <h3>Sound sessions</h3>
+          <p class="body-copy">Sound is part of the studio's fabric — from in-class sound baths to dedicated sound evenings, captured and shared from the studio floor.</p>
+          <p class="note">Follow @the_spacelondon for announcements of the next sound evening.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETHOS QUOTE -->
+  <section class="block">
+    <div class="wrap quote-grid reveal">
+      <img src="assets/photo-6.webp" width="640" height="775" loading="lazy" alt="Words shared by The Space: 'Life is just a series of returning to yourself. Over and over again.'">
+      <div>
+        <blockquote>“Life is just a series of returning to yourself. Over and over again.”</blockquote>
+        <cite>Shared by The Space · words: We The Urban</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIND US -->
+  <section class="block dark" id="find">
+    <div class="wrap find-grid reveal">
+      <div>
+        <p class="kicker">Find us</p>
+        <h2>Come to the studio</h2>
+        <address>
+          <strong>The Space</strong>
+          Unit 3B, 9 Park Hill<br>
+          Clapham, London
+        </address>
+        <ul>
+          <li><a href="https://www.instagram.com/the_spacelondon/" target="_blank" rel="noopener">Instagram: @the_spacelondon</a> — DM to book</li>
+          <li>Class bookings via their current MomoYoga booking link (in their Instagram bio)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Community</h3>
+        <p class="body-copy">A neighbourhood studio posting nearly every day — teacher spotlights, class announcements, pop-ups and sound evenings. The best way to keep up is to follow along.</p>
+        <div class="cta-row" style="margin-top:18px">
+          <a class="btn btn-light" href="https://www.instagram.com/the_spacelondon/" target="_blank" rel="noopener">Follow @the_spacelondon</a>
+        </div>
+        <p class="note">Studio address as listed in the public ClassPass directory.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA STUDIO PORTRAIT -->
+  <section class="block band">
+    <div class="wrap split reveal">
+      <div class="media">
+        <img src="assets/photo-8.webp" width="640" height="853" loading="lazy" alt="A portrait shared by The Space of a practitioner outdoors among trees">
+      </div>
+      <div>
+        <p class="kicker">Beyond the studio</p>
+        <h3>Practice is a way of life</h3>
+        <p class="body-copy">The Space's feed reaches beyond the studio walls — portraits, practice notes and the people who make the community what it is.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Demo preview crafted by <strong>Devflix</strong> — a concept website for The Space, Clapham.</span>
+    <span>Photos © @the_spacelondon via Instagram · Text drawn from their published posts</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

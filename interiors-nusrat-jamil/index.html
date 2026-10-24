@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interiors by Nusrat Jamil — Bespoke Interiors, Lahore | Est. 2005</title>
+<meta name="description" content="Interiors by Nusrat Jamil — a Lahore interior design studio led by Nusrat Jamil. Bespoke interiors, custom digital-print curtains, signature wall art installations and furniture design. Est. 2005.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F8F4EB;
+    --paper-2:#F1EAD9;
+    --ink:#232B26;
+    --forest:#1B221E;
+    --brass:#C6A15B;
+    --brass-deep:#8A6A33;
+    --muted:#4A524B;
+    --line:#DCD2BC;
+    --maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.15;letter-spacing:.01em}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+  section{padding:clamp(56px,8vw,110px) 0}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(248,244,235,.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(20px,4vw,48px);max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .monogram{
+    width:42px;height:42px;border:1.5px solid var(--brass-deep);color:var(--brass-deep);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-size:20px;border-radius:2px;flex:none;
+  }
+  .brand-name{font-family:'Fraunces',serif;font-size:18px;line-height:1.25}
+  .brand-sub{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+  .nav-links a{text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.04em}
+  .nav-links a:hover{color:var(--brass-deep)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.02em;
+    padding:13px 28px;border-radius:2px;transition:background .25s ease,color .25s ease,transform .25s ease;
+  }
+  .btn-brass{background:var(--brass-deep);color:var(--paper)}
+  .btn-brass:hover{background:var(--ink)}
+  .btn-outline{border:1.5px solid var(--ink);color:var(--ink)}
+  .btn-outline:hover{background:var(--ink);color:var(--paper)}
+  .btn-light{background:var(--brass);color:var(--forest)}
+  .btn-light:hover{background:var(--paper)}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--paper);padding:clamp(48px,7vw,96px) 0 clamp(56px,7vw,96px)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
+  .eyebrow{
+    font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--brass-deep);margin-bottom:20px;
+  }
+  .hero h1{font-size:clamp(38px,5.2vw,64px);margin-bottom:22px}
+  .hero h1 em{font-style:italic;color:var(--brass-deep)}
+  .lede{font-size:clamp(16px,1.6vw,19px);color:var(--muted);max-width:34em;margin-bottom:34px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .hero figure{
+    margin:0;justify-self:end;width:100%;max-width:448px;
+    border:1px solid var(--line);padding:10px;background:#fff;
+  }
+  .hero figure a{display:block}
+  .hero figure img{width:100%;height:auto;aspect-ratio:640/800;object-fit:contain;background:var(--paper-2)}
+  .hero figcaption{font-size:13px;color:var(--muted);padding:10px 4px 2px;font-style:italic}
+  .hero figcaption a{color:var(--brass-deep)}
+
+  /* ---------- fact band ---------- */
+  .band{background:var(--forest);color:var(--paper);padding:44px 0}
+  .band-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;text-align:center}
+  .band-item .num{font-family:'Fraunces',serif;font-size:clamp(26px,3vw,36px);color:var(--brass);margin-bottom:6px}
+  .band-item p{font-size:14px;letter-spacing:.06em;color:var(--paper);opacity:.92}
+
+  /* ---------- studio ---------- */
+  .studio-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(32px,5vw,72px);align-items:center}
+  .studio figure{margin:0;justify-self:start}
+  .studio figure a{display:block;border:1px solid var(--line);padding:10px;background:#fff}
+  .studio figure img{width:auto;max-width:100%;max-height:480px;aspect-ratio:640/1136;object-fit:contain;background:var(--paper-2)}
+  .studio figcaption{font-size:13px;color:var(--muted);padding:10px 4px 2px;font-style:italic}
+  .studio h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:6px}
+  .rule{width:64px;height:2px;background:var(--brass-deep);margin:18px 0 22px}
+  .studio p{color:var(--muted);margin-bottom:16px;max-width:36em}
+  .studio p strong{color:var(--ink)}
+  .sig{font-family:'Fraunces',serif;font-style:italic;font-size:20px;color:var(--brass-deep);margin-top:8px}
+
+  /* ---------- expertise ---------- */
+  .expertise{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .section-head{max-width:44em;margin-bottom:clamp(32px,4vw,56px)}
+  .section-head h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:6px}
+  .section-head p{color:var(--muted)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.5vw,32px)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:2px;overflow:hidden;display:flex;flex-direction:column}
+  .card a.img-link{display:block}
+  .card img{width:100%;height:auto;aspect-ratio:640/853;object-fit:contain;background:var(--paper)}
+  .card-body{padding:22px 22px 26px}
+  .card-body h3{font-size:21px;margin-bottom:8px}
+  .card-body p{font-size:14.5px;color:var(--muted)}
+  .card .tag{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:10px;display:block}
+
+  /* ---------- craft (dark) ---------- */
+  .craft{background:var(--forest);color:var(--paper)}
+  .craft .eyebrow{color:var(--brass)}
+  .craft h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:6px}
+  .craft .rule{background:var(--brass)}
+  .craft .intro{color:var(--paper);opacity:.88;max-width:40em;margin-bottom:clamp(28px,4vw,48px)}
+  .craft-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);align-items:start}
+  .craft figure{margin:0}
+  .craft figure a{display:block;border:1px solid rgba(198,161,91,.4);padding:10px}
+  .craft figure img{width:auto;max-width:100%;margin:0 auto;background:#101511}
+  .craft figure img.ratio-a{max-height:480px;aspect-ratio:640/853;object-fit:contain}
+  .craft figure img.ratio-b{max-height:480px;aspect-ratio:640/1138;object-fit:contain}
+  .craft figcaption{font-size:13px;color:var(--brass);padding:12px 4px 0;font-style:italic;opacity:.95}
+
+  /* ---------- process ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);counter-reset:step}
+  .step{border-top:2px solid var(--brass-deep);padding-top:20px}
+  .step .n{font-family:'Fraunces',serif;font-size:15px;color:var(--brass-deep);letter-spacing:.2em;margin-bottom:10px}
+  .step h3{font-size:21px;margin-bottom:8px}
+  .step p{font-size:14.5px;color:var(--muted)}
+
+  /* ---------- CTA ---------- */
+  .cta{background:var(--forest);color:var(--paper);text-align:center;padding:clamp(64px,9vw,120px) 0}
+  .cta .eyebrow{color:var(--brass)}
+  .cta h2{font-size:clamp(32px,4.4vw,52px);margin-bottom:16px}
+  .cta p{color:var(--paper);opacity:.88;max-width:34em;margin:0 auto 32px}
+  .cta .note{margin-top:22px;font-size:13px;color:var(--brass);letter-spacing:.08em}
+
+  /* ---------- footer ---------- */
+  footer{background:#141916;color:var(--paper);padding:44px 0 32px}
+  .foot-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+  .foot-brand{font-family:'Fraunces',serif;font-size:20px;margin-bottom:6px}
+  .foot-meta{font-size:13px;color:var(--brass);letter-spacing:.06em}
+  .foot-links{display:flex;gap:22px;list-style:none;font-size:14px}
+  .foot-links a{color:var(--paper);opacity:.85;text-decoration:none}
+  .foot-links a:hover{color:var(--brass)}
+  .fine{margin-top:28px;padding-top:20px;border-top:1px solid rgba(198,161,91,.25);font-size:12.5px;color:var(--paper);opacity:.6}
+
+  /* ---------- reveal (JS-gated) ---------- */
+  .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1;transform:none;transition:none}
+    *{transition:none!important}
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero figure{justify-self:start;max-width:420px}
+    .studio-grid{grid-template-columns:1fr}
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:1fr;gap:28px}
+  }
+  @media (max-width:768px){
+    .nav-links{display:none}
+    .band-grid{grid-template-columns:1fr;gap:22px}
+    .craft-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    .cards{grid-template-columns:1fr}
+    .card img{max-width:360px;margin:0 auto}
+    .hero-ctas .btn{width:100%;text-align:center}
+    .studio figure img{max-height:440px}
+    /* keep brand + CTA on one row at 390px */
+    .nav{padding:10px 16px;gap:10px}
+    .monogram{width:34px;height:34px;font-size:16px}
+    .brand-name{font-size:14px}
+    .brand-sub{font-size:9px;letter-spacing:.14em}
+    .nav .btn{padding:10px 14px;font-size:13px;white-space:nowrap}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top">
+      <span class="monogram" aria-hidden="true">NJ</span>
+      <span>
+        <span class="brand-name">Interiors by Nusrat Jamil</span><br>
+        <span class="brand-sub">Est. 2005 · Lahore</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#craft">Craft</a></li>
+      <li><a href="#process">Process</a></li>
+    </ul>
+    <a class="btn btn-brass" href="https://www.instagram.com/interiorbynj_/" target="_blank" rel="noopener">DM for Consultation</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Interior Designer · Est. 2005 · Lahore</p>
+        <h1>Bespoke Interiors.<br><em>Timeless Aesthetics.</em></h1>
+        <p class="lede">Interiors by Nusrat Jamil is a Lahore interior design studio led by Nusrat Jamil — creating custom digital-print curtains, signature wall art installations, furniture and full bespoke interiors since 2005.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-brass" href="https://www.instagram.com/interiorbynj_/" target="_blank" rel="noopener">DM for Consultation</a>
+          <a class="btn btn-outline" href="#expertise">Explore the Work</a>
+        </div>
+      </div>
+      <figure class="reveal">
+        <a href="https://www.instagram.com/p/DdTzcxojYyz/" target="_blank" rel="noopener" aria-label="View this project on Instagram">
+          <img src="assets/atrium-open-house.webp" alt="Double-height atrium interior with a tall marble art panel by Interiors by Nusrat Jamil" width="640" height="800" fetchpriority="high">
+        </a>
+        <figcaption>Open house — coming soon. <a href="https://www.instagram.com/p/DdTzcxojYyz/" target="_blank" rel="noopener">View on Instagram</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FACT BAND -->
+  <div class="band">
+    <div class="wrap band-grid">
+      <div class="band-item reveal">
+        <p class="num serif">Est. 2005</p>
+        <p>Two decades of interior design</p>
+      </div>
+      <div class="band-item reveal">
+        <p class="num serif">Lahore</p>
+        <p>Bespoke homes across the city</p>
+      </div>
+      <div class="band-item reveal">
+        <p class="num serif">1–2 Kanal</p>
+        <p>Modern residences, designed end to end</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STUDIO -->
+  <section class="studio" id="studio">
+    <div class="wrap studio-grid">
+      <figure class="reveal">
+        <a href="https://www.instagram.com/p/DeExrmUtNMM/" target="_blank" rel="noopener" aria-label="View this project on Instagram">
+          <img src="assets/residence-site-visit.webp" alt="Nusrat Jamil on site at a Lahore residence in progress" width="640" height="1136" loading="lazy">
+        </a>
+        <figcaption>On site — a Lahore residence in progress.</figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="eyebrow">The Studio</p>
+        <h2>Two decades of quiet, confident design</h2>
+        <div class="rule" aria-hidden="true"></div>
+        <p>Founded in <strong>2005</strong> and led by interior designer <strong>Nusrat Jamil</strong>, the studio shapes homes across Lahore — from 1-Kanal family homes to 2-Kanal modern residences.</p>
+        <p>Every interior is composed around the people who live in it: bespoke layouts, custom curtains, signature wall art and furniture designed as one complete, timeless whole.</p>
+        <p class="sig">— Signature Interiors by NJ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="expertise" id="expertise">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Expertise</p>
+        <h2>What the studio creates</h2>
+        <div class="rule" aria-hidden="true"></div>
+        <p>Services drawn from the studio's own published work — interiors, curtains, art and furniture, composed as one.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <a class="img-link" href="https://www.instagram.com/p/Dc_AZoTEkN0/" target="_blank" rel="noopener" aria-label="View custom digital-print curtains on Instagram">
+            <img src="assets/digital-print-curtains.webp" alt="Custom digital-print curtains in beige and bronze tones with a textured wall and table lamp" width="640" height="853" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag">Textiles</span>
+            <h3>Custom Digital-Print Curtains</h3>
+            <p>Curtains designed and printed exclusively for each room — pattern, palette and fall composed around the interior.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <a class="img-link" href="https://www.instagram.com/p/Dci415yDdWM/" target="_blank" rel="noopener" aria-label="View sheer curtain detailing on Instagram">
+            <img src="assets/sheer-fringe-curtains.webp" alt="Sheer curtains with a hand-finished fringe border catching the light" width="640" height="853" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag">Textiles</span>
+            <h3>Sheers &amp; Drapery Detailing</h3>
+            <p>Layered sheers with hand-finished borders and tassels — softness and light, detailed to the last inch.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <a class="img-link" href="https://www.instagram.com/p/DYm7wUgjQob/" target="_blank" rel="noopener" aria-label="View signature wall art on Instagram">
+            <img src="assets/metal-leaf-wall-art.webp" alt="Hand-crafted metallic leaf wall sculptures in silver tones" width="640" height="853" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag">Art</span>
+            <h3>Signature Wall Art Installations</h3>
+            <p>One-of-a-kind wall pieces — sculpted, composed and installed as the centrepiece of the room.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <a class="img-link" href="https://www.instagram.com/p/DcgNDsptC0Z/" target="_blank" rel="noopener" aria-label="View a styled statement corner on Instagram">
+            <img src="assets/statement-corner-sofa.webp" alt="Curved emerald sofa styled with sheer curtains and an amber bead installation" width="640" height="853" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag">Furniture</span>
+            <h3>Furniture Design &amp; Styling</h3>
+            <p>Statement furniture and styling that turn a quiet corner into the room's defining moment.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-body">
+            <span class="tag">Materials</span>
+            <h3>Marble &amp; Soft Interior Curation</h3>
+            <p>Stone, fabric and finish selections curated together — marble's permanence balanced with soft, liveable layers.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-body">
+            <span class="tag">Interiors</span>
+            <h3>Bespoke Full Interiors</h3>
+            <p>Complete homes designed end to end — from 1-Kanal residences to 2-Kanal modern houses across Lahore.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="craft" id="craft">
+    <div class="wrap">
+      <p class="eyebrow reveal">The Craft</p>
+      <h2 class="reveal">Signature pieces, made by hand</h2>
+      <div class="rule reveal" aria-hidden="true"></div>
+      <p class="intro reveal">The studio's signature wall art installations are designed, crafted and fitted for each project — conceived on the wall, finished by hand, installed with care.</p>
+      <div class="craft-grid">
+        <figure class="reveal">
+          <a href="https://www.instagram.com/p/DeylJPxtw9s/" target="_blank" rel="noopener" aria-label="View the wall art installation on Instagram">
+            <img class="ratio-a" src="assets/wall-art-installation.webp" alt="The studio team installing a circular blue and gold wall art composition" width="640" height="853" loading="lazy">
+          </a>
+          <figcaption>Installation in progress — a signature circular wall composition.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <a href="https://www.instagram.com/p/DZHl2NAEha6/" target="_blank" rel="noopener" aria-label="View the studded panel detail on Instagram">
+            <img class="ratio-b" src="assets/studded-panel-detail.webp" alt="Close detail of a hand-studded panel with a brass oval frame" width="640" height="1138" loading="lazy">
+          </a>
+          <figcaption>Detail — hand-studded panel within a brass oval frame.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Process</p>
+        <h2>From first conversation to final fitting</h2>
+        <div class="rule" aria-hidden="true"></div>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <p class="n">01</p>
+          <h3>Consultation</h3>
+          <p>Every project begins with a conversation — DM the studio for consultation &amp; inquiries.</p>
+        </div>
+        <div class="step reveal">
+          <p class="n">02</p>
+          <h3>Design Development</h3>
+          <p>Fabric books, floor plans and material palettes are composed around how you live.</p>
+        </div>
+        <div class="step reveal">
+          <p class="n">03</p>
+          <h3>Craft &amp; Installation</h3>
+          <p>Custom curtains, signature wall art and furniture are crafted and installed to completion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <p class="eyebrow reveal">Begin</p>
+      <h2 class="reveal">Your home, composed around you</h2>
+      <p class="reveal">Consultations and inquiries are welcomed by direct message — the studio replies personally to every inquiry.</p>
+      <a class="btn btn-light reveal" href="https://www.instagram.com/interiorbynj_/" target="_blank" rel="noopener">DM for Consultation</a>
+      <p class="note reveal">@interiorbynj_ · Lahore, Pakistan</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">Interiors by Nusrat Jamil</p>
+        <p class="foot-meta">Interior Designer · Est. 2005 · Lahore, Pakistan</p>
+      </div>
+      <ul class="foot-links">
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#craft">Craft</a></li>
+        <li><a href="https://www.instagram.com/interiorbynj_/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="fine">Preview website concept crafted by Devflix. All photographs © Interiors by Nusrat Jamil, via their public Instagram. Signature Interiors by NJ.</p>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{threshold:.12});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>

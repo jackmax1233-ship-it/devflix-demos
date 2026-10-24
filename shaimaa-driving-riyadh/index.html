@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coach Shaimaa Al-Bili — Driving Trainer in Riyadh | مدربة القيادة شيماء البيلي</title>
+<meta name="description" content="Coach Shaimaa Al-Bili — individual female driving trainer (مدربة قيادة) in Riyadh, Saudi Arabia. Lessons from zero: track practice, then the main street. Book via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#FBF6EC; --sand2:#F0E6D2; --ink:#153B3A; --teal:#0F5C4E;
+  --rust:#B4552B; --white:#FFFFFF; --muted:#6B5744;
+  --max:1140px; --rad:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter','Cairo',sans-serif;background:var(--sand);color:var(--ink);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.ar-head{font-family:'Cairo','Inter',sans-serif;line-height:1.25}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--teal)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.ar{direction:rtl;text-align:right;font-family:'Cairo','Inter',sans-serif}
+
+/* reveal (progressive enhancement) */
+html.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+html.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.js .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.96);backdrop-filter:blur(6px);border-bottom:1px solid rgba(21,59,58,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px clamp(16px,4vw,32px);max-width:var(--max);margin:0 auto}
+.brand{font-family:'Cairo',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none}
+.brand small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.04em}
+.navlinks{display:flex;gap:clamp(10px,2.4vw,26px);align-items:center}
+.navlinks a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem}
+.navlinks a:hover{color:var(--teal);text-decoration:underline}
+.btn{display:inline-block;text-decoration:none;font-weight:600;border-radius:10px;padding:12px 22px;font-size:1rem;line-height:1.3}
+.btn-rust{background:var(--rust);color:var(--white)}
+.btn-rust:hover{background:#9c4a25;color:var(--white)}
+.btn-teal{background:var(--teal);color:var(--white)}
+.btn-teal:hover{background:#0c4a3e;color:var(--white)}
+.btn-ghost{border:2px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--white)}
+.btn-sm{padding:9px 16px;font-size:.9rem}
+
+/* hero */
+.hero{background:var(--ink);color:var(--white)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(36px,6vw,72px) 0}
+.kicker{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#9fd8c8;margin-bottom:14px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;color:var(--white);margin-bottom:10px}
+.hero .ar-sub{font-size:clamp(1.2rem,3vw,1.7rem);font-weight:700;color:#f5c98a;margin-bottom:18px}
+.hero p.lead{font-size:clamp(1rem,2.2vw,1.15rem);color:#e9f3ef;max-width:46ch;margin-bottom:26px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{justify-self:center;width:min(100%,400px)}
+.hero-photo figure{background:#0e2c2b;border-radius:18px;padding:10px}
+.hero-photo img{border-radius:10px;width:100%;aspect-ratio:640/1136;object-fit:cover;max-height:560px}
+.hero-photo figcaption{color:#cfe3dc;font-size:.85rem;padding:10px 4px 4px}
+.hero-note{margin-top:18px;font-size:.9rem;color:#bcd6cf}
+
+/* sections */
+section.block{padding:clamp(48px,7vw,84px) 0}
+.sec-kicker{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin-bottom:10px}
+h2.sec{font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:800;margin-bottom:8px}
+p.sec-sub{color:#2b4b49;max-width:62ch;margin-bottom:30px;font-size:1.05rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.5vw,26px)}
+.step{background:var(--white);border:1px solid rgba(21,59,58,.12);border-radius:var(--rad);padding:26px 22px}
+.step .n{font-family:'Cairo',sans-serif;font-weight:800;font-size:2.2rem;color:var(--teal);line-height:1}
+.step h3{font-size:1.2rem;margin:10px 0 6px}
+.step p{font-size:.97rem;color:#2b4b49}
+.step .ar-line{color:var(--teal);font-weight:700;margin-bottom:6px}
+
+/* gallery */
+.moments{background:var(--sand2)}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.5vw,26px)}
+.mcard{background:var(--sand);border-radius:var(--rad);overflow:hidden;border:1px solid rgba(21,59,58,.12)}
+.mcard img{width:100%;aspect-ratio:640/1136;object-fit:cover}
+.mcard.port img{aspect-ratio:640/1136}
+.mcard.sq img{aspect-ratio:640/853}
+.mcard .cap{padding:14px 16px}
+.mcard .cap .ar{font-weight:700;color:var(--teal);margin-bottom:6px}
+.mcard .cap .en{font-size:.92rem;color:#2b4b49}
+.mstrip{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.5vw,26px);margin-top:clamp(14px,2.5vw,26px)}
+.mstrip img{border-radius:var(--rad);width:100%;aspect-ratio:640/1136;object-fit:cover}
+.mstrip img.wide{aspect-ratio:640/853}
+
+/* testimonials */
+.voices{background:var(--ink);color:var(--white)}
+.voices h2.sec{color:var(--white)}
+.voices p.sec-sub{color:#d8e9e3}
+.qgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2.5vw,26px)}
+.quote{background:#0f2e2d;border:1px solid rgba(255,255,255,.12);border-radius:var(--rad);padding:26px 24px}
+.quote .ar{font-size:1.35rem;font-weight:700;color:#f5c98a;margin-bottom:10px}
+.quote .en{font-size:1rem;color:#e9f3ef;font-style:italic}
+.quote .src{margin-top:12px;font-size:.85rem;color:#a9c9c1}
+.qnote{margin-top:22px;font-size:1rem;color:#d8e9e3;max-width:66ch}
+
+/* booking */
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.book-card{background:var(--white);border:1px solid rgba(21,59,58,.14);border-radius:18px;padding:clamp(26px,4vw,40px)}
+.book-card .wa-num{font-family:'Cairo',sans-serif;font-weight:800;font-size:clamp(1.5rem,4vw,2.1rem);color:var(--ink);margin:8px 0;direction:ltr;text-align:left}
+.book-card .wa-num a{color:var(--ink);text-decoration:none}
+.book-list{list-style:none;margin:18px 0 24px}
+.book-list li{padding:8px 0 8px 30px;position:relative;font-size:1rem;color:#2b4b49}
+.book-list li::before{content:"✓";position:absolute;left:0;top:8px;color:var(--teal);font-weight:700}
+.book-photo img{border-radius:18px;width:100%;aspect-ratio:640/1136;object-fit:cover;max-height:480px}
+.book-photo figcaption{font-size:.85rem;color:var(--muted);margin-top:8px}
+
+/* footer */
+footer{background:var(--ink);color:#d8e9e3;padding:34px 0}
+.foot{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+.foot .fbrand{font-family:'Cairo',sans-serif;font-weight:800;color:var(--white);font-size:1.1rem}
+.foot a{color:#f5c98a}
+.foot .fine{font-size:.85rem;color:#a9c9c1;flex-basis:100%}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--rust);color:var(--white)!important;text-decoration:none;font-weight:600;font-size:.95rem;border-radius:999px;padding:13px 22px;box-shadow:0 6px 20px rgba(0,0,0,.28)}
+.wa-float:hover{background:#9c4a25}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-photo{justify-self:start;width:min(100%,340px)}
+  .steps{grid-template-columns:1fr}
+  .mgrid,.mstrip{grid-template-columns:1fr}
+  .mgrid .mcard img,.mstrip img{max-height:480px}
+  .qgrid{grid-template-columns:1fr}
+  .book-grid{grid-template-columns:1fr}
+  .navlinks a:not(.btn){display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="#top">Coach Shaimaa Al-Bili<small>مدربة القيادة شيماء البيلي · Riyadh</small></a>
+    <nav class="navlinks">
+      <a href="#how">How it works</a>
+      <a href="#moments">Student moments</a>
+      <a href="#voices">Reviews</a>
+      <a class="btn btn-rust btn-sm" href="https://wa.me/966501854862?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%85%D8%AF%D8%B1%D8%A8%D8%A9%20%D8%B4%D9%8A%D9%85%D8%A7%D8%A1%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%AD%D8%B5%D8%A9%20%D9%82%D9%8A%D8%A7%D8%AF%D8%A9">Book on WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="kicker">Riyadh, Saudi Arabia · Individual Driving Trainer</span>
+        <h1>From zero to confident on Riyadh&rsquo;s roads.</h1>
+        <p class="ar ar-sub">مدربة القيادة شيماء البيلي — من الصفر للشارع الرئيسي بثقة</p>
+        <p class="lead">Coach Shaimaa Al-Bili teaches women to drive from the very first class — patient, encouraging training on the track first, then the main street. Four-hour sessions that build real confidence, not just mileage.</p>
+        <div class="hero-cta">
+          <a class="btn btn-rust" href="https://wa.me/966501854862?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%85%D8%AF%D8%B1%D8%A8%D8%A9%20%D8%B4%D9%8A%D9%85%D8%A7%D8%A1%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%AD%D8%B5%D8%A9%20%D9%82%D9%8A%D8%A7%D8%AF%D8%A9">Book on WhatsApp</a>
+          <a class="btn btn-ghost" style="border-color:var(--white);color:var(--white)" href="https://www.instagram.com/driving.coach1/">Instagram @driving.coach1</a>
+        </div>
+        <p class="hero-note">Beginners welcome — most students start from absolute zero.</p>
+      </div>
+      <div class="hero-photo reveal">
+        <figure>
+          <img src="assets/photo-2.webp" width="640" height="1136" alt="Student driving with the coach on a palm-lined Riyadh road">
+          <figcaption>On the road in Riyadh — student behind the wheel. <span class="ar">«الشارع الرئيسي»</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="block" id="how">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="sec-kicker">How it works</p>
+        <h2 class="sec">A calm path from first class to the main street</h2>
+        <p class="sec-sub">No pressure, no rush. Each step builds on the last — most students begin from zero and grow into confident city drivers.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="n">١</div>
+          <h3>Start from zero</h3>
+          <p class="ar ar-line">أول كلاس من الصفر</p>
+          <p>Your first class begins from absolute zero — no experience needed. The coach&rsquo;s students say: first class from zero, and the confidence grows from there.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">٢</div>
+          <h3>Train on the track</h3>
+          <p class="ar ar-line">التدريب في الميدان</p>
+          <p>Parking, turns and control are practiced on the training track first — a safe space to make mistakes and learn them properly.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">٣</div>
+          <h3>Take the main street</h3>
+          <p class="ar ar-line">ثم الشارع الرئيسي</p>
+          <p>Then out onto real Riyadh roads — ring roads, traffic and parking — with the coach beside you until driving feels natural.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOMENTS -->
+  <section class="block moments" id="moments">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="sec-kicker">Student moments</p>
+        <h2 class="sec">Real progress, documented class by class</h2>
+        <p class="sec-sub">Snapshots from training — from a first class starting at zero to confident driving on Riyadh&rsquo;s main roads. Quotes below are her own words on Instagram.</p>
+      </div>
+      <div class="mgrid">
+        <div class="mcard reveal">
+          <img src="assets/photo-6.webp" width="640" height="1138" loading="lazy" decoding="async" alt="First driving class from zero on a Riyadh street">
+          <div class="cap">
+            <p class="ar">ما شاء الله أول كلاس من الصفر</p>
+            <p class="en">&ldquo;Masha&rsquo;Allah — first class from zero.&rdquo; The journey starts here.</p>
+          </div>
+        </div>
+        <div class="mcard reveal">
+          <img src="assets/photo-3.webp" width="640" height="1136" loading="lazy" decoding="async" alt="Student driving on a main street in her second class">
+          <div class="cap">
+            <p class="ar">ثاني كلاس والتطور الواضح</p>
+            <p class="en">&ldquo;Second class — and the progress is clear.&rdquo;</p>
+          </div>
+        </div>
+        <div class="mcard reveal">
+          <img src="assets/photo-5.webp" width="640" height="1136" loading="lazy" decoding="async" alt="Beginner student driving confidently on the Eastern Ring Road">
+          <div class="cap">
+            <p class="ar">مبتدئة على الدائري الشرقي تحسها تسوق من سنين</p>
+            <p class="en">&ldquo;A beginner on the Eastern Ring Road — you&rsquo;d think she&rsquo;s been driving for years.&rdquo;</p>
+          </div>
+        </div>
+      </div>
+      <div class="mstrip">
+        <img class="reveal" src="assets/photo-4.webp" width="640" height="1138" loading="lazy" decoding="async" alt="Morning training drive under a bridge — the joy of driving">
+        <img class="reveal" src="assets/photo-8.webp" width="640" height="853" loading="lazy" decoding="async" alt="Two iced coffees shared after a lesson">
+        <img class="reveal" src="assets/photo-1.webp" width="640" height="1136" loading="lazy" decoding="async" alt="Waiting at a traffic light on a Riyadh street">
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICES -->
+  <section class="block voices" id="voices">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="sec-kicker" style="color:#f5c98a">What students say</p>
+        <h2 class="sec">She teaches confidence before driving</h2>
+        <p class="sec-sub">From student comments on <a href="https://www.instagram.com/driving.coach1/" style="color:#f5c98a">@driving.coach1</a>:</p>
+      </div>
+      <div class="qgrid">
+        <div class="quote reveal">
+          <p class="ar" dir="rtl" lang="ar">علمتي الثقة قبل السواقة</p>
+          <p class="en">&ldquo;You taught me confidence before driving.&rdquo;</p>
+          <p class="src">— student comment, Instagram</p>
+        </div>
+        <div class="quote reveal">
+          <p class="ar" dir="rtl" lang="ar">أحسن مدربة سواقة</p>
+          <p class="en">&ldquo;The best driving instructor.&rdquo;</p>
+          <p class="src">— student comment, Instagram</p>
+        </div>
+      </div>
+      <p class="qnote reveal">Again and again, students name the same three things: <strong style="color:#fff">patience</strong>, <strong style="color:#fff">encouragement</strong>, and <strong style="color:#fff">confidence</strong> — the feeling that a nervous beginner is genuinely looked after.</p>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="block" id="book">
+    <div class="wrap book-grid">
+      <div class="book-card reveal">
+        <p class="sec-kicker">Booking</p>
+        <h2 class="sec">Reserve your seat on WhatsApp</h2>
+        <ul class="book-list">
+          <li>Booking is direct via WhatsApp — no app, no waiting list</li>
+          <li>Four-hour training sessions advertised</li>
+          <li>Beginners from zero are welcome</li>
+          <li>Individual trainer, based in Riyadh, Saudi Arabia</li>
+        </ul>
+        <p class="wa-num"><a href="https://wa.me/966501854862">+966 50 185 4862</a></p>
+        <a class="btn btn-rust" href="https://wa.me/966501854862?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%85%D8%AF%D8%B1%D8%A8%D8%A9%20%D8%B4%D9%8A%D9%85%D8%A7%D8%A1%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%AD%D8%B5%D8%A9%20%D9%82%D9%8A%D8%A7%D8%AF%D8%A9">Message Coach Shaimaa</a>
+      </div>
+      <div class="book-photo reveal">
+        <figure>
+          <img src="assets/photo-7.webp" width="640" height="853" loading="lazy" decoding="async" alt="Driving towards a sunset — a warm illustration of the open road ahead">
+          <figcaption><span class="ar" dir="rtl">الصوره الثانيه تهمك</span> — for every girl who wants to drive but feels nervous: the road is closer than you think.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="fbrand">Coach Shaimaa Al-Bili <span style="font-weight:400">· مدربة القيادة شيماء البيلي</span></div>
+    <div>
+      <a href="https://www.instagram.com/driving.coach1/">Instagram @driving.coach1</a>
+      &nbsp;·&nbsp;
+      <a href="https://wa.me/966501854862">WhatsApp +966 50 185 4862</a>
+    </div>
+    <p class="fine">Individual driving trainer, Riyadh, Saudi Arabia. Bookings via WhatsApp only.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/966501854862">💬 WhatsApp</a>
+
+<script>
+document.documentElement.classList.add('js');
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>

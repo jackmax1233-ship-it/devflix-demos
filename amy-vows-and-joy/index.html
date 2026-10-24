@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amy Vows and Joy — Trilingual Marriage Celebrant, Brisbane</title>
+<meta name="description" content="Amy is a marriage celebrant serving Brisbane & surrounds. Weddings and elopements officiated in English, Mandarin and Cantonese.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F7F2E7; --card:#FFFDF7; --band-soft:#EFE7D6;
+  --ink:#221E14; --muted:#5C5647;
+  --jade-deep:#1E4032; --jade:#24523E;
+  --verm:#AC3A18; --verm-dark:#8C2E12;
+  --gold:#D3A94F; --foot:#14100A; --foot-muted:#CFC3AD;
+  --maxw:1120px; --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--ink);
+  line-height:1.65;font-size:1rem;-webkit-text-size-adjust:100%}
+img{display:block;max-width:100%}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:.6rem 1rem;z-index:99}
+.skip:focus{left:0}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:50;background:rgba(247,242,231,.96);
+  backdrop-filter:blur(6px);border-bottom:1px solid #ddd2bd}
+.nav{display:flex;align-items:center;gap:1rem;padding:.8rem 0}
+.brand{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.35rem;
+  color:var(--ink);text-decoration:none;letter-spacing:.01em}
+.brand em{color:var(--verm);font-style:normal}
+.nav-links{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;margin-left:auto;align-items:center}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;
+  padding:.4rem .1rem;border-bottom:2px solid transparent}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--verm-dark);border-bottom-color:var(--verm)}
+.btn{display:inline-block;text-decoration:none;font-weight:600;border-radius:999px;
+  padding:.75rem 1.5rem;transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn-primary{background:var(--verm-dark);color:#fff}
+.btn-primary:hover,.btn-primary:focus-visible{background:#752710;color:#fff;transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:var(--ink);color:var(--paper)}
+.nav .btn{padding:.55rem 1.1rem;font-size:.9rem;white-space:nowrap}
+:focus-visible{outline:3px solid var(--verm);outline-offset:2px;border-radius:4px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid #ddd2bd}
+.hero .yuan{position:absolute;right:-2rem;top:-1rem;font-size:clamp(10rem,28vw,20rem);
+  line-height:1;color:var(--jade-deep);opacity:.07;user-select:none;pointer-events:none;
+  font-family:"Cormorant Garamond",serif}
+.hero-grid{display:grid;gap:2.5rem;padding:clamp(2rem,5vw,3.5rem) 0;align-items:center}
+.hero-copy .kicker{color:var(--verm);font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;font-size:.78rem;margin-bottom:1rem}
+.hero-copy h1{font-size:clamp(2.4rem,5.5vw,3.9rem);line-height:1.08;font-weight:600;
+  margin-bottom:1.1rem}
+.hero-copy h1 em{color:var(--jade);font-style:italic}
+.hero-copy p.lede{font-size:1.12rem;color:var(--ink);max-width:34rem;margin-bottom:.6rem}
+.hero-copy .langs{color:var(--muted);font-size:.95rem;margin-bottom:1.6rem;letter-spacing:.06em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.4rem}
+.hero-note{font-size:.88rem;color:var(--muted)}
+.hero-photo{position:relative}
+.hero-photo figure{background:var(--card);border:1px solid #ddd2bd;border-radius:var(--r);
+  padding:.7rem;box-shadow:0 18px 40px -22px rgba(34,30,20,.35)}
+.hero-photo img{width:100%;aspect-ratio:3/4;max-height:560px;object-fit:cover;
+  object-position:center 32%;border-radius:8px}
+.figcap{position:absolute;left:50%;transform:translateX(-50%);bottom:1.4rem;
+  background:rgba(34,30,20,.92);color:#fff;font-size:.78rem;padding:.5rem .9rem;
+  border-radius:999px;max-width:88%;text-align:center;line-height:1.4}
+@media (min-width:720px){.figcap{font-size:.82rem;white-space:nowrap}}
+
+/* ---------- jade band ---------- */
+.band{background:var(--jade-deep);color:#F7F2E7}
+.band .wrap{padding:clamp(2.2rem,5vw,3.2rem) clamp(1rem,4vw,2rem)}
+.band h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:600;line-height:1.15;margin-bottom:.6rem}
+.band h2 em{color:var(--gold);font-style:italic}
+.band .sub{color:#EDE4CF;max-width:42rem;margin-bottom:2rem}
+.langs3{display:grid;gap:1.2rem;border-top:1px solid rgba(211,169,79,.45);padding-top:1.6rem}
+.lang{background:rgba(247,242,231,.06);border:1px solid rgba(211,169,79,.4);
+  border-radius:12px;padding:1.2rem 1.3rem}
+.lang .cn{font-family:"Cormorant Garamond",serif;font-size:1.7rem;color:var(--gold);line-height:1.2}
+.lang h3{font-size:1.05rem;margin:.3rem 0 .3rem}
+.lang p{font-size:.94rem;color:#EDE4CF}
+
+/* ---------- sections ---------- */
+section.block{padding:clamp(2.5rem,6vw,4rem) 0}
+.sec-head{max-width:44rem;margin-bottom:2rem}
+.sec-head .kicker{color:var(--verm);font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;font-size:.78rem;margin-bottom:.6rem}
+.sec-head h2{font-size:clamp(1.9rem,4.2vw,2.7rem);font-weight:600;line-height:1.12;margin-bottom:.7rem}
+.sec-head p{color:var(--muted)}
+
+/* services */
+.svc-grid{display:grid;gap:1.2rem}
+.svc{background:var(--card);border:1px solid #ddd2bd;border-radius:var(--r);padding:1.6rem;
+  box-shadow:0 12px 30px -20px rgba(34,30,20,.3)}
+.svc .no{font-family:"Cormorant Garamond",serif;font-size:1.1rem;color:var(--verm);
+  letter-spacing:.2em}
+.svc h3{font-size:1.45rem;font-weight:600;margin:.4rem 0 .6rem}
+.svc p{color:var(--ink);font-size:.98rem}
+.svc .places{margin-top:.9rem;font-size:.88rem;color:var(--muted);border-top:1px dashed #d8ccb3;
+  padding-top:.8rem}
+
+/* gallery */
+.gal-grid{display:grid;gap:1.2rem}
+.gal{background:var(--card);border:1px solid #ddd2bd;border-radius:var(--r);overflow:hidden;
+  box-shadow:0 12px 30px -22px rgba(34,30,20,.3)}
+.gal img{width:100%;aspect-ratio:3/4;max-height:340px;object-fit:cover}
+.gal.palm img{aspect-ratio:1/1}
+.gal figcaption{padding:.9rem 1.1rem;border-top:1px solid #eee4cf}
+.gal figcaption strong{font-size:1rem;display:block}
+.gal figcaption span{font-size:.86rem;color:var(--muted)}
+
+/* about */
+.about{background:var(--band-soft);border-top:1px solid #ddd2bd;border-bottom:1px solid #ddd2bd}
+.about-grid{display:grid;gap:2.2rem;align-items:center}
+.about-grid figure{background:var(--card);border:1px solid #ddd2bd;border-radius:var(--r);
+  padding:.7rem;box-shadow:0 18px 40px -24px rgba(34,30,20,.4)}
+.about-grid img{width:100%;aspect-ratio:3/4;max-height:480px;object-fit:cover;
+  object-position:center 52%;border-radius:8px}
+.about-copy h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:600;margin-bottom:.9rem;line-height:1.15}
+.about-copy p{margin-bottom:.9rem}
+.about-facts{list-style:none;margin:1.2rem 0 0;display:grid;gap:.5rem}
+.about-facts li{padding-left:1.6rem;position:relative;font-size:.97rem}
+.about-facts li::before{content:"✦";position:absolute;left:0;color:var(--verm)}
+.about-quote{margin-top:1.4rem;border-left:3px solid var(--verm);padding:.6rem 0 .6rem 1.1rem;
+  font-style:italic;font-family:"Cormorant Garamond",serif;font-size:1.25rem;color:var(--jade)}
+.about-quote cite{display:block;font-style:normal;font-family:Inter,sans-serif;
+  font-size:.82rem;color:var(--muted);margin-top:.4rem}
+
+/* contact */
+.contact{text-align:center}
+.contact h2{font-size:clamp(2rem,4.5vw,2.9rem);font-weight:600;line-height:1.12;margin-bottom:.8rem}
+.contact h2 em{color:var(--jade);font-style:italic}
+.contact p{color:var(--muted);max-width:36rem;margin:0 auto 1.8rem}
+.email-card{display:inline-block;background:var(--card);border:1px solid #ddd2bd;
+  border-radius:var(--r);padding:1.4rem 1.8rem;box-shadow:0 16px 34px -22px rgba(34,30,20,.35)}
+.email-card .lbl{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:.4rem}
+.email-card a.mail{font-size:clamp(1.05rem,3vw,1.35rem);font-weight:600;color:var(--verm-dark);
+  text-decoration:none;word-break:break-all}
+.email-card a.mail:hover,.email-card a.mail:focus-visible{text-decoration:underline}
+.loc{margin-top:1.4rem;font-size:.92rem;color:var(--muted)}
+
+/* footer */
+footer{background:var(--foot);color:var(--foot-muted)}
+footer .wrap{padding:2rem clamp(1rem,4vw,2rem);display:flex;flex-wrap:wrap;gap:.6rem 2rem;
+  align-items:center;justify-content:space-between}
+footer .fname{font-family:"Cormorant Garamond",serif;font-size:1.25rem;color:#F7F2E7}
+footer a{color:var(--gold);text-decoration:none}
+footer a:hover,footer a:focus-visible{text-decoration:underline}
+footer .fine{font-size:.8rem;width:100%;opacity:.85}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:719px){
+  .nav{flex-wrap:wrap}
+  .brand{flex:1 1 auto}
+  .nav-links{flex:1 1 100%;margin-left:0;justify-content:flex-start;gap:.2rem 1rem;padding-top:.4rem}
+}
+@media (min-width:720px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .langs3{grid-template-columns:repeat(3,1fr)}
+  .svc-grid{grid-template-columns:repeat(3,1fr)}
+  .gal-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:.9fr 1.1fr}
+}
+@media (min-width:1024px){
+  .gal-grid{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Amy <em>Vows and Joy</em></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Ceremonies</a>
+      <a href="#weddings">Real weddings</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="mailto:hello@amyvowsandjoy.co.site?subject=Our%20wedding%20date">Check your date</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-label="Introduction">
+    <span class="yuan" aria-hidden="true">緣</span>
+    <div class="wrap hero-grid">
+      <div class="hero-copy rv">
+        <p class="kicker">Marriage celebrant · Brisbane &amp; surrounds</p>
+        <h1 class="serif">Weddings &amp; elopements, <em>in three languages.</em></h1>
+        <p class="lede">Amy officiates wedding ceremonies and elopements in English, Mandarin and Cantonese — so both families can hear every word of the ceremony in the language of their hearts.</p>
+        <p class="langs">英語 · 普通話 · 粵語 — ENGLISH · MANDARIN · CANTONESE</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:hello@amyvowsandjoy.co.site?subject=Our%20wedding%20date">Email Amy</a>
+          <a class="btn btn-ghost" href="#weddings">See real weddings</a>
+        </div>
+        <p class="hero-note">Enquiries are answered by email — tell Amy your date, your venue, and the language your families speak.</p>
+      </div>
+      <div class="hero-photo rv">
+        <figure>
+          <img src="img/hero.webp" alt="Candice and Jimmy kissing at their reception overlooking the Brisbane skyline" width="900" height="1200" fetchpriority="high">
+          <span class="figcap">Candice &amp; Jimmy · Fig Tree Lawn, Mt Coot-tha · 16.9.2026</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRILINGUAL BAND -->
+  <section class="band" aria-label="Three languages">
+    <div class="wrap">
+      <h2 class="serif rv">One celebrant. <em>Three languages.</em></h2>
+      <p class="sub rv">Many Brisbane couples live between two cultures. Amy makes sure nobody — not the grandparents, not the in-laws — misses a single moment of the ceremony.</p>
+      <div class="langs3">
+        <div class="lang rv">
+          <p class="cn" lang="en">English</p>
+          <h3>Ceremonies in plain, warm English</h3>
+          <p>The full legal ceremony and personal vows, told in words everyone can follow.</p>
+        </div>
+        <div class="lang rv">
+          <p class="cn" lang="zh">普通話</p>
+          <h3>Mandarin for family &amp; tradition</h3>
+          <p>Bilingual ceremonies and traditions like the haobao tea gift, explained so both sides feel included.</p>
+        </div>
+        <div class="lang rv">
+          <p class="cn" lang="zh">粵語</p>
+          <h3>Cantonese for the ones who raised you</h3>
+          <p>So grandparents and elders hear the promises in the language they dream in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="block" id="services" aria-label="Ceremony services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker">What Amy does</p>
+        <h2 class="serif">Ceremonies, elopements &amp; the details that make them yours</h2>
+        <p>Every ceremony is personalised — from the vows to the styling touches Amy crafts herself.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc rv">
+          <p class="no">壹</p>
+          <h3 class="serif">Wedding ceremonies</h3>
+          <p>Full personalised ceremonies for weddings big and small — bilingual where your family needs it, with traditions like the tea ceremony woven in naturally.</p>
+          <p class="places">Recent ceremonies: Fig Tree Lawn &amp; Palm Tree Lawn, Mt Coot-tha · City Botanic Gardens · Brisbane Phoenix Chinese Restaurant</p>
+        </article>
+        <article class="svc rv">
+          <p class="no">貳</p>
+          <h3 class="serif">Elopements</h3>
+          <p>Intimate, just-us elopements — from early-morning ceremonies at Wellington Point to garden corners of the Botanic Gardens. Amy guides you through the legal steps and the romance.</p>
+          <p class="places">Recent elopements: City Botanic Gardens · Palm Tree Lawn · Cleland Light House · Wellington Point</p>
+        </article>
+        <article class="svc rv">
+          <p class="no">叁</p>
+          <h3 class="serif">Custom signage &amp; styling</h3>
+          <p>Personalised welcome signs, arbours and ceremony styling — designed by Amy to match your day, so your ceremony looks as good as it feels.</p>
+          <p class="places">Made in Brisbane · order by email or Instagram DM</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL WEDDINGS -->
+  <section class="block" id="weddings" aria-label="Real weddings" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker">Real weddings</p>
+        <h2 class="serif">Couples Amy has married</h2>
+        <p>Real ceremonies, real couples — all photographed at their actual weddings in and around Brisbane.</p>
+      </div>
+      <div class="gal-grid">
+        <figure class="gal rv">
+          <img src="img/wedding-sherry-henry.webp" alt="Sherry and Henry holding hands by the water at their elopement" width="700" height="932" loading="lazy" style="object-position:center 62%">
+          <figcaption><strong>Sherry &amp; Henry</strong><span>Elopement, 15.9.2026 — where they had their first date</span></figcaption>
+        </figure>
+        <figure class="gal rv">
+          <img src="img/wedding-susan-tony.webp" alt="Susan and Tony by a white wall at their wedding, afternoon sun" width="700" height="933" loading="lazy" style="object-position:center 68%">
+          <figcaption><strong>Susan &amp; Tony</strong><span>Wedding, 13.9.2026 — officiated in Mandarin &amp; English</span></figcaption>
+        </figure>
+        <figure class="gal rv">
+          <img src="img/officiant.webp" alt="Amy officiating as Olivia and Oliver exchange their vows in the City Botanic Gardens" width="900" height="1200" loading="lazy" style="object-position:center 45%">
+          <figcaption><strong>Olivia &amp; Oliver</strong><span>Elopement, City Botanic Gardens, 22.8.2026</span></figcaption>
+        </figure>
+        <figure class="gal palm rv">
+          <img src="img/wedding-palm-tree-lawn.webp" alt="Couple kissing beneath the palms at Palm Tree Lawn" width="700" height="703" loading="lazy" style="object-position:center 50%">
+          <figcaption><strong>Palm Tree Lawn elopement</strong><span>Brisbane Botanic Gardens, Mt Coot-tha, 13.1.2026</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block about" id="about" aria-label="About Amy">
+    <div class="wrap about-grid">
+      <figure class="rv">
+        <img src="img/about-amy.webp" alt="Amy in a red top smiling with Louis and Yen after their wedding at Palm Tree Lawn" width="900" height="1200" loading="lazy">
+      </figure>
+      <div class="about-copy rv">
+        <p class="kicker" style="color:var(--verm);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:.6rem">About Amy</p>
+        <h2 class="serif">The celebrant who <em style="color:var(--jade);font-style:italic">feels like family</em> by the end of the day</h2>
+        <p>Amy is a Brisbane-based marriage celebrant with a heart for cross-cultural couples. By day she is a high school teacher — so she is calm under pressure, great with nervous speakers, and a natural at keeping a ceremony flowing. In October 2026 she officiated three weddings in a single day.</p>
+        <ul class="about-facts">
+          <li>Celebrant in English, Mandarin &amp; Cantonese</li>
+          <li>Serving Brisbane &amp; surrounds, QLD</li>
+          <li>High school teacher, new mum, proud corgi owner</li>
+          <li>Also designs custom ceremony signage &amp; styling</li>
+        </ul>
+        <blockquote class="about-quote">
+          “有時候緣分真的很奇妙。Sometimes fate works in beautiful and subtle ways — almost like your stories were quietly connected from the very beginning.”
+          <cite>— Amy, at Louis &amp; Yen's wedding, 28.5.2026</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block contact" id="contact" aria-label="Contact">
+    <div class="wrap">
+      <h2 class="serif rv">Your love story deserves <em>to be heard</em> — by everyone.</h2>
+      <p class="rv">Tell Amy your date, your venue, and which languages your families speak. She will take it from there.</p>
+      <div class="rv">
+        <div class="email-card">
+          <p class="lbl">Email Amy directly</p>
+          <a class="mail" href="mailto:hello@amyvowsandjoy.co.site?subject=Our%20wedding%20date">hello@amyvowsandjoy.co.site</a>
+        </div>
+      </div>
+      <p class="loc rv">Based in Brisbane &amp; surrounds, Queensland · Also on Instagram <a href="https://www.instagram.com/amyvowsandjoy" style="color:var(--verm-dark)">@amyvowsandjoy</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fname">Amy Vows and Joy</p>
+    <p>Marriage celebrant · Brisbane &amp; surrounds · <a href="https://www.instagram.com/amyvowsandjoy">@amyvowsandjoy</a></p>
+    <p class="fine">© 2026 Amy Vows and Joy. All photos from Amy's own Instagram. Concept preview by Devflix.</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+  })},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

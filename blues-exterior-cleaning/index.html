@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue's Exterior Cleaning Services — Pressure Washing &amp; Exterior Cleaning, Blanco, Texas</title>
+<meta name="description" content="Blue's Exterior Cleaning Services: pressure washing, window cleaning, gutters and roof cleaning in Blanco, Texas. Real results, documented reel by reel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a1a30;
+    --navy-deep:#060f1e;
+    --yellow:#ffc400;
+    --yellow-dark:#e0a800;
+    --cyan:#35e0ff;
+    --paper:#ffffff;
+    --mist:#f1f5f9;
+    --slate:#42546c;
+    --line:#d7e0ea;
+    --radius:10px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    color:var(--navy);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-text-size-adjust:100%;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .skip-link{position:absolute;left:-9999px;top:0;background:var(--yellow);color:var(--navy);padding:.75rem 1.25rem;font-weight:700;z-index:200;border-radius:0 0 8px 0}
+  .skip-link:focus{left:0}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2.5rem)}
+  .display{font-family:'Anton',Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.05;text-transform:uppercase}
+
+  /* ---------- Header ---------- */
+  header.site{
+    background:var(--navy-deep);
+    color:#fff;
+    position:sticky;top:0;z-index:100;
+    border-bottom:3px solid var(--yellow);
+  }
+  .bar{display:flex;align-items:center;gap:1rem;padding:.7rem 0}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-right:auto}
+  .brand-mark{
+    width:44px;height:44px;flex:0 0 44px;border-radius:8px;
+    background:var(--yellow);
+    display:grid;place-items:center;
+    font-family:'Anton',Impact,sans-serif;font-size:1.5rem;color:var(--navy);line-height:1;
+  }
+  .brand-text{line-height:1.2}
+  .brand-text strong{display:block;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:1.15rem;letter-spacing:.04em;color:#fff}
+  .brand-text span{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:600}
+  nav.main{display:flex;align-items:center;gap:1.4rem}
+  nav.main a.nl{text-decoration:none;color:#fff;font-weight:600;font-size:.92rem;letter-spacing:.02em;padding:.4rem .1rem;border-bottom:2px solid transparent}
+  nav.main a.nl:hover,nav.main a.nl:focus-visible{color:var(--yellow);border-bottom-color:var(--yellow)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.03em;
+    padding:.8rem 1.6rem;border-radius:8px;border:2px solid transparent;
+    transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;
+    cursor:pointer;font-size:1rem;line-height:1.3;
+  }
+  .btn-yellow{background:var(--yellow);color:var(--navy)}
+  .btn-yellow:hover,.btn-yellow:focus-visible{background:var(--yellow-dark);color:var(--navy);transform:translateY(-1px)}
+  .btn-outline{border-color:#fff;color:#fff;background:transparent}
+  .btn-outline:hover,.btn-outline:focus-visible{background:#fff;color:var(--navy);transform:translateY(-1px)}
+  .btn-sm{padding:.6rem 1.1rem;font-size:.88rem;white-space:nowrap}
+  .menu-toggle{display:none}
+  @media (max-width:560px){
+    nav.main .btn{display:none}
+    .brand-text span{letter-spacing:.14em}
+  }
+  @media (max-width:760px){
+    nav.main a.nl{display:none}
+    .menu-toggle{display:block}
+    details.menu{position:relative}
+    details.menu summary{
+      list-style:none;cursor:pointer;background:transparent;border:2px solid #fff;color:#fff;
+      border-radius:8px;padding:.55rem .9rem;font-weight:700;font-size:.9rem;
+    }
+    details.menu summary::-webkit-details-marker{display:none}
+    details.menu summary:hover,details.menu summary:focus-visible{border-color:var(--yellow);color:var(--yellow)}
+    details.menu[open] summary{border-color:var(--yellow);color:var(--yellow)}
+    .menu-panel{
+      position:absolute;right:0;top:calc(100% + .5rem);background:var(--navy-deep);
+      border:1px solid var(--line);border-radius:10px;padding:.6rem;min-width:200px;
+      display:flex;flex-direction:column;box-shadow:0 18px 40px rgba(0,0,0,.45);
+    }
+    .menu-panel a{color:#fff;text-decoration:none;font-weight:600;padding:.7rem .9rem;border-radius:6px}
+    .menu-panel a:hover,.menu-panel a:focus-visible{background:rgba(255,255,255,.1);color:var(--yellow)}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{background:var(--navy);color:#fff;overflow:hidden;position:relative}
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(-45deg,transparent 0 26px,rgba(255,255,255,.022) 26px 52px);
+  }
+  .hero-grid{
+    position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,4rem);
+    align-items:center;padding:clamp(2.2rem,5vw,4.5rem) 0;
+  }
+  .kicker{
+    display:inline-flex;align-items:center;gap:.6rem;
+    color:var(--yellow);font-weight:700;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;
+    margin-bottom:1.1rem;
+  }
+  .kicker::before{content:"";width:34px;height:3px;background:var(--cyan);border-radius:2px}
+  .hero h1{font-size:clamp(2.4rem,5.6vw,4.4rem);color:#fff;margin-bottom:1.2rem}
+  .hero h1 .y{color:var(--yellow)}
+  .hero p.lede{font-size:clamp(1.02rem,1.6vw,1.2rem);color:#e6eef7;max-width:34rem;margin-bottom:2rem}
+  .hero-cta{display:flex;gap:.9rem;flex-wrap:wrap}
+  .hero-note{margin-top:1.4rem;font-size:.86rem;color:#b9c9dc}
+  .hero-note strong{color:var(--cyan)}
+  .hero-fig{justify-self:end;position:relative}
+  .hero-fig .frame{
+    border:4px solid var(--yellow);border-radius:var(--radius);overflow:hidden;
+    background:var(--navy-deep);line-height:0;
+  }
+  .hero-fig img{width:auto;max-height:560px;aspect-ratio:auto;object-fit:contain}
+  .hero-fig figcaption{
+    position:absolute;left:1rem;bottom:1rem;
+    background:rgba(6,15,30,.92);color:#fff;border:1px solid var(--cyan);
+    border-radius:8px;padding:.55rem .9rem;font-size:.8rem;font-weight:600;line-height:1.4;
+  }
+  .hero-fig figcaption b{color:var(--yellow)}
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-fig{justify-self:start}
+    .hero-fig img{max-height:480px;width:auto;max-width:100%}
+  }
+
+  /* ---------- Fact strip ---------- */
+  .facts{background:var(--yellow);color:var(--navy)}
+  .facts-row{
+    display:flex;flex-wrap:wrap;gap:1rem 2.5rem;align-items:center;justify-content:center;
+    padding:1rem 0;font-weight:700;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;
+  }
+  .facts-row .dot{width:7px;height:7px;border-radius:50%;background:var(--navy);opacity:.55}
+
+  /* ---------- Sections ---------- */
+  section{padding:clamp(2.6rem,6vw,5rem) 0}
+  .eyebrow{color:#0b6e8c;font-weight:700;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:.8rem}
+  h2.sec{font-size:clamp(1.9rem,3.8vw,3rem);color:var(--navy);margin-bottom:1rem}
+  .sec-sub{color:var(--slate);max-width:42rem;font-size:1.05rem;margin-bottom:2.4rem}
+
+  /* ---------- Services ---------- */
+  .services{background:var(--mist)}
+  .svc-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(1.8rem,4vw,4rem);align-items:start}
+  .svc-fig{position:sticky;top:96px}
+  .svc-fig .frame{border-radius:var(--radius);overflow:hidden;line-height:0;background:#0d2038;border:1px solid var(--line)}
+  .svc-fig img{max-height:480px;width:100%;object-fit:contain;background:#0d2038}
+  .svc-fig figcaption{padding:.8rem .2rem 0;font-size:.85rem;color:var(--slate)}
+  .svc-fig figcaption b{color:var(--navy)}
+  .svc-list{list-style:none;display:flex;flex-direction:column}
+  .svc-list li{
+    display:grid;grid-template-columns:3.4rem 1fr;gap:1.1rem;align-items:start;
+    padding:1.4rem .6rem;border-top:2px solid var(--line);border-radius:6px;
+    transition:background .18s ease;
+  }
+  .svc-list li:last-child{border-bottom:2px solid var(--line)}
+  .svc-list li:hover,.svc-list li:focus-within{background:#fff}
+  .svc-num{font-family:'Anton',Impact,sans-serif;font-size:1.7rem;color:#8a6100;line-height:1.2}
+  .svc-list h3{font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:.35rem;letter-spacing:.01em}
+  .svc-list p{color:var(--slate);font-size:.98rem;max-width:30rem}
+  @media (max-width:900px){
+    .svc-grid{grid-template-columns:1fr}
+    .svc-fig{position:static;max-width:420px}
+  }
+
+  /* ---------- Transformation band ---------- */
+  .band{background:var(--navy);color:#fff}
+  .band-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.8rem,4vw,4rem);align-items:center}
+  .band h2.sec{color:#fff}
+  .band h2.sec .y{color:var(--yellow)}
+  .band p{color:#dbe6f2;font-size:1.05rem;margin-bottom:1.6rem;max-width:30rem}
+  .band .frame{border-radius:var(--radius);overflow:hidden;line-height:0;border:1px solid rgba(255,255,255,.18);background:var(--navy-deep)}
+  .band img{width:100%;max-height:420px;object-fit:contain}
+  .band .reel-link{display:inline-flex;align-items:center;gap:.5rem;color:var(--cyan);font-weight:700;text-decoration:none;border-bottom:2px solid transparent}
+  .band .reel-link:hover,.band .reel-link:focus-visible{color:var(--yellow);border-bottom-color:var(--yellow)}
+  @media (max-width:900px){.band-grid{grid-template-columns:1fr}}
+
+  /* ---------- Reels gallery ---------- */
+  .reels-head{display:flex;align-items:end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.2rem}
+  .reels-head .sec-sub{margin-bottom:0}
+  .ig-link{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--yellow);padding-bottom:2px}
+  .ig-link:hover,.ig-link:focus-visible{color:#0b6e8c}
+  .reel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+  .reel-card{
+    background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;
+  }
+  .reel-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,26,48,.14)}
+  .reel-card .frame{line-height:0;background:#0d2038}
+  .reel-card img{width:100%;max-height:320px;object-fit:contain}
+  .reel-card .body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+  .reel-card q{font-weight:600;color:var(--navy);font-size:.98rem;line-height:1.45;quotes:"“" "”"}
+  .reel-card .meta{font-size:.8rem;color:var(--slate);font-weight:500}
+  .reel-card a.watch{margin-top:auto;font-weight:700;font-size:.88rem;color:#0b6e8c;text-decoration:none;border-bottom:2px solid transparent;align-self:flex-start}
+  .reel-card a.watch:hover,.reel-card a.watch:focus-visible{border-bottom-color:#0b6e8c}
+  @media (max-width:900px){.reel-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:460px){
+    .reel-grid{gap:.9rem}
+    .reel-card img{max-height:280px}
+  }
+
+  /* ---------- Quote ---------- */
+  .quote{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden}
+  .quote::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(600px 300px at 85% 20%,rgba(53,224,255,.08),transparent 70%);
+  }
+  .quote-inner{position:relative;text-align:center;max-width:46rem;margin:0 auto}
+  .quote h2.sec{color:#fff}
+  .quote h2.sec .y{color:var(--yellow)}
+  .quote p{color:#dbe6f2;font-size:1.08rem;margin-bottom:.8rem}
+  .quote p.small{font-size:.92rem;color:#a9bdd4;margin-bottom:2rem}
+  .quote .btn-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+  .ig-handle{display:inline-block;margin-top:1.6rem;color:var(--cyan);font-weight:700;text-decoration:none;letter-spacing:.03em}
+  .ig-handle:hover,.ig-handle:focus-visible{color:var(--yellow)}
+
+  /* ---------- Footer ---------- */
+  footer{background:#040b16;color:#c8d6e8;padding:2.6rem 0 2rem;font-size:.9rem}
+  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+  footer h4{color:#fff;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1rem}
+  footer ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+  footer a{color:#c8d6e8;text-decoration:none}
+  footer a:hover,footer a:focus-visible{color:var(--yellow)}
+  .foot-brand strong{display:block;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:1.3rem;color:#fff;letter-spacing:.04em;margin-bottom:.4rem}
+  .foot-brand .loc{color:var(--cyan);font-weight:600;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase}
+  .foot-base{border-top:1px solid rgba(255,255,255,.14);padding-top:1.4rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:#8fa3bd;font-size:.82rem}
+  @media (max-width:760px){.foot-grid{grid-template-columns:1fr;gap:1.6rem}}
+
+  /* ---------- Reveal ---------- */
+  .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1;transform:none;transition:none}
+    *{transition:none !important}
+  }
+  :focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Blue's Exterior Cleaning Services — home">
+      <span class="brand-mark" aria-hidden="true">B</span>
+      <span class="brand-text">
+        <strong>BLUE'S</strong>
+        <span>Exterior Cleaning</span>
+      </span>
+    </a>
+    <nav class="main" aria-label="Main navigation">
+      <a class="nl" href="#services">Services</a>
+      <a class="nl" href="#work">Before &amp; After</a>
+      <a class="nl" href="#reels">Reels</a>
+      <a class="nl" href="#quote">Contact</a>
+      <a class="btn btn-yellow btn-sm" href="#quote">Get a Quote</a>
+    </nav>
+    <details class="menu menu-toggle">
+      <summary aria-label="Open menu">Menu</summary>
+      <div class="menu-panel">
+        <a href="#services">Services</a>
+        <a href="#work">Before &amp; After</a>
+        <a href="#reels">Reels</a>
+        <a href="#quote">Contact</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Pressure Washing · Blanco, Texas</span>
+        <h1 class="display" id="hero-h">Exteriors washed to look <span class="y">like new.</span></h1>
+        <p class="lede">Blue's Exterior Cleaning Services handles the grime Texas puts on your home — pressure washing, window cleaning, gutters and roof cleaning — with results documented reel by reel on Instagram.</p>
+        <div class="hero-cta">
+          <a class="btn btn-yellow" href="#quote">Get a Quote</a>
+          <a class="btn btn-outline" href="#work">See the Work</a>
+        </div>
+        <p class="hero-note">Real jobs, real results — <strong>55 posts</strong> of actual work shared on Instagram since April 2026.</p>
+      </div>
+      <figure class="hero-fig reveal">
+        <div class="frame">
+          <img src="img/job-satisfaction.webp" alt="Surface cleaner washing a concrete driveway in front of a garage — a sharp line divides the cleaned half from the dirty half" width="640" height="1136" fetchpriority="high">
+        </div>
+        <figcaption><b>109 likes</b> — the crew's most-watched reel: "Satisfaction?"</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FACT STRIP -->
+  <div class="facts" role="note" aria-label="Business facts">
+    <div class="wrap facts-row">
+      <span>Blanco, Texas</span><span class="dot" aria-hidden="true"></span>
+      <span>4 Exterior Services</span><span class="dot" aria-hidden="true"></span>
+      <span>55 Posts of Real Work</span><span class="dot" aria-hidden="true"></span>
+      <span>Active Since April 2026</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <p class="eyebrow">What we do</p>
+      <h2 class="sec display" id="svc-h">Four services. One spotless exterior.</h2>
+      <p class="sec-sub">Every job the crew posts is residential exterior cleaning — the same four services, done job after job across Blanco.</p>
+      <div class="svc-grid">
+        <figure class="svc-fig reveal">
+          <div class="frame">
+            <img src="img/surface-cleaner.webp" alt="Crew member pushing a rotary surface cleaner along a sidewalk, leaving a bright cleaned path behind" width="640" height="1136" loading="lazy">
+          </div>
+          <figcaption><b>In action:</b> a sidewalk wash mid-job, clean line visible behind the machine.</figcaption>
+        </figure>
+        <ol class="svc-list">
+          <li class="reveal">
+            <span class="svc-num" aria-hidden="true">01</span>
+            <div>
+              <h3>Pressure Washing</h3>
+              <p>Driveways, sidewalks and concrete brought back to clean — the crew's signature job, posted again and again.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="svc-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Window Cleaning</h3>
+              <p>Residential windows left clear — "nothing like the look of cleaned windows," as the crew puts it.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="svc-num" aria-hidden="true">03</span>
+            <div>
+              <h3>Gutters</h3>
+              <p>Gutter exteriors washed clean as part of the full house wash.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="svc-num" aria-hidden="true">04</span>
+            <div>
+              <h3>Roof Cleaning</h3>
+              <p>Roofs washed to look their best, completing the curb-appeal reset.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFORMATION BAND -->
+  <section class="band" id="work" aria-labelledby="band-h">
+    <div class="wrap band-grid">
+      <div class="reveal">
+        <div class="frame">
+          <img src="img/before-after.webp" alt="Before-and-after reel frame: a dirty driveway surface next to the same surface after washing" width="640" height="772" loading="lazy">
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow" style="color:var(--cyan)">Before &amp; after</p>
+        <h2 class="sec display" id="band-h">The difference a wash <span class="y">makes.</span></h2>
+        <p>Years of Texas dust and grime, gone in one visit. The crew's before-and-after reels do the talking — no filters, just water and work.</p>
+        <a class="reel-link" href="https://www.instagram.com/reel/Derjs6FRrx3/" target="_blank" rel="noopener">Watch the before-and-after reel <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REELS GALLERY -->
+  <section id="reels" aria-labelledby="reels-h">
+    <div class="wrap">
+      <div class="reels-head">
+        <div>
+          <p class="eyebrow">Recent jobs</p>
+          <h2 class="sec display" id="reels-h">Straight from the reels.</h2>
+          <p class="sec-sub">Frames from the crew's own public Instagram reels — homes, driveways and windows across Blanco, Texas.</p>
+        </div>
+        <a class="ig-link" href="https://www.instagram.com/bluesexteriorcleaningservices" target="_blank" rel="noopener">Follow @bluesexteriorcleaningservices <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="reel-grid">
+        <article class="reel-card reveal">
+          <div class="frame">
+            <img src="img/window-cleaning.webp" alt="Newly serviced home exterior: white brick house with clean windows and gutters, landscaped front bed" width="640" height="1136" loading="lazy">
+          </div>
+          <div class="body">
+            <q>Window cleaning!</q>
+            <p class="meta">Posted Oct 19, 2026</p>
+            <a class="watch" href="https://www.instagram.com/reel/Derk-5_ROZF/" target="_blank" rel="noopener">Watch the reel <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="reel-card reveal">
+          <div class="frame">
+            <img src="img/brick-home.webp" alt="Brick home with standing-seam metal roof after cleaning, ladder and hoses on the driveway" width="640" height="1136" loading="lazy">
+          </div>
+          <div class="body">
+            <q>Got the privilege of cleaning this beautiful home.</q>
+            <p class="meta">Posted Jun 24, 2026</p>
+            <a class="watch" href="https://www.instagram.com/reel/DZ_FgucRRAD/" target="_blank" rel="noopener">Watch the reel <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="reel-card reveal">
+          <div class="frame">
+            <img src="img/blanco-home.webp" alt="Modern white farmhouse-style home in Blanco, Texas with cleaned windows under a clear blue sky" width="640" height="1136" loading="lazy">
+          </div>
+          <div class="body">
+            <q>Blanco Texas.</q>
+            <p class="meta">Posted Jul 3, 2026</p>
+            <a class="watch" href="https://www.instagram.com/reel/DaWZ5DQRAuC/" target="_blank" rel="noopener">Watch the reel <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="reel-card reveal">
+          <div class="frame">
+            <img src="img/transformation-reel.webp" alt="Reel frame showing a cleaned aggregate driveway and garage — a hand points toward the finished work" width="640" height="1136" loading="lazy">
+          </div>
+          <div class="body">
+            <q>Transformation!</q>
+            <p class="meta">Posted Apr 11, 2026</p>
+            <a class="watch" href="https://www.instagram.com/reel/DXAop5qEXla/" target="_blank" rel="noopener">Watch the reel <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote" id="quote" aria-labelledby="quote-h">
+    <div class="wrap quote-inner reveal">
+      <p class="eyebrow" style="color:var(--cyan)">Get a quote</p>
+      <h2 class="sec display" id="quote-h">Ready when your <span class="y">driveway is.</span></h2>
+      <p>No forms, no hold music. Send a DM on Instagram with your address and a photo of the job — pressure washing, windows, gutters or roof — and the crew will take it from there.</p>
+      <p class="small">Blanco, Texas · Exterior cleaning services</p>
+      <div class="btn-row">
+        <a class="btn btn-yellow" href="https://www.instagram.com/bluesexteriorcleaningservices" target="_blank" rel="noopener">DM Us on Instagram</a>
+        <a class="btn btn-outline" href="https://www.instagram.com/reel/DaWrRFZRREL/" target="_blank" rel="noopener">See the 109-Like Reel</a>
+      </div>
+      <a class="ig-handle" href="https://www.instagram.com/bluesexteriorcleaningservices" target="_blank" rel="noopener">@bluesexteriorcleaningservices</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <strong>BLUE'S</strong>
+        <span class="loc">Exterior Cleaning Services</span>
+        <p style="margin-top:1rem;max-width:22rem">Pressure washing, window cleaning, gutters and roof cleaning in Blanco, Texas.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Pressure Washing</li>
+          <li>Window Cleaning</li>
+          <li>Gutters</li>
+          <li>Roof Cleaning</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find the crew</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/bluesexteriorcleaningservices" target="_blank" rel="noopener">Instagram — @bluesexteriorcleaningservices</a></li>
+          <li><a href="#quote">Request a quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Blue's Exterior Cleaning Services · Blanco, Texas</span>
+      <span>Preview concept — photos are frames from the business's own public Instagram reels.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

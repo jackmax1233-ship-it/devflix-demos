@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lotus Face Painting — Face Painting &amp; Glitter Art in the GTA</title>
+<meta name="description" content="Lotus Face Painting by Shreya Savaj — face painting and glitter art for birthdays, festivals and corporate events across the GTA & surrounding areas. DM to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFF8F1; --white:#FFFFFF;
+  --ink:#2B2320; --soft:#6F5B52;
+  --coral:#C02A44; --coral-deep:#A81F38; --coral-bright:#E4576B;
+  --teal:#0B5B5A; --teal-deep:#103B3A;
+  --sun:#FFC94D; --line:#F0DCCB;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'Nunito',sans-serif;font-size:17px;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--coral)}
+h1,h2,h3{font-family:'Baloo 2',cursive;line-height:1.08;font-weight:800}
+h2{font-size:clamp(2rem,4.6vw,3.1rem);margin:.2em 0 .45em}
+.lede{color:var(--soft);max-width:54ch}
+.btn{display:inline-block;padding:.9rem 2rem;border-radius:999px;font-weight:700;font-size:1.02rem;text-decoration:none;border:2px solid var(--coral);transition:background .2s,color .2s,transform .15s}
+.btn-solid{background:var(--coral);color:#fff}
+.btn-solid:hover{background:var(--ink);border-color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--coral)}
+.btn-ghost:hover{background:var(--coral);color:#fff}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+/* header */
+header{background:var(--cream);border-bottom:2px dashed var(--line);position:sticky;top:0;z-index:20}
+.hrow{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;gap:12px;flex-wrap:wrap}
+.logo{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.4rem;text-decoration:none;color:var(--ink)}
+.logo b{color:var(--coral)}
+nav{display:flex;gap:24px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:600}
+nav a:hover{color:var(--coral)}
+/* hero */
+.hero{position:relative;padding-top:52px;padding-bottom:64px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.hero h1{font-size:clamp(2.9rem,7vw,5.2rem);margin:.25em 0 .3em}
+.hero h1 .teal{color:var(--teal)}
+.hero h1 .coral{color:var(--coral)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero .area{margin-top:18px;color:var(--soft);font-weight:600}
+.hero .area b{color:var(--teal)}
+.hero figure{position:relative;width:100%;max-width:430px;min-width:0;margin:0 auto}
+.hero .blob{position:absolute;inset:-26px -26px auto -26px;height:calc(100% + 52px);background:var(--sun);border-radius:46% 54% 52% 48%/52% 46% 54% 48%;z-index:0}
+.hero figure img{position:relative;z-index:1;width:100%;max-width:430px;aspect-ratio:4/5;max-height:560px;object-fit:cover;object-position:50% 28%;border-radius:34px;border:6px solid var(--white);box-shadow:0 18px 44px rgba(43,35,32,.18)}
+.hero .tag{position:absolute;z-index:2;bottom:18px;left:-18px;background:var(--teal);color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;padding:.55rem 1.2rem;border-radius:999px;transform:rotate(-3deg)}
+.dots{position:absolute;top:34px;right:6%;width:120px;height:60px;background-image:radial-gradient(var(--coral-bright) 4px,transparent 4px);background-size:24px 24px;opacity:.5}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:36px}
+  .hero figure{order:-1}
+  .hero .blob{inset:-16px -16px auto -16px}
+  .hero .tag{left:6px}
+  .dots{display:none}
+}
+/* strip */
+.strip{background:var(--teal);color:#fff;padding:15px 0;overflow:hidden}
+.strip .marq{display:flex;gap:0;white-space:nowrap;animation:scroll 26s linear infinite}
+.strip .marq span{font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase;padding:0 26px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.strip .marq{animation:none}}
+/* gallery */
+.designs{padding-top:72px;padding-bottom:72px}
+.dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+@media(max-width:900px){.dgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.dgrid{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto}}
+.dgrid figure{background:var(--white);border:2px solid var(--line);border-radius:24px;overflow:hidden;transition:transform .2s}
+.dgrid figure:hover{transform:translateY(-5px)}
+.dgrid img{width:100%;max-height:340px;object-fit:cover}
+.dgrid img.ar45{aspect-ratio:4/5}
+.dgrid img.ar11{aspect-ratio:1/1}
+.dgrid figcaption{padding:14px 20px 18px}
+.dgrid figcaption b{font-family:'Baloo 2',cursive;font-size:1.12rem}
+.dgrid figcaption span{display:block;color:var(--soft);font-size:.94rem}
+.dgrid figcaption a{color:var(--teal);font-weight:600;font-size:.9rem}
+/* services */
+.services{padding:72px 0;background:var(--white);border-top:2px dashed var(--line);border-bottom:2px dashed var(--line)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:30px}
+.scard{background:var(--cream);border:2px solid var(--line);border-radius:22px;padding:24px 22px}
+.scard .n{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.6rem;color:var(--coral-bright)}
+.scard h3{font-size:1.15rem;margin:.35em 0 .3em}
+.scard p{color:var(--soft);font-size:.95rem}
+.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.badges li{list-style:none;background:var(--sun);color:var(--ink);font-weight:700;font-size:.95rem;padding:.55rem 1.15rem;border-radius:999px}
+/* halloween band */
+.halloween{background:var(--coral-deep);color:#fff;padding:72px 0}
+.hgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+@media(max-width:900px){.hgrid{grid-template-columns:1fr}}
+.halloween .kicker{color:var(--sun)}
+.halloween h2{color:#fff}
+.halloween p{color:#FFE9EC;max-width:52ch}
+.halloween img{width:100%;max-width:440px;min-width:0;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%;border-radius:30px;border:6px solid #fff;margin:0 auto}
+.halloween .btn-solid{background:#fff;color:var(--coral-deep);border-color:#fff;margin-top:24px}
+.halloween .btn-solid:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+/* book */
+.book{padding-top:72px;padding-bottom:72px}
+.bcard{background:var(--white);border:2px solid var(--line);border-radius:28px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+@media(max-width:900px){.bcard{grid-template-columns:1fr;padding:32px 26px}}
+.elist{list-style:none;margin:20px 0 0;display:grid;gap:10px}
+.elist li{display:flex;gap:12px;align-items:baseline;font-weight:600}
+.elist li::before{content:"";width:12px;height:12px;flex:none;border-radius:50%;background:var(--coral);transform:translateY(1px)}
+.bcard .side{text-align:center;background:var(--cream);border-radius:20px;padding:30px 24px}
+.bcard .side .handle{font-family:'Baloo 2',cursive;font-size:1.35rem;font-weight:800;color:var(--teal);margin:.4em 0 .6em}
+/* footer */
+footer{background:var(--teal-deep);color:#FFF8F1;padding:44px 0 52px}
+footer .fname{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.4rem}
+footer p{margin-top:10px;max-width:80ch;color:#EDE4DA}
+footer a{color:var(--sun);font-weight:700}
+footer .fine{margin-top:22px;font-size:.88rem;color:#C9BBAE}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hrow">
+    <a class="logo" href="#top"><b>Lotus</b> Face Painting</a>
+    <nav>
+      <a href="#designs">Designs</a>
+      <a href="#services">Services</a>
+      <a href="#halloween">Halloween</a>
+      <a href="#book">Book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="rv">
+    <p class="kicker">Face Painting &amp; Glitter Art — GTA, Ontario</p>
+    <h1>Happy faces, <span class="teal">painted</span> with <span class="coral">love</span>.</h1>
+    <p class="lede">Lotus Face Painting brings colour and sparkle to birthdays, festivals and corporate events across the GTA &amp; surrounding areas — from fierce little tigers to full Halloween transformations.</p>
+    <div class="ctas">
+      <a class="btn btn-solid" href="https://ig.me/m/lotusfacepainting_gta">DM to Book</a>
+      <a class="btn btn-ghost" href="#designs">See the designs</a>
+    </div>
+    <p class="area">Serving <b>Brampton · Mississauga · Toronto</b> &amp; surrounding areas</p>
+  </div>
+  <figure class="rv">
+    <div class="blob" aria-hidden="true"></div>
+    <img src="img/hero.webp" alt="A young girl with a colourful tiger and rainbow face paint design, eyes closed" width="1100" height="1182" fetchpriority="high">
+    <span class="tag">by Shreya Savaj</span>
+  </figure>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="marq">
+    <span>Birthdays</span><span>·</span><span>Festivals</span><span>·</span><span>Corporate Events</span><span>·</span><span>Glitter Art</span><span>·</span><span>Halloween Looks</span><span>·</span>
+    <span>Birthdays</span><span>·</span><span>Festivals</span><span>·</span><span>Corporate Events</span><span>·</span><span>Glitter Art</span><span>·</span><span>Halloween Looks</span><span>·</span>
+  </div>
+</div>
+
+<section class="designs wrap" id="designs">
+  <div class="rv">
+    <p class="kicker">Recent work</p>
+    <h2>Real designs, real happy faces.</h2>
+    <p class="lede">Every photo below is Lotus Face Painting's own work, posted on Instagram — a peek at what your party could look like.</p>
+  </div>
+  <div class="dgrid">
+    <figure class="rv">
+      <img class="ar45" src="img/butterfly.webp" alt="Little girl with a pink and purple butterfly and flower face paint design" width="1100" height="1467" loading="lazy" style="object-position:50% 20%">
+      <figcaption><b>Butterfly &amp; blossoms</b><span>Soft pink flowers, delicate butterflies and sparkles.</span><a href="https://www.instagram.com/p/Dee2gfLRr2K/">See the post</a></figcaption>
+    </figure>
+    <figure class="rv">
+      <img class="ar45" src="img/spidey.webp" alt="Boy with a red and black Spider-Man half-face paint design" width="1100" height="1467" loading="lazy" style="object-position:50% 25%">
+      <figcaption><b>Spidey for the birthday boy</b><span>Web-slinging superhero looks for little heroes.</span><a href="https://www.instagram.com/p/Dej0mB6xJJt/">See the post</a></figcaption>
+    </figure>
+    <figure class="rv">
+      <img class="ar11" src="img/rainbow.webp" alt="Girl with a rainbow, clouds, stars and gem face paint design on her forehead" width="1100" height="1100" loading="lazy" style="object-position:50% 40%">
+      <figcaption><b>Rainbow, clouds &amp; gems</b><span>Fluffy clouds, stars and sparkling gems.</span><a href="https://www.instagram.com/p/DeZfNWZxNQW/">See the post</a></figcaption>
+    </figure>
+    <figure class="rv">
+      <img class="ar11" src="img/fairy.webp" alt="Girl with a fairy silhouette, rainbow colours and pink flowers painted around her eyes" width="1100" height="1100" loading="lazy" style="object-position:50% 45%">
+      <figcaption><b>Fairy magic</b><span>Rainbow colour, butterflies and a fairy silhouette.</span><a href="https://www.instagram.com/p/DeWf9qfxMz8/">See the post</a></figcaption>
+    </figure>
+    <figure class="rv">
+      <img class="ar45" src="img/bunny.webp" alt="A mom and daughter with matching bunny and floral face paint designs" width="1100" height="1221" loading="lazy" style="object-position:50% 30%">
+      <figcaption><b>Mom &amp; daughter bunnies</b><span>Sweet bunnies and pretty florals — a matching pair.</span><a href="https://www.instagram.com/p/DeAF1lQRD3Z/">See the post</a></figcaption>
+    </figure>
+    <figure class="rv">
+      <img class="ar11" src="img/halloween.webp" alt="Two adults with white skeleton and skull Halloween face paint" width="1100" height="1100" loading="lazy" style="object-position:50% 30%">
+      <figcaption><b>Halloween skeletons</b><span>Spooky-season looks — for grown-ups too.</span><a href="https://www.instagram.com/p/Dexl9aFNGez/">See the post</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">What she offers</p>
+      <h2>Simple picks, or the full masterpiece.</h2>
+      <p class="lede">Face painting options straight from Lotus Face Painting — pick the style that fits your event.</p>
+    </div>
+    <div class="sgrid">
+      <div class="scard rv"><span class="n">01</span><h3>Single Face</h3><p>A simple design — perfect for quick party lines.</p></div>
+      <div class="scard rv"><span class="n">02</span><h3>Special Design</h3><p>More detail for kids who want something extra.</p></div>
+      <div class="scard rv"><span class="n">03</span><h3>Premium / Full Face</h3><p>Intricate &amp; detailed — the full canvas treatment.</p></div>
+      <div class="scard rv"><span class="n">04</span><h3>Glitter Add-On</h3><p>A little extra sparkle on any design.</p></div>
+      <div class="scard rv"><span class="n">05</span><h3>Group Bookings</h3><p>Birthdays, festivals &amp; larger events.</p></div>
+    </div>
+    <ul class="badges rv">
+      <li>Safe &amp; non-toxic face paints</li>
+      <li>Clean &amp; hygienic</li>
+      <li>Fun &amp; creative designs</li>
+      <li>Suitable for all ages</li>
+    </ul>
+  </div>
+</section>
+
+<section class="halloween" id="halloween">
+  <div class="wrap hgrid">
+    <img class="rv" src="img/halloween.webp" alt="Two adults with white skeleton Halloween face paint" width="1100" height="1100" loading="lazy">
+    <div class="rv">
+      <p class="kicker">Spooky season</p>
+      <h2>Halloween bookings are open.</h2>
+      <p>Witches, ghosts, skeletons &amp; creepy creatures — Lotus Face Painting is taking Halloween bookings now, and spots are limited. Don't wait until the witching hour: DM now to book your spooky transformation.</p>
+      <a class="btn btn-solid" href="https://ig.me/m/lotusfacepainting_gta">DM to Book Halloween</a>
+    </div>
+  </div>
+</section>
+
+<section class="book wrap" id="book">
+  <div class="bcard rv">
+    <div>
+      <p class="kicker">Book your event</p>
+      <h2>One DM is all it takes.</h2>
+      <p class="lede">Message Lotus Face Painting on Instagram with your event date and city — she'll take it from there.</p>
+      <ul class="elist">
+        <li>Birthday parties</li>
+        <li>Festivals &amp; community events</li>
+        <li>Corporate events</li>
+        <li>Halloween &amp; seasonal parties</li>
+      </ul>
+    </div>
+    <div class="side">
+      <p class="kicker">DM to book</p>
+      <p class="handle">@lotusfacepainting_gta</p>
+      <a class="btn btn-solid" href="https://ig.me/m/lotusfacepainting_gta">Open Instagram Chat</a>
+      <p class="lede" style="margin-top:14px;font-size:.92rem">Also on Instagram: <a href="https://www.instagram.com/lotusfacepainting_gta/" style="color:var(--teal);font-weight:700">@lotusfacepainting_gta</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fname">Lotus Face Painting</p>
+    <p>Face painting &amp; glitter art by Shreya Savaj — birthdays, festivals and corporate events across the GTA &amp; surrounding areas, Ontario.</p>
+    <p>Instagram: <a href="https://www.instagram.com/lotusfacepainting_gta/">@lotusfacepainting_gta</a> · DM to book.</p>
+    <p class="fine">Preview page built by Devflix.</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  if('IntersectionObserver' in window){
+    var els=document.querySelectorAll('.rv');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{threshold:0.12});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>

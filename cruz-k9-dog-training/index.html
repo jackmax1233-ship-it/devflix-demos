@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cruz K9 Dog Training — Behaviour Modification Specialist, Glasgow</title>
+<meta name="description" content="Cruz K9 Dog Training, Glasgow: behaviour modification specialist. Balanced training for all breeds, sizes and ages. 1-to-1 sessions, group classes and pack walks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F4EDDE;
+  --cream-2:#EFE4CC;
+  --green:#1B3A2A;
+  --green-deep:#0F2419;
+  --moss:#41564A;
+  --bark:#4A2F1D;
+  --ochre:#8F6B00;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--cream);
+  color:var(--green);
+  line-height:1.6;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3,.display{font-family:'Oswald',sans-serif;font-weight:600;line-height:1.08;text-transform:uppercase;letter-spacing:.01em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.eyebrow{
+  display:inline-block;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--moss);margin-bottom:14px;
+}
+.eyebrow::before{content:"";display:inline-block;width:26px;height:3px;background:var(--ochre);vertical-align:middle;margin-right:10px}
+/* ---------- header ---------- */
+.site-head{
+  background:var(--green-deep);color:var(--cream);
+  position:sticky;top:0;z-index:50;
+  border-bottom:3px solid var(--ochre);
+}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:var(--maxw);margin:0 auto}
+.brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;letter-spacing:.06em;color:var(--cream);text-decoration:none;text-transform:uppercase}
+.brand span{color:#E9C46A}
+nav.main{display:none;gap:26px}
+nav.main a{color:var(--cream);text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+nav.main a:hover{color:#E9C46A}
+.btn{
+  display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;
+  text-decoration:none;border-radius:4px;transition:transform .15s ease,background .15s ease;
+}
+.btn-solid{background:var(--green);color:var(--cream);padding:14px 28px;font-size:16px}
+.btn-solid:hover{background:#26502f;transform:translateY(-1px)}
+.btn-gold{background:#E9C46A;color:#0F2419;padding:10px 20px;font-size:14px}
+.btn-gold:hover{background:#f2d384}
+.btn-outline{border:2px solid var(--green);color:var(--green);padding:12px 26px;font-size:16px}
+.btn-outline:hover{background:var(--green);color:var(--cream)}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+/* ---------- hero ---------- */
+.hero{background:var(--cream);padding:44px 0 56px;position:relative}
+.hero-grid{display:grid;gap:34px;align-items:center}
+.hero h1{font-size:clamp(38px,7.5vw,68px);color:var(--green);margin-bottom:18px}
+.hero h1 .accent{color:var(--ochre)}
+.hero p.lede{font-size:19px;color:var(--moss);max-width:34ch;margin-bottom:6px}
+.fact-strip{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px;list-style:none}
+.fact-strip li{font-size:14px;font-weight:600;letter-spacing:.04em;color:var(--green)}
+.fact-strip li::before{content:"◆";color:var(--ochre);margin-right:8px;font-size:11px}
+.hero-photo{position:relative}
+.hero-photo img{
+  width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;border-radius:6px;
+  max-height:560px;box-shadow:0 24px 60px -18px rgba(15,36,25,.45);
+}
+.hero-tag{
+  position:absolute;left:-10px;bottom:26px;background:var(--green-deep);color:var(--cream);
+  padding:12px 18px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:14px;
+  border-radius:4px;max-width:80%;
+}
+/* ---------- proof band ---------- */
+.proof{background:var(--green-deep);color:var(--cream);padding:52px 0}
+.proof-grid{display:grid;gap:28px}
+.proof-item{border-left:4px solid var(--ochre);padding-left:18px}
+.proof-item .num{font-family:'Oswald',sans-serif;font-size:40px;font-weight:700;color:#E9C46A;line-height:1}
+.proof-item p{font-size:15px;color:var(--cream);margin-top:8px;max-width:30ch}
+/* ---------- sections ---------- */
+section.block{padding:64px 0}
+.split{display:grid;gap:32px;align-items:center}
+.split img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;border-radius:6px;max-height:480px;box-shadow:0 18px 44px -18px rgba(15,36,25,.35)}
+h2.sec{font-size:clamp(30px,5vw,46px);color:var(--green);margin-bottom:16px}
+.sec-copy{color:var(--moss);font-size:17px;max-width:52ch}
+.checks{list-style:none;margin-top:22px;display:grid;gap:12px}
+.checks li{padding-left:30px;position:relative;font-weight:500}
+.checks li::before{content:"✓";position:absolute;left:0;color:#E9C46A;background:var(--green);width:22px;height:22px;border-radius:50%;font-size:14px;line-height:22px;text-align:center;font-weight:700}
+/* ---------- services ---------- */
+.services{background:var(--cream-2)}
+.cards{display:grid;gap:22px;margin-top:34px}
+.card{background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 12px 32px -16px rgba(15,36,25,.28);display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;max-height:340px}
+.card-body{padding:22px}
+.card-body h3{font-size:22px;margin-bottom:8px;color:var(--green)}
+.card-body p{font-size:15px;color:var(--moss)}
+.card .kicker{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--moss);margin-bottom:6px}
+.note-strip{margin-top:26px;background:var(--green);color:var(--cream);border-radius:6px;padding:22px 26px;display:grid;gap:14px;align-items:center}
+.note-strip h3{color:#E9C46A;font-size:20px}
+.note-strip p{font-size:15px}
+/* ---------- case studies ---------- */
+.cases{display:grid;gap:26px;margin-top:34px}
+.case{display:grid;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 12px 32px -16px rgba(15,36,25,.28)}
+.case img{width:100%;height:100%;object-fit:cover;object-position:center}
+.case-r{aspect-ratio:1/1}
+.case-c{aspect-ratio:3/4}
+.case-copy{padding:30px}
+.case-copy h3{font-size:26px;margin-bottom:4px}
+.case-copy .breed{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);margin-bottom:12px}
+.case-copy p{font-size:16px;color:var(--moss)}
+.case-copy .src{margin-top:16px;font-size:13px;color:var(--moss)}
+.case-copy .src a{color:var(--green);font-weight:600}
+/* ---------- wide band ---------- */
+.band{background:var(--green-deep);color:var(--cream)}
+.band-grid{display:grid;gap:30px;align-items:center}
+.band-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;border-radius:6px;max-height:420px}
+.band blockquote{font-family:'Oswald',sans-serif;font-size:clamp(24px,4vw,36px);line-height:1.25;text-transform:uppercase}
+.band blockquote .hl{color:#E9C46A}
+.band p{color:var(--cream);margin-top:14px;font-size:15px;opacity:.92}
+/* ---------- gallery ---------- */
+.gallery{display:grid;gap:18px;margin-top:34px}
+.g-item{position:relative;border-radius:6px;overflow:hidden}
+.g-item img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;max-height:340px}
+.g-cap{position:absolute;left:0;right:0;bottom:0;padding:26px 18px 16px;background:linear-gradient(transparent,rgba(15,36,25,.88));color:var(--cream)}
+.g-cap strong{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.05em;font-size:18px;display:block}
+.g-cap span{font-size:13px}
+/* ---------- contact ---------- */
+.contact{background:var(--green);color:var(--cream);text-align:center}
+.contact h2{color:var(--cream)}
+.contact p{color:var(--cream);opacity:.92;max-width:52ch;margin:0 auto}
+.dm-card{background:var(--green-deep);border-radius:8px;padding:34px 26px;margin-top:32px;max-width:620px;margin-left:auto;margin-right:auto}
+.dm-card h3{color:#E9C46A;font-size:24px;margin-bottom:10px}
+.dm-card p{font-size:15px;margin-bottom:22px}
+.contact-facts{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:center;margin-top:28px;list-style:none}
+.contact-facts li{font-size:14px;font-weight:600}
+.contact-facts a{color:#E9C46A}
+/* ---------- footer ---------- */
+footer{background:var(--green-deep);color:var(--cream);padding:28px 0;font-size:13px}
+.foot-in{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:space-between;align-items:center;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+footer a{color:#E9C46A;text-decoration:none}
+footer a:hover{text-decoration:underline}
+/* ---------- reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+/* ---------- breakpoints ---------- */
+@media(min-width:640px){
+  nav.main{display:flex}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .proof-grid{grid-template-columns:repeat(3,1fr)}
+  .case{grid-template-columns:1fr 1fr}
+  .case .media{min-height:100%}
+  .head-cta{display:inline-block}
+}
+@media(min-width:1024px){
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:56px}
+  .hero{padding:70px 0 84px}
+  .split{grid-template-columns:.95fr 1.05fr;gap:56px}
+  .split.flip{grid-template-columns:1.05fr .95fr}
+  .split.flip .media{order:2}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .band-grid{grid-template-columns:1fr 1fr;gap:56px}
+  section.block{padding:88px 0}
+}
+@media(max-width:639px){
+  .head-cta{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="head-in">
+    <a class="brand" href="#">CRUZ <span>K9</span> DOG TRAINING</a>
+    <nav class="main" aria-label="Main">
+      <a href="#method">Method</a>
+      <a href="#services">Services</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-gold head-cta" href="https://ig.me/m/cruz_k9_dogtraining">DM on Instagram</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Glasgow · Behaviour Modification Specialist</span>
+      <h1>For the dog that <span class="accent">barks, lunges and snaps</span> — we do what others won't.</h1>
+      <p class="lede">Balanced, no-nonsense training for reactive and aggressive dogs. All breeds, sizes and ages. Fully qualified.</p>
+      <ul class="fact-strip">
+        <li>1-to-1 sessions</li>
+        <li>Public group classes</li>
+        <li>Pack walks</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-solid" href="https://ig.me/m/cruz_k9_dogtraining">Message on Instagram</a>
+        <a class="btn btn-outline" href="#cases">See real case studies</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="img/kilo.webp" alt="Kilo, a German Shepherd training with Cruz K9, sitting to attention on a park bench" width="640" height="853" fetchpriority="high">
+      <div class="hero-tag">Kilo — from lunging at dogs to handling busy parks</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF BAND -->
+<section class="proof">
+  <div class="wrap proof-grid">
+    <div class="proof-item reveal">
+      <div class="num">18</div>
+      <p>reactive dogs — some with bite history — worked in a single class night</p>
+    </div>
+    <div class="proof-item reveal">
+      <div class="num">All</div>
+      <p>group classes and pack walks welcome reactive dogs — that's the whole point</p>
+    </div>
+    <div class="proof-item reveal">
+      <div class="num">5 mths</div>
+      <p>is how young Caesar was at his first session — all ages, all breeds, all sizes</p>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="block" id="method">
+  <div class="wrap split">
+    <div class="media reveal">
+      <img src="img/cali.webp" alt="Cali, the trainer's own working-line Golden Retriever, standing on a grassy hill" width="640" height="853" loading="lazy">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">The method</span>
+      <h2 class="sec">Balanced training. Honest results. No gimmicks.</h2>
+      <p class="sec-copy">Cruz K9 specialises in behaviour modification — the dogs other trainers turn away: reactivity, aggression, dogs that can't be walked in public. The approach is balanced and direct, built on exposure, neutrality and clear handling.</p>
+      <ul class="checks">
+        <li>Behaviour modification specialist</li>
+        <li>Balanced training — fair, clear, consistent</li>
+        <li>Fully qualified trainer</li>
+        <li>All breeds, sizes and ages welcome</li>
+      </ul>
+      <p class="sec-copy" style="margin-top:22px">Meet Cali — a working-line Golden Retriever, and the trainer's own dog. She's the reason all of this started.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="block services" id="services">
+  <div class="wrap">
+    <span class="eyebrow">Services</span>
+    <h2 class="sec">Three ways to train with us</h2>
+    <p class="sec-copy">Every route starts with a conversation — message on Instagram and we'll point you at the right one for your dog.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="img/trainer.webp" alt="The Cruz K9 trainer with a client's dog during a drop and train session" width="640" height="853" loading="lazy">
+        <div class="card-body">
+          <div class="kicker">Foundation</div>
+          <h3>1-to-1 Sessions</h3>
+          <p>Private, focused work on your dog's specific issues — reactivity, aggression, recall, lead manners. You and the trainer, no distractions.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/group.webp" alt="Handlers and their dogs working together at an indoor Cruz K9 group class" width="640" height="851" loading="lazy">
+        <div class="card-body">
+          <div class="kicker">Exposure</div>
+          <h3>Group Classes</h3>
+          <p>Public group sessions built around raw exposure to triggers — no tricks, no fancy footwork. Owners develop handling skills with real dogs around them.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/packwalk.webp" alt="A Cruz K9 pack walk through the woods with many owners and their dogs" width="640" height="853" loading="lazy">
+        <div class="card-body">
+          <div class="kicker">Socialisation</div>
+          <h3>Pack Walks</h3>
+          <p>Structured group walks with like-minded owners. Reactive dogs welcome — build confidence, neutrality and social skills out on the trail.</p>
+        </div>
+      </article>
+    </div>
+    <div class="note-strip reveal">
+      <div>
+        <h3>New: Drop &amp; Train</h3>
+        <p>Short on time or working through something serious? The trainer collects your dog — or you drop them off — and they train through the day, then hand the progress back to you.</p>
+      </div>
+      <div><a class="btn btn-gold" href="https://ig.me/m/cruz_k9_dogtraining">Ask about Drop &amp; Train</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- BEHAVIOUR SPOTLIGHT -->
+<section class="block">
+  <div class="wrap split flip">
+    <div class="media reveal">
+      <img src="img/finn.webp" alt="Finn, a five-year-old cockapoo, sitting calmly on grass in his harness" width="640" height="853" loading="lazy">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Behaviour case</span>
+      <h2 class="sec">Bitten both owners. Eight weeks later: zero incidents.</h2>
+      <p class="sec-copy">Finn is a five-year-old cockapoo whose owners asked for help after he had bitten both of them in the home — resource guarding that had them walking on eggshells. Eight weeks after the first session: not a single incident, no more biting or lunging, the guarding stopped.</p>
+      <p class="sec-copy" style="margin-top:14px">If your dog has been labelled "too aggressive", "unfixable" or "too much" — you're exactly who these sessions are for.</p>
+      <div class="btn-row">
+        <a class="btn btn-solid" href="https://ig.me/m/cruz_k9_dogtraining">Talk to us about your dog</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="block services" id="cases">
+  <div class="wrap">
+    <span class="eyebrow">Case studies</span>
+    <h2 class="sec">Real dogs. Real turnarounds.</h2>
+    <p class="sec-copy">Named clients, documented on Instagram from the first session. No stock photos, no invented stories.</p>
+    <div class="cases">
+      <article class="case reveal">
+        <div class="media"><img class="case-c" src="img/caesar.webp" alt="Caesar, a five-month-old Rottweiler puppy, with Loki the Rottweiler by the water" width="640" height="853" loading="lazy"></div>
+        <div class="case-copy">
+          <h3>Caesar</h3>
+          <div class="breed">Rottweiler · First session at 5 months</div>
+          <p>Caesar arrived as a five-month-old pup already barking and growling at dogs — and heading for 50–60kg as an adult. His owner wanted it stopped before it became a problem.</p>
+          <p style="margin-top:12px">First session: foundation, engagement, neutrality and socialisation, working alongside veteran student Loki. By the end of it, Caesar was ignoring every other dog they met.</p>
+          <p class="src">Source: <a href="https://www.instagram.com/p/DeuCpq8K3kl/">@cruz_k9_dogtraining, 20 Oct 2026</a></p>
+        </div>
+      </article>
+      <article class="case reveal">
+        <div class="media"><img class="case-r" src="img/ragz.webp" alt="Ragz the Rottweiler lying happily in the grass" width="640" height="640" loading="lazy"></div>
+        <div class="case-copy">
+          <h3>Ragz</h3>
+          <div class="breed">Rottweiler · Rescue behaviour case</div>
+          <p>Ragz was rescued from the meat trade in China. When his owners came to Cruz K9, his behaviour was the detailed subject of a full case study — the kind of dog most trainers won't take on.</p>
+          <p style="margin-top:12px">Rescue dogs with serious histories are a speciality here, not an exception.</p>
+          <p class="src">Source: <a href="https://www.instagram.com/p/DeUFrCaKw0F/">@cruz_k9_dogtraining, 10 Oct 2026</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WIDE BAND -->
+<section class="block band">
+  <div class="wrap band-grid">
+    <div class="reveal">
+      <img src="img/handling.webp" alt="Owners practising handling skills with their dogs at a Cruz K9 group handling class" width="640" height="480" loading="lazy">
+    </div>
+    <div class="reveal">
+      <blockquote>"<span class="hl">18 reactive dogs</span> tonight. Some with bite history. Some were told they were too aggressive."</blockquote>
+      <p>That's a normal class night at Cruz K9 — owners taking turns handling different dogs, building confidence on both ends of the lead.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="block">
+  <div class="wrap">
+    <span class="eyebrow">The pack</span>
+    <h2 class="sec">All breeds. All sizes. All ages.</h2>
+    <p class="sec-copy">A few of the dogs training with Cruz K9 — from beagles to German Shepherds.</p>
+    <div class="gallery">
+      <figure class="g-item reveal">
+        <img src="img/bear.webp" alt="Bear, a German Shepherd, lying in the grass" width="640" height="853" loading="lazy">
+        <figcaption class="g-cap"><strong>Bear</strong><span>German Shepherd</span></figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="img/brodie.webp" alt="Brodie, a beagle, sitting on a wooden picnic bench in the park" width="640" height="853" loading="lazy">
+        <figcaption class="g-cap"><strong>Brodie</strong><span>Beagle — trained on his birthday</span></figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="img/luna.webp" alt="Luna on her wedding day, when she was ring bearer at her owners' wedding" width="640" height="853" loading="lazy">
+        <figcaption class="g-cap"><strong>Luna</strong><span>Ring bearer at her owners' wedding</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E9C46A">Get started</span>
+    <h2 class="sec">Ready when your dog is.</h2>
+    <p>There's no booking form and no price list online — everything runs through Instagram. Send a message with your dog's breed, age and what's going on, and you'll get a straight answer.</p>
+    <div class="dm-card reveal">
+      <h3>DM for info</h3>
+      <p>Message <strong>@cruz_k9_dogtraining</strong> on Instagram to ask about 1-to-1s, group classes, pack walks or Drop &amp; Train.</p>
+      <a class="btn btn-gold" href="https://ig.me/m/cruz_k9_dogtraining">Open Instagram DM</a>
+    </div>
+    <ul class="contact-facts">
+      <li>📍 Glasgow, Scotland</li>
+      <li><a href="https://www.instagram.com/cruz_k9_dogtraining/">@cruz_k9_dogtraining</a></li>
+      <li>🐶 All breeds, sizes &amp; ages</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-in">
+    <span>© 2026 Cruz K9 Dog Training · Glasgow, Scotland</span>
+    <span><a href="https://www.instagram.com/cruz_k9_dogtraining/">Instagram</a> · Demo preview by <a href="https://www.instagram.com/devfl_ix/">Devflix</a></span>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

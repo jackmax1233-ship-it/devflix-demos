@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fix Stop — Phone, Tablet &amp; Computer Repair in Phibsborough, Dublin</title>
+<meta name="description" content="Fix Stop repairs phone screens and charging ports — any phone, any model — at 352 North Circular Road, Phibsborough, Dublin 7. Call +353 863 697 222.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F5F0; --card:#FFFFFF; --ink:#10201C; --body:#2E3B38;
+  --deep:#0C2620; --deep2:#0C2E27; --teal:#0E4D3F;
+  --green:#37D67A; --greentext:#0B3D2E; --amber:#9A5B00; --amberlt:#FFB020;
+  --line:#DCD9CF; --radius:14px;
+  --font-d:"Space Grotesk",system-ui,sans-serif; --font-b:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--paper);color:var(--body);line-height:1.6;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--teal)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--font-d);color:var(--ink);line-height:1.15;letter-spacing:-0.01em}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:var(--deep);border-bottom:2px solid var(--green)}
+.nav .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-family:var(--font-d);font-weight:700;font-size:1.25rem;letter-spacing:.02em}
+.brand svg{width:30px;height:30px}
+.nav-links{display:flex;gap:22px;margin-left:auto;list-style:none}
+.nav-links a{color:#fff;text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.btn{display:inline-block;text-decoration:none;font-family:var(--font-d);font-weight:600;border-radius:10px;padding:13px 24px;font-size:1rem;line-height:1.2;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn-call{background:var(--green);color:var(--greentext)}
+.btn-call:hover,.btn-call:focus-visible{background:#fff;color:var(--greentext);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border-color:var(--green)}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:var(--green);color:var(--greentext)}
+.btn-dark{background:var(--deep2);color:#fff}
+.btn-dark:hover,.btn-dark:focus-visible{background:var(--teal);transform:translateY(-2px)}
+.nav .btn-call{padding:10px 18px;font-size:.92rem}
+.nav-links{display:none}
+@media(min-width:760px){.nav-links{display:flex}}
+
+/* ---------- hero ---------- */
+.hero{background:var(--deep);color:#EDEFF0;padding:64px 0 60px;overflow:hidden}
+.hero .wrap{display:grid;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-family:var(--font-d);font-weight:600;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+.hero h1{color:#fff;font-size:clamp(2rem,5.2vw,3.4rem);max-width:16ch;margin-bottom:16px}
+.hero h1 .hl{color:var(--green)}
+.hero p.lede{color:#D7DEDC;font-size:1.1rem;max-width:44ch;margin-bottom:28px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-media{justify-self:center;position:relative}
+.hero-media img{height:min(520px,64vh);width:auto;max-width:100%;border-radius:var(--radius);border:3px solid var(--green);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.hero-badge{position:absolute;left:-14px;bottom:22px;background:var(--amberlt);color:#1d1500;font-family:var(--font-d);font-weight:700;font-size:.85rem;padding:10px 16px;border-radius:10px;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+@media(min-width:920px){.hero .wrap{grid-template-columns:1.05fr .95fr}.hero-media{justify-self:end}}
+
+/* ---------- strip ---------- */
+.strip{background:var(--green);color:var(--greentext);padding:14px 0}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:8px 30px;justify-content:center;font-family:var(--font-d);font-weight:600;font-size:.95rem}
+
+/* ---------- sections ---------- */
+section.block{padding:72px 0}
+.sec-head{max-width:640px;margin-bottom:38px}
+.sec-kicker{font-family:var(--font-d);font-weight:600;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.6rem,3.6vw,2.4rem);margin-bottom:12px}
+.sec-head p{font-size:1.05rem}
+
+/* services */
+.svc-grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:repeat(4,1fr)}}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px}
+.svc svg{width:40px;height:40px;margin-bottom:14px}
+.svc h3{font-size:1.15rem;margin-bottom:8px}
+.svc p{font-size:.96rem}
+.brand-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;list-style:none}
+.brand-pills li{font-family:var(--font-d);font-weight:600;font-size:.85rem;background:var(--deep);color:#fff;padding:6px 14px;border-radius:999px}
+
+/* work */
+.work{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.work-grid{display:grid;gap:44px;align-items:start}
+@media(min-width:960px){.work-grid{grid-template-columns:1.25fr .9fr}}
+.work-main figure{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.work-main img{width:100%}
+.work-main figcaption{padding:14px 20px;font-size:.92rem;color:var(--body)}
+.work-side{display:grid;gap:28px}
+.work-side figure{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.work-side figcaption{padding:14px 20px;font-size:.92rem}
+.work-note{font-size:.88rem;color:var(--body);background:var(--paper);border-left:4px solid var(--amber);padding:14px 18px;border-radius:0 10px 10px 0}
+
+/* steps */
+.steps{background:var(--deep);color:#E4E9E7}
+.steps .sec-head h2,.steps .sec-head p{color:#fff}
+.steps .sec-kicker{color:var(--green)}
+.steps-grid{display:grid;gap:18px;grid-template-columns:1fr;list-style:none;counter-reset:step}
+@media(min-width:820px){.steps-grid{grid-template-columns:repeat(3,1fr)}}
+.steps-grid li{background:#123029;border:1px solid #1E4A3E;border-radius:var(--radius);padding:30px 26px;position:relative}
+.steps-grid li::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:var(--font-d);font-weight:700;font-size:1rem;color:var(--green);letter-spacing:.08em}
+.steps-grid h3{color:#fff;font-size:1.25rem;margin:10px 0 8px}
+.steps-grid p{font-size:.97rem;color:#CBD6D2}
+.steps-grid a{color:var(--green);font-weight:600}
+
+/* visit */
+.visit-grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:820px){.visit-grid{grid-template-columns:1.1fr .9fr}}
+.visit-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px}
+.visit-card h3{font-size:1.2rem;margin-bottom:10px}
+.visit-card address{font-style:normal;font-size:1.02rem;margin-bottom:16px}
+.visit-card p{margin-bottom:12px}
+.visit-card .btn-dark{margin-top:8px}
+.map-note{font-size:.9rem;color:var(--body)}
+.hours{background:var(--deep);color:#fff;border-radius:var(--radius);padding:32px 28px}
+.hours h3{color:#fff;margin-bottom:10px}
+.hours p{color:#D7DEDC}
+.hours a{color:var(--green);font-weight:600}
+
+/* footer */
+footer{background:var(--deep);color:#A9B7B3;padding:34px 0;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;justify-content:space-between}
+footer a{color:var(--green)}
+.credit{font-size:.82rem;color:#8CA09A}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+:focus-visible{outline:3px solid var(--amberlt);outline-offset:2px}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Fix Stop — home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#37D67A"/><path d="M17.5 5 8 17.2h6.4L14.5 27 24 14.8h-6.4L17.5 5z" fill="#0C2620"/></svg>
+      FIX&nbsp;STOP
+    </a>
+    <nav aria-label="Sections">
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#visit">Visit us</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-call" href="tel:+353863697222">Call the shop</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">Fix Stop · Phibsborough, Dublin</span>
+        <h1>Cracked screen? Charging port dead? <span class="hl">Fixed.</span></h1>
+        <p class="lede">Dublin phone, tablet &amp; computer repairs on North Circular Road. Screen repairs for any phone, any model — plus charging port repairs and all the accessories you need.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+353863697222">Call +353 863 697 222</a>
+          <a class="btn btn-ghost" href="#visit">Find the shop</a>
+        </div>
+      </div>
+      <div class="hero-media rv">
+        <img src="assets/hero-cracked-screen.webp" width="1200" height="1528" alt="A customer's badly cracked iPhone — the kind of screen Fix Stop replaces" fetchpriority="high">
+        <span class="hero-badge">We fix this, daily</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" role="note">
+    <div class="wrap">
+      <span>Screen repair — any phone, any model</span>
+      <span>Charging port repair — any phone</span>
+      <span>Accessories &amp; screen protection in store</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="block" id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="sec-kicker">What we do</p>
+        <h2>Straightforward repairs, no fuss</h2>
+        <p>Bring in the device, tell us what's wrong, and we'll sort it. These are the jobs we do every day.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc rv">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="11" y="4" width="18" height="32" rx="4" fill="none" stroke="#0E4D3F" stroke-width="2.5"/><path d="M13 10 27 24 M27 10 13 24" stroke="#9A5B00" stroke-width="2.5" stroke-linecap="round"/><rect x="17" y="31" width="6" height="2" rx="1" fill="#0E4D3F"/></svg>
+          <h3>Screen repair</h3>
+          <p>We repair screens on any phone, any model — cracked glass, dead touch, lines across the display.</p>
+        </article>
+        <article class="svc rv">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="14" width="24" height="12" rx="3" fill="none" stroke="#0E4D3F" stroke-width="2.5"/><path d="M21 8l-4 6h6l-4 6" fill="none" stroke="#9A5B00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 20h4M32 20h4" stroke="#0E4D3F" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <h3>Charging port repair</h3>
+          <p>Phone won't charge or only charges at an angle? We repair charging ports for any phone.</p>
+        </article>
+        <article class="svc rv">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="8" width="20" height="14" rx="2" fill="none" stroke="#0E4D3F" stroke-width="2.5"/><rect x="6" y="24" width="28" height="4" rx="2" fill="#0E4D3F"/><path d="M30 12h4v6h-4" fill="none" stroke="#9A5B00" stroke-width="2.5"/></svg>
+          <h3>Brands we fix</h3>
+          <p>iPhone, Samsung, Huawei, Xiaomi and tablets — plus computers.</p>
+          <ul class="brand-pills">
+            <li>iPhone</li><li>Samsung</li><li>Huawei</li><li>Xiaomi</li><li>Tablets</li>
+          </ul>
+        </article>
+        <article class="svc rv">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5l11 6v9c0 7-4.5 12-11 15C13.5 32 9 27 9 20v-9l11-6z" fill="none" stroke="#0E4D3F" stroke-width="2.5"/><path d="M15 20l4 4 7-8" fill="none" stroke="#9A5B00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Accessories</h3>
+          <p>Cases, chargers, accessories and screen protection — sold in the shop, fitted on the spot.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR WORK -->
+  <section class="block work" id="work">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="sec-kicker">From our Instagram</p>
+        <h2>Before &amp; after, straight from the bench</h2>
+        <p>Real jobs we've posted for our customers — follow <a href="https://www.instagram.com/info.fixstop/" rel="noopener">@info.fixstop</a> to see the latest.</p>
+      </div>
+      <div class="work-grid">
+        <figure class="work-main rv">
+          <img src="assets/before-after.webp" width="1100" height="608" alt="Before and after: a cracked iPhone screen restored to like-new" loading="lazy">
+          <figcaption>A screen replacement we posted: cracked display in, flawless display out.</figcaption>
+        </figure>
+        <div class="work-side">
+          <figure class="rv">
+            <img src="assets/charging-fix.webp" width="1100" height="619" alt="iPhone plugged in and charging — charging port repairs fix slow charging" loading="lazy">
+            <figcaption>Slow to charge? We sort charging port problems for any phone.</figcaption>
+          </figure>
+          <figure class="rv">
+            <img src="assets/repair-promo.webp" width="640" height="1020" alt="Fix Stop's own in-store offer: iPhone screen replacement with a free screen protector" loading="lazy">
+            <figcaption>Our own offer, posted on our page: iPhone screen replacement with a free screen protector.</figcaption>
+          </figure>
+          <p class="work-note rv">Photos are from our own Instagram page — the actual work we do, not stock photos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="block steps">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="sec-kicker">How it works</p>
+        <h2>Three steps to a working phone</h2>
+        <p>No booking system, no forms — just a local repair shop that answers the phone.</p>
+      </div>
+      <ol class="steps-grid">
+        <li class="rv">
+          <h3>Call or message</h3>
+          <p>Ring <a href="tel:+353863697222">+353 863 697 222</a> or send us a DM on <a href="https://www.instagram.com/info.fixstop/" rel="noopener">Instagram</a>. Tell us your model and what's wrong with it.</p>
+        </li>
+        <li class="rv">
+          <h3>Drop it off</h3>
+          <p>Bring the device to 352 North Circular Road, Phibsborough, Dublin 7 — right in the neighbourhood.</p>
+        </li>
+        <li class="rv">
+          <h3>Get it back</h3>
+          <p>We fix it and hand it back working. While you're in, grab a case or screen protector for it.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="block" id="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="sec-kicker">Find us</p>
+        <h2>Pop into the shop</h2>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-card rv">
+          <h3>Fix Stop</h3>
+          <address>
+            352 North Circular Road,<br>
+            Phibsborough, Dublin 7<br>
+            D07 F44C, Ireland
+          </address>
+          <p><strong>Phone:</strong> <a href="tel:+353863697222">+353 863 697 222</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/info.fixstop/" rel="noopener">@info.fixstop</a></p>
+          <p class="map-note">Opening hours aren't listed online — give the shop a ring before heading over.</p>
+          <a class="btn btn-dark" href="tel:+353863697222">Call +353 863 697 222</a>
+        </div>
+        <div class="hours rv">
+          <h3>Good to know</h3>
+          <p>We repair screens and charging ports for any phone, any model — iPhone, Samsung, Huawei, Xiaomi and tablets — plus computers. Accessories and screen protection are sold in store.</p>
+          <p style="margin-top:14px">No website yet? That's exactly why this page exists — <a href="https://www.instagram.com/info.fixstop/" rel="noopener">message us on Instagram</a> and we'll look after you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Fix Stop · 352 North Circular Road, Phibsborough, Dublin 7 · <a href="tel:+353863697222">+353 863 697 222</a></span>
+    <span class="credit">Preview concept by Devflix</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henna Hassan — Hand-Crafted Designer Window Dressings · Lahore</title>
+<meta name="description" content="Henna Hassan, Interior Architect & Designer in Lahore. Hand-crafted designer window dressings and bespoke interior collections. Made with love in Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF6ED;
+  --cream-2:#F3EADC;
+  --ink:#2C2620;
+  --muted:#5D544A;
+  --terra:#A8441A;
+  --terra-soft:#E9B48B;
+  --line:#E0D3BC;
+  --max:1160px;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--terra)}
+::selection{background:var(--terra);color:var(--cream)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,246,237,.97);border-bottom:1px solid var(--line)}
+.site-head{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.35rem;letter-spacing:.01em;color:var(--ink);text-decoration:none}
+.brand small{display:block;font-family:var(--sans);font-weight:500;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+nav.links{display:flex;gap:26px;align-items:center}
+nav.links a{text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:500}
+nav.links a:hover{color:var(--terra)}
+.btn{display:inline-block;background:var(--terra);color:#FBF6ED;text-decoration:none;font-weight:600;font-size:.95rem;padding:13px 26px;border-radius:3px;border:2px solid var(--terra);transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--terra)}
+.btn.ghost{background:transparent;color:var(--terra)}
+.btn.ghost:hover{background:var(--terra);color:#FBF6ED}
+.btn-head{padding:10px 20px;font-size:.88rem}
+/* hero */
+.hero{padding:72px 0 80px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--terra);margin-bottom:20px}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.1rem,4.2vw,3.3rem);line-height:1.18;margin-bottom:22px}
+h1 em{font-style:italic;color:var(--terra)}
+.lede{font-size:1.08rem;color:var(--muted);max-width:34rem;margin-bottom:30px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.hero-fig{justify-self:end}
+.hero-fig img{height:520px;width:auto;max-width:100%;background:var(--cream-2);border:1px solid var(--line);border-radius:4px}
+figcaption{font-size:.82rem;color:var(--muted);margin-top:10px;line-height:1.5}
+figcaption strong{color:var(--ink)}
+/* band */
+.band{background:var(--cream-2);border-bottom:1px solid var(--line);padding:26px 0}
+.band ul{list-style:none;display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap}
+.band li{font-family:var(--serif);font-size:1.02rem;color:var(--ink);display:flex;align-items:center;gap:12px}
+.band li::before{content:"";width:34px;height:1px;background:var(--terra);flex:none}
+/* sections */
+section{padding:84px 0}
+.sec-head{max-width:44rem;margin-bottom:48px}
+.sec-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.25;margin-bottom:14px}
+.sec-head p{color:var(--muted)}
+/* collections grid */
+.coll-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 32px}
+.coll{background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.coll img{width:100%;height:440px;object-fit:contain;background:var(--cream-2);padding:0}
+.coll-body{padding:22px 26px 26px}
+.coll-body h3{font-family:var(--serif);font-weight:600;font-size:1.25rem;margin-bottom:8px}
+.coll-body p{font-size:.94rem;color:var(--muted)}
+.coll-extra{margin-top:44px;border:1px dashed var(--terra);border-radius:4px;padding:28px 32px;background:#fff}
+.coll-extra h3{font-family:var(--serif);font-size:1.15rem;margin-bottom:12px}
+.coll-extra ul{list-style:none;display:flex;gap:12px 28px;flex-wrap:wrap}
+.coll-extra li{font-size:.95rem;color:var(--ink)}
+.coll-extra li::before{content:"— ";color:var(--terra)}
+/* project */
+.project{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proj-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.proj-fig img{width:auto;max-width:100%;height:480px;background:#fff;border:1px solid var(--line);border-radius:4px}
+.proj-copy h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.25;margin-bottom:16px}
+.proj-copy p{color:var(--muted);margin-bottom:16px}
+.proj-copy .fact{border-left:3px solid var(--terra);padding-left:18px;font-style:italic;color:var(--ink)}
+/* philosophy */
+.phil{background:var(--ink);color:var(--cream)}
+.phil blockquote{font-family:var(--serif);font-weight:400;font-style:italic;font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.4;max-width:56rem}
+.phil .attr{margin-top:22px;color:var(--terra-soft);font-size:.95rem;letter-spacing:.08em}
+.phil .attr strong{color:var(--cream)}
+/* order */
+.order-card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.order-card h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:16px}
+.order-card p{color:var(--muted);margin-bottom:22px}
+.order-steps{list-style:none}
+.order-steps li{padding:14px 0;border-top:1px solid var(--line);font-size:.95rem}
+.order-steps li:first-child{border-top:none}
+.order-steps .n{display:inline-block;font-family:var(--serif);color:var(--terra);font-weight:600;margin-right:10px}
+/* footer */
+footer.site{border-top:1px solid var(--line);padding:40px 0 48px;color:var(--muted);font-size:.88rem}
+.foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer.site a{color:var(--terra);font-weight:600}
+.foot-note{margin-top:22px;font-size:.78rem;opacity:.85}
+/* reveal */
+html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+html.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html.js .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+/* responsive */
+@media (max-width:860px){
+  nav.links{display:none}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-fig{justify-self:start}
+  .hero-fig img{width:100%;max-width:330px;height:auto;aspect-ratio:4/5;max-height:520px;object-fit:contain}
+  .proj-grid{grid-template-columns:1fr;gap:36px}
+  .order-card{grid-template-columns:1fr;gap:32px;padding:36px 28px}
+  .coll-grid{grid-template-columns:1fr}
+  section{padding:60px 0}
+  .hero{padding:52px 0 60px}
+}
+@media (max-width:420px){
+  .wrap{padding:0 20px}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<header class="site">
+  <div class="wrap site-head">
+    <a class="brand" href="#top">Henna Hassan<small>Interior Architect &amp; Designer</small></a>
+    <nav class="links" aria-label="Primary">
+      <a href="#collections">Collections</a>
+      <a href="#project">Projects</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#order">Order</a>
+    </nav>
+    <a class="btn btn-head" href="https://www.instagram.com/hennahassanofficial/" target="_blank" rel="noopener">DM to order</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" style="padding-top:72px" aria-label="Introduction">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Hand-crafted designer window dressings · Lahore</p>
+        <h1>“Beautiful windows don’t just decorate a space, <em>they transform how it feels.</em>”</h1>
+        <p class="lede">Henna Hassan transforms spaces with hand-crafted designer window dressings and bespoke interior collections — made with love in Pakistan. Silk curtains with a signature wave heading, embroidered tiebacks, Roman blinds, and cushions designed to be one of a kind.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://www.instagram.com/hennahassanofficial/" target="_blank" rel="noopener">DM to place an order</a>
+          <a class="btn ghost" href="#collections">View the collections</a>
+        </div>
+      </div>
+      <figure class="hero-fig reveal">
+        <img src="assets/photo-1.webp" alt="Cream silk curtains gathered back with a teal velvet tieback embroidered with an equestrian horse-bit motif in burnt orange, finished with a gold beaded tassel finial." width="640" height="800" fetchpriority="high">
+        <figcaption><strong>Equestrian-motif tiebacks</strong> — the studio’s signature hand-embroidery, from their own post.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <div class="band">
+    <div class="wrap">
+      <ul>
+        <li>Hand-crafted designer window dressings</li>
+        <li>Bespoke interior collections</li>
+        <li>Made with love in Pakistan</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- COLLECTIONS -->
+  <section id="collections" aria-label="Collections">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">The collections</p>
+        <h2>Every piece is made by hand, made to belong.</h2>
+        <p>Curtains, tiebacks and cushions from the studio’s own Instagram — photographed as posted by Henna Hassan.</p>
+      </div>
+      <div class="coll-grid">
+        <article class="coll reveal">
+          <img src="assets/photo-5.webp" alt="A terracotta silk curtain tied with a gold cord holding a tall ombré tassel in cream and rust, in front of a sheer embroidered with small motifs." width="640" height="800" loading="lazy">
+          <div class="coll-body">
+            <h3>Terracotta silks</h3>
+            <p>Ombré tassel tiebacks over an embroidered sheer — rich colour, simple elegance, no excess drapery.</p>
+          </div>
+        </article>
+        <article class="coll reveal">
+          <img src="assets/photo-2.webp" alt="Two navy velvet cushions embroidered with a dachshund in tan and orange, beside matching orange tieback bands with navy paw prints, arranged on an ikat-patterned sofa." width="640" height="800" loading="lazy">
+          <div class="coll-body">
+            <h3>Dachshund cushions</h3>
+            <p>Embroidered dachshund cushions with matching paw-print bands — a playful bespoke set made for dog lovers.</p>
+          </div>
+        </article>
+        <article class="coll reveal">
+          <img src="assets/photo-3.webp" alt="The Master Bedroom Edit: grey silk curtains with signature wave heading and chess-trim edges layered with sheers, beside a dove-grey curved sofa with rose-embroidered cushions." width="640" height="800" loading="lazy">
+          <div class="coll-body">
+            <h3>The Master Bedroom Edit</h3>
+            <p>Silk, sheers and chess trim at the window; rose-embroidered cushions at the seat. One story, told in layers — from the studio’s own caption.</p>
+          </div>
+        </article>
+        <article class="coll reveal">
+          <img src="assets/photo-4.webp" alt="Close-up of a grey silk curtain gathered with a tieback embroidered with magenta and cream floral roses; the chess-trim edge of the curtain is visible alongside." width="640" height="800" loading="lazy">
+          <div class="coll-body">
+            <h3>Embroidered floral tiebacks</h3>
+            <p>Hand-embroidered floral tiebacks in magenta and cream — the finishing detail the studio is known for.</p>
+          </div>
+        </article>
+      </div>
+      <div class="coll-extra reveal">
+        <h3>More from the studio</h3>
+        <ul>
+          <li>Roman blinds</li>
+          <li>Tasselled cords</li>
+          <li>“Raptor” kids bed set collection</li>
+          <li>“Tile Collection” tea-time cushions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="project" class="project" aria-label="Projects">
+    <div class="wrap proj-grid">
+      <figure class="proj-fig reveal">
+        <img src="assets/photo-6.webp" alt="Blush-pink full-length silk curtains with delicate embroidered banding opening onto a balcony with a navy armchair; ceiling fan above. On-image caption: Inside the details — a full home project, Bahria Town, Lahore." width="640" height="1138" loading="lazy">
+        <figcaption><strong>Bahria Town, Lahore</strong> — a full home project, from the studio’s own post (this reel drew 1,918 likes and 144 comments on Instagram).</figcaption>
+      </figure>
+      <div class="proj-copy reveal">
+        <p class="eyebrow">Completed project</p>
+        <h2>A full home in Bahria Town, Lahore — simple elegance, no excess.</h2>
+        <p>The studio’s toured Bahria Town project pairs bespoke curtain sets with embroidered cushions in truck-art motifs and Roman blinds — each window dressed to the room, not the other way round.</p>
+        <p class="fact">Design philosophy: “simple elegance without excessive drapery.”</p>
+        <p style="margin-top:22px"><a class="btn ghost" href="https://www.instagram.com/hennahassanofficial/" target="_blank" rel="noopener">See more on Instagram</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section id="philosophy" class="phil" aria-label="Philosophy">
+    <div class="wrap reveal">
+      <p class="eyebrow" style="color:var(--terra-soft)">The philosophy</p>
+      <blockquote>“Beautiful windows don’t just decorate a space, they transform how it feels.”</blockquote>
+      <p class="attr"><strong>— Henna Hassan</strong> · Interior Architect &amp; Designer · Lahore · Made with love in Pakistan</p>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" aria-label="Order">
+    <div class="wrap">
+      <div class="order-card reveal">
+        <div>
+          <p class="eyebrow">Order</p>
+          <h2>DM to place an order.</h2>
+          <p>The studio takes orders directly on Instagram and keeps site visits back to back — send a message to start the conversation about your windows.</p>
+          <a class="btn" href="https://www.instagram.com/hennahassanofficial/" target="_blank" rel="noopener">Message @hennahassanofficial</a>
+        </div>
+        <ol class="order-steps">
+          <li><span class="n">1</span>Browse the collections and recent projects above — all from the studio’s own Instagram.</li>
+          <li><span class="n">2</span>DM <strong>@hennahassanofficial</strong> with your space and what you have in mind.</li>
+          <li><span class="n">3</span>Henna replies directly — site visits and bespoke orders are arranged one to one.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong style="color:var(--ink);font-family:var(--serif)">Henna Hassan</strong><br>
+        Interior Architect &amp; Designer · Lahore, Pakistan
+      </div>
+      <div>
+        Instagram: <a href="https://www.instagram.com/hennahassanofficial/" target="_blank" rel="noopener">@hennahassanofficial</a><br>
+        Ordering: DM to place an order
+      </div>
+    </div>
+    <p class="foot-note">Concept preview site prepared by Devflix for @hennahassanofficial. All photographs © the studio, sourced from their public Instagram posts. This is a design preview, not the business’s official website.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

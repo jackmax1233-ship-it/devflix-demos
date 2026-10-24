@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin and Smile Dental Clinic — Dental &amp; Aesthetic Care, Al Satwa Dubai</title>
+<meta name="description" content="Skin and Smile Dental Clinic in Al Satwa, Dubai — dental care, smile makeovers, orthodontics, teeth whitening, laser hair removal, Botox and PRP therapy. Rose House Bldg, Al Hudaiba Rd. Call 04 272 5458.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FFFFFF;
+  --paper:#F7FAF9;
+  --mint:#CDEEDD;
+  --mint-soft:#EAF6EF;
+  --ink:#15211F;
+  --body:#45514E;
+  --teal:#0E5B59;
+  --teal-dark:#07322F;
+  --teal-deep:#0A423F;
+  --coral:#A8441F;
+  --coral-bright:#A8441F;
+  --line:#DCE8E3;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--white);color:var(--ink);line-height:1.65;overflow-x:hidden}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;line-height:1.16;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- nav ---------- */
+header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:44px;height:44px;border-radius:14px;background:var(--teal);display:grid;place-items:center;flex:none}
+.brand-name{font-family:'Sora',sans-serif;font-weight:700;font-size:20px;line-height:1.2}
+.brand-name small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+nav.top{display:flex;gap:28px;font-weight:500;font-size:15px}
+nav.top a{text-decoration:none;color:var(--body)}
+nav.top a:hover{color:var(--teal)}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;color:#fff;background:var(--teal);padding:11px 22px;border-radius:999px;transition:background .2s ease}
+.nav-cta:hover{background:var(--teal-deep)}
+.nav-cta svg{flex:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:16px;padding:15px 32px;border-radius:999px;background:var(--teal);color:#fff;transition:background .2s ease,transform .15s ease}
+.btn:hover{background:var(--teal-deep);transform:translateY(-1px)}
+.btn.wa{background:var(--coral)}
+.btn.wa:hover{background:#8F3A1A}
+.btn.outline{background:#fff;color:var(--teal);border:2px solid var(--teal)}
+.btn.outline:hover{background:var(--mint-soft)}
+
+/* ---------- hero ---------- */
+.hero{padding:60px 0 70px;background:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:18px}
+.kicker::before{content:"";width:32px;height:2px;background:var(--coral-bright)}
+.hero h1{font-size:clamp(38px,5vw,64px);font-weight:800;margin-bottom:16px}
+.hero h1 .accent{color:var(--teal)}
+.lede{font-size:17.5px;color:var(--body);max-width:47ch;margin-bottom:28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.hero-meta{display:flex;gap:24px;flex-wrap:wrap;font-size:14.5px;color:var(--body)}
+.hero-meta div strong{display:block;color:var(--ink);font-size:15px}
+.hero-photo figure{background:var(--mint-soft);border:1px solid var(--line);border-radius:22px;overflow:hidden;aspect-ratio:4/5;max-height:520px;width:100%}
+.hero-photo img{width:100%;height:100%;object-fit:contain}
+.hero-tag{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:600;color:var(--teal);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px}
+
+/* ---------- offer ---------- */
+.offer{background:var(--teal-dark);color:#fff;padding:64px 0}
+.offer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.offer .kicker{color:var(--mint)}
+.offer .kicker::before{background:var(--mint)}
+.offer h2{font-size:clamp(30px,3.6vw,46px);font-weight:800;margin-bottom:14px}
+.offer h2 .price{color:var(--mint)}
+.offer p{font-size:16.5px;color:#DCEDEA;max-width:52ch;margin-bottom:8px}
+.offer-facts{list-style:none;margin:20px 0 26px;display:grid;gap:12px}
+.offer-facts li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:#fff}
+.offer-facts .tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--mint);color:var(--teal-dark);font-weight:800;display:grid;place-items:center;font-size:15px;margin-top:2px}
+.offer-facts small{color:#BFD8D4;font-size:14px}
+.offer-photo figure{background:#0A2A28;border:1px solid #1C4F4B;border-radius:20px;overflow:hidden;aspect-ratio:4/3;max-height:420px;width:100%}
+.offer-photo img{width:100%;height:100%;object-fit:contain}
+.offer-note{margin-top:16px;font-size:13.5px;color:#A9C6C2}
+
+/* ---------- sections ---------- */
+section.block{padding:76px 0}
+.sec-head{max-width:720px;margin-bottom:42px}
+.sec-kicker{font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--coral-bright);margin-bottom:12px}
+.sec-head h2{font-size:clamp(30px,3.8vw,46px);font-weight:800;margin-bottom:14px}
+.sec-head p{color:var(--body);font-size:17px}
+
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 26px;transition:transform .2s ease,box-shadow .2s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:0 16px 38px rgba(14,91,89,.10)}
+.svc .ic{width:48px;height:48px;border-radius:14px;background:var(--mint-soft);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:16px}
+.svc h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.svc p{font-size:15px;color:var(--body)}
+.svc .tag{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+
+/* ---------- duo (dental + skin) ---------- */
+.duo{background:var(--paper)}
+.duo-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.duo-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px 32px}
+.duo-card h3{font-size:24px;font-weight:700;margin-bottom:6px}
+.duo-card .sub{font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--coral-bright);margin-bottom:18px}
+.duo-card ul{list-style:none;display:grid;gap:12px;font-size:16px;color:var(--body)}
+.duo-card ul li{display:flex;gap:12px;align-items:flex-start}
+.duo-card .dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--teal);margin-top:9px}
+.duo-photo{margin-top:22px}
+.duo-photo figure{background:var(--mint-soft);border:1px solid var(--line);border-radius:18px;overflow:hidden;aspect-ratio:16/10;max-height:400px;width:100%}
+.duo-photo img{width:100%;height:100%;object-fit:contain}
+.duo-note{margin-top:26px;font-size:15.5px;color:var(--body);max-width:70ch}
+.duo-note strong{color:var(--ink)}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 28px}
+.vcard h3{font-size:20px;font-weight:700;margin-bottom:14px}
+.vcard p,.vcard li{font-size:15.5px;color:var(--body)}
+.vcard ul{list-style:none;display:grid;gap:8px}
+.vcard .big{font-size:19px;font-weight:700;color:var(--teal)}
+a.tel{text-decoration:none;color:var(--teal);font-weight:700}
+a.tel:hover{text-decoration:underline}
+.vcard .wa-btn{display:inline-flex;align-items:center;gap:10px;margin-top:14px;text-decoration:none;font-weight:700;font-size:15.5px;color:#fff;background:var(--coral);padding:12px 24px;border-radius:999px}
+.vcard .wa-btn:hover{background:#8F3A1A}
+.hours-row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.hours-row:last-child{border-bottom:0}
+.hours-note{font-size:13.5px;margin-top:12px;color:var(--body)}
+
+/* ---------- footer ---------- */
+footer{background:var(--teal-dark);color:#CBE0DD;padding:54px 0 28px}
+.foot{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap}
+.foot-brand{font-family:'Sora',sans-serif;font-weight:800;font-size:26px;color:#fff}
+.foot-brand small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);margin-top:6px}
+.foot p{font-size:14.5px;max-width:44ch;margin-top:12px}
+.foot-col h4{font-family:'Sora',sans-serif;font-size:16px;color:#fff;margin-bottom:12px}
+.foot-col a,.foot-col span{display:block;font-size:14.5px;text-decoration:none;margin-bottom:8px}
+.foot-col a:hover{color:var(--mint)}
+.copy{margin-top:36px;padding-top:20px;border-top:1px solid #1C4F4B;font-size:13px;color:#9DBFBB;text-align:center}
+.copy .dev{display:block;margin-top:8px;font-size:12.5px}
+
+@media (max-width:940px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-photo figure{max-height:440px}
+  .offer-grid{grid-template-columns:1fr;gap:30px}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .duo-grid{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  nav.top{display:none}
+  .hero{padding:44px 0 54px}
+  section.block{padding:56px 0}
+  .svc-grid{grid-template-columns:1fr}
+  .nav-cta{padding:10px 18px;font-size:14px}
+  .brand-name{font-size:18px}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Skin and Smile Dental Clinic — home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M4 9c1.5 4.5 4.5 7 8 7s6.5-2.5 8-7"/><circle cx="9" cy="6" r="1.3" fill="#fff" stroke="none"/><circle cx="15" cy="6" r="1.3" fill="#fff" stroke="none"/></svg>
+      </span>
+      <span class="brand-name">Skin &amp; Smile<small>Dental Clinic · Satwa, Dubai</small></span>
+    </a>
+    <nav class="top" aria-label="Sections">
+      <a href="#offer">Offer</a>
+      <a href="#services">Services</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+    <a class="nav-cta" href="tel:+97142725458">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+      04 272 5458
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <span class="kicker">Dental &amp; aesthetic clinic · Al Satwa, Dubai</span>
+        <h1>Skin and Smile <span class="accent">Dental Clinic</span></h1>
+        <p class="lede">One clinic in Al Satwa for teeth and skin — dental care, smile makeovers and orthodontics, alongside laser hair removal, Botox and PRP therapy. Appointments by call or WhatsApp.</p>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+97142725458">Call 04 272 5458</a>
+          <a class="btn wa" href="https://wa.me/971564233443" target="_blank" rel="noopener">WhatsApp 056 423 3443</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>Location</strong>Rose House Bldg, Al Hudaiba Rd, Satwa</div>
+          <div><strong>Hours</strong>Mon–Thu &amp; Sat–Sun · 10:00–22:00</div>
+        </div>
+      </div>
+      <div class="hero-photo rv">
+        <figure>
+          <img src="assets/hero.webp" alt="A confident, smiling patient — the clinic's veneers offer post from Skin and Smile Dental Clinic" width="1136" height="1408" fetchpriority="high">
+        </figure>
+        <span class="hero-tag">Smile care &amp; skin care — under one roof</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER -->
+  <section class="offer" id="offer">
+    <div class="wrap offer-grid">
+      <div class="rv">
+        <span class="kicker">Current offer · as posted Oct 17</span>
+        <h2>Teeth whitening <span class="price">349 AED</span></h2>
+        <p>Professional teeth whitening with a <strong>free dental cleaning</strong> included.</p>
+        <ul class="offer-facts">
+          <li><span class="tick" aria-hidden="true">✓</span><span><strong>349 AED</strong> — was 499 AED<br><small>Limited-time price, valid October 17–29, 2026</small></span></li>
+          <li><span class="tick" aria-hidden="true">✓</span><span><strong>Free dental cleaning</strong> included with every whitening<br><small>One appointment, both treatments</small></span></li>
+          <li><span class="tick" aria-hidden="true">✓</span><span><strong>Tabby &amp; Tamara</strong> payments accepted<br><small>Book by call or WhatsApp: 056 423 3443</small></span></li>
+        </ul>
+        <a class="btn wa" href="https://wa.me/971564233443" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <p class="offer-note">Offer details exactly as published by the clinic on Instagram, Oct 17 2026.</p>
+      </div>
+      <div class="offer-photo rv">
+        <figure>
+          <img src="assets/offer-whitening.webp" alt="The clinic's teeth whitening offer graphic — 349 AED with free dental cleaning, October 17–29" width="1024" height="1360" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="block" id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="sec-kicker">What they do</div>
+        <h2>Dental care and aesthetic treatments</h2>
+        <p>Everything the clinic lists for its Satwa practice — teeth and skin, in one place.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M5.6 5.6l2.2 2.2M3 12h3M18.4 5.6l-2.2 2.2M21 12h-3"/><path d="M8 21c1-4 2.5-6 4-6s3 2 4 6"/></svg></div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional whitening — currently 349 AED with a free dental cleaning, Oct 17–29.</p>
+          <span class="tag">Limited offer</span>
+        </article>
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><path d="M4 10c2 5 5 7.5 8 7.5S18 15 20 10"/><path d="M7 6.5h.01M12 5.5h.01M17 6.5h.01"/></svg></div>
+          <h3>Smile Makeover</h3>
+          <p>Cosmetic dental treatments planned around your smile.</p>
+          <span class="tag">Dental</span>
+        </article>
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><path d="M4 12h16M7 8v8M17 8v8M10 10v4M14 10v4"/></svg></div>
+          <h3>Orthodontics</h3>
+          <p>Braces and alignment treatments for straighter teeth.</p>
+          <span class="tag">Dental</span>
+        </article>
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><path d="M12 3c-4 3.5-7 6.5-7 11a7 7 0 0 0 14 0c0-4.5-3-7.5-7-11z"/></svg></div>
+          <h3>General Dental Care</h3>
+          <p>Everyday dental treatments for healthy teeth and gums.</p>
+          <span class="tag">Dental</span>
+        </article>
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></div>
+          <h3>Laser Hair Removal</h3>
+          <p>Aesthetic laser hair removal treatments.</p>
+          <span class="tag">Aesthetics</span>
+        </article>
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><path d="M9 3h6M10 3v6l-5 9a2.4 2.4 0 0 0 2.1 3.6h9.8A2.4 2.4 0 0 0 19 18l-5-9V3"/></svg></div>
+          <h3>Botox</h3>
+          <p>Botox treatments for aesthetic care.</p>
+          <span class="tag">Aesthetics</span>
+        </article>
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
+          <h3>PRP Therapy</h3>
+          <p>PRP therapy treatments for skin and hair.</p>
+          <span class="tag">Aesthetics</span>
+        </article>
+        <article class="svc rv">
+          <div class="ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5B59" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div>
+          <h3>Book Directly</h3>
+          <p>Call <a class="tel" href="tel:+97142725458">04 272 5458</a> or WhatsApp <a class="tel" href="https://wa.me/971564233443" target="_blank" rel="noopener">056 423 3443</a>.</p>
+          <span class="tag">Satwa, Dubai</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DUO -->
+  <section class="block duo" id="about">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="sec-kicker">Two practices, one clinic</div>
+        <h2>Teeth and skin, under one roof</h2>
+        <p>Skin and Smile pairs a dental clinic with an aesthetics practice — so a whitening visit and a skin treatment can happen at the same address.</p>
+      </div>
+      <div class="duo-grid">
+        <div class="duo-card rv">
+          <h3>The dental side</h3>
+          <div class="sub">Smile care</div>
+          <ul>
+            <li><span class="dot"></span>Teeth whitening with free dental cleaning</li>
+            <li><span class="dot"></span>Smile makeovers</li>
+            <li><span class="dot"></span>Orthodontics — braces and alignment</li>
+            <li><span class="dot"></span>General dental treatments</li>
+          </ul>
+        </div>
+        <div class="duo-card rv">
+          <h3>The skin side</h3>
+          <div class="sub">Aesthetic care</div>
+          <ul>
+            <li><span class="dot"></span>Laser hair removal</li>
+            <li><span class="dot"></span>Botox</li>
+            <li><span class="dot"></span>PRP therapy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="duo-photo rv">
+        <figure>
+          <img src="assets/clinic-interior.webp" alt="The clinic's dental X-ray services post, showing the modern dental treatment room" width="1100" height="1100" loading="lazy">
+        </figure>
+      </div>
+      <p class="duo-note rv"><strong>The clinic takes appointments directly.</strong> There is no online booking — call 04 272 5458 or WhatsApp 056 423 3443, and Tabby &amp; Tamara payments are accepted.</p>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="block" id="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="sec-kicker">Find them</div>
+        <h2>Visit the clinic</h2>
+        <p>In Al Satwa, on Al Hudaiba Road — open six days a week until 10 pm.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="vcard rv">
+          <h3>Location</h3>
+          <p>Rose House Building, Room 207<br>Al Hudaiba Road<br>Al Badaa / Satwa, Dubai, UAE</p>
+        </div>
+        <div class="vcard rv">
+          <h3>Hours</h3>
+          <ul>
+            <li class="hours-row"><span>Mon – Thu</span><span><strong>10:00 – 22:00</strong></span></li>
+            <li class="hours-row"><span>Sat – Sun</span><span><strong>10:00 – 22:00</strong></span></li>
+          </ul>
+          <p class="hours-note">Hours as listed; call ahead to confirm Friday availability.</p>
+        </div>
+        <div class="vcard rv">
+          <h3>Contact</h3>
+          <ul>
+            <li class="big"><a class="tel" href="tel:+97142725458">04 272 5458</a></li>
+            <li class="big"><a class="tel" href="tel:+971564233443">+971 56 423 3443</a></li>
+          </ul>
+          <a class="wa-btn" href="https://wa.me/971564233443" target="_blank" rel="noopener">WhatsApp 056 423 3443</a>
+          <p class="hours-note">Tabby &amp; Tamara payments accepted.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="foot-brand">Skin &amp; Smile<small>Dental Clinic · Satwa, Dubai</small></div>
+        <p>Rose House Bldg, Room 207, Al Hudaiba Rd, Al Badaa / Satwa, Dubai. Dental care, smile makeovers, orthodontics, laser hair removal, Botox and PRP.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Sections</h4>
+        <a href="#offer">Current offer</a>
+        <a href="#services">Services</a>
+        <a href="#visit">Visit us</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+97142725458">04 272 5458</a>
+        <a href="tel:+971564233443">+971 56 423 3443</a>
+        <a href="https://wa.me/971564233443" target="_blank" rel="noopener">WhatsApp 056 423 3443</a>
+        <span>IG @skinandsmiledentalclinic</span>
+      </div>
+    </div>
+    <div class="copy">
+      © 2026 Skin and Smile Dental Clinic — concept preview. All facts taken from the clinic's own public posts.
+      <span class="dev">Preview concept by Devflix</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io;
+  if('IntersectionObserver' in window){
+    io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>

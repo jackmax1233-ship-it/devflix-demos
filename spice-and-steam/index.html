@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice &amp; Steam — Romance &amp; Romantasy Bookshop, Thornwood Glasgow</title>
+<meta name="description" content="Spice & Steam is Thornwood, Glasgow's romance and romantasy specialist bookshop — sprayed-edge and collectors editions, bookish merch from local makers, and seasonal drinks in store.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FAF2E3;
+  --cream-2:#F3E7D1;
+  --ink:#2B1B14;
+  --muted:#6B5646;
+  --wine:#7A1F2B;
+  --wine-deep:#4A1420;
+  --gold:#D9A441;
+  --gold-deep:#8A5B14;
+  --line:#E2CFAF;
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--wine);color:var(--cream)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(250,242,227,.96);border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{font-family:var(--serif);font-weight:700;font-size:23px;letter-spacing:.02em;text-decoration:none;color:var(--ink)}
+.brand .amp{color:var(--wine);font-style:italic}
+nav{display:flex;gap:clamp(14px,2.5vw,30px);align-items:center}
+nav a{text-decoration:none;font-size:13.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+nav a:hover,nav a:focus-visible{color:var(--wine)}
+.btn{display:inline-block;background:var(--wine);color:var(--cream);font-weight:700;font-size:15px;letter-spacing:.04em;text-decoration:none;padding:14px 30px;border-radius:3px;border:2px solid var(--wine);transition:background .25s,color .25s}
+.btn:hover,.btn:focus-visible{background:transparent;color:var(--wine)}
+.btn.ghost{background:transparent;color:var(--wine);border-color:var(--wine)}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--wine);color:var(--cream)}
+.head .btn{padding:10px 22px;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center;padding:clamp(44px,7vh,88px) 0 clamp(52px,7vh,96px)}
+.kicker{font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--wine);font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:40px;height:2px;background:var(--wine)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(42px,5.8vw,76px);line-height:1.06;letter-spacing:.005em;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--wine)}
+.hero .lede{font-size:19px;color:var(--muted);max-width:36ch;margin-bottom:12px}
+.hero .lede strong{color:var(--ink)}
+.hero .dogtag{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--wine);border:1px solid var(--wine);border-radius:999px;padding:6px 16px;margin:10px 0 26px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.hero-fig{position:relative}
+.hero-fig .frame{aspect-ratio:4/5;overflow:hidden;border-radius:6px;border:1px solid var(--line);background:var(--cream-2)}
+.hero-fig img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+.hero-fig figcaption{position:absolute;left:20px;bottom:20px;background:rgba(43,27,20,.88);color:var(--cream);padding:12px 18px;font-size:14px;border-radius:4px;letter-spacing:.02em;max-width:calc(100% - 40px)}
+.hero-fig figcaption .q{font-family:var(--serif);font-style:italic;font-size:16px}
+
+/* ---------- marquee strip ---------- */
+.strip{background:var(--wine-deep);color:var(--cream);padding:20px 0;text-align:center;border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
+.strip p{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.5vw,25px);letter-spacing:.05em}
+.strip p b{color:var(--gold);font-weight:600}
+
+/* ---------- sections ---------- */
+section{padding:clamp(60px,9vh,110px) 0}
+.sec-head{margin-bottom:clamp(30px,5vh,52px);max-width:720px}
+.sec-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(32px,4.2vw,52px);line-height:1.1;margin:12px 0 12px}
+.sec-head h2 em{font-style:italic;color:var(--wine)}
+.sec-head p{color:var(--muted)}
+
+/* ---------- the shop ---------- */
+.shop{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.shop-copy .rule{width:56px;height:3px;background:var(--wine);margin-bottom:26px}
+.shop-copy h3{font-family:var(--serif);font-size:26px;font-weight:600;margin:26px 0 8px}
+.shop-copy h3:first-of-type{margin-top:0}
+.shop-copy p{color:var(--muted);margin-bottom:6px}
+.shop-copy p strong{color:var(--ink)}
+.shop-figs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.shop-figs .tall{grid-row:span 2}
+.shop-figs .frame{overflow:hidden;border-radius:6px;border:1px solid var(--line);background:var(--cream-2)}
+.shop-figs .tall .frame{aspect-ratio:3/4}
+.shop-figs .sq .frame{aspect-ratio:1/1}
+.shop-figs img{width:100%;height:100%;object-fit:cover}
+.shop-figs .tall img{object-position:center 30%}
+.shop-figs .sq img{object-position:center 42%}
+.shop-figs figcaption{font-size:13.5px;color:var(--muted);padding:10px 4px 0;line-height:1.5}
+
+/* ---------- drinks (wine band) ---------- */
+.drinks{background:var(--wine-deep);color:var(--cream);border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
+.drinks .grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(28px,5vw,72px);align-items:center}
+.drinks .frame{aspect-ratio:4/5;overflow:hidden;border-radius:6px;border:1px solid rgba(217,164,65,.45)}
+.drinks img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.drinks .kicker{color:var(--gold)}
+.drinks .kicker::before{background:var(--gold)}
+.drinks h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4vw,48px);line-height:1.12;margin:12px 0 18px}
+.drinks h2 em{font-style:italic;color:var(--gold)}
+.drinks p{color:#F0DFC2;margin-bottom:16px;max-width:44ch}
+.drinks p strong{color:var(--cream)}
+.drinks .note{font-size:14.5px;color:#E4CFA4;border-left:3px solid var(--gold);padding-left:16px;margin-top:22px}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hours{border:1px solid var(--line);border-radius:6px;background:#FFFDF6;overflow:hidden}
+.hours .h-head{background:var(--ink);color:var(--cream);padding:16px 24px;font-family:var(--serif);font-size:20px;font-style:italic}
+.hours ul{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:13px 24px;border-bottom:1px dashed var(--line);font-size:16px}
+.hours li:last-child{border-bottom:none}
+.hours li .day{font-weight:600}
+.hours li .time{color:var(--muted)}
+.hours li.closed .time{color:var(--wine);font-weight:600}
+.visit-copy p{color:var(--muted);margin-bottom:14px}
+.visit-copy p strong{color:var(--ink)}
+.visit-copy address{font-style:normal;font-family:var(--serif);font-size:22px;line-height:1.5;color:var(--ink);margin:18px 0 8px}
+.visit-copy .dog{margin-top:18px;display:inline-block;background:var(--cream-2);border:1px solid var(--line);border-radius:6px;padding:12px 18px;font-size:15px;color:var(--ink)}
+.visit-copy .dog b{color:var(--wine)}
+.visit-fig .frame{aspect-ratio:16/10;overflow:hidden;border-radius:6px;border:1px solid var(--line);background:var(--cream-2)}
+.visit-fig img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+
+/* ---------- contact / footer ---------- */
+.contact{background:var(--ink);color:var(--cream);text-align:center;border-top:3px solid var(--gold)}
+.contact h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.2vw,50px);margin-bottom:14px}
+.contact h2 em{font-style:italic;color:var(--gold)}
+.contact p{color:#DCCBB2;max-width:52ch;margin:0 auto 30px}
+.contact .mail{display:inline-block;font-family:var(--serif);font-size:clamp(19px,2.6vw,26px);color:var(--cream);text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:4px;margin-bottom:28px}
+.contact .mail:hover,.contact .mail:focus-visible{color:var(--gold)}
+.contact .ig{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.contact .ig a{color:var(--gold);text-decoration:none;font-size:14px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border:1px solid var(--gold);border-radius:999px;padding:10px 24px}
+.contact .ig a:hover,.contact .ig a:focus-visible{background:var(--gold);color:var(--ink)}
+footer{background:#1D100B;color:#B99F83;font-size:13.5px;padding:22px 0;text-align:center}
+footer p{max-width:70ch;margin:0 auto}
+
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-fig{max-width:560px}
+  .shop{grid-template-columns:1fr}
+  .drinks .grid{grid-template-columns:1fr}
+  .drinks .frame{max-width:560px}
+  .visit-grid{grid-template-columns:1fr}
+  nav a:not(.btn){display:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header>
+  <div class="wrap head">
+    <a class="brand" href="#top">Spice <span class="amp">&amp;</span> Steam</a>
+    <nav>
+      <a href="#shop">The Shop</a>
+      <a href="#drinks">Drinks</a>
+      <a href="#visit">Visit</a>
+      <a class="btn" href="#contact">Say Hello</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="rv">
+      <p class="kicker">Romance &amp; Romantasy Bookshop · Thornwood, Glasgow</p>
+      <h1>Sip slow.<br><em>Read spicy.</em></h1>
+      <p class="lede">Glasgow's specialist bookshop for <strong>romance and romantasy</strong> — shelves of sprayed-edge and collectors editions, bookish finds from local makers, and a proper good cuppa while you browse.</p>
+      <span class="dogtag">🐾 Dog friendly — bring your pup</span>
+      <div class="cta-row">
+        <a class="btn" href="#visit">Plan Your Visit</a>
+        <a class="btn ghost" href="#shop">Browse the Shelves</a>
+      </div>
+    </div>
+    <figure class="hero-fig rv">
+      <div class="frame"><img src="img/hero-shop.webp" alt="Candlelit shelves of romance books inside Spice and Steam bookshop" width="1400" height="1866" fetchpriority="high"></div>
+      <figcaption><span class="q">"Stay spicy, angels"</span> — the shop, glowing at night</figcaption>
+    </figure>
+  </div>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <p class="wrap">Sprayed edges · <b>Collectors editions</b> · Seasonal sips · <b>Local makers</b></p>
+  </div>
+
+  <!-- THE SHOP -->
+  <section id="shop">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker">The Shop</p>
+        <h2>Built for <em>romance readers</em></h2>
+        <p>Every shelf is curated for the romantasy-obsessed — the tropes you love, the editions you collect, and the little extras you didn't know you needed.</p>
+      </div>
+      <div class="shop">
+        <div class="shop-copy rv">
+          <div class="rule"></div>
+          <h3>Sprayed edges &amp; collectors editions</h3>
+          <p>From <strong>found family</strong> to <strong>why choose</strong> to <strong>omegaverse</strong> — the special editions collectors hunt for, right here on Dumbarton Road.</p>
+          <h3>Bookish merch, made locally</h3>
+          <p>Totes, gifts and bookish bits from <strong>local makers</strong>, stocked alongside the shelves.</p>
+          <h3>Seasonal drinks in store</h3>
+          <p>Autumnal specials like the <strong>ghostface</strong> — served warm while you decide which world to fall into next. <a href="#drinks" style="color:var(--wine);font-weight:600">See what's pouring ↓</a></p>
+        </div>
+        <div class="shop-figs rv">
+          <figure class="tall">
+            <div class="frame"><img src="img/shelf-romance.webp" alt="Wooden shelves packed with romance novels at Spice and Steam" width="720" height="960" loading="lazy"></div>
+            <figcaption>The romance wall — trope-sorted and reader-approved.</figcaption>
+          </figure>
+          <figure class="sq">
+            <div class="frame"><img src="img/merch-tote.webp" alt="Spice and Steam tote bag reading 'Find me at Spice and Steam' among gift-wrapped books" width="1100" height="1467" loading="lazy"></div>
+            <figcaption>Bookish merch from local makers.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRINKS -->
+  <section id="drinks" class="drinks">
+    <div class="wrap grid">
+      <figure class="rv">
+        <div class="frame"><img src="img/drinks-ghostface.webp" alt="The autumnal ghostface hot chocolate with books and autumn leaves at Spice and Steam" width="1100" height="1467" loading="lazy"></div>
+      </figure>
+      <div class="rv">
+        <p class="kicker">In-Store Sips</p>
+        <h2>Seasonal drinks, <em>poured with drama</em></h2>
+        <p>The drinks menu turns with the seasons. This autumn it's the <strong>ghostface</strong> — a proper autumnal warmer, best enjoyed wedged between the romantasy shelves with a new chapter waiting.</p>
+        <p>Grab a cup, grab a book, grab the good armchair. That's the whole ritual.</p>
+        <p class="note">Drinks are served in store only — one more reason to come and stay a while.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker">Visit</p>
+        <h2>Come say <em>hello</em></h2>
+      </div>
+      <div class="visit-grid">
+        <div class="rv">
+          <div class="hours">
+            <div class="h-head">Opening hours</div>
+            <ul>
+              <li><span class="day">Tuesday – Saturday</span><span class="time">10am – 6pm</span></li>
+              <li><span class="day">Sunday</span><span class="time">12pm – 4pm</span></li>
+              <li class="closed"><span class="day">Monday</span><span class="time">Closed</span></li>
+            </ul>
+          </div>
+          <div class="visit-copy">
+            <address>571–573 Dumbarton Road<br>Glasgow G11 6HU</address>
+            <p>In the heart of <strong>Thornwood</strong> — look for the warm glow and the shelves you can see from the street.</p>
+            <span class="dog">🐾 <b>Dog friendly.</b> Well-behaved pups very welcome.</span>
+          </div>
+        </div>
+        <figure class="visit-fig rv">
+          <div class="frame"><img src="img/visit-window.webp" alt="Inside Spice and Steam looking out through the shopfront windows onto Dumbarton Road" width="1100" height="1955" loading="lazy"></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap rv">
+      <h2>Let's talk <em>books</em></h2>
+      <p>Questions about stock, special orders or events? Send a message — a real bookseller reads every one.</p>
+      <a class="mail" href="mailto:Spiceandsteam26@gmail.com">Spiceandsteam26@gmail.com</a>
+      <div class="ig">
+        <a href="https://www.instagram.com/spiceandsteam26/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@spiceandsteam26" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="wrap">Spice &amp; Steam · 571–573 Dumbarton Road, Glasgow G11 6HU · Concept preview crafted with care.</p>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var els=document.querySelectorAll('.rv');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

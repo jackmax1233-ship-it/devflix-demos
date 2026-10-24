@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Other Road Interiors — Interior Design Studio, Dublin</title>
+<meta name="description" content="The Other Road Interiors is a Dublin interior design studio founded by Emma & Ava — residential interiors, bespoke schemes and colour.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F1E6;          /* warm plaster */
+    --cream-deep:#EFE7D6;
+    --line:#E2D7C0;
+    --forest:#1E3329;         /* deep forest ink */
+    --forest-deep:#152420;
+    --ink:#26302B;            /* body text */
+    --muted:#4A544E;          /* secondary text */
+    --clay:#9A5B33;           /* terracotta accent */
+    --clay-light:#D9A97E;     /* accent on dark */
+    --parchment:#EFE8D8;      /* light text on dark */
+    --parchment-soft:#CFC7B4; /* secondary text on dark */
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-0.01em}
+  img{display:block}
+  a{color:inherit}
+
+  .wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+
+  /* ---------- header ---------- */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+  }
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4rem}
+  .wordmark{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--forest);text-decoration:none;white-space:nowrap}
+  .wordmark span{color:var(--clay)}
+  .nav{display:flex;align-items:center;gap:1.75rem}
+  .nav a.navlink{text-decoration:none;font-size:.95rem;font-weight:500;color:var(--forest)}
+  .nav a.navlink:hover{text-decoration:underline;text-underline-offset:4px}
+
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;font-size:1rem;
+    background:var(--forest);color:#FFFFFF;
+    padding:.85rem 1.7rem;border-radius:999px;border:2px solid var(--forest);
+    transition:background .2s ease,border-color .2s ease;
+  }
+  .btn:hover{background:var(--forest-deep);border-color:var(--forest-deep)}
+  .btn.ghost{background:transparent;color:var(--forest)}
+  .btn.ghost:hover{background:var(--forest);color:#FFFFFF}
+  .btn.small{padding:.6rem 1.2rem;font-size:.9rem}
+
+  /* ---------- hero ---------- */
+  .hero{padding:4.5rem 0 4rem}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:600;
+    color:var(--clay);margin:0 0 1.1rem;
+  }
+  .hero h1{font-size:clamp(2.5rem,4.8vw,3.9rem);color:var(--forest);margin:0 0 1.25rem}
+  .hero h1 em{font-style:italic;color:var(--clay)}
+  .lede{font-size:1.13rem;color:var(--muted);max-width:33rem;margin:0 0 2rem}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap}
+  .hero figure{margin:0;justify-self:end}
+  .hero img{
+    height:540px;width:auto;max-width:100%;
+    border-radius:6px;
+    box-shadow:14px 14px 0 var(--cream-deep);
+  }
+  figcaption{
+    font-size:.82rem;color:var(--muted);margin-top:.9rem;max-width:20rem;line-height:1.5;
+  }
+  figcaption strong{color:var(--ink)}
+
+  /* ---------- section rhythm ---------- */
+  section.block{padding:4.5rem 0}
+  .section-head{max-width:44rem;margin-bottom:3rem}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem);color:var(--forest);margin:0 0 .8rem}
+  .section-head p{color:var(--muted);margin:0;font-size:1.05rem}
+
+  /* ---------- work ---------- */
+  .work{background:#FFFFFF;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .project{display:grid;grid-template-columns:.95fr 1.05fr;gap:3.5rem;align-items:center;margin-bottom:4.5rem}
+  .project:last-child{margin-bottom:0}
+  .project.flip{grid-template-columns:1.05fr .95fr}
+  .project.flip figure{order:2;justify-self:end}
+  .project figure{margin:0;min-width:0}
+  .project img{height:460px;width:auto;max-width:100%;border-radius:6px}
+  .project h3{font-size:1.7rem;color:var(--forest);margin:0 0 .7rem}
+  .project .eyebrow{margin-bottom:.7rem}
+  .project p{color:var(--muted);margin:0 0 1rem;max-width:30rem}
+  .materials{
+    list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem;
+  }
+  .materials li{
+    font-size:.82rem;font-weight:500;color:var(--forest);
+    border:1px solid var(--line);border-radius:999px;padding:.3rem .85rem;background:var(--cream);
+  }
+  .supplier-note{
+    margin-top:2.5rem;max-width:46rem;border-left:3px solid var(--clay);padding:.2rem 0 .2rem 1.25rem;
+  }
+  .supplier-note p{margin:0;color:var(--muted);font-size:.98rem}
+  .supplier-note strong{color:var(--ink)}
+
+  /* ---------- studio (dark) ---------- */
+  .studio{background:var(--forest);color:var(--parchment)}
+  .studio-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;align-items:center}
+  .studio figure{margin:0;min-width:0}
+  .studio img{height:460px;width:auto;max-width:100%;border-radius:6px}
+  .studio .eyebrow{color:var(--clay-light)}
+  .studio h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin:0 0 1rem;color:var(--parchment)}
+  .studio p{color:var(--parchment-soft);margin:0 0 1.1rem;max-width:32rem}
+  .studio p strong{color:var(--parchment)}
+  .services{list-style:none;padding:0;margin:1.75rem 0 0;display:grid;gap:.9rem}
+  .services li{
+    display:flex;gap:.8rem;align-items:baseline;
+    border-bottom:1px solid rgba(239,232,216,.18);padding-bottom:.9rem;max-width:32rem;
+  }
+  .services .n{font-family:'Fraunces',Georgia,serif;color:var(--clay-light);font-size:1.05rem;min-width:2rem}
+  .services .t{color:var(--parchment);font-weight:600}
+  .services .d{color:var(--parchment-soft);font-size:.95rem}
+
+  /* ---------- enquire ---------- */
+  .enquire{text-align:center}
+  .enquire h2{font-size:clamp(2rem,3.6vw,2.8rem);color:var(--forest);margin:0 0 1rem}
+  .enquire p{color:var(--muted);max-width:36rem;margin:0 auto 2rem;font-size:1.08rem}
+  .enquire .fine{font-size:.88rem;color:var(--muted);margin:1.25rem 0 0}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--forest);color:var(--parchment-soft)}
+  footer .wrap{padding-top:2.75rem;padding-bottom:2.75rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+  footer .fname{font-family:'Fraunces',Georgia,serif;font-size:1.3rem;color:var(--parchment)}
+  footer p{margin:.3rem 0 0;font-size:.92rem}
+  footer a{color:var(--parchment);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+  footer a:hover{color:var(--clay-light)}
+  footer .credit{font-size:.8rem;color:var(--parchment-soft);opacity:.85}
+
+  /* ---------- reveal animation (JS-gated) ---------- */
+  .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1;transform:none;transition:none}
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:2.5rem}
+    .hero figure{justify-self:start}
+    .hero img{height:440px;box-shadow:10px 10px 0 var(--cream-deep)}
+    .project,.project.flip{grid-template-columns:1fr;gap:1.75rem}
+    .project.flip figure{order:0;justify-self:start}
+    .project img{height:420px}
+    .studio-grid{grid-template-columns:1fr;gap:2.25rem}
+    .studio img{height:420px}
+  }
+  @media (max-width:560px){
+    .nav a.navlink{display:none}
+    .hero{padding:3rem 0 2.75rem}
+    .hero img{height:400px}
+    .project img,.studio img{height:380px}
+    section.block{padding:3.25rem 0}
+    .btn.small{padding:.55rem 1rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="#top">The Other Road <span>Interiors</span></a>
+    <nav class="nav" aria-label="Main">
+      <a class="navlink" href="#work">Work</a>
+      <a class="navlink" href="#studio">Studio</a>
+      <a class="btn small" href="https://www.instagram.com/theotherroadinteriors/" target="_blank" rel="noopener">Enquire on Instagram</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Interior design studio &middot; Dublin, Ireland</p>
+        <h1>Rooms that feel <em>personal</em>, designed with intention.</h1>
+        <p class="lede">The Other Road is an interior design studio founded by Emma &amp; Ava &mdash; residential interiors, bespoke schemes and colour, created for the way you actually live.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#work">See the work</a>
+          <a class="btn ghost" href="https://www.instagram.com/theotherroadinteriors/" target="_blank" rel="noopener">Enquire on Instagram</a>
+        </div>
+      </div>
+      <figure class="reveal">
+        <img src="assets/photo-1.webp" alt="Tiled bathroom vanity with a veined stone vessel basin, brushed brass taps and a rounded mirror" width="640" height="1136" fetchpriority="high">
+        <figcaption><strong>Bathroom scheme, Dublin.</strong> Bespoke tiled vanity, veined stone basin, brushed brass &mdash; revealed this October.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="block work" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Rooms with a point of view</h2>
+        <p>A look at recent schemes &mdash; confident with tile, generous with texture, and always built around colour.</p>
+      </div>
+
+      <article class="project reveal">
+        <figure>
+          <img src="assets/photo-1.webp" alt="Tiled bathroom vanity with a veined stone vessel basin, brushed brass taps and hexagonal floor tiles" width="640" height="1136" loading="lazy">
+          <figcaption><strong>Bathroom reveal, Dublin.</strong> The studio&rsquo;s October project reveal.</figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">Project &middot; Dublin</p>
+          <h3>A bathroom in tile and stone</h3>
+          <p>The October reveal shows the studio&rsquo;s confident hand with hard materials: a bespoke tiled vanity, a veined stone vessel basin and brushed brass taps, set against soft handmade-look wall tiles and a hexagonal floor.</p>
+          <ul class="materials">
+            <li>Tiled vanity</li>
+            <li>Stone vessel basin</li>
+            <li>Brushed brass</li>
+            <li>Hexagonal floor tiles</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project flip reveal">
+        <figure>
+          <img src="assets/photo-3.webp" alt="Warm living-room corner with two round timber pedestal side tables, a linen sofa with patterned cushions and a tall plant" width="640" height="1136" loading="lazy">
+          <figcaption><strong>Living room corner.</strong> Layered pattern and warm timber.</figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">Project &middot; Living space</p>
+          <h3>Warmth, layered up</h3>
+          <p>Round timber side tables, a linen sofa with considered pattern, a tonal woven rug and a tall leafy plant &mdash; a corner that shows how the studio builds warmth through material and colour rather than clutter.</p>
+          <ul class="materials">
+            <li>Warm timber</li>
+            <li>Linen &amp; pattern</li>
+            <li>Tonal rug</li>
+            <li>Considered colour</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="supplier-note reveal">
+        <p><strong>An honest process.</strong> The studio&rsquo;s project posts name the real makers behind the rooms &mdash; <strong>@capietra</strong> tiles, <strong>Synk Concrete</strong> basins and <strong>@finlinefurniture</strong> among them. Good design, properly credited.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIO -->
+  <section class="block studio" id="studio">
+    <div class="wrap studio-grid">
+      <figure class="reveal">
+        <img src="assets/photo-2.webp" alt="Emma and Ava, founders of The Other Road Interiors, seated and laughing in a glass-walled sunroom" width="640" height="1138" loading="lazy">
+        <figcaption style="color:var(--parchment-soft)"><strong style="color:var(--parchment)">Emma &amp; Ava.</strong> The duo behind The Other Road.</figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="eyebrow">The studio</p>
+        <h2>Two founders, one shared eye</h2>
+        <p>The Other Road is an interior design studio founded by <strong>Emma &amp; Ava</strong>, working across Dublin on residential projects &mdash; introduced in their own words in their October studio reel.</p>
+        <p>Bespoke schemes built around colour, texture and the way a room actually gets lived in. No showroom formulas &mdash; just rooms that feel like the people in them.</p>
+        <ul class="services">
+          <li>
+            <span class="n">01</span>
+            <span><span class="t">Residential interiors</span><br><span class="d">Whole rooms and whole homes, designed around how you live.</span></span>
+          </li>
+          <li>
+            <span class="n">02</span>
+            <span><span class="t">Bespoke schemes</span><br><span class="d">One-of-one concepts &mdash; no two rooms the same.</span></span>
+          </li>
+          <li>
+            <span class="n">03</span>
+            <span><span class="t">Colour-led design</span><br><span class="d">Confident palettes, layered with natural material.</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRE -->
+  <section class="block enquire" id="enquire">
+    <div class="wrap reveal">
+      <p class="eyebrow">Enquiries</p>
+      <h2>Let&rsquo;s talk about your space</h2>
+      <p>Every project starts with a conversation. Tell Emma &amp; Ava about your home &mdash; the rooms you love, the ones you don&rsquo;t &mdash; and what you&rsquo;d like it to feel like.</p>
+      <a class="btn" href="https://www.instagram.com/theotherroadinteriors/" target="_blank" rel="noopener">Message us on Instagram</a>
+      <p class="fine">Currently taking enquiries by Instagram DM &middot; Dublin, Ireland</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fname">The Other Road Interiors</div>
+      <p>Interior design studio &middot; Dublin, Ireland &middot; <a href="https://www.instagram.com/theotherroadinteriors/" target="_blank" rel="noopener">@theotherroadinteriors</a></p>
+    </div>
+    <p class="credit">Concept preview made by Devflix</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.12, rootMargin: '0px 0px -6% 0px'});
+  items.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

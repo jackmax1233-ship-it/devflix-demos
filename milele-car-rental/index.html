@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milele Car Rental — Drive Dubai Your Way</title>
+<meta name="description" content="Car rental in Dubai, UAE. Daily, weekly and monthly rentals, rent-to-own options, used cars, zero-deposit options and free delivery. Book via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#161310;
+  --card:#1F1B16;
+  --card-2:#24201A;
+  --ink:#F7F2E9;
+  --muted:#C7BFAE;
+  --amber:#FFB800;
+  --amber-deep:#D99A00;
+  --line:#38302A;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--asphalt);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+h1,h2,h3,.display{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:1.02}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--amber)}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:50;background:rgba(22,19,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;letter-spacing:.06em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand .mark{width:30px;height:30px;border:3px solid var(--amber);border-radius:50%;position:relative;flex:none}
+.brand .mark::after{content:"";position:absolute;inset:6px;background:var(--amber);border-radius:50%}
+.brand small{font-family:'Inter',sans-serif;font-weight:600;font-size:10px;letter-spacing:.24em;color:var(--muted);display:block}
+.navlinks{display:flex;gap:30px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.navlinks a{text-decoration:none;color:var(--muted);transition:color .2s}
+.navlinks a:hover{color:var(--amber)}
+.navlinks a:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--amber);color:var(--asphalt);font-weight:700;font-size:15px;letter-spacing:.04em;text-decoration:none;padding:14px 28px;border-radius:6px;border:none;cursor:pointer;transition:transform .15s,background .2s}
+.btn:hover{background:#ffc42e;transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.btn.ghost:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px)}
+.btn.small{padding:10px 20px;font-size:13.5px}
+@media(max-width:760px){.navlinks{display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 60px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-120px;right:-160px;width:520px;height:520px;background:radial-gradient(circle,rgba(255,184,0,.10),transparent 65%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(46px,6.4vw,92px);font-weight:700;margin:0 0 20px}
+.hero h1 .stroke{color:transparent;-webkit-text-stroke:2px var(--amber)}
+.hero p.lede{font-size:19px;color:var(--muted);max-width:46ch;margin-bottom:30px}
+.hero p.lede strong{color:var(--ink)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.hero-facts{display:flex;gap:28px;flex-wrap:wrap}
+.hero-facts div{border-left:3px solid var(--amber);padding-left:14px}
+.hero-facts b{display:block;font-family:'Oswald',sans-serif;font-size:24px;letter-spacing:.02em}
+.hero-facts span{font-size:13px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.hero-photo{position:relative}
+.hero-photo .frame{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.5);transform:rotate(1.2deg)}
+.hero-photo img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:50% 42%}
+.hero-photo .badge{position:absolute;left:-18px;bottom:36px;background:var(--amber);color:var(--asphalt);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:12px 18px;border-radius:8px;box-shadow:0 14px 30px rgba(0,0,0,.45);transform:rotate(-2deg)}
+.hero-photo .badge.alt{left:auto;right:-14px;top:30px;bottom:auto;background:var(--ink);transform:rotate(2deg)}
+@media(max-width:900px){
+  .hero{padding:52px 0 44px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-photo{max-width:420px;margin:0 auto;width:100%}
+  .hero-photo .badge{left:8px}
+  .hero-photo .badge.alt{right:8px}
+}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--amber);color:var(--asphalt);overflow:hidden;white-space:nowrap;padding:13px 0;border-top:3px solid var(--asphalt);border-bottom:3px solid var(--asphalt)}
+.ticker .track{display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;letter-spacing:.14em;text-transform:uppercase;animation:tick 26s linear infinite}
+.ticker span{margin:0 26px}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}}
+
+/* ---------- sections ---------- */
+section.block{padding:88px 0}
+section.block h2{font-size:clamp(34px,4vw,56px);margin-bottom:8px}
+.sec-sub{color:var(--muted);max-width:62ch;margin-bottom:44px;font-size:18px}
+
+/* ways to drive */
+.rows{display:grid;gap:16px}
+.row{display:grid;grid-template-columns:84px 1fr auto;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 30px;transition:border-color .2s,transform .15s}
+.row:hover{border-color:var(--amber);transform:translateX(6px)}
+.row .num{font-family:'Oswald',sans-serif;font-size:44px;font-weight:700;color:var(--amber);line-height:1}
+.row h3{font-size:22px;margin-bottom:6px;letter-spacing:.02em}
+.row p{color:var(--muted);font-size:15.5px}
+.row .tag{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);border:1.5px solid var(--amber);border-radius:20px;padding:7px 16px;white-space:nowrap}
+@media(max-width:640px){.row{grid-template-columns:56px 1fr}.row .num{font-size:32px}.row .tag{grid-column:2;justify-self:start}}
+
+.split{margin-top:56px;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.split img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:50% 52%;border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.split .copy h3{font-size:clamp(26px,3vw,38px);margin-bottom:16px}
+.split .copy h3 em{font-style:normal;color:var(--amber)}
+.split .copy p{color:var(--muted);margin-bottom:16px}
+.checks{list-style:none;margin:20px 0 28px;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.checks li::before{content:"✓";color:var(--amber);font-weight:800;flex:none;margin-top:2px}
+@media(max-width:900px){.split{grid-template-columns:1fr}.split img{max-width:420px}}
+
+/* how it works */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;position:relative;overflow:hidden}
+.step::after{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--amber);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.step:hover::after{transform:scaleX(1)}
+.step .n{font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;color:var(--asphalt);background:var(--amber);display:inline-block;padding:6px 14px;border-radius:20px;letter-spacing:.14em;margin-bottom:18px}
+.step h3{font-size:21px;margin-bottom:10px}
+.step p{color:var(--muted);font-size:15.5px}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* visit / contact */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:40px}
+.contact-card h3{font-size:26px;margin-bottom:6px}
+.contact-card .addr{color:var(--muted);margin-bottom:26px}
+.c-line{display:flex;gap:16px;align-items:center;padding:16px 0;border-top:1px solid var(--line);font-size:16px}
+.c-line:last-of-type{border-bottom:1px solid var(--line);margin-bottom:26px}
+.c-line .ic{width:44px;height:44px;flex:none;border-radius:50%;background:#2C2620;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--amber);font-size:19px}
+.c-line a{color:var(--ink);text-decoration:none;font-weight:600;border-bottom:2px solid var(--amber)}
+.c-line a:hover{color:var(--amber)}
+.c-line a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.visit-grid>img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:50% 58%;border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+@media(max-width:900px){.visit-grid{grid-template-columns:1fr}.visit-grid>img{max-width:420px}}
+
+footer{border-top:1px solid var(--line);padding:36px 0;margin-top:40px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer p{color:var(--muted);font-size:13.5px;max-width:70ch}
+footer a{color:var(--amber)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.body.classList.add('js')</script>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Milele Car Rental — home"><span class="mark" aria-hidden="true"></span><span>MILELE<small>CAR RENTAL · DUBAI</small></span></a>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="#rentals">Ways to drive</a>
+      <a href="#how">How it works</a>
+      <a href="#visit">Find us</a>
+    </nav>
+    <a class="btn small" href="https://wa.me/97142116700" target="_blank" rel="noopener">Book on WhatsApp</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv in">
+        <p class="eyebrow">Car rental · Dubai, UAE</p>
+        <h1>Drive Dubai <span class="stroke">on your</span> terms.</h1>
+        <p class="lede">Milele Car Rental puts you behind the wheel your way — <strong>daily, weekly and monthly rentals</strong>, rent-to-own plans, and a used-cars department, all with <strong>zero-deposit options</strong> and <strong>free delivery</strong> across Dubai.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://wa.me/97142116700" target="_blank" rel="noopener">Message us on WhatsApp</a>
+          <a class="btn ghost" href="#how">How it works</a>
+        </div>
+        <div class="hero-facts">
+          <div><b>Daily / Weekly / Monthly</b><span>Rental plans</span></div>
+          <div><b>Zero-deposit</b><span>Options available</span></div>
+          <div><b>Free</b><span>Car delivery</span></div>
+        </div>
+      </div>
+      <div class="hero-photo rv in">
+        <div class="frame">
+          <img src="img/hero.webp" alt="A white Land Cruiser 300 and a black Range Rover parked in front of the Milele Car Rental showroom in Dubai" width="720" height="1280" fetchpriority="high">
+        </div>
+        <span class="badge">Zero-deposit options</span>
+        <span class="badge alt">Free delivery</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="track">
+      <span>Daily rentals</span>·<span>Weekly rentals</span>·<span>Monthly rentals</span>·<span>Rent-to-own</span>·<span>Used cars</span>·<span>Zero deposit</span>·<span>Free delivery</span>·<span>Daily rentals</span>·<span>Weekly rentals</span>·<span>Monthly rentals</span>·<span>Rent-to-own</span>·<span>Used cars</span>·<span>Zero deposit</span>·<span>Free delivery</span>·
+    </div>
+  </div>
+
+  <section class="block" id="rentals">
+    <div class="wrap">
+      <p class="eyebrow rv">What we do</p>
+      <h2 class="rv">Ways to drive</h2>
+      <p class="sec-sub rv">From a day trip to a full ownership plan — every option is booked directly with our team, no portals, no waiting.</p>
+      <div class="rows">
+        <div class="row rv">
+          <span class="num">01</span>
+          <div><h3>Daily rentals</h3><p>Need a car for a day or two? Message us and drive out the same day.</p></div>
+          <span class="tag">Flexible</span>
+        </div>
+        <div class="row rv">
+          <span class="num">02</span>
+          <div><h3>Weekly rentals</h3><p>A full week of wheels at a better rate — ideal for visitors and short stays.</p></div>
+          <span class="tag">Better value</span>
+        </div>
+        <div class="row rv">
+          <span class="num">03</span>
+          <div><h3>Monthly rentals</h3><p>Your car for the month, sorted in one message. Great for residents and business trips.</p></div>
+          <span class="tag">Best rate</span>
+        </div>
+        <div class="row rv">
+          <span class="num">04</span>
+          <div><h3>Rent-to-own</h3><p>Love the car you're driving? Our rent-to-own plans turn rental payments into ownership.</p></div>
+          <span class="tag">Own it</span>
+        </div>
+        <div class="row rv">
+          <span class="num">05</span>
+          <div><h3>Used cars department</h3><p>Looking to buy? Browse quality used cars from our own fleet and showroom stock.</p></div>
+          <span class="tag">Buy</span>
+        </div>
+      </div>
+
+      <div class="split">
+        <img class="rv" src="img/showroom.webp" alt="Team member in front of the Milele showroom in Dubai with rental cars" width="900" height="1600" loading="lazy">
+        <div class="copy rv">
+          <h3>No big deposit. <em>No pickup hassle.</em></h3>
+          <p>We keep renting simple. Ask about our zero-deposit options and we'll bring the car to you — free delivery, anywhere in Dubai.</p>
+          <ul class="checks">
+            <li>Zero-deposit rental options advertised</li>
+            <li>Free delivery to your doorstep</li>
+            <li>Direct booking — message, pick, drive</li>
+          </ul>
+          <a class="btn" href="https://wa.me/97142116700" target="_blank" rel="noopener">Ask about a car</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="how" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow rv">Booking</p>
+      <h2 class="rv">How it works</h2>
+      <p class="sec-sub rv">Three steps. No website forms, no queues — just message us.</p>
+      <div class="steps">
+        <div class="step rv">
+          <span class="n">Step 1</span>
+          <h3>Message us on WhatsApp</h3>
+          <p>Tell us what you need — dates, car type, budget. Our team replies with options and clear rates.</p>
+        </div>
+        <div class="step rv">
+          <span class="n">Step 2</span>
+          <h3>Pick your car</h3>
+          <p>Choose from daily, weekly or monthly plans — or talk rent-to-own if you'd rather buy.</p>
+        </div>
+        <div class="step rv">
+          <span class="n">Step 3</span>
+          <h3>Get it delivered</h3>
+          <p>We bring the car to you, free, anywhere in Dubai. Keys in hand, drive off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="visit" style="padding-top:0">
+    <div class="wrap visit-grid">
+      <img class="rv" src="img/driver.webp" alt="A Milele customer sitting in his rental car, ready to drive" width="900" height="1600" loading="lazy">
+      <div class="contact-card rv">
+        <p class="eyebrow">Visit / Contact</p>
+        <h3>Find us in Dubai</h3>
+        <p class="addr">Showroom 178, Dubai, United Arab Emirates</p>
+        <div class="c-line">
+          <span class="ic" aria-hidden="true">✆</span>
+          <span>Call: <a href="tel:+97142116700">+971 4 211 6700</a></span>
+        </div>
+        <div class="c-line">
+          <span class="ic" aria-hidden="true">✉</span>
+          <span>Email: <a href="mailto:info@milelecarrental.com">info@milelecarrental.com</a></span>
+        </div>
+        <div class="c-line">
+          <span class="ic" aria-hidden="true">◈</span>
+          <span>Instagram: <a href="https://www.instagram.com/milelecarrentals" target="_blank" rel="noopener">@milelecarrentals</a></span>
+        </div>
+        <a class="btn" href="https://wa.me/97142116700" target="_blank" rel="noopener">Book via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>This is a preview website concept prepared by <a href="https://www.instagram.com/devfl_ix" target="_blank" rel="noopener">Devflix</a> for Milele Car Rental. Photos and facts belong to the business.</p>
+    <p>© 2026 Milele Car Rental · Dubai, UAE</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

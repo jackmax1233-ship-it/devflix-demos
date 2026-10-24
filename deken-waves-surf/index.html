@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deken Waves Surf Coaching — Oakura, Taranaki</title>
+<meta name="description" content="Surf coaching for groms and learners in Oakura, Taranaki. Friday Frothout kids' sessions, Thursday surf sessions and club squads with coach Simon Deken.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B2B31;          /* deep ocean ink */
+  --ink-deep:#071E23;
+  --sand:#F6F1E4;
+  --sand-deep:#ECE3CE;
+  --coral:#B8431D;        /* sun-faded coral, AA on sand */
+  --coral-dark:#93330F;   /* hover */
+  --teal:#0F5F5C;
+  --teal-dark:#0A4A47;
+  --sun:#F2B33D;
+  --white:#FFFFFF;
+  --radius:14px;
+  --max:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--sand);
+  color:var(--ink);
+  line-height:1.6;
+  font-size:1rem;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,.display{font-family:'Oswald',sans-serif;font-weight:600;line-height:1.08;letter-spacing:.01em;text-transform:uppercase}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+a{color:var(--teal-dark)}
+a:hover{color:var(--ink)}
+
+/* ---------- top strip ---------- */
+.topstrip{background:var(--ink-deep);color:var(--white);font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.topstrip .wrap{display:flex;justify-content:space-between;gap:1rem;padding-top:.5rem;padding-bottom:.5rem}
+.topstrip .season{color:var(--sun)}
+
+/* ---------- nav ---------- */
+header.nav{background:var(--sand);border-bottom:2px solid var(--sand-deep);position:sticky;top:0;z-index:50}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink)}
+.brand-mark{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--sun);
+  display:flex;align-items:center;justify-content:center;font-family:'Oswald';font-weight:700;font-size:1.05rem;flex:none}
+.brand-name{font-family:'Oswald';font-weight:700;font-size:1.15rem;letter-spacing:.04em;line-height:1.1}
+.brand-sub{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-dark);font-weight:600}
+.nav-links{display:none;gap:1.5rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.nav-links a:hover{color:var(--coral)}
+.nav-cta{display:none!important}
+.menu-btn{background:none;border:2px solid var(--ink);border-radius:8px;color:var(--ink);
+  font-weight:700;font-size:.85rem;padding:.45rem .8rem;cursor:pointer;letter-spacing:.05em}
+.menu-btn:hover{background:var(--ink);color:var(--white)}
+.js .mobile-menu{display:none}
+.js .mobile-menu.open{display:block}
+.mobile-menu{background:var(--ink);padding:1rem 1.25rem 1.25rem}
+.mobile-menu ul{list-style:none;display:grid;gap:.2rem}
+.mobile-menu a{color:var(--white);text-decoration:none;font-weight:600;display:block;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.mobile-menu a:hover{color:var(--sun)}
+@media(min-width:820px){
+  .nav-links{display:flex}
+  .nav-cta{display:inline-flex!important}
+  .menu-btn{display:none}
+  .mobile-menu{display:none!important}
+}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;text-decoration:none;font-weight:700;
+  border-radius:999px;padding:.85rem 1.6rem;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:background .18s ease,transform .18s ease}
+.btn:active{transform:scale(.98)}
+.btn-coral{background:var(--coral);color:var(--white)}
+.btn-coral:hover{background:var(--coral-dark);color:var(--white)}
+.btn-ghost{background:transparent;color:var(--white);border-color:var(--white)}
+.btn-ghost:hover{background:var(--white);color:var(--ink)}
+.btn-ink{background:var(--ink);color:var(--white)}
+.btn-ink:hover{background:var(--ink-deep);color:var(--white)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:var(--white);overflow:hidden}
+.hero .wrap{display:grid;gap:2rem;padding-top:2.75rem;padding-bottom:2.75rem}
+.kicker{color:var(--sun);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.8rem;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.6rem,7vw,4.4rem);color:var(--white);margin-bottom:1rem}
+.hero h1 .accent{color:var(--sun)}
+.hero p.lede{font-size:1.1rem;max-width:34rem;color:#E9E4D4;margin-bottom:1.75rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.85rem;margin-bottom:1.5rem}
+.opener-badge{display:inline-flex;align-items:center;gap:.6rem;background:var(--sun);color:var(--ink);
+  font-weight:700;border-radius:999px;padding:.6rem 1.2rem;font-size:.95rem;width:fit-content}
+.opener-badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--ink)}
+.hero-photo{margin:0}
+.hero-photo figure{margin:0}
+.hero-photo img{width:100%;aspect-ratio:11/7.83;object-fit:cover;border-radius:var(--radius);border:6px solid var(--sand-deep)}
+.hero-photo figcaption{font-size:.85rem;color:#CFC8B2;margin-top:.6rem}
+@media(min-width:900px){
+  .hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;padding-top:3.5rem;padding-bottom:3.5rem}
+  .hero-photo img{max-height:520px}
+}
+
+/* ---------- quick facts strip ---------- */
+.facts{background:var(--sand-deep);border-bottom:2px solid #DCD2B8}
+.facts .wrap{display:grid;grid-template-columns:1fr;gap:.4rem;padding-top:1.1rem;padding-bottom:1.1rem}
+.fact{display:flex;align-items:center;gap:.7rem;font-weight:600;font-size:.98rem}
+.fact svg{flex:none}
+@media(min-width:760px){.facts .wrap{grid-template-columns:repeat(3,1fr);gap:1rem}}
+
+/* ---------- sections ---------- */
+section{padding:3.5rem 0}
+.eyebrow{color:var(--teal-dark);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.8rem;margin-bottom:.7rem}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:1rem}
+.section-intro{max-width:44rem;margin-bottom:2.25rem;font-size:1.06rem}
+
+/* sessions cards */
+.cards{display:grid;gap:1.25rem;grid-template-columns:1fr}
+.card{background:var(--white);border:2px solid var(--sand-deep);border-radius:var(--radius);padding:1.75rem;display:flex;flex-direction:column}
+.card .tag{align-self:flex-start;background:var(--teal-dark);color:var(--white);font-size:.75rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:.35rem .9rem;margin-bottom:1rem}
+.card .tag.sun{background:var(--sun);color:var(--ink)}
+.card h3{font-size:1.5rem;margin-bottom:.6rem}
+.card p{margin-bottom:.6rem}
+.card ul{list-style:none;margin:.4rem 0 1.25rem;display:grid;gap:.45rem}
+.card ul li{padding-left:1.5rem;position:relative;font-size:.97rem}
+.card ul li::before{content:"";position:absolute;left:0;top:.5em;width:.55rem;height:.55rem;border-radius:50%;background:var(--coral)}
+.card .price{font-family:'Oswald';font-size:1.6rem;font-weight:700;color:var(--coral);margin-bottom:.25rem}
+.card .price-note{font-size:.85rem;color:var(--teal-dark);font-weight:600;margin-bottom:1rem}
+.card .btn{margin-top:auto;align-self:flex-start}
+@media(min-width:860px){.cards{grid-template-columns:repeat(3,1fr)}}
+
+/* gallery */
+.gallery{background:var(--ink);color:var(--white)}
+.gallery h2{color:var(--white)}
+.gallery .eyebrow{color:var(--sun)}
+.gallery .section-intro{color:#E9E4D4}
+.shots{display:grid;gap:1.25rem;grid-template-columns:1fr}
+.shot{background:var(--ink-deep);border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.14)}
+.shot img{width:100%}
+.shot.r11 img{aspect-ratio:1/1;object-fit:cover}
+.shot.rp img{aspect-ratio:1100/953;object-fit:cover}
+.shot figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:#E9E4D4}
+@media(min-width:700px){.shots{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.shots{grid-template-columns:1fr 1fr 1fr 1fr}}
+.shot{grid-column:span 1}
+@media(min-width:700px){.shot.rp{grid-column:span 2}}
+
+/* season opener */
+.opener{background:var(--sand)}
+.opener-grid{display:grid;gap:2rem;align-items:center}
+.flyer-card{background:var(--white);border:2px solid var(--sand-deep);border-radius:var(--radius);padding:1rem;max-width:340px;margin:0 auto}
+.flyer-card img{width:100%;aspect-ratio:1100/1464;object-fit:contain;border-radius:8px;background:var(--sand)}
+.flyer-card figcaption{text-align:center;font-size:.85rem;color:var(--teal-dark);font-weight:600;padding:.7rem 0 .2rem}
+.opener-copy .btn{margin-top:1.25rem}
+.opener-copy ul{list-style:none;margin:1.1rem 0;display:grid;gap:.55rem}
+.opener-copy ul li{padding-left:1.6rem;position:relative}
+.opener-copy ul li::before{content:"→";position:absolute;left:0;color:var(--coral);font-weight:700}
+@media(min-width:860px){.opener-grid{grid-template-columns:340px 1fr;gap:3rem}}
+
+/* wave band (decorative) */
+.waveband{position:relative;min-height:300px;display:flex;align-items:center;overflow:hidden;padding:3rem 0}
+.waveband .bg{position:absolute;inset:0}
+.waveband .bg img{width:100%;height:100%;object-fit:cover}
+.waveband .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(7,30,35,.78) 20%,rgba(7,30,35,.48) 60%,rgba(7,30,35,.28))}
+.waveband .wrap{position:relative}
+.waveband blockquote{font-family:'Oswald';font-size:clamp(1.6rem,4vw,2.5rem);text-transform:uppercase;color:var(--white);max-width:36rem;line-height:1.2}
+.waveband cite{display:block;margin-top:.8rem;color:var(--sun);font-style:normal;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem}
+
+/* about */
+.about-grid{display:grid;gap:2rem;align-items:center}
+.about-photo img{aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius);width:100%}
+.about-photo figcaption{font-size:.85rem;color:var(--teal-dark);margin-top:.6rem;font-weight:500}
+@media(min-width:860px){.about-grid{grid-template-columns:1fr 1fr;gap:3rem}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--white);text-align:center}
+.contact h2{color:var(--white)}
+.contact .eyebrow{color:var(--sun)}
+.contact p{color:#E9E4D4;max-width:38rem;margin:0 auto 2rem}
+.contact-ways{display:grid;gap:1rem;grid-template-columns:1fr;max-width:820px;margin:0 auto}
+.way{background:var(--ink-deep);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:var(--white);display:block}
+.way:hover{border-color:var(--sun)}
+.way:hover .way-value{color:var(--sun)}
+.way-label{font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sun);margin-bottom:.4rem}
+.way-value{font-family:'Oswald';font-size:1.45rem;font-weight:600;letter-spacing:.02em}
+.way-note{font-size:.88rem;color:#CFC8B2;margin-top:.35rem}
+@media(min-width:720px){.contact-ways{grid-template-columns:repeat(3,1fr)}}
+
+/* footer */
+footer{background:var(--ink-deep);color:#CFC8B2;font-size:.88rem}
+footer .wrap{display:flex;flex-direction:column;gap:.6rem;padding-top:1.75rem;padding-bottom:1.75rem}
+footer a{color:var(--sun)}
+footer .devflix{color:#8FA3A6}
+@media(min-width:720px){footer .wrap{flex-direction:row;justify-content:space-between;align-items:center}}
+
+/* reveal (progressive enhancement) */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span>Oakura &middot; Taranaki &middot; Aotearoa New Zealand</span>
+    <span class="season">Season opener &middot; 6 Nov</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Deken Waves Surf Coaching — home">
+      <span class="brand-mark" aria-hidden="true">DW</span>
+      <span>
+        <span class="brand-name">DEKEN WAVES</span><br>
+        <span class="brand-sub">Surf Coaching</span>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#sessions">Sessions</a></li>
+        <li><a href="#crew">The crew</a></li>
+        <li><a href="#opener">Season opener</a></li>
+        <li><a href="#coach">Coach</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-coral nav-cta" href="sms:+64211229525">Text Simon</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <ul>
+      <li><a href="#sessions">Sessions</a></li>
+      <li><a href="#crew">The crew</a></li>
+      <li><a href="#opener">Season opener</a></li>
+      <li><a href="#coach">Coach</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="sms:+64211229525">Text Simon — 021 122 9525</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Surf coaching &middot; Oakura, Taranaki</p>
+        <h1>First waves,<br><span class="accent">big froth.</span></h1>
+        <p class="lede">Deken Waves is Simon Deken's surf coaching for groms and learners on the Taranaki coast — warm-ups on the sand, pop-ups, then straight into small waves with a coach who knows every bank at Oakura.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-coral" href="sms:+64211229525">Text 021 122 9525</a>
+          <a class="btn btn-ghost" href="mailto:dekenwaves@gmail.com">Email Simon</a>
+        </div>
+        <span class="opener-badge"><span class="dot" aria-hidden="true"></span>Season opener &middot; Friday 6 November</span>
+      </div>
+      <div class="hero-photo">
+        <figure>
+          <img src="img/hero-frothout.webp" width="1100" height="783" alt="Kids and caregivers with surfboards at a Deken Waves Friday Frothout session on the beach" fetchpriority="high">
+          <figcaption>Friday Frothout crew — boards out, caregivers in the water.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK FACTS -->
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 15c2-4 5-7 8-8 2 3 1 7-1 9l-2 2c-2 0-4-1-5-3z" stroke="#0A4A47" stroke-width="2" stroke-linejoin="round"/><path d="M9 20c3 1 7 0 10-3" stroke="#B8431D" stroke-width="2" stroke-linecap="round"/></svg>
+        Club surfboards available
+      </div>
+      <div class="fact">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#0A4A47" stroke-width="2"/><path d="M12 7v5l3 3" stroke="#B8431D" stroke-width="2" stroke-linecap="round"/></svg>
+        Fridays 5:30&ndash;6:30pm &middot; $15 a session
+      </div>
+      <div class="fact">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3.5" stroke="#0A4A47" stroke-width="2"/><circle cx="16.5" cy="9.5" r="2.8" stroke="#0A4A47" stroke-width="2"/><path d="M2.5 20c.8-3.4 3-5 5.5-5s4.7 1.6 5.5 5M13.5 20c.6-2.6 2.2-4 4-4 1.5 0 2.8 1 3.4 3" stroke="#B8431D" stroke-width="2" stroke-linecap="round"/></svg>
+        Young learners surf with their caregiver
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSIONS -->
+  <section id="sessions" aria-labelledby="sessions-h">
+    <div class="wrap">
+      <p class="eyebrow rv">Sessions</p>
+      <h2 id="sessions-h" class="rv">Pick your froth</h2>
+      <p class="section-intro rv">Three ways to get in the water with Deken Waves this season. Everything runs off the beach at Oakura — text or email Simon to lock in a spot.</p>
+      <div class="cards">
+        <article class="card rv">
+          <span class="tag sun">Starts 6 Nov</span>
+          <h3>Groms Fri-Frothout</h3>
+          <p>The Friday after-school surf for young groms — warm-up, pop-ups and a few tips from Simon, then into the water with a caregiver.</p>
+          <div class="price">$15 <span style="font-size:1rem;font-family:'Inter';font-weight:600">per session</span></div>
+          <p class="price-note">7-week program &middot; $105 full block</p>
+          <ul>
+            <li>Fridays 5:30&ndash;6:30pm, straight off the Oakura Boardriders Club</li>
+            <li>Club surfboards available — just bring togs and a towel</li>
+            <li>Burgers, snags and refreshments back at the Club afterwards</li>
+            <li>Oakura Boardriders members get a $40 subsidy off the Froth</li>
+          </ul>
+          <a class="btn btn-ink" href="sms:+64211229525">Text to sign up</a>
+        </article>
+        <article class="card rv">
+          <span class="tag">Starts 29 Oct</span>
+          <h3>Thursday surf sessions</h3>
+          <p>Weekly afternoon coaching for learner and intermediate surfers keen to lift their skills and confidence in the waves.</p>
+          <div class="price">8-week program</div>
+          <p class="price-note">Two sessions available &middot; limited spots</p>
+          <ul>
+            <li>Thursday afternoons, starting 29 October</li>
+            <li>Oakura Beach or Weld Road — picked on the day for the best conditions</li>
+            <li>Led by Simon, an experienced local surfing coach</li>
+            <li>Build skills, confidence and wave knowledge</li>
+          </ul>
+          <a class="btn btn-ink" href="mailto:dekenwaves@gmail.com">Email to book</a>
+        </article>
+        <article class="card rv">
+          <span class="tag">With the club</span>
+          <h3>Shred squads &amp; club sessions</h3>
+          <p>Seasonal squads and holiday programs run with the Oakura Boardriders Club — the next step for groms who've caught the bug.</p>
+          <div class="price">Squads</div>
+          <p class="price-note">Seasonal &middot; term-time</p>
+          <ul>
+            <li>Grommy shred squads for progressing young surfers</li>
+            <li>Seasonal sessions run with Oakura Boardriders Club</li>
+            <li>School-holiday surf programs through the summer</li>
+            <li>Text Simon for the current term's program</li>
+          </ul>
+          <a class="btn btn-ink" href="sms:+64211229525">Ask about squads</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="crew" class="gallery" aria-labelledby="crew-h" style="padding:3.5rem 0">
+    <div class="wrap">
+      <p class="eyebrow rv">The crew</p>
+      <h2 id="crew-h" class="rv">Straight from the beach</h2>
+      <p class="section-intro rv">Real sessions, real groms — this is what a Deken Waves froth-out looks like.</p>
+      <div class="shots">
+        <figure class="shot r11 rv">
+          <img src="img/arvo-frothout.webp" width="1100" height="1100" alt="Oakura beach on a clear day with a surfer carrying a board across the sand" loading="lazy">
+          <figcaption>Final Friday Froth-out — glassy arvo at Oakura.</figcaption>
+        </figure>
+        <figure class="shot r11 rv">
+          <img src="img/throttle-mural.webp" width="1100" height="1100" alt="Five young surfers in wetsuits posing with surfboards in front of a wave mural" loading="lazy">
+          <figcaption>Full-throttle crew after their last session of term.</figcaption>
+        </figure>
+        <figure class="shot rp rv">
+          <img src="img/heavies-taranaki.webp" width="1100" height="953" alt="Five groms posing after a surf with Mount Taranaki behind them" loading="lazy">
+          <figcaption>Local heavies — post-surf with the maunga behind.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASON OPENER -->
+  <section id="opener" class="opener" aria-labelledby="opener-h">
+    <div class="wrap opener-grid">
+      <figure class="flyer-card rv">
+        <img src="img/flyer-frothout.webp" width="1100" height="1464" alt="Deken Waves Friday Froth Out season flyer with the Oakura Boardriders Club" loading="lazy">
+        <figcaption>The season flyer — Deken Waves &times; Oakura Boardriders Club</figcaption>
+      </figure>
+      <div class="opener-copy">
+        <p class="eyebrow rv">Season opener</p>
+        <h2 id="opener-h" class="rv">Friday 6 November —<br>the Frothout takes off</h2>
+        <p class="rv">The Groms Fri-Frothout launches together with the Oakura Boardriders Club season opening. Weekly Friday surf sessions for the kids, then everyone heads back to the Club for burgers, snags and refreshments.</p>
+        <ul class="rv">
+          <li>An easy first step onto a board for young ones</li>
+          <li>Skills, confidence and new mates — all about fun</li>
+          <li>Warm-up, pop-ups, tips from Simon, then surf with a caregiver</li>
+        </ul>
+        <a class="btn btn-coral rv" href="sms:+64211229525">Text Simon to sign up</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE BAND (decorative) -->
+  <div class="waveband" aria-hidden="true">
+    <div class="bg"><img src="img/ocean-band.webp" width="1100" height="825" alt="" loading="lazy"></div>
+    <div class="veil"></div>
+    <div class="wrap">
+      <blockquote>All about fun.<cite>&mdash; the Deken Waves way</cite></blockquote>
+    </div>
+  </div>
+
+  <!-- COACH -->
+  <section id="coach" aria-labelledby="coach-h">
+    <div class="wrap about-grid">
+      <div class="about-photo rv">
+        <figure>
+          <img src="img/shredders-van.webp" width="1100" height="1100" alt="Two smiling groms in wetsuits with surfboards after a Deken Waves session" loading="lazy">
+          <figcaption>Post-session stoke — term shredders with the boards.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <p class="eyebrow rv">Your coach</p>
+        <h2 id="coach-h" class="rv">Simon Deken</h2>
+        <p class="rv">Simon runs Deken Waves surf coaching out of Oakura on the Taranaki coast — an experienced local surfing coach who knows the breaks, the banks and the best small-wave days for learners.</p>
+        <p class="rv" style="margin-top:1rem">Sessions are small, hands-on and built around fun: Simon moves through the group in the water, guiding and offering tips while caregivers surf alongside the youngest groms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="eyebrow rv">Get in the water</p>
+      <h2 id="contact-h" class="rv">Book a spot</h2>
+      <p class="rv">No booking forms, no apps — text or email Simon directly and he'll sort you out. Sign-ups are open for the 6 November opener.</p>
+      <div class="contact-ways">
+        <a class="way rv" href="sms:+64211229525">
+          <div class="way-label">Text</div>
+          <div class="way-value">021 122 9525</div>
+          <div class="way-note">Text to book a spot</div>
+        </a>
+        <a class="way rv" href="mailto:dekenwaves@gmail.com">
+          <div class="way-label">Email</div>
+          <div class="way-value">dekenwaves@gmail.com</div>
+          <div class="way-note">For bookings &amp; questions</div>
+        </a>
+        <a class="way rv" href="https://www.instagram.com/dekenwaves" target="_blank" rel="noopener">
+          <div class="way-label">Instagram</div>
+          <div class="way-value">@dekenwaves</div>
+          <div class="way-note">Session updates &amp; photos</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; Deken Waves Surf Coaching &middot; Oakura, Taranaki</span>
+    <span class="devflix">Concept preview crafted by Devflix</span>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var btn=document.getElementById('menuBtn'),menu=document.getElementById('mobileMenu');
+  btn.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
+</body>
+</html>
