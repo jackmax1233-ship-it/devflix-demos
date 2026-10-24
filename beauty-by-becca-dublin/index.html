@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty by Becca — Lashes, Brows &amp; Facials · Sallynoggin, South Dublin</title>
+<meta name="description" content="Beauty by Becca — AIT/ABT qualified lash tech, brow tech &amp; skincare specialist in Sallynoggin, South Dublin. Hybrid &amp; classic lash extensions, brows, facials. DM to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --ivory:#FBF7F3; --ivory-2:#F5ECE4; --card:#FFFFFF;
+  --ink:#241A17; --muted:#6F5E54;
+  --rose:#9C3D5C; --rose-deep:#7A2E48;
+  --gold:#B98A3E; --line:#EADDD2; --dark:#241A17;
+  --max:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:'Jost',system-ui,-apple-system,sans-serif;font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:.01em}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+a{color:var(--rose)}
+section{padding:76px 0}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(251,247,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:var(--max);margin:0 auto}
+.brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:700;color:var(--ink);text-decoration:none}
+.brand em{font-style:italic;color:var(--rose)}
+nav.links{display:flex;gap:26px;align-items:center}
+nav.links a{color:var(--ink);text-decoration:none;font-size:15.5px;font-weight:500;letter-spacing:.02em}
+nav.links a:hover{color:var(--rose)}
+.btn{display:inline-block;background:var(--rose);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 30px;border-radius:999px;border:1px solid var(--rose);transition:background .25s,transform .25s}
+.btn:hover{background:var(--rose-deep);border-color:var(--rose-deep)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ivory)}
+.btn.sm{padding:9px 22px;font-size:15px}
+
+/* hero */
+.hero{padding:64px 0 70px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(720px 380px at 88% 8%,rgba(185,138,62,.14),transparent 60%),radial-gradient(560px 420px at 6% 90%,rgba(156,61,92,.10),transparent 60%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
+.kicker::before{content:"";width:34px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(44px,5.4vw,72px);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--rose)}
+.lede{font-size:18.5px;color:var(--muted);max-width:44ch;margin-bottom:14px}
+.lede strong{color:var(--ink);font-weight:600}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.hero-note{margin-top:18px;font-size:14.5px;color:var(--muted)}
+.arch{border-radius:220px 220px 22px 22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(36,26,23,.35);border:1px solid var(--line);max-height:540px}
+.arch img{width:100%;height:100%;max-height:540px;object-fit:cover;object-position:center 20%}
+
+/* facts strip */
+.facts{background:var(--dark);color:var(--ivory);padding:26px 0}
+.facts .wrap{display:flex;gap:36px;justify-content:space-between;flex-wrap:wrap}
+.fact{display:flex;align-items:center;gap:12px;font-size:16px}
+.fact b{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700}
+
+/* services */
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head .kicker{margin-bottom:12px}
+.sec-head h2{font-size:clamp(34px,3.8vw,48px);margin-bottom:12px}
+.sec-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 24px 44px -24px rgba(36,26,23,.25)}
+.card .ph{aspect-ratio:4/4.6;overflow:hidden;background:var(--ivory-2)}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .tx{padding:24px 26px 28px}
+.card h3{font-size:27px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15.5px}
+.card .tag{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
+
+/* gallery */
+.gallery-sec{background:var(--ivory-2)}
+.g-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.g-item{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.g-item .ph{aspect-ratio:4/4.4;overflow:hidden;background:#fff}
+.g-item img{width:100%;height:100%;object-fit:cover}
+.g-item .ph.fit-full{background:#FE69C4}
+.g-item .ph.fit-full img{object-fit:contain}
+.g-item figcaption{padding:16px 22px 20px;font-size:15.5px;color:var(--muted)}
+.g-item figcaption strong{color:var(--ink);font-weight:600;display:block;font-size:17px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.about-img{border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(36,26,23,.3);border:1px solid var(--line);max-height:520px}
+.about-img img{width:100%;height:100%;max-height:520px;object-fit:cover;object-position:center 30%}
+.about-tx h2{font-size:clamp(34px,3.8vw,48px);margin-bottom:18px}
+.about-tx p{color:var(--muted);margin-bottom:14px}
+.about-tx p strong{color:var(--ink);font-weight:600}
+.checks{list-style:none;margin:20px 0 26px}
+.checks li{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;font-size:16.5px}
+.checks li::before{content:"✦";color:var(--gold);font-size:15px;line-height:1.8}
+
+/* book band */
+.book{background:var(--dark);color:var(--ivory);text-align:center;border-radius:26px;margin:0 24px;max-width:calc(var(--max) - 48px);margin-left:auto;margin-right:auto}
+.book h2{font-size:clamp(36px,4.2vw,54px);margin-bottom:14px;color:var(--ivory)}
+.book h2 em{font-style:italic;color:var(--gold)}
+.book p{color:#D9CFC4;max-width:52ch;margin:0 auto 28px}
+.book .btn{border-color:var(--rose)}
+.book small{display:block;margin-top:18px;color:#A89B8E;font-size:14px}
+
+/* footer */
+footer{padding:44px 0 54px;border-top:1px solid var(--line);margin-top:80px}
+.f-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.f-grid .brand{font-size:22px}
+footer p{color:var(--muted);font-size:14.5px;max-width:46ch}
+.credit{font-size:13.5px;color:var(--muted)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+
+/* responsive */
+@media(max-width:940px){
+  .hero-grid,.about-grid{grid-template-columns:1fr;gap:40px}
+  .arch{max-height:480px;max-width:520px;margin:0 auto}
+  .arch img{max-height:480px}
+  .about-img{max-height:440px}
+  .about-img img{max-height:440px}
+  .cards{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  section{padding:56px 0}
+  nav.links a:not(.btn){display:none}
+  .cards{grid-template-columns:1fr}
+  .g-grid{grid-template-columns:1fr}
+  .hero{padding:44px 0 52px}
+  .arch{border-radius:160px 160px 18px 18px;max-height:420px}
+  .arch img{max-height:420px}
+  .book{margin-left:16px;margin-right:16px}
+  .facts .wrap{gap:18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hbar">
+    <a class="brand" href="#top">Beauty <em>by</em> Becca</a>
+    <nav class="links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a class="btn sm" href="https://www.instagram.com/beautybybecca.xx/" target="_blank" rel="noopener">DM to Book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <span class="kicker">Lashes · Brows · Facials — Sallynoggin, South Dublin</span>
+        <h1>Beautiful lashes, brows <em>&amp; skin</em> — by Becca.</h1>
+        <p class="lede"><strong>AIT/ABT qualified</strong> lash tech, brow tech &amp; skincare specialist with <strong>3+ years</strong> of experience — creating sets and skin results her clients love.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://www.instagram.com/beautybybecca.xx/" target="_blank" rel="noopener">DM to Book</a>
+          <a class="btn ghost" href="#work">See the Work</a>
+        </div>
+        <p class="hero-note">Bookings taken by DM · Based in Sallynoggin, South Dublin, Ireland</p>
+      </div>
+      <div class="arch rv">
+        <img src="img/hybrid-set.webp" width="640" height="743" alt="Close-up of Becca's hybrid lash extension set with styled brows" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS -->
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact"><b>AIT / ABT</b><span>Qualified brow tech, lash tech &amp; skincare specialist</span></div>
+      <div class="fact"><b>3+</b><span>years of experience</span></div>
+      <div class="fact"><b>DM</b><span>to book your appointment</span></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Services</span>
+        <h2>What Becca does best</h2>
+        <p>Three specialities, one chair. Every service is done by Becca herself — qualified, experienced, and obsessed with the detail.</p>
+      </div>
+      <div class="cards">
+        <article class="card rv">
+          <div class="ph"><img src="img/classic-set.webp" width="640" height="727" alt="Classic lash extension set, close-up of both eyes" loading="lazy"></div>
+          <div class="tx">
+            <span class="tag">Lashes</span>
+            <h3>Lash Extensions</h3>
+            <p>Hybrid and classic sets — from natural everyday lift to full, fluttery volume. Styled around your eyes, never one-size-fits-all.</p>
+          </div>
+        </article>
+        <article class="card rv">
+          <div class="ph"><img src="img/full-set.webp" width="640" height="824" alt="Defined brow with a full lash set" loading="lazy"></div>
+          <div class="tx">
+            <span class="tag">Brows</span>
+            <h3>Brows</h3>
+            <p>Shaped, defined brows that frame your face — by a qualified brow tech who treats brows as seriously as lashes.</p>
+          </div>
+        </article>
+        <article class="card rv">
+          <div class="ph"><img src="img/facial-glow.webp" width="640" height="760" alt="Client with glowing skin after a facial treatment" loading="lazy"></div>
+          <div class="tx">
+            <span class="tag">Skin</span>
+            <h3>Facials</h3>
+            <p>Skincare treatments for a smoother, natural glow — from a qualified skincare specialist, not a rushed add-on.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="work" class="gallery-sec">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Recent Work</span>
+        <h2>Straight from Becca's chair</h2>
+        <p>Real sets and real skin — every photo below is Becca's own work, taken from her Instagram.</p>
+      </div>
+      <div class="g-grid">
+        <figure class="g-item rv">
+          <div class="ph"><img src="img/lash-detail.webp" width="640" height="720" alt="Natural lash detail with groomed brows" loading="lazy"></div>
+          <figcaption><strong>Natural lash detail</strong>Soft, separated lashes with groomed brows — the everyday set.</figcaption>
+        </figure>
+        <figure class="g-item rv">
+          <div class="ph"><img src="img/mirror-check.webp" width="640" height="679" alt="Client admiring a fresh full lash set in a hand mirror" loading="lazy"></div>
+          <figcaption><strong>The mirror check</strong>That first look at a fresh full set — always the best moment.</figcaption>
+        </figure>
+        <figure class="g-item rv">
+          <div class="ph fit-full"><img src="img/skin-promo.webp" width="640" height="791" alt="Becca's own promotional graphic for microneedling and skin booster treatments" loading="lazy"></div>
+          <figcaption><strong>Skin treatments</strong>Becca's own post: microneedling + skin booster for smoother skin, naturally.</figcaption>
+        </figure>
+        <figure class="g-item rv">
+          <div class="ph"><img src="img/hybrid-set.webp" width="640" height="743" alt="Hybrid lash set close-up using The Lash Hause lashes" loading="lazy"></div>
+          <figcaption><strong>Hybrid set</strong>Her most-loved style — hybrids with lashes by @thelashhause.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-img rv">
+        <img src="img/facial-glow.webp" width="640" height="760" alt="Glowing skin result after one of Becca's facial treatments" loading="lazy">
+      </div>
+      <div class="about-tx rv">
+        <span class="kicker">About Becca</span>
+        <h2>Qualified. Experienced. <em class="serif" style="font-style:italic;color:var(--rose)">Detail-obsessed.</em></h2>
+        <p><strong>Beauty by Becca</strong> is a lash, brow and skincare studio in <strong>Sallynoggin, South Dublin</strong>. Becca is an <strong>AIT/ABT qualified</strong> brow technician, lash technician and skincare specialist with <strong>3+ years</strong> behind the chair.</p>
+        <ul class="checks">
+          <li>Hybrid &amp; classic lash extensions, styled to your eyes</li>
+          <li>Brow shaping and definition by a qualified brow tech</li>
+          <li>Facials and skin treatments for a natural glow</li>
+          <li>Quality products — including lashes by @thelashhause</li>
+        </ul>
+        <a class="btn ghost" href="https://www.instagram.com/beautybybecca.xx/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section>
+    <div class="book rv">
+      <div class="wrap" style="padding:70px 24px">
+        <h2>Ready for your <em>glow-up?</em></h2>
+        <p>Becca takes all bookings by DM — no phone tag, no forms. Message her on Instagram with the service you want and she'll take it from there.</p>
+        <a class="btn" href="https://www.instagram.com/beautybybecca.xx/" target="_blank" rel="noopener">DM @beautybybecca.xx to Book</a>
+        <small>Sallynoggin, South Dublin, Ireland · Lashes · Brows · Facials</small>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <a class="brand" href="#top">Beauty <em>by</em> Becca</a>
+      <p style="margin-top:10px">Lash tech, brow tech &amp; skincare specialist — Sallynoggin, South Dublin, Ireland.<br>Photos: Becca's own work (@beautybybecca.xx).</p>
+    </div>
+    <div class="credit">Preview concept by Devflix.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js-done');
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
