@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MacPhail Home Staging &amp; Design — Gilroy, California</title>
+<meta name="description" content="Home staging for agents and sellers in Gilroy and the South Bay. Beautifully staged. Strategically marketed. Book a free consult with Jessica MacPhail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --cream:#FBF8F3; --sand:#EFE7DB; --ink:#2A2320; --muted:#6B5F55;
+    --clay:#8C4A2F; --clay-dark:#7A3E26; --white:#FFFFFF; --sand-text:#E8DCCB;
+  }
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.65}
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--clay)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  /* Header */
+  header{border-bottom:1px solid #E3D8C8;background:var(--cream)}
+  .head{display:flex;align-items:center;gap:14px;padding:14px 0;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);margin-right:auto}
+  .brand img{height:52px;width:auto}
+  .brand .name{font-family:Fraunces,Georgia,serif;font-size:22px;line-height:1.1;font-weight:600}
+  .brand .sub{display:block;font-family:Inter,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+  nav a{color:var(--ink);text-decoration:none;font-weight:500}
+  nav a:hover,nav a:focus{text-decoration:underline}
+  .btn{display:inline-block;background:var(--clay-dark);color:var(--white);text-decoration:none;
+    font-weight:600;font-size:16px;padding:12px 22px;border-radius:4px}
+  .btn:hover,.btn:focus{background:var(--ink)}
+  .btn-light{background:var(--cream);color:var(--ink);border:1px solid var(--ink)}
+  /* Hero */
+  .hero{padding:40px 0 48px}
+  .hero-grid{display:grid;gap:28px}
+  .eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);font-weight:600;margin:0 0 12px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:42px;line-height:1.08;margin:0 0 18px;max-width:14ch}
+  .lead{font-size:18px;color:var(--muted);max-width:52ch;margin:0 0 26px}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-photo{margin:0}
+  .hero-photo img{width:auto;max-height:540px;margin-left:auto;border-radius:6px}
+  .hero-photo figcaption{font-size:14px;color:var(--muted);margin-top:10px;text-align:right}
+  /* Audience strip */
+  .strip{background:var(--sand);padding:28px 0}
+  .strip p{margin:0;font-family:Fraunces,Georgia,serif;font-size:22px;line-height:1.4;max-width:62ch}
+  .strip p span{color:var(--clay)}
+  /* Sections */
+  section{padding:56px 0}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 10px}
+  .section-intro{color:var(--muted);max-width:60ch;margin:0 0 32px}
+  /* Gallery */
+  .gallery{display:grid;gap:24px;align-items:start}
+  .gallery figure{margin:0}
+  .gallery img{width:100%;border-radius:6px}
+  .gallery figcaption{font-size:15px;color:var(--muted);margin-top:10px}
+  /* Packages */
+  .packages{background:var(--sand)}
+  .pkg{border-top:1px solid #D8CBB6;padding:26px 0;display:grid;gap:8px}
+  .pkg:last-of-type{border-bottom:1px solid #D8CBB6}
+  .pkg .num{font-family:Fraunces,Georgia,serif;color:var(--clay);font-size:20px}
+  .pkg h3{font-family:Fraunces,Georgia,serif;font-size:26px;margin:0;line-height:1.2}
+  .pkg p{margin:0;color:var(--muted);max-width:62ch}
+  .pkg .meta{font-weight:600;color:var(--ink);font-size:15px}
+  .realtor-note{margin-top:28px;background:var(--cream);border:1px solid #D8CBB6;border-radius:6px;padding:22px}
+  .realtor-note p{margin:0}
+  .realtor-note strong{font-family:Fraunces,Georgia,serif;font-size:21px;font-weight:600}
+  /* About */
+  .about-grid{display:grid;gap:28px;align-items:start}
+  .about-grid img{border-radius:6px}
+  .about-grid p{color:var(--muted)}
+  .about-grid p:first-of-type{color:var(--ink)}
+  /* Contact */
+  .contact{background:var(--ink);color:var(--cream)}
+  .contact h2{color:var(--cream)}
+  .contact .section-intro{color:var(--sand-text)}
+  .contact-list{list-style:none;margin:0;padding:0;display:grid;gap:16px;font-size:18px}
+  .contact-list a{color:var(--cream);font-weight:600}
+  .contact-list .label{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-text);font-weight:500;margin-bottom:2px}
+  footer{background:var(--ink);color:var(--sand-text);border-top:1px solid #4A3F39;padding:22px 0;font-size:14px}
+  footer p{margin:0}
+  footer a{color:var(--sand-text)}
+  @media (min-width:640px){
+    .gallery{grid-template-columns:1fr 1fr}
+  }
+  @media (min-width:860px){
+    .hero-grid{grid-template-columns:1.15fr .85fr;align-items:center}
+    .hero{padding:56px 0 64px}
+    h1{font-size:56px}
+    .about-grid{grid-template-columns:.8fr 1.2fr}
+    .pkg{grid-template-columns:64px 1fr;align-items:baseline}
+    .contact-list{grid-template-columns:1fr 1fr 1fr}
+  }
+  @media (min-width:1024px){
+    .gallery{grid-template-columns:1fr 1fr 1fr}
+    .wrap{padding:0 32px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <a class="brand" href="index.html">
+      <img src="images/logo.webp" alt="MacPhail Home Staging and Design logo" width="640" height="640">
+      <span><span class="name">MacPhail</span><span class="sub">Home Staging &amp; Design</span></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-top:40px;padding-bottom:48px">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Gilroy &amp; the South Bay, California</p>
+        <h1>Beautifully staged. Strategically marketed.</h1>
+        <p class="lead">Home staging for agents and sellers — rooms styled so buyers can picture themselves living there, and listings that show at their very best.</p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+14087106803">Book a free consult</a>
+          <a class="btn btn-light" href="#work">See the work</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/hero-bedroom.webp" alt="Staged primary bedroom with white bedding, a knit throw and soft neutral cushions" width="640" height="1136" fetchpriority="high">
+        <figcaption>A staged bedroom, ready for showings.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <p>From a vacant listing to a lived-in home that needs a fresh eye — <span>every space is styled around the way buyers will actually live in it.</span></p>
+    </div>
+  </div>
+
+  <section id="work" aria-labelledby="work-heading">
+    <div class="wrap">
+      <h2 id="work-heading">Recent staging work</h2>
+      <p class="section-intro">Warm, calm, move-in-ready rooms — photographed from MacPhail's own staging projects in Gilroy and the South Bay.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/gallery-coffee-table.webp" alt="Styled coffee table with a woven vase of white blossoms, candles and a book" width="640" height="1138" loading="lazy">
+          <figcaption>Styling details — living room</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-dining-living.webp" alt="Staged dining table with a clay vase of white flowers, looking through to a bright living area" width="640" height="1136" loading="lazy">
+          <figcaption>Dining and living space</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-dining-nook.webp" alt="Round dining table with cream boucle chairs under a black ring chandelier" width="640" height="1138" loading="lazy">
+          <figcaption>Dining nook</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-home-office.webp" alt="Staged home office with a wooden desk, white chair, lamp and tall olive tree" width="640" height="1137" loading="lazy">
+          <figcaption>Home office</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-kitchen-hutch.webp" alt="Styled kitchen hutch with white serveware, glassware, a framed print and greenery" width="640" height="1138" loading="lazy">
+          <figcaption>Kitchen styling</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-bedroom-vaulted.webp" alt="Bright staged bedroom with a vaulted ceiling, white bedding, dark bedside tables and lamps" width="640" height="853" loading="lazy">
+          <figcaption>Bedroom with vaulted ceiling</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-living-room.webp" alt="Sunlit staged living room with a cream sofa, black coffee table and cane sideboard" width="640" height="480" loading="lazy">
+          <figcaption>Living room</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-bedroom-light.webp" alt="Light staged bedroom with white bedding, a patterned throw and shuttered windows" width="320" height="567" loading="lazy">
+          <figcaption>Guest bedroom</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="packages" aria-labelledby="packages-heading">
+    <div class="wrap">
+      <h2 id="packages-heading">Staging packages</h2>
+      <p class="section-intro">Three ways to work with MacPhail, depending on the home and how much of it needs staging.</p>
+      <div class="pkg">
+        <span class="num">01</span>
+        <div>
+          <h3>Signature Staging</h3>
+          <p>Full staging for a complete home — ideal for a three-bedroom, two-bath property.</p>
+          <p class="meta">45 days</p>
+        </div>
+      </div>
+      <div class="pkg">
+        <span class="num">02</span>
+        <div>
+          <h3>The Essentials</h3>
+          <p>Focused staging for the rooms buyers notice first — the key main living spaces.</p>
+          <p class="meta">45 days</p>
+        </div>
+      </div>
+      <div class="pkg">
+        <span class="num">03</span>
+        <div>
+          <h3>The Refresh</h3>
+          <p>A styling refresh for a home that is still lived in — a new perspective, not a full restage.</p>
+          <p class="meta">Up to 5 hours</p>
+        </div>
+      </div>
+      <div class="realtor-note">
+        <p><strong>For realtors:</strong> $400 off a first staging project, plus a complimentary walk-through — as shared on Instagram. Ask about it when you book.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-heading">
+    <div class="wrap about-grid">
+      <img src="images/about-jessica.webp" alt="Jessica MacPhail, founder of MacPhail Home Staging and Design" width="640" height="800" loading="lazy">
+      <div>
+        <h2 id="about-heading">Meet Jessica</h2>
+        <p>Jessica MacPhail is the founder of MacPhail Home Staging &amp; Design — and a Gilroy native, born and raised in the town she now stages homes in.</p>
+        <p>For her, a home is never just about how it looks. It is about how a space feels, the memories made inside it, and bringing out what each room does best. That belief is what turned a lifelong love of intentional, beautiful spaces into this business.</p>
+        <p>She works with local realtors looking to lift a listing, homeowners preparing for a move, and anyone who simply loves thoughtful interiors.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-heading">
+    <div class="wrap">
+      <h2 id="contact-heading">Book a free consult</h2>
+      <p class="section-intro">Thinking about staging a home for the market, or refreshing a space you live in? Get in touch — Jessica would love to talk it through.</p>
+      <ul class="contact-list">
+        <li><span class="label">Phone</span><a href="tel:+14087106803">(408) 710-6803</a></li>
+        <li><span class="label">Email</span><a href="mailto:macphailhomestagingdesign@gmail.com">macphailhomestagingdesign@gmail.com</a></li>
+        <li><span class="label">Instagram</span><a href="https://www.instagram.com/macphailhomestagingdesign">@macphailhomestagingdesign</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MacPhail Home Staging &amp; Design — Gilroy, California. Concept preview by Devflix. Photography from MacPhail Home Staging &amp; Design on Instagram.</p>
+  </div>
+</footer>
+</body>
+</html>

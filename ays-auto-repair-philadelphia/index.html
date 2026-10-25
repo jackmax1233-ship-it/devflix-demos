@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>At Your Service Auto Repair — Mobile Mechanic in Philadelphia</title>
+<meta name="description" content="Mobile mechanic in Philadelphia and surrounding areas. We come to you — home, job, or roadside. Call or text (215) 520-1100.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Barlow",system-ui,sans-serif;background:#F5F1E8;color:#1C1C1C;line-height:1.55}
+a{color:inherit}
+img{display:block;max-width:100%}
+.topbar{background:#161616;color:#F5F1E8;padding:.55rem 1rem;text-align:center;font-size:.95rem}
+.topbar a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.topbar .sep{color:#F2C200;padding:0 .4rem}
+header{background:#F5F1E8;border-bottom:3px solid #161616}
+.nav{max-width:1100px;margin:0 auto;padding:1rem;display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;justify-content:space-between}
+.brand{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.65rem;letter-spacing:.02em;line-height:1.05;text-transform:uppercase}
+.brand span{display:block;font-size:.85rem;letter-spacing:.18em;color:#A81E1E}
+nav{display:flex;flex-wrap:wrap;gap:1rem;font-weight:600}
+nav a{text-decoration:none}
+nav a:hover,nav a:focus{text-decoration:underline;text-underline-offset:4px}
+.btn{display:inline-block;background:#A81E1E;color:#FFFFFF;padding:.8rem 1.4rem;font-weight:600;text-decoration:none;border:2px solid #A81E1E}
+.btn:hover,.btn:focus{background:#8F1D1D;border-color:#8F1D1D}
+.btn-dark{background:#161616;border-color:#161616;color:#FFFFFF}
+.btn-dark:hover,.btn-dark:focus{background:#000;border-color:#000}
+main{max-width:1100px;margin:0 auto;padding:0 1rem 3rem}
+.hero{display:grid;gap:1.5rem;padding:2rem 0 2.5rem;align-items:start}
+.eyebrow{display:inline-block;background:#F2C200;color:#161616;font-weight:600;padding:.25rem .6rem;text-transform:uppercase;letter-spacing:.08em;font-size:.85rem}
+h1{font-family:"Barlow Condensed",sans-serif;font-size:3rem;line-height:1.02;margin:.8rem 0 .6rem;text-transform:uppercase}
+h1 .red{color:#A81E1E}
+.lead{font-size:1.15rem;margin:0 0 1.25rem;max-width:34rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem}
+.hero-note{margin-top:1rem;color:#4A4A44}
+.hero-photo{margin:0 auto;width:100%;max-width:300px}
+.hero-photo img{width:100%;aspect-ratio:640/1136;object-fit:contain;background:#161616}
+.hero-photo figcaption{font-size:.9rem;color:#4A4A44;padding:.5rem 0 0}
+.specials{background:#161616;color:#F5F1E8;padding:1.75rem 1.25rem;margin:0 0 2.5rem}
+.specials h2,.dark h2{font-family:"Barlow Condensed",sans-serif;font-size:2rem;text-transform:uppercase;margin:0 0 .25rem;line-height:1.1}
+.specials p.sub{color:#D8D2C4;margin:0 0 1.25rem}
+.price-grid{display:grid;gap:1rem}
+.price-card{border:2px solid #F2C200;padding:1.25rem;background:#1C1C1C}
+.price-card .label{font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#F2C200}
+.price-card .price{font-family:"Barlow Condensed",sans-serif;font-size:3rem;line-height:1;margin:.3rem 0}
+.price-card p{margin:0;color:#F5F1E8}
+.price-card .small{color:#D8D2C4;font-size:.95rem;margin-top:.5rem}
+h2{font-family:"Barlow Condensed",sans-serif;font-size:2.1rem;text-transform:uppercase;line-height:1.1;margin:0 0 1rem}
+.section{padding:0 0 2.5rem}
+.section p.intro{max-width:40rem;margin:0 0 1.25rem}
+.steps{display:grid;gap:1rem}
+.step{background:#FFFFFF;border:1px solid #D8D2C4;border-top:4px solid #A81E1E;padding:1.25rem}
+.step .num{font-family:"Barlow Condensed",sans-serif;font-size:1.6rem;color:#A81E1E;font-weight:700}
+.step h3{margin:.2rem 0 .35rem;font-size:1.15rem}
+.step p{margin:0;color:#4A4A44}
+.services{display:grid;gap:.75rem}
+.service{background:#FFFFFF;border:1px solid #D8D2C4;padding:1rem 1.1rem}
+.service h3{margin:0 0 .2rem;font-size:1.05rem}
+.service p{margin:0;color:#4A4A44;font-size:.98rem}
+.why{background:#8F1D1D;color:#FFFFFF;padding:1.75rem 1.25rem;margin:0 0 2.5rem}
+.why h2{color:#FFFFFF}
+.why ul{margin:0;padding-left:1.25rem}
+.why li{margin:.5rem 0}
+.gallery{display:grid;gap:1rem}
+figure{margin:0;background:#161616}
+figure img{width:100%;object-fit:contain;background:#161616}
+figure.square img{aspect-ratio:1/1}
+figure.portrait img{aspect-ratio:640/828}
+figcaption{padding:.6rem .8rem;color:#F5F1E8;background:#161616;font-size:.92rem}
+.booking{background:#FFFFFF;border:3px solid #161616;padding:1.75rem 1.25rem;text-align:left}
+.booking .phone{font-family:"Barlow Condensed",sans-serif;font-size:2.4rem;font-weight:700;margin:.5rem 0;line-height:1.1}
+.booking .phone a{text-decoration:none}
+.booking .phone a:hover,.booking .phone a:focus{text-decoration:underline}
+.booking p{margin:.4rem 0}
+.booking .cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+footer{background:#161616;color:#F5F1E8;padding:1.5rem 1rem;margin-top:1rem}
+footer .inner{max-width:1100px;margin:0 auto}
+footer p{margin:.35rem 0;color:#D8D2C4}
+footer a{color:#FFFFFF}
+@media(min-width:768px){
+  .hero{grid-template-columns:1.35fr .85fr;padding:2.5rem 0 3rem}
+  h1{font-size:3.8rem}
+  .price-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .specials,.why{padding:2rem}
+  .booking{padding:2rem}
+}
+@media(min-width:1100px){
+  .services{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="topbar">Mobile mechanic — Philadelphia &amp; surrounding areas <span class="sep">|</span> <a href="tel:+12155201100">Call or text (215) 520-1100</a></div>
+<header>
+  <div class="nav">
+    <div class="brand">At Your Service<span>Auto Repair</span></div>
+    <nav aria-label="Main">
+      <a href="#specials">Specials</a>
+      <a href="#services">Services</a>
+      <a href="#photos">Photos</a>
+      <a href="#book">Call / Text</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <span class="eyebrow">We come to you</span>
+      <h1>Your car.<br>Your location.<br><span class="red">We come to you.</span></h1>
+      <p class="lead">Skip the shop wait and save the tow. At Your Service Auto Repair brings the repair to your home, your job, or the roadside in Philadelphia and surrounding areas.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+12155201100">Call (215) 520-1100</a>
+        <a class="btn btn-dark" href="sms:+12155201100">Text (215) 520-1100</a>
+      </div>
+      <p class="hero-note">Same-day service available. Most cars and light trucks serviced. Credit cards accepted: Visa, Mastercard, American Express, and Discover.</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="images/hero-brake-job.webp" alt="A car raised for brake work in a parking lot, with its wheel removed and tools on the ground" width="640" height="1136" loading="eager">
+      <figcaption>On-site brake work — the mechanic comes to the car, not the other way round.</figcaption>
+    </figure>
+  </section>
+
+  <section class="specials" id="specials">
+    <h2>Published specials</h2>
+    <p class="sub">Prices as published by the business on Instagram. Most cars — see notes under each price.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="label">Front brake pads</div>
+        <div class="price">$140</div>
+        <p>Front brake pad special — parts and installation included.</p>
+        <p class="small">Most cars. Published again in their latest reel, 20 October 2026.</p>
+      </div>
+      <div class="price-card">
+        <div class="label">Oil change</div>
+        <div class="price">$100</div>
+        <p>Oil change special — oil and filter included.</p>
+        <p class="small">Most cars. Published again in their latest reel, 20 October 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Call or text</h3><p>Call or text (215) 520-1100 and tell them what your car needs.</p></div>
+      <div class="step"><div class="num">2</div><h3>Say where you are</h3><p>Home, job, or roadside — the service comes to your location.</p></div>
+      <div class="step"><div class="num">3</div><h3>Get it fixed there</h3><p>Brakes, oil changes, no-starts, diagnostics, and more — done where your car already is.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Services</h2>
+    <p class="intro">Most cars and light trucks. If your car will not start, needs brakes, or is due an oil change, start with a call or text — no booking page or shop visit is needed first.</p>
+    <div class="services">
+      <div class="service"><h3>Brake pads &amp; rotors</h3><p>Front brake pad special, $140 for most cars, parts and installation included.</p></div>
+      <div class="service"><h3>Oil changes</h3><p>Oil change special, $100 for most cars, oil and filter included.</p></div>
+      <div class="service"><h3>No-starts</h3><p>Car will not start? Diagnostics and repair at your location.</p></div>
+      <div class="service"><h3>Diagnostics</h3><p>Find out what is wrong before the repair.</p></div>
+      <div class="service"><h3>Starters &amp; alternators</h3><p>Starting and charging system repairs.</p></div>
+      <div class="service"><h3>Batteries</h3><p>Battery replacement.</p></div>
+      <div class="service"><h3>Suspension</h3><p>Suspension work, tie rods, and control arms.</p></div>
+      <div class="service"><h3>Tune-ups</h3><p>Tune-ups and routine maintenance.</p></div>
+      <div class="service"><h3>A/C service</h3><p>Air conditioning service.</p></div>
+      <div class="service"><h3>Fuel pumps</h3><p>Fuel pump replacement.</p></div>
+      <div class="service"><h3>Radiators</h3><p>Radiator work.</p></div>
+      <div class="service"><h3>Wheel bearings &amp; hubs</h3><p>Wheel bearings and hub assemblies.</p></div>
+      <div class="service"><h3>Serpentine belts</h3><p>Belt replacement.</p></div>
+      <div class="service"><h3>Thermostats</h3><p>Thermostat replacement, as shown in their service graphic.</p></div>
+      <div class="service"><h3>Discounted parts</h3><p>Discount parts, as published by the business.</p></div>
+      <div class="service"><h3>Junk cars bought</h3><p>Junk cars bought — ask by call or text for details.</p></div>
+    </div>
+  </section>
+
+  <section class="why">
+    <h2>Why mobile?</h2>
+    <ul>
+      <li>Save the tow — the mechanic comes to you.</li>
+      <li>Skip the shop wait — service at your home, job, or roadside.</li>
+      <li>Quality parts, honest pricing, professional service — in their own words.</li>
+      <li>Credit cards accepted: Visa, Mastercard, American Express, and Discover.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="photos">
+    <h2>From their Instagram</h2>
+    <p class="intro">Real posts from @aysmobleautorepair — their service graphics and a recent on-site brake job. No stock photos.</p>
+    <div class="gallery">
+      <figure class="square">
+        <img src="images/specials-brakes-oil.webp" alt="At Your Service Mobile Repair graphic showing the $140 brakes and $100 oil change specials and the phone number" width="640" height="640" loading="lazy">
+        <figcaption>Their specials graphic: $140 brakes, $100 oil change.</figcaption>
+      </figure>
+      <figure class="square">
+        <img src="images/specials-brakes-oil-alt.webp" alt="A second At Your Service Mobile Repair graphic with the same brakes and oil change specials" width="640" height="640" loading="lazy">
+        <figcaption>The same specials, posted again — brakes and oil change.</figcaption>
+      </figure>
+      <figure class="portrait">
+        <img src="images/mobile-mechanic-flyer.webp" alt="At Your Service Mobile Mechanic flyer listing brakes, rotors, suspension, oil changes, and tune-ups" width="640" height="828" loading="lazy">
+        <figcaption>Their mobile mechanic flyer: brakes, rotors, suspension, tune-ups.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="booking" id="book">
+    <span class="eyebrow">No booking page — call or text</span>
+    <h2>Book by call or text</h2>
+    <p>There is no online booking form for this business yet — booking is by call, text, or Instagram DM, exactly as they publish it.</p>
+    <p class="phone"><a href="tel:+12155201100">(215) 520-1100</a></p>
+    <p>Serving Philadelphia &amp; surrounding areas. Mobile service only — no shop address is published, so none is listed here.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+12155201100">Call now</a>
+      <a class="btn btn-dark" href="sms:+12155201100">Text now</a>
+      <a class="btn btn-dark" href="https://www.instagram.com/aysmobleautorepair">Instagram: @aysmobleautorepair</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="inner">
+    <p><strong>At Your Service Auto Repair</strong> — Mobile mechanic, Philadelphia &amp; surrounding areas.</p>
+    <p>Call or text <a href="tel:+12155201100">(215) 520-1100</a> &middot; Instagram <a href="https://www.instagram.com/aysmobleautorepair">@aysmobleautorepair</a></p>
+    <p>Preview site built from the business's own Instagram posts. Prices and services are as published there; no hours, address, reviews, or ratings are claimed on this page.</p>
+  </div>
+</footer>
+</body>
+</html>

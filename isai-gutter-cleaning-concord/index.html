@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isai's Gutter Cleaning Service — Concord &amp; Bay Area, CA</title>
+<meta name="description" content="Gutter cleaning and gutter guard installation in Concord and the surrounding Bay Area. Call or text 925-771-4295 for a free estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --ink:#1e1e1e; --paper:#f7f3eb; --paper2:#ede6d6; --card:#ffffff;
+    --red:#9e1b1b; --dark:#1a2119; --muted:#5a5348; --line:#ddd3bd;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  /* Top bar */
+  .topbar{background:var(--dark);color:var(--paper);font-size:14px;font-weight:600;letter-spacing:.02em}
+  .topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;padding-top:9px;padding-bottom:9px}
+  .topbar a{text-decoration:none}
+  .topbar a:hover,.topbar a:focus{text-decoration:underline}
+  /* Header */
+  header{background:var(--paper);border-bottom:3px solid var(--ink)}
+  .head{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+  .brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:26px;line-height:1.1;letter-spacing:.01em;text-transform:uppercase;text-decoration:none}
+  .brand span{color:var(--red)}
+  nav{display:flex;flex-wrap:wrap;gap:6px 22px;font-weight:600;font-size:15px}
+  nav a{text-decoration:none;padding:4px 0}
+  nav a:hover,nav a:focus{text-decoration:underline;text-underline-offset:4px}
+  /* Hero */
+  .hero{padding:44px 0 40px}
+  .hero-grid{display:grid;gap:28px;align-items:center}
+  .eyebrow{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--red)}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.02;font-size:clamp(2.4rem,7vw,4.2rem);letter-spacing:.005em;margin:12px 0 16px}
+  .hero p.lede{font-size:19px;max-width:34rem;color:var(--ink)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .btn{display:inline-block;font-weight:700;text-decoration:none;padding:13px 22px;border:2px solid var(--ink);font-size:16px}
+  .btn-red{background:var(--red);border-color:var(--red);color:#fff}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-light{background:transparent;color:var(--ink)}
+  .btn:hover,.btn:focus{outline:3px solid var(--red);outline-offset:2px}
+  .hero-note{margin-top:18px;font-size:15px;color:var(--muted);font-weight:500}
+  .hero-media{background:var(--dark);padding:14px}
+  .hero-media figure{margin:0}
+  .hero-media img{width:100%;height:auto;max-height:520px;object-fit:contain;background:var(--dark)}
+  .hero-media figcaption{color:var(--paper);font-size:13px;text-align:center;padding-top:10px}
+  /* Bio strip */
+  .strip{background:var(--ink);color:var(--paper)}
+  .strip .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:center;padding-top:16px;padding-bottom:16px;font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:15px}
+  /* Sections */
+  section.block{padding:52px 0}
+  h2{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.05;font-size:clamp(1.7rem,4.5vw,2.5rem);margin-bottom:10px}
+  .sec-intro{max-width:40rem;color:var(--muted);font-size:18px;margin-bottom:28px}
+  .sec-intro strong{color:var(--ink)}
+  /* Services */
+  .services{display:grid;gap:18px}
+  .service{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--red);padding:24px}
+  .service h3{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;font-size:21px;line-height:1.2;margin-bottom:8px}
+  .service p{color:var(--muted)}
+  .service p strong{color:var(--ink)}
+  /* Why */
+  .why{background:var(--dark);color:var(--paper)}
+  .why h2{color:var(--paper)}
+  .why .sec-intro{color:#d8d2c2}
+  .why-grid{display:grid;gap:18px}
+  .why-item{border:1px solid #3d463c;padding:22px}
+  .why-item h3{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;font-size:19px;margin-bottom:6px;color:var(--paper)}
+  .why-item p{color:#d8d2c2}
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .gallery figure{background:var(--paper2);margin:0}
+  .gallery img{width:100%;height:auto;object-fit:contain;background:var(--paper2)}
+  .gallery .ratio-34{aspect-ratio:3/4}
+  .gallery .ratio-916{aspect-ratio:9/16}
+  .gallery figcaption{padding:10px 12px 12px;font-size:14px;color:var(--muted);background:var(--paper)}
+  /* Quote */
+  .quote{background:var(--red);color:#fff}
+  .quote h2{color:#fff}
+  .quote p{max-width:38rem}
+  .quote .cta-row{margin-top:22px}
+  .quote .btn{border-color:#fff}
+  .quote .btn-white{background:#fff;color:var(--ink)}
+  .quote .btn-outline{background:transparent;color:#fff}
+  .quote-note{margin-top:20px;font-size:15px;color:#ffe9e9}
+  .msg-list{margin:20px 0 0 20px}
+  .msg-list li{margin-bottom:6px}
+  /* Footer */
+  footer{background:var(--dark);color:var(--paper);padding:32px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between;font-size:15px}
+  footer a{text-decoration:none}
+  footer a:hover,footer a:focus{text-decoration:underline}
+  footer strong{font-family:'Oswald',sans-serif;letter-spacing:.06em;text-transform:uppercase}
+  @media (min-width:768px){
+    .hero-grid{grid-template-columns:1.15fr .85fr}
+    .services{grid-template-columns:1fr 1fr}
+    .why-grid{grid-template-columns:1fr 1fr}
+    .gallery{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (min-width:1024px){
+    .hero{padding:60px 0 56px}
+  }
+  @media (max-width:420px){
+    body{font-size:16px}
+    .brand{font-size:22px}
+    .gallery{grid-template-columns:1fr 1fr}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <span>Concord &amp; surrounding Bay Area, California</span>
+    <a href="tel:+19257714295">Call or text 925-771-4295 — free estimate</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap head">
+    <a class="brand" href="index.html">Isai's <span>Gutter</span> Cleaning Service</a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#area">Service Area</a>
+      <a href="#quote">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Bay Area Gutter Service</p>
+        <h1>Keep your home safe &amp; dry.</h1>
+        <p class="lede">Regular gutter cleaning helps prevent clogs, water damage, and costly repairs. Isai's Gutter Cleaning Service clears leaves, dirt, and debris so your gutters drain the way they should.</p>
+        <div class="cta-row">
+          <a class="btn btn-red" href="tel:+19257714295">Call or Text 925-771-4295</a>
+          <a class="btn btn-dark" href="https://www.instagram.com/isaiguttercleaning">DM on Instagram</a>
+        </div>
+        <p class="hero-note">Free estimates. Serving Concord and surrounding areas.</p>
+      </div>
+      <div class="hero-media">
+        <figure>
+          <img src="images/flyer-hero.webp" alt="Isai's Gutter Cleaning Service flyer: Keep your home safe and dry, professional gutter cleaning, call or text 925-771-4295 for a free estimate" width="640" height="800" loading="eager" fetchpriority="high">
+          <figcaption>Clean gutters. A safer home.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="Business values">
+    <div class="wrap"><span>Quality</span><span>•</span><span>Reliable</span><span>•</span><span>Professional</span></div>
+  </div>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="sec-intro">Two services, done properly — <strong>cleaning</strong> and <strong>gutter guard installation</strong> — for homes in Concord and the Bay Area.</p>
+      <div class="services">
+        <article class="service">
+          <h3>Gutter Cleaning</h3>
+          <p><strong>Leaves, dirt, and debris removed</strong> from your gutters, so water can flow freely again instead of overflowing.</p>
+        </article>
+        <article class="service">
+          <h3>Gutter Deep Cleaning</h3>
+          <p>A <strong>thorough clean</strong> for gutters packed with built-up leaves and debris — the kind that blocks drainage altogether.</p>
+        </article>
+        <article class="service">
+          <h3>Gutter Guard Installation</h3>
+          <p><strong>Guards fitted</strong> to help keep leaves and debris out of your gutters between cleanings.</p>
+        </article>
+        <article class="service">
+          <h3>Flow Check</h3>
+          <p>Every job is finished with the gutters <strong>flowing properly</strong> — water draining fluidly, not pooling or spilling over.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block why" id="why">
+    <div class="wrap">
+      <h2>Why clean gutters matter</h2>
+      <p class="sec-intro">Clogged gutters don't just look bad — they stop doing their job. A cleaning clears the way for water to get off your roof and away from your home.</p>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Prevents clogs</h3>
+          <p>Leaves, dirt, and debris are removed before they pack down and block the gutter completely.</p>
+        </div>
+        <div class="why-item">
+          <h3>Prevents water damage</h3>
+          <p>Clear gutters drain fluidly, so overflow doesn't soak walls, fascia, or the ground around your home.</p>
+        </div>
+        <div class="why-item">
+          <h3>Protects roof &amp; foundation</h3>
+          <p>Water that drains properly puts less strain on your roof edge and the ground your home sits on.</p>
+        </div>
+        <div class="why-item">
+          <h3>Avoids costly repairs</h3>
+          <p>Regular cleaning catches the small problem — a clog — before it becomes a repair bill.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <h2>Our work</h2>
+      <p class="sec-intro">Real jobs from Isai's Instagram — gutters before and after cleaning, and water flowing properly again.</p>
+      <div class="gallery">
+        <figure>
+          <img class="ratio-34" src="images/work-roof-gutter.webp" alt="A long roof gutter filled with leaves and debris before cleaning, above a backyard" width="640" height="853" loading="lazy">
+          <figcaption>Job complete — gutters flowing properly.</figcaption>
+        </figure>
+        <figure>
+          <img class="ratio-34" src="images/work-leaf-gutter.webp" alt="A gutter packed with dry leaves alongside a shingle roof" width="640" height="853" loading="lazy">
+          <figcaption>Thoroughly cleaned, proper water flow restored.</figcaption>
+        </figure>
+        <figure>
+          <img class="ratio-34" src="images/work-tile-roof.webp" alt="Debris and leaves collected along a tiled roof edge and gutter line" width="640" height="853" loading="lazy">
+          <figcaption>Water draining fluidly after cleaning.</figcaption>
+        </figure>
+        <figure>
+          <img class="ratio-34" src="images/work-cleaned-gutter.webp" alt="A freshly cleaned gutter running along a tiled roof with water draining through it" width="640" height="853" loading="lazy">
+          <figcaption>Gutter guard installation and cleaning work.</figcaption>
+        </figure>
+        <figure>
+          <img class="ratio-34" src="images/work-deep-clean.webp" alt="A deep gutter clean in progress above a deck, with debris visible in the gutter" width="640" height="853" loading="lazy">
+          <figcaption>Gutter deep cleaning.</figcaption>
+        </figure>
+        <figure>
+          <img class="ratio-916" src="images/work-reel-gutter-pov.webp" alt="First-person view of gutter cleaning in progress, scooping debris from a gutter" width="640" height="1136" loading="lazy">
+          <figcaption>On the job — spring gutter cleaning (still from a reel).</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="area">
+    <div class="wrap">
+      <h2>Service area</h2>
+      <p class="sec-intro">Isai's Gutter Cleaning Service is based around <strong>Concord, California</strong>, and serves <strong>Concord and surrounding Bay Area</strong> communities. If you're nearby and unsure whether you're covered, just ask when you message.</p>
+    </div>
+  </section>
+
+  <section class="block quote" id="quote">
+    <div class="wrap">
+      <h2>Get a free estimate</h2>
+      <p>There are no prices listed here because every home is different — message or call with a few details and you'll get a free estimate.</p>
+      <ul class="msg-list">
+        <li>Your area (Concord or elsewhere in the Bay Area)</li>
+        <li>Cleaning, gutter guard installation, or both</li>
+        <li>A photo of your gutters, if you have one</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-white" href="tel:+19257714295">Call or Text 925-771-4295</a>
+        <a class="btn btn-outline" href="https://www.instagram.com/isaiguttercleaning">DM @isaiguttercleaning</a>
+      </div>
+      <p class="quote-note">Quotes are currently handled by call, text, or Instagram DM — the same way Isai's already takes them.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Isai's Gutter Cleaning Service</strong><br>Concord &amp; Bay Area, California</div>
+    <div><a href="tel:+19257714295">925-771-4295</a><br><a href="https://www.instagram.com/isaiguttercleaning">@isaiguttercleaning on Instagram</a></div>
+  </div>
+</footer>
+</body>
+</html>

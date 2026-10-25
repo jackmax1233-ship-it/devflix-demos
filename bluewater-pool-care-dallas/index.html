@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bluewater Pool Care — Weekly Pool Service in Dallas–Fort Worth</title>
+<meta name="description" content="Bluewater Pool Care: full-service weekly pool cleaning, repairs and remodels across Dallas–Fort Worth. Same technician, same time, every week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{--ink:#0e2a33;--deep:#0c3744;--teal:#0b5563;--teal-dark:#0a5e5e;--sand:#f4efe6;--mist:#e9f2f1;--pale:#dcebe8;--gold:#f2c14e;--white:#ffffff}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+  a{color:var(--teal-dark)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px;width:100%}
+  header{background:var(--white);border-bottom:3px solid var(--deep)}
+  .topbar{display:flex;align-items:center;gap:14px;padding:16px 0;flex-wrap:wrap}
+  .topbar img{width:56px;height:56px;border-radius:50%;object-fit:contain;background:var(--mist);flex:0 0 auto}
+  .brand{line-height:1.2}
+  .brand strong{font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--deep);display:block}
+  .brand span{font-size:14px;color:var(--teal);font-weight:600}
+  nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+  nav a{text-decoration:none;font-weight:700;font-size:15px;color:var(--deep);padding:8px 10px;border-radius:6px}
+  nav a:hover,nav a:focus{background:var(--mist);outline:2px solid var(--deep)}
+  .cta{display:inline-block;background:var(--teal);color:#fff !important;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:8px;border:2px solid var(--teal)}
+  .cta:hover,.cta:focus{background:var(--deep);border-color:var(--deep);outline:2px solid var(--gold);outline-offset:2px}
+  .cta-gold{background:var(--gold);color:var(--ink) !important;border-color:var(--gold)}
+  .cta-gold:hover,.cta-gold:focus{background:#e0ac2e;border-color:#e0ac2e}
+  .hero{background:var(--deep);color:#fff;padding:56px 0 48px}
+  .hero h1{font-family:Fraunces,Georgia,serif;font-size:clamp(34px,6vw,58px);line-height:1.08;margin:0 0 16px;max-width:820px}
+  .hero p{font-size:19px;max-width:720px;margin:0 0 24px;color:#fff}
+  .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+  .hero .note{margin-top:22px;font-size:15px;color:#fff}
+  .hero .note a{color:var(--gold);font-weight:700}
+  section{padding:48px 0}
+  section.sand{background:var(--sand)}
+  section.mist{background:var(--mist)}
+  h2{font-family:Fraunces,Georgia,serif;font-size:clamp(27px,4vw,38px);line-height:1.15;color:var(--deep);margin:0 0 12px}
+  .lede{font-size:18px;max-width:760px;margin:0 0 28px}
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  .card{background:var(--white);border:2px solid var(--pale);border-radius:10px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:20px;color:var(--deep);line-height:1.3}
+  .card p{margin:0}
+  .card .src{font-size:14px;color:var(--teal);margin-top:10px}
+  ul.check{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:10px}
+  ul.check li{padding-left:28px;position:relative}
+  ul.check li::before{content:"✓";position:absolute;left:0;color:var(--teal-dark);font-weight:700}
+  .areas{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+  .areas li{background:var(--deep);color:#fff;font-weight:700;padding:9px 16px;border-radius:999px;font-size:15px}
+  .steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:16px}
+  .steps li{background:var(--white);border:2px solid var(--pale);border-radius:10px;padding:22px}
+  .steps li strong{display:block;color:var(--deep);font-size:19px;margin-bottom:4px}
+  .steps li p{margin:0}
+  .reel{display:block;background:var(--white);border:2px solid var(--pale);border-radius:10px;padding:20px;text-decoration:none;color:var(--ink)}
+  .reel:hover,.reel:focus{border-color:var(--deep);outline:2px solid var(--deep)}
+  .reel strong{color:var(--deep);font-size:18px}
+  .reel span{display:block;margin-top:6px}
+  form{max-width:640px}
+  label{display:block;font-weight:700;margin:14px 0 6px;color:var(--deep)}
+  input,select,textarea{width:100%;padding:12px 14px;font:inherit;border:2px solid var(--deep);border-radius:8px;background:#fff;color:var(--ink);max-width:100%}
+  input:focus,select:focus,textarea:focus{outline:3px solid var(--gold);outline-offset:1px}
+  button{font:inherit;cursor:pointer}
+  #form-note{display:none;background:var(--gold);color:var(--ink);font-weight:700;padding:14px 18px;border-radius:8px;margin-top:18px}
+  footer{background:var(--deep);color:#fff;padding:36px 0}
+  footer a{color:var(--gold);font-weight:700}
+  footer p{margin:6px 0}
+  .small{font-size:14px}
+  @media (min-width:700px){
+    .grid{grid-template-columns:1fr 1fr}
+    ul.check{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+  }
+  @media (min-width:1000px){
+    .grid.cols3{grid-template-columns:1fr 1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr 1fr 1fr}
+    .hero{padding:64px 0 56px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <img src="images/bluewater-avatar.webp" alt="Bluewater Pool Care profile photo" width="56" height="56">
+    <div class="brand"><strong>Bluewater Pool Care</strong><span>Full-Service Pool Cleaning, Repairs &amp; Remodels — DFW</span></div>
+    <nav aria-label="Main">
+      <a href="#why">Why Bluewater</a>
+      <a href="#services">Services</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#quote">Free Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-top:56px;padding-bottom:48px">
+    <div class="wrap">
+      <h1>Weekly pool service that doesn&rsquo;t disappoint.</h1>
+      <p>Consistent, professional, on-time pool care for Dallas–Fort Worth homeowners. Same technician, same time, every week — so your pool is ready when you are, not another chore on your weekend.</p>
+      <div class="actions">
+        <a class="cta cta-gold" href="tel:+18178093217">Call or text 817-809-3217</a>
+        <a class="cta" href="#quote">Get a free quote</a>
+      </div>
+      <p class="note">Prefer Instagram? <a href="https://www.instagram.com/bluewaterpoolcare/">Message @bluewaterpoolcare</a> — DM for availability.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <h2>Why our clients don&rsquo;t switch</h2>
+      <p class="lede">Bluewater&rsquo;s own words, from its Instagram: one team handles your pool start to finish, so nothing gets passed around or subbed out.</p>
+      <div class="grid cols3">
+        <div class="card"><h3>Same technician, same time, every week</h3><p>No rotating strangers, no guessing when someone will show up. Your pool, on a schedule you can plan around.</p></div>
+        <div class="card"><h3>Free service calls for weekly clients</h3><p>On a weekly plan? Service calls between visits are free — a problem spotted mid-week doesn&rsquo;t become an extra bill.</p></div>
+        <div class="card"><h3>In-house repair tech</h3><p>Repairs are handled by Bluewater&rsquo;s own team, so nothing gets subbed out and your pool&rsquo;s history stays with one crew.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="sand">
+    <div class="wrap">
+      <h2>What a weekly visit covers</h2>
+      <p class="lede">Bluewater&rsquo;s weekly checklist, as published by the business: a full routine every visit, plus a detailed service report so you know exactly what was done.</p>
+      <ul class="check">
+        <li>Surface debris removal — skimming</li>
+        <li>Wall and step brushing</li>
+        <li>Vacuuming as required</li>
+        <li>Water testing and chemical balancing</li>
+        <li>Skimmer and pump basket emptying</li>
+        <li>Equipment checks — pumps, filters and circulation</li>
+        <li>Detailed service report after every visit</li>
+        <li>Fixed weekly routes and a consistent checklist</li>
+      </ul>
+      <h2 style="margin-top:44px">Services</h2>
+      <div class="grid cols3">
+        <div class="card"><h3>Weekly pool cleaning</h3><p>Recurring cleaning, water balancing, equipment checks and service reports on a fixed weekly route.</p></div>
+        <div class="card"><h3>Filter cleaning</h3><p>Cartridge filter cleaning — most pools need it every few months. If your pressure gauge is running high, it&rsquo;s time. Cartridges are removed, every pleat hosed down, inspected for wear or tears, and reassembled.</p><p class="src">Rule of thumb from Bluewater: clean when pressure reads about 8–10 PSI above its clean starting point.</p></div>
+        <div class="card"><h3>Green pool cleanup &amp; one-time cleaning</h3><p>A reset for pools behind on service, hit by a storm, or left unattended — then a regular schedule to keep the result.</p></div>
+        <div class="card"><h3>Repairs</h3><p>Pool pump repair, pool filter repair and pool leak repair, with an in-house repair technician.</p></div>
+        <div class="card"><h3>Remodels</h3><p>Pool remodels, as listed in Bluewater&rsquo;s bio: full-service pool cleaning, repairs &amp; remodels.</p></div>
+        <div class="card"><h3>Fall &amp; seasonal care</h3><p>Skimming, brushing and balancing through DFW&rsquo;s fall debris, algae and chemistry swings, so the pool stays clear all season.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="wrap">
+      <h2>Serving homeowners across DFW</h2>
+      <p class="lede">Bluewater&rsquo;s published service areas in the Dallas–Fort Worth area:</p>
+      <ul class="areas">
+        <li>Frisco</li><li>Prosper</li><li>Plano</li><li>Carrollton</li><li>The Colony</li><li>Farmers Branch</li><li>North Dallas</li>
+      </ul>
+      <p style="margin-top:20px">Outside this list but in DFW? Call or DM — availability is confirmed by message, so it&rsquo;s worth asking.</p>
+    </div>
+  </section>
+
+  <section class="mist">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>1. Get in touch</strong><p>Call, text or DM for a free quote.</p></li>
+        <li><strong>2. Pool &amp; equipment review</strong><p>Bluewater reviews your pool and equipment before recommending a plan, so the routine fits your property.</p></li>
+        <li><strong>3. Clear pricing first</strong><p>Pricing is agreed before you approve the service — no surprises after the work starts.</p></li>
+        <li><strong>4. On the weekly route</strong><p>Same technician, same time, every week, with a service report after each visit.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Recent work on Instagram</h2>
+      <p class="lede">Bluewater posts its routes and transformations as reels. See the real work — no stock photos here:</p>
+      <div class="grid">
+        <a class="reel" href="https://www.instagram.com/reel/Dez0JGjii-9/"><strong>Weekly pool service that doesn&rsquo;t disappoint</strong><span>Latest reel, 22 October 2026</span></a>
+        <a class="reel" href="https://www.instagram.com/reel/Demg2nNRqYH/"><strong>Why our clients don&rsquo;t switch</strong><span>Same technician, same time, every week — free service calls for weekly clients</span></a>
+        <a class="reel" href="https://www.instagram.com/reel/DecE2HbRYBM/"><strong>When was your cartridge filter last cleaned?</strong><span>Most pools need it every few months</span></a>
+        <a class="reel" href="https://www.instagram.com/reel/DeH9xxGiIob/"><strong>What a dirty cartridge filter does to your pool</strong><span>Cloudy water, weak circulation, extra strain on your pump</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="sand">
+    <div class="wrap">
+      <h2>Get a free quote</h2>
+      <p class="lede">Tell Bluewater about your pool and it will confirm availability for your area. Or skip the form and call or text directly.</p>
+      <form id="quote-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="area">Your area</label>
+        <select id="area" name="area" required>
+          <option value="">Choose an area…</option>
+          <option>Frisco</option><option>Prosper</option><option>Plano</option><option>Carrollton</option>
+          <option>The Colony</option><option>Farmers Branch</option><option>North Dallas</option><option>Elsewhere in DFW</option>
+        </select>
+        <label for="service">What do you need?</label>
+        <select id="service" name="service" required>
+          <option value="">Choose a service…</option>
+          <option>Weekly pool cleaning</option><option>Filter cleaning</option><option>Green pool cleanup</option>
+          <option>One-time cleaning</option><option>Repair</option><option>Remodel</option>
+        </select>
+        <label for="details">About your pool (optional)</label>
+        <textarea id="details" name="details" rows="4" placeholder="e.g. cartridge filter pressure running high, pool not serviced for a few weeks…"></textarea>
+        <p style="margin-top:18px"><button class="cta" type="submit">Request my free quote</button></p>
+        <div id="form-note" role="status">This is a preview form and does not send yet. For a reply, please call or text 817-809-3217 or DM @bluewaterpoolcare on Instagram.</div>
+      </form>
+      <p style="margin-top:24px"><a class="cta" href="tel:+18178093217">Call or text 817-809-3217</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Bluewater Pool Care</strong> — Full-Service Pool Cleaning, Repairs &amp; Remodels. Consistent, professional, on-time. DFW.</p>
+    <p>Call or text: <a href="tel:+18178093217">817-809-3217</a> &nbsp;·&nbsp; Instagram: <a href="https://www.instagram.com/bluewaterpoolcare/">@bluewaterpoolcare</a></p>
+    <p class="small">Preview website prepared by Devflix. Services, areas and contact details are taken from Bluewater Pool Care&rsquo;s own Instagram and published articles; the business confirms availability and pricing before any service. No prices are listed here because none were published with figures.</p>
+  </div>
+</footer>
+<script>
+document.getElementById('quote-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('form-note').style.display='block';
+  document.getElementById('form-note').scrollIntoView({block:'nearest'});
+});
+</script>
+</body>
+</html>

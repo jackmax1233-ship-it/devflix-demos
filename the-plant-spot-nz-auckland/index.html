@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Plant Spot NZ — Indoor Plants, Auckland</title>
+<meta name="description" content="The Plant Spot NZ, an Auckland indoor plant shop. Orchids, impatiens and colourful foliage, as seen on Instagram. Message @theplantspot.nz on Instagram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.65;color:#2E3B26;background:#FAF7EF}
+  img{max-width:100%;height:auto;display:block}
+  a{color:#8C3B1F}
+  a:focus-visible,.btn:focus-visible{outline:3px solid #1C3A28;outline-offset:3px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid #DDD4BC;background:#FAF7EF}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+  .brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:26px;line-height:1.1;color:#1C3A28;text-decoration:none}
+  .brand span{display:block;font-family:"DM Sans",sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#4A5A44}
+  .navlinks{display:flex;gap:18px;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+  .navlinks a{color:#2E3B26;text-decoration:none;font-weight:500}
+  .navlinks a:hover{text-decoration:underline}
+  /* Hero: editorial split. Photo is 640x853 (3:4); frame matches it exactly, capped 560px tall. */
+  .hero{display:grid;grid-template-columns:1fr;gap:28px;padding:44px 0 52px;align-items:center}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8C3B1F;margin:0 0 12px}
+  h1{font-family:Fraunces,Georgia,serif;font-size:clamp(38px,6vw,64px);line-height:1.05;color:#1C3A28;margin:0 0 16px}
+  .lede{font-size:19px;line-height:1.6;margin:0 0 24px;max-width:34rem}
+  .btn{display:inline-block;background:#8C3B1F;color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:6px}
+  .btn:hover{background:#5B2D16}
+  .btn.ghost{background:transparent;color:#1C3A28;border:2px solid #1C3A28}
+  .btn.ghost:hover{background:#1C3A28;color:#fff}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-photo{margin:0}
+  .hero-photo img{width:100%;aspect-ratio:3/4;object-fit:contain;background:#E9E2CF;border-radius:10px;max-height:560px}
+  .hero-photo figcaption{font-size:14px;color:#4A5A44;margin-top:10px;line-height:1.5}
+  section{padding:52px 0}
+  h2{font-family:Fraunces,Georgia,serif;font-size:clamp(28px,4vw,40px);line-height:1.15;color:#1C3A28;margin:0 0 12px}
+  .section-intro{max-width:38rem;margin:0 0 28px;color:#2E3B26}
+  .band{background:#E9E2CF}
+  /* Gallery: contain on a sand background, max 340px tall — every plant fully in frame, never cropped. */
+  .gallery{display:grid;grid-template-columns:1fr;gap:22px}
+  .card{margin:0;background:#fff;border:1px solid #DDD4BC;border-radius:10px;overflow:hidden}
+  .card img{width:100%;max-height:340px;object-fit:contain;background:#E9E2CF}
+  .card figcaption{padding:16px 18px}
+  .card h3{font-family:Fraunces,Georgia,serif;font-size:22px;line-height:1.25;color:#1C3A28;margin:0 0 6px}
+  .card p{font-size:16px;line-height:1.6;margin:0;color:#2E3B26}
+  .visit{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
+  .visit-box{background:#1C3A28;color:#fff;border-radius:10px;padding:28px}
+  .visit-box h2{color:#fff}
+  .visit-box p{margin:0 0 16px}
+  .visit-box .btn{background:#fff;color:#1C3A28}
+  .visit-box .btn:hover{background:#E9E2CF}
+  .note{font-size:15px;color:#4A5A44}
+  footer{background:#1C3A28;color:#fff;padding:28px 0}
+  footer p{margin:0 0 8px;font-size:15px;line-height:1.6}
+  footer a{color:#fff}
+  @media (min-width:768px){
+    .hero{grid-template-columns:1.05fr .95fr;gap:44px;padding:64px 0 72px}
+    .gallery{grid-template-columns:1fr 1fr}
+    .visit{grid-template-columns:1fr 1fr}
+    .wrap{padding:0 32px}
+  }
+  @media (min-width:1100px){
+    .gallery{grid-template-columns:1fr 1fr 1fr}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">The Plant Spot NZ<span>Auckland &middot; Indoor Plants</span></a>
+    <ul class="navlinks">
+      <li><a href="#in-the-shop">In the shop</a></li>
+      <li><a href="#find-us">Find us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Auckland, New Zealand</p>
+      <h1>Plants that make a room feel alive.</h1>
+      <p class="lede">The Plant Spot NZ is an Auckland indoor plant shop. Its shelves are full of lush, colourful potted plants &mdash; flowering orchids, bright impatiens and bold foliage &mdash; shared on Instagram at @theplantspot.nz.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://www.instagram.com/theplantspot.nz">Message on Instagram</a>
+        <a class="btn ghost" href="#in-the-shop">See what&rsquo;s in the shop</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="images/retail-space.webp" alt="Inside The Plant Spot NZ: shelves and tables full of lush potted plants, including colourful coleus and flowering plants" width="640" height="853" loading="eager">
+      <figcaption>The shop floor, as posted on Instagram &mdash; rows of potted plants, from leafy greens to bright seasonal colour.</figcaption>
+    </figure>
+  </div>
+
+  <section class="band" id="in-the-shop" aria-labelledby="shop-heading">
+    <div class="wrap">
+      <h2 id="shop-heading">In the shop</h2>
+      <p class="section-intro">A few of the plants recently shared from the shop. Ask on Instagram about what is in store at the moment &mdash; stock changes, and this page shows what has been posted, not a live catalogue.</p>
+      <div class="gallery">
+        <figure class="card">
+          <img src="images/orchids.webp" alt="Pink and magenta phalaenopsis orchids in flower" width="640" height="853" loading="lazy">
+          <figcaption>
+            <h3>Orchids</h3>
+            <p>Phalaenopsis orchids in pink and deep magenta, posted in September 2026.</p>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="images/impatiens.webp" alt="Bright pink and orange impatiens flowers among dark green leaves" width="640" height="1138" loading="lazy">
+          <figcaption>
+            <h3>Impatiens</h3>
+            <p>Bright pink and orange impatiens &mdash; cheerful flowering colour for indoors.</p>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="images/colourful-foliage.webp" alt="Colourful coleus foliage in green, red, pink and gold, with ranunculus flowers" width="640" height="1138" loading="lazy">
+          <figcaption>
+            <h3>Colourful foliage</h3>
+            <p>Coleus in green, red, pink and gold, with flowering ranunculus alongside.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="find-us" aria-labelledby="find-heading">
+    <div class="wrap visit">
+      <div>
+        <h2 id="find-heading">Find us</h2>
+        <p>The Plant Spot NZ is based in Auckland, New Zealand. No street address or opening hours are published on this page, because the business has not published them here &mdash; the surest way to check is to ask directly.</p>
+        <p class="note">If you are planning a visit, message first to confirm what is in store and when to come by.</p>
+      </div>
+      <div class="visit-box">
+        <h2>Message the shop</h2>
+        <p>The shop&rsquo;s Instagram is the way to get in touch: ask about a plant you have seen, what is in store, or visiting.</p>
+        <a class="btn" href="https://www.instagram.com/theplantspot.nz">@theplantspot.nz on Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>The Plant Spot NZ</strong> &middot; Auckland, New Zealand &middot; <a href="https://www.instagram.com/theplantspot.nz">@theplantspot.nz</a></p>
+    <p>Photos from @theplantspot.nz on Instagram. Preview site prepared by Devflix.</p>
+  </div>
+</footer>
+</body>
+</html>
