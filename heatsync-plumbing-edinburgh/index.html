@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heat Sync Plumbing &amp; Heating — Edinburgh, Lothians &amp; Fife</title>
+<meta name="description" content="Heat Sync Plumbing & Heating — plumbing and heating repairs, installs and maintenance across Edinburgh, the Lothians and Fife.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#102A43; --ink:#1A2E3D; --muted:#46586A; --copper:#A84E1C;
+    --warm:#F4EFE8; --white:#FFFFFF; --line:#D8D2C8; --pale:#E8C9A8;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--white);overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  /* Top strip */
+  .strip{background:var(--navy);color:var(--white);font-size:14px;font-weight:600;letter-spacing:.04em;text-align:center;padding:9px 16px}
+  /* Header */
+  header{background:var(--white);border-bottom:2px solid var(--navy);position:sticky;top:0;z-index:10}
+  .head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1120px;margin:0 auto}
+  .brand{font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;letter-spacing:.01em;color:var(--navy);text-decoration:none;line-height:1.15}
+  .brand span{color:var(--copper)}
+  nav{display:flex;gap:22px;font-size:15px;font-weight:600}
+  nav a{color:var(--ink);text-decoration:none}
+  nav a:hover,nav a:focus{color:var(--copper);text-decoration:underline}
+  .btn{display:inline-block;background:var(--copper);color:var(--white);font-weight:600;font-size:16px;text-decoration:none;padding:12px 22px;border-radius:6px;border:2px solid var(--copper)}
+  .btn:hover,.btn:focus{background:var(--white);color:var(--copper)}
+  .btn-navy{background:var(--navy);border-color:var(--navy);color:var(--white)}
+  .btn-navy:hover,.btn-navy:focus{background:var(--white);color:var(--navy)}
+  .btn-outline{background:transparent;border-color:var(--white);color:var(--white)}
+  .btn-outline:hover,.btn-outline:focus{background:var(--white);color:var(--navy);border-color:var(--white)}
+  /* Hero */
+  .hero{background:var(--warm);border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:56px 20px}
+  .eyebrow{font-family:'Archivo',sans-serif;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin:0 0 14px}
+  h1{font-family:'Archivo',sans-serif;font-weight:800;font-size:52px;line-height:1.08;letter-spacing:-.01em;color:var(--navy);margin:0 0 18px}
+  .lead{font-size:19px;color:var(--ink);margin:0 0 26px;max-width:34em}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-note{font-size:15px;color:var(--muted);margin:22px 0 0}
+  .hero-figure{margin:0;max-width:448px;justify-self:end;width:100%}
+  .hero-figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px;border:3px solid var(--navy)}
+  .hero-figure figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+  /* Sections */
+  section{padding:64px 0}
+  h2{font-family:'Archivo',sans-serif;font-weight:800;font-size:36px;line-height:1.15;color:var(--navy);margin:0 0 12px}
+  .sec-lead{font-size:18px;color:var(--muted);margin:0 0 36px;max-width:40em}
+  /* Services */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{border:1px solid var(--line);border-top:5px solid var(--copper);border-radius:8px;padding:24px;background:var(--white)}
+  .card h3{font-family:'Archivo',sans-serif;font-size:21px;line-height:1.25;color:var(--navy);margin:0 0 8px}
+  .card p{font-size:16px;color:var(--muted);margin:0}
+  /* Gallery */
+  .gallery-sec{background:var(--warm);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .shot{margin:0}
+  .shot img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+  .shot figcaption{font-size:14px;line-height:1.45;color:var(--muted);margin-top:10px}
+  .shot figcaption strong{color:var(--ink)}
+  /* Areas */
+  .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .area{background:var(--navy);color:var(--white);border-radius:8px;padding:28px 24px}
+  .area h3{font-family:'Archivo',sans-serif;font-size:22px;margin:0 0 6px;color:var(--white)}
+  .area p{font-size:16px;color:var(--pale);margin:0}
+  /* Contact */
+  .contact{background:var(--navy);color:var(--white)}
+  .contact h2{color:var(--white)}
+  .contact .sec-lead{color:var(--pale)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .contact-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .contact-list a{font-weight:600}
+  .contact-list li{font-size:18px}
+  .contact-list .lbl{display:block;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pale);margin-bottom:2px}
+  footer{background:var(--navy);color:var(--white);border-top:1px solid rgba(255,255,255,.25);padding:28px 0;font-size:15px}
+  footer p{margin:0 0 6px;color:var(--white)}
+  footer .fine{color:var(--pale)}
+  /* Reveal: content visible without JS; gentle fade only when JS runs */
+  .js .reveal{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.js .reveal{transition:none;opacity:1;transform:none}}
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:32px;padding:44px 20px}
+    .hero-figure{justify-self:center}
+    h1{font-size:40px}
+    .services{grid-template-columns:repeat(2,1fr)}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .areas{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr;gap:32px}
+    nav{display:none}
+  }
+  @media (max-width:520px){
+    body{font-size:16px}
+    h1{font-size:34px}
+    h2{font-size:29px}
+    section{padding:48px 0}
+    .services{grid-template-columns:1fr}
+    .head{padding:12px 16px}
+    .brand{font-size:18px}
+    .btn{padding:11px 18px;font-size:15px}
+  }
+</style>
+</head>
+<body>
+<div class="strip">Edinburgh &nbsp;·&nbsp; Lothians &nbsp;·&nbsp; Fife</div>
+<header>
+  <div class="head">
+    <a class="brand" href="#">HEAT SYNC <span>Plumbing &amp; Heating</span></a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Recent work</a>
+      <a href="#areas">Areas</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="https://ig.me/m/heatsync_ph">Message us</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding:0">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Gas Safe trade · Plumbing &amp; Heating</p>
+        <h1>Plumbing and heating, done properly.</h1>
+        <p class="lead">Repairs, installs and maintenance across Edinburgh, the Lothians and Fife — from boilers and radiators to showers, toilets and gas cookers.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://ig.me/m/heatsync_ph">Message on Instagram</a>
+          <a class="btn btn-navy" href="mailto:Heatsyncph@outlook.com">Email us</a>
+        </div>
+        <p class="hero-note">No job too fiddly — if it leaks, drips, runs or won&rsquo;t heat, get in touch and tell us what&rsquo;s happening.</p>
+      </div>
+      <figure class="hero-figure">
+        <img src="images/radiators-column.webp" alt="Two newly fitted column radiators in a finished room" width="640" height="800" fetchpriority="high">
+        <figcaption>Recent work: two new column radiators fitted and finished to a high standard.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 class="reveal">What we do</h2>
+      <p class="sec-lead reveal">Plumbing and heating repairs, installs and maintenance — the jobs below are all work we have actually carried out and shared.</p>
+      <div class="services">
+        <article class="card reveal">
+          <h3>Boiler installs &amp; servicing</h3>
+          <p>Boiler replacements and servicing, including system upgrades with new controls and magnetic system filters.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Radiator fitting</h3>
+          <p>New radiators fitted and finished neatly — including modern column radiators.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Showers &amp; towel rails</h3>
+          <p>Showers fitted and towel rails installed, with everything left neat and tidy.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Toilet repairs</h3>
+          <p>Running toilets traced to the fault — flush and fill valves replaced, cisterns refitted properly.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Gas cooker fitting</h3>
+          <p>Gas cookers installed and tested, ready to go.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Leak tracing</h3>
+          <p>Leaks traced to source — enclosures stripped, cleaned and resealed properly, no cutting corners.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="gallery-sec">
+    <div class="wrap">
+      <h2 class="reveal">Recent work</h2>
+      <p class="sec-lead reveal">Real jobs, photographed as finished. See more on Instagram <a href="https://www.instagram.com/heatsync_ph">@heatsync_ph</a>.</p>
+      <div class="gallery">
+        <figure class="shot reveal">
+          <img src="images/worcester-boiler.webp" alt="Newly installed Worcester boiler" width="640" height="800" loading="lazy">
+          <figcaption><strong>Boiler upgrade.</strong> Worcester 4000 installed, with new programmer, wireless controls, zone valve and magnetic filter.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="images/shower-leak-repair.webp" alt="Shower enclosure after leak repair and resealing" width="640" height="800" loading="lazy">
+          <figcaption><strong>Leak traced.</strong> A shower enclosure leaking into the flat below — stripped, cleaned, refitted and resealed.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="images/toilet-repair.webp" alt="Toilet after flush and fill valve replacement" width="640" height="800" loading="lazy">
+          <figcaption><strong>Toilet sorted.</strong> A constantly running toilet fixed with new flush and fill valves.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="images/shower-towel-rail.webp" alt="Newly fitted shower and towel rail" width="640" height="800" loading="lazy">
+          <figcaption><strong>Shower &amp; towel rail.</strong> Shower fitted, towel rail installed, everything left neat and tidy.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="images/gas-cooker.webp" alt="Newly fitted gas cooker" width="640" height="800" loading="lazy">
+          <figcaption><strong>Gas cooker fitted.</strong> Installed, tested and ready to go.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="images/radiators-column.webp" alt="Two newly fitted column radiators" width="640" height="800" loading="lazy">
+          <figcaption><strong>Column radiators.</strong> Two new column radiators fitted and finished nicely.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="images/recent-jobs.webp" alt="Recent plumbing and heating work" width="640" height="800" loading="lazy">
+          <figcaption><strong>Another week, another few jobs ticked off.</strong> Ongoing repair and install work.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="images/recent-jobs-2.webp" alt="Selection of recent plumbing and heating jobs" width="640" height="800" loading="lazy">
+          <figcaption><strong>Recent jobs.</strong> A few recent jobs completed across the area.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="wrap">
+      <h2 class="reveal">Where we work</h2>
+      <p class="sec-lead reveal">Covering homes and properties across:</p>
+      <div class="areas">
+        <div class="area reveal"><h3>Edinburgh</h3><p>Plumbing &amp; heating across the city.</p></div>
+        <div class="area reveal"><h3>The Lothians</h3><p>Plumbing &amp; heating across the Lothians.</p></div>
+        <div class="area reveal"><h3>Fife</h3><p>Plumbing &amp; heating across Fife.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 class="reveal">Get in touch</h2>
+        <p class="sec-lead reveal">Tell us what&rsquo;s gone wrong or what you&rsquo;d like fitted, and where you are — we&rsquo;ll take it from there.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://ig.me/m/heatsync_ph">Message on Instagram</a>
+          <a class="btn btn-outline" href="mailto:Heatsyncph@outlook.com">Email us</a>
+        </div>
+      </div>
+      <ul class="contact-list reveal">
+        <li><span class="lbl">Instagram</span><a href="https://www.instagram.com/heatsync_ph">@heatsync_ph</a> — message us direct</li>
+        <li><span class="lbl">Email</span><a href="mailto:Heatsyncph@outlook.com">Heatsyncph@outlook.com</a></li>
+        <li><span class="lbl">Areas</span>Edinburgh, Lothians and Fife</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Heat Sync Plumbing &amp; Heating</strong> — Edinburgh, Lothians &amp; Fife</p>
+    <p class="fine">Instagram: @heatsync_ph &nbsp;·&nbsp; Email: Heatsyncph@outlook.com &nbsp;·&nbsp; Photos from @heatsync_ph on Instagram. Preview website prepared for Heat Sync Plumbing &amp; Heating.</p>
+  </div>
+</footer>
+<script>
+  document.documentElement.classList.add('js');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>

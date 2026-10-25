@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electrician4you — Electrician in Newton-le-Willows &amp; Liverpool Area</title>
+<meta name="description" content="Electrician4you: fuse-box upgrades, EICRs, house rewires, EV charger fitting and electrical safety work in Newton-le-Willows and the Liverpool area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17181a; --ink2:#1e2023; --paper:#faf7f0; --card:#ffffff;
+    --amber:#f5b301; --amber-dark:#8a5b00; --grey:#3a3d42; --grey2:#5a5e66;
+    --line:#e8e4da; --muted-light:#d8d5cc; --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper)}
+  img{max-width:100%;height:auto;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding-left:20px;padding-right:20px}
+  /* Top bar */
+  .topbar{background:var(--ink);color:var(--muted-light);font-size:14px}
+  .topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;padding-top:9px;padding-bottom:9px}
+  .topbar strong{color:var(--amber);font-weight:600}
+  /* Header */
+  header.site{background:var(--paper);border-bottom:3px solid var(--ink);position:sticky;top:0;z-index:10}
+  .head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+  .brand{font-family:"Archivo",sans-serif;font-weight:900;font-size:26px;letter-spacing:-.02em;text-decoration:none;line-height:1}
+  .brand span{color:var(--amber-dark)}
+  .brand small{display:block;font-family:"Inter",sans-serif;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey2);margin-top:3px}
+  nav.main{display:flex;gap:22px;font-weight:600;font-size:15px}
+  nav.main a{text-decoration:none}
+  nav.main a:hover,nav.main a:focus{text-decoration:underline;text-underline-offset:4px}
+  .btn{display:inline-block;background:var(--amber);color:var(--ink);font-weight:700;text-decoration:none;padding:12px 22px;border:2px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);line-height:1.3}
+  .btn:hover,.btn:focus{background:#ffc91f}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover,.btn-dark:focus{background:#000}
+  .btn-sm{padding:9px 16px;font-size:15px}
+  /* Hero */
+  .hero{background:var(--ink);color:#fff}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-top:48px;padding-bottom:52px}
+  .eyebrow{display:inline-block;background:var(--amber);color:var(--ink);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:3px}
+  .hero h1{font-family:"Archivo",sans-serif;font-weight:900;font-size:52px;line-height:1.04;letter-spacing:-.02em;margin:20px 0 16px}
+  .hero h1 em{font-style:normal;color:var(--amber)}
+  .hero p.lead{font-size:19px;color:var(--muted-light);margin:0 0 26px;max-width:56ch}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero-cta .note{font-size:14px;color:var(--muted-light)}
+  .hero figure{margin:0;border:3px solid #fff;border-radius:6px;overflow:hidden;background:var(--ink2)}
+  .hero figure img{width:100%}
+  .hero figcaption{background:var(--ink2);color:var(--muted-light);font-size:14px;padding:10px 14px}
+  /* Strip */
+  .strip{background:var(--amber);border-bottom:3px solid var(--ink)}
+  .strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-top:16px;padding-bottom:16px}
+  .strip p{margin:0;font-weight:700;font-size:15px;color:var(--ink)}
+  .strip p span{display:block;font-weight:500;font-size:14px}
+  /* Sections */
+  section{padding-top:64px;padding-bottom:64px}
+  .kicker{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-dark);margin:0 0 10px}
+  h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:38px;line-height:1.1;letter-spacing:-.01em;margin:0 0 14px}
+  .section-intro{font-size:18px;color:var(--grey);max-width:68ch;margin:0 0 32px}
+  /* Services */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .service{background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:24px;box-shadow:4px 4px 0 var(--line)}
+  .service .num{font-family:"Archivo",sans-serif;font-weight:900;font-size:30px;color:var(--amber-dark);line-height:1}
+  .service h3{font-family:"Archivo",sans-serif;font-weight:800;font-size:21px;line-height:1.25;margin:14px 0 8px}
+  .service p{margin:0;color:var(--grey);font-size:16px}
+  /* Split (landlords) */
+  .split{background:var(--card);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+  .split-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+  .split figure{margin:0;border:2px solid var(--ink);border-radius:6px;overflow:hidden;background:var(--line)}
+  .split figcaption{font-size:14px;color:var(--grey);padding:10px 14px;background:var(--paper)}
+  .checks{list-style:none;padding:0;margin:24px 0}
+  .checks li{padding-left:32px;position:relative;margin-bottom:12px;font-weight:600}
+  .checks li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;background:var(--amber);color:var(--ink);font-weight:900;text-align:center;line-height:24px;border-radius:50%;border:1.5px solid var(--ink)}
+  /* Work gallery */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .gallery figure{margin:0;background:var(--card);border:2px solid var(--ink);border-radius:6px;overflow:hidden}
+  .gallery .imgwrap{background:var(--ink2)}
+  .gallery img{width:100%}
+  .gallery figcaption{padding:14px 16px}
+  .gallery figcaption strong{display:block;font-family:"Archivo",sans-serif;font-size:17px}
+  .gallery figcaption span{font-size:15px;color:var(--grey2)}
+  .gallery figure.wide{grid-column:span 2}
+  /* Fault band */
+  .band{background:var(--ink);color:#fff}
+  .band-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .band figure{margin:0;border:3px solid #fff;border-radius:6px;overflow:hidden;background:var(--ink2)}
+  .band figcaption{font-size:14px;color:var(--muted-light);padding:10px 14px;background:var(--ink2)}
+  .band h2{color:#fff}
+  .band p{color:var(--muted-light)}
+  .band p strong{color:var(--amber)}
+  /* Contact */
+  .contact{text-align:center}
+  .contact .box{max-width:720px;margin:0 auto;background:var(--card);border:2px solid var(--ink);border-radius:8px;box-shadow:5px 5px 0 var(--amber);padding:40px 32px}
+  .contact p{color:var(--grey);max-width:58ch;margin:0 auto 24px}
+  footer{background:var(--ink);color:var(--muted-light);font-size:14px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;padding-top:22px;padding-bottom:22px}
+  footer a{color:var(--amber);font-weight:600}
+  /* Reveal (content visible without JS) */
+  .js .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.js .reveal{transition:none;opacity:1;transform:none}}
+  /* Responsive */
+  @media (max-width:900px){
+    .hero-grid,.split-grid,.band-grid{grid-template-columns:1fr;gap:28px}
+    .hero h1{font-size:42px}
+    .services,.gallery{grid-template-columns:repeat(2,1fr)}
+    .gallery figure.wide{grid-column:span 1}
+    .strip .wrap{grid-template-columns:1fr}
+    nav.main{display:none}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    .hero h1{font-size:34px}
+    h2{font-size:29px}
+    section{padding-top:44px;padding-bottom:44px}
+    .services,.gallery{grid-template-columns:1fr}
+    .hero-grid{padding-top:32px;padding-bottom:36px}
+    .head{flex-wrap:wrap}
+    .brand{font-size:23px}
+    .btn{width:100%;text-align:center}
+    .hero-cta .btn{width:auto}
+    .contact .box{padding:28px 20px}
+    .topbar .wrap{font-size:13px}
+  }
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <span><strong>Newton-le-Willows</strong> &nbsp;·&nbsp; Liverpool area</span>
+  <span>Local electrician — <a href="https://www.instagram.com/local_electrician4you" style="color:#f5b301;font-weight:600">@local_electrician4you</a></span>
+</div></div>
+
+<header class="site"><div class="wrap head">
+  <a class="brand" href="#">Electrician<span>4</span>you<small>Newton-le-Willows · Liverpool area</small></a>
+  <nav class="main" aria-label="Main">
+    <a href="#services">Services</a>
+    <a href="#landlords">Landlords</a>
+    <a href="#work">Recent work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-sm" href="https://ig.me/m/local_electrician4you">Message on Instagram</a>
+</div></header>
+
+<main>
+  <div class="hero"><div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Local electrician</span>
+      <h1>Improving your electrical safety, <em>one property at a time.</em></h1>
+      <p class="lead">Fuse-box upgrades, EICRs, house rewires and EV charger fitting in Newton-le-Willows and the Liverpool area — from a local electrician whose recent work speaks for itself.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://ig.me/m/local_electrician4you">Message us on Instagram →</a>
+        <span class="note">Enquiries via Instagram DM</span>
+      </div>
+    </div>
+    <figure>
+      <img src="images/fusebox-upgrade.webp" alt="A newly fitted fuse box from a Saturday morning fuse-box upgrade" width="640" height="452" loading="eager">
+      <figcaption>Saturday morning fuse-box upgrade — recent work in the local area.</figcaption>
+    </figure>
+  </div></div>
+
+  <div class="strip"><div class="wrap">
+    <p>Newton-le-Willows &amp; surrounding areas<span>Proudly serving the local area</span></p>
+    <p>Landlords, buyers &amp; homeowners<span>EICRs, testing and remedial work</span></p>
+    <p>Clear advice, no jargon<span>Straight answers on your electrics</span></p>
+  </div></div>
+
+  <section id="services" class="reveal"><div class="wrap">
+    <p class="kicker">What we do</p>
+    <h2>Services</h2>
+    <p class="section-intro">From a fuse-box swap to a full rewire — if it keeps your property safe and powered, it is the kind of job Electrician4you takes on.</p>
+    <div class="services">
+      <article class="service"><div class="num">01</div><h3>Fuse-box &amp; mains-board upgrades</h3><p>Old fuse boards swapped for modern RCD-protected boards — including the Saturday-morning upgrades pictured here.</p></article>
+      <article class="service"><div class="num">02</div><h3>EICRs &amp; inspection and testing</h3><p>Electrical Installation Condition Reports and testing that find hidden faults before they become serious problems.</p></article>
+      <article class="service"><div class="num">03</div><h3>EV charger fitting</h3><p>Home EV chargers fitted alongside fuse-box upgrades — a new charger and board fitted in Newton-le-Willows in the same week.</p></article>
+      <article class="service"><div class="num">04</div><h3>House rewires</h3><p>Full rewires for homes whose wiring has had its day, carried out with the safety of the property first.</p></article>
+      <article class="service"><div class="num">05</div><h3>Landlord work</h3><p>Inspections, testing and remedial work for rental properties — keeping tenants safe and landlords up to date.</p></article>
+      <article class="service"><div class="num">06</div><h3>Floodlights &amp; soffit lighting</h3><p>Outdoor and soffit lighting fitted to brighten up the outside of your home — including recent soffit lighting in Liverpool.</p></article>
+    </div>
+  </div></section>
+
+  <section id="landlords" class="split reveal"><div class="wrap split-grid">
+    <figure>
+      <img src="images/eicr-inspection.webp" alt="Electrical inspection work for an EICR" width="640" height="800" loading="lazy">
+      <figcaption>EICR inspections carried out every day for landlords and property owners.</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">For landlords &amp; property owners</p>
+      <h2>Is your property electrically safe?</h2>
+      <p>Tenants don’t always report electrical issues. Regular inspections help protect everyone and give peace of mind — especially in rental properties.</p>
+      <ul class="checks">
+        <li>Identify hidden faults</li>
+        <li>Keep tenants safe</li>
+        <li>Protect your property</li>
+        <li>Stay up to date with electrical safety checks</li>
+      </ul>
+      <p>Don’t wait for a small problem to become a major one. Get your property checked.</p>
+      <a class="btn" href="https://ig.me/m/local_electrician4you">Ask about an EICR →</a>
+    </div>
+  </div></section>
+
+  <section id="work" class="reveal"><div class="wrap">
+    <p class="kicker">Recent work</p>
+    <h2>Straight from the job</h2>
+    <p class="section-intro">Real jobs, in the local area — fuse boxes, chargers, lighting and fault-finding, as posted on Instagram.</p>
+    <div class="gallery">
+      <figure class="wide">
+        <div class="imgwrap"><img src="images/fusebox-ev-charger.webp" alt="A new fuse box upgrade with an EV charger fitted in Newton-le-Willows" width="640" height="853" loading="lazy"></div>
+        <figcaption><strong>Fuse box + EV charger</strong><span>New fuse-box upgrade and EV charger fitted in Newton-le-Willows.</span></figcaption>
+      </figure>
+      <figure>
+        <div class="imgwrap"><img src="images/soffit-lighting-liverpool.webp" alt="New soffit lighting fitted on a house in Liverpool" width="640" height="800" loading="lazy"></div>
+        <figcaption><strong>Soffit lighting, Liverpool</strong><span>New soffit lighting fitted in Liverpool.</span></figcaption>
+      </figure>
+      <figure>
+        <div class="imgwrap"><img src="images/van-signage.webp" alt="The Electrician4you van with its new signage" width="640" height="853" loading="lazy"></div>
+        <figcaption><strong>On the road</strong><span>The van, freshly sign-written and ready for action.</span></figcaption>
+      </figure>
+      <figure>
+        <div class="imgwrap"><img src="images/electrical-safety.webp" alt="Electrical safety and testing work" width="640" height="640" loading="lazy"></div>
+        <figcaption><strong>Safety, tested &amp; compliant</strong><span>Electrics made safe, tested and compliant — clear advice, no jargon.</span></figcaption>
+      </figure>
+    </div>
+  </div></section>
+
+  <section class="band reveal"><div class="wrap band-grid">
+    <div>
+      <p class="kicker">Fault-finding</p>
+      <h2>Found the issue? We’ll track it down.</h2>
+      <p>Damaged lighting cables, a tripping board, a fault nobody can place — <strong>finding the real cause</strong> is half the job, and it is where experience shows.</p>
+      <p>If something electrical is not right at your property, get in touch and describe what is happening.</p>
+      <a class="btn" href="https://ig.me/m/local_electrician4you">Describe your job →</a>
+    </div>
+    <figure>
+      <img src="images/damaged-cables.webp" alt="Damaged lighting cables found during fault-finding work" width="640" height="853" loading="lazy">
+      <figcaption>Damaged lighting cables — found during fault-finding.</figcaption>
+    </figure>
+  </div></section>
+
+  <section id="contact" class="contact reveal"><div class="wrap">
+    <div class="box">
+      <p class="kicker">Get in touch</p>
+      <h2>Need an electrician?</h2>
+      <p>Message Electrician4you on Instagram — tell us what the job is and where the property is, and we will get back to you.</p>
+      <a class="btn" href="https://ig.me/m/local_electrician4you">Message @local_electrician4you on Instagram →</a>
+      <p style="margin:24px 0 0;font-size:15px">Serving Newton-le-Willows and the Liverpool area.</p>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <span><strong style="color:#fff">Electrician4you</strong> — Newton-le-Willows / Liverpool area</span>
+  <span>Instagram: <a href="https://www.instagram.com/local_electrician4you">@local_electrician4you</a></span>
+</div></footer>
+
+<script>
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+</script>
+</body>
+</html>

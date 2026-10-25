@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Culinary by Chef Fady — Private Chef in Dubai</title>
+<meta name="description" content="Dubai's premium in-home chef experience. Private dining and daily cooking at home in Dubai, with menus curated for you. Book by Instagram DM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FAF6EE;color:#1E1C18;font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.65}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid #DDD2BC}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+.brand{font-family:"Playfair Display",Georgia,serif;font-size:26px;font-weight:600;line-height:1.15;text-decoration:none}
+.brand small{display:block;font-family:Inter,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#7A5E1F;font-weight:600;margin-top:3px}
+nav{display:flex;gap:22px;flex-wrap:wrap;font-size:15px;font-weight:500}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:#1E1C18;color:#FAF6EE;text-decoration:none;font-weight:600;font-size:16px;padding:14px 24px;border-radius:4px;line-height:1.3}
+.btn:hover{background:#3A3F2A}
+.btn-light{background:#FAF6EE;color:#1E1C18}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#7A5E1F;font-weight:600;margin:0 0 14px}
+.eyebrow-light{color:#C9A86A}
+h1,h2{font-family:"Playfair Display",Georgia,serif;line-height:1.12;margin:0}
+h1{font-size:clamp(38px,6vw,64px);font-weight:600}
+h2{font-size:clamp(30px,4.5vw,44px);font-weight:600}
+.lead{font-size:19px;color:#3D382E;max-width:62ch}
+.muted{color:#5C564A}
+.hero{padding:56px 0 48px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero figure{margin:0}
+.hero figure img{width:100%;aspect-ratio:3/4;max-height:560px;object-fit:cover;border-radius:6px}
+.hero figcaption{font-size:14px;color:#5C564A;margin-top:10px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;align-items:center}
+.text-link{font-weight:600}
+.band{background:#1E1C18;color:#FAF6EE;padding:52px 0}
+.band h2{max-width:24ch}
+.band p{color:#E8DCC0;max-width:62ch}
+.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.band figure{margin:0}
+.band figure img{width:100%;height:380px;object-fit:contain;background:#2A2823;border-radius:6px}
+section{padding:64px 0}
+.section-head{max-width:68ch;margin-bottom:36px}
+.dishes{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.dish{margin:0}
+.dish img{width:100%;height:320px;object-fit:contain;background:#EFE7D6;border-radius:6px}
+.dish figcaption{padding:12px 2px 0}
+.dish h3{font-family:"Playfair Display",Georgia,serif;font-size:21px;margin:0 0 4px;line-height:1.25}
+.dish p{font-size:15px;color:#5C564A;margin:0;line-height:1.55}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.service{border:1px solid #DDD2BC;border-radius:6px;padding:28px;background:#FFFDF8}
+.service h3{font-family:"Playfair Display",Georgia,serif;font-size:26px;margin:0 0 10px;line-height:1.2}
+.service p{margin:0;color:#3D382E}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+.step{border-top:2px solid #7A5E1F;padding-top:18px}
+.step strong{font-family:"Playfair Display",Georgia,serif;font-size:22px;display:block;margin-bottom:6px}
+.step p{margin:0;color:#3D382E}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:340px;object-fit:contain;background:#EFE7D6;border-radius:6px}
+.gallery figcaption{font-size:14px;color:#5C564A;margin-top:10px}
+.booking{background:#3A3F2A;color:#FAF6EE;border-radius:8px;padding:48px 40px;text-align:center}
+.booking h2{max-width:22ch;margin:0 auto}
+.booking p{color:#E8DCC0;max-width:56ch;margin:16px auto 26px}
+footer{border-top:1px solid #DDD2BC;padding:28px 0 36px;font-size:14px;color:#5C564A}
+footer p{margin:4px 0}
+.js-reveal{opacity:1}
+@media(max-width:860px){
+  .hero-grid,.band-grid,.services{grid-template-columns:1fr;gap:28px}
+  .hero{padding:40px 0}
+  .hero figure img{max-height:520px}
+  .dishes{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  section{padding:48px 0}
+  .band figure img{height:340px}
+}
+@media(max-width:520px){
+  body{font-size:16px}
+  .topbar{padding:14px 0}
+  nav{gap:14px}
+  .brand{font-size:23px}
+  .dishes,.gallery{grid-template-columns:1fr}
+  .dish img{height:340px}
+  .gallery img{height:340px}
+  .booking{padding:36px 20px}
+  .wrap{padding:0 18px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <a class="brand" href="#">The Culinary <small>by Chef Fady · Dubai</small></a>
+    <nav aria-label="Main">
+      <a href="#menus">Menus</a>
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#book">Book</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-top:56px;padding-bottom:48px">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Private chef · Dubai, UAE</p>
+        <h1>Dubai&rsquo;s premium in-home chef experience.</h1>
+        <p class="lead" style="margin:22px 0 0">Private dining and daily cooking at home in Dubai — with menus curated for you, cooked in your own kitchen, and served at your own table.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://ig.me/m/the_culinary_uae">Book by Instagram DM</a>
+          <a class="text-link" href="#menus">See what&rsquo;s cooking ↓</a>
+        </div>
+        <p class="muted" style="font-size:15px;margin-top:18px">Booking is by DM — send a message on Instagram to start your private dinner or daily cooking.</p>
+      </div>
+      <figure>
+        <img src="images/charcuterie-board.webp" alt="Charcuterie board prepared by Chef Fady" width="640" height="853" fetchpriority="high">
+        <figcaption>Charcuterie board — rich, fresh, sweet and savoury, all in one reach.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap band-grid">
+      <div>
+        <p class="eyebrow eyebrow-light">A menu made for you</p>
+        <h2>Your private dinner, curated just for you.</h2>
+        <p style="margin:18px 0 0">No set dining room, no fixed menu. Chef Fady curates the menu for the occasion — and brings the dining experience home.</p>
+        <p style="margin-top:26px"><a class="btn btn-light" href="https://ig.me/m/the_culinary_uae">Send a DM to book</a></p>
+      </div>
+      <figure>
+        <img src="images/private-dinner.webp" alt="Private dinner at home with a curated menu" width="640" height="853" loading="lazy">
+      </figure>
+    </div>
+  </div>
+
+  <section id="menus">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From the kitchen</p>
+        <h2>Flavours from near and far.</h2>
+        <p class="muted">A taste of what Chef Fady cooks at home — from handmade pasta to Lebanese dishes and handcrafted Japanese gyoza.</p>
+      </div>
+      <div class="dishes">
+        <figure class="dish">
+          <img src="images/pasta-fresca.webp" alt="Handmade Pasta Fresca" width="640" height="853" loading="lazy">
+          <figcaption><h3>Pasta Fresca</h3><p>Handmade pasta, made to perfection.</p></figcaption>
+        </figure>
+        <figure class="dish">
+          <img src="images/chicken-gyoza.webp" alt="Handcrafted Japanese chicken gyoza" width="640" height="853" loading="lazy">
+          <figcaption><h3>Japanese Chicken Gyoza</h3><p>Handcrafted, with a little artistry and a lot of flavour.</p></figcaption>
+        </figure>
+        <figure class="dish">
+          <img src="images/lebanese-cooking.webp" alt="Lebanese cuisine cooked with intention" width="640" height="847" loading="lazy">
+          <figcaption><h3>Lebanese Cuisine</h3><p>Cooking with intention.</p></figcaption>
+        </figure>
+        <figure class="dish">
+          <img src="images/chicken-quesadillas.webp" alt="Handcrafted chicken quesadillas" width="640" height="853" loading="lazy">
+          <figcaption><h3>Chicken Quesadillas</h3><p>Handcrafted — lunch for two, at your own home.</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2>Two ways to eat beautifully at home.</h2>
+      </div>
+      <div class="services">
+        <article class="service">
+          <h3>Private Dinner</h3>
+          <p>A full-course, curated dinner at your home — for a celebration, a gathering, or simply an evening worth remembering. Your private dinner is right at home, with a menu curated just for you.</p>
+        </article>
+        <article class="service">
+          <h3>Daily Cooking</h3>
+          <p>Personalised, healthy food cooked at home, day to day — the private-chef experience as part of everyday life, not just special occasions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>You are a message away.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><strong>1 · Send a DM</strong><p>Message The Culinary by Chef Fady on Instagram to start your booking.</p></div>
+        <div class="step"><strong>2 · Curate your menu</strong><p>Chef Fady curates a menu for you and your occasion.</p></div>
+        <div class="step"><strong>3 · Dine at home</strong><p>Enjoy a private dinner or daily cooking, prepared in your own home in Dubai.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="images/chef-at-home.webp" alt="The private chef experience at home" width="640" height="853" loading="lazy"><figcaption>The private chef experience, right at your home.</figcaption></figure>
+        <figure><img src="images/chef-plating.webp" alt="Chef Fady plating a dish" width="640" height="853" loading="lazy"><figcaption>Plated with care, course by course.</figcaption></figure>
+        <figure><img src="images/charcuterie-board.webp" alt="Charcuterie board" width="640" height="853" loading="lazy"><figcaption>For sharing — rich, fresh, sweet and savoury.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" style="padding-top:0">
+    <div class="wrap">
+      <div class="booking">
+        <p class="eyebrow eyebrow-light">Book your private dinner</p>
+        <h2>Want a full-course meal at your home?</h2>
+        <p>Send a DM on Instagram — that is how every booking begins.</p>
+        <a class="btn btn-light" href="https://ig.me/m/the_culinary_uae">Message @the_culinary_uae on Instagram</a>
+        <p style="font-size:14px;margin:22px 0 0;color:#E8DCC0">Private dining &amp; daily cooking · Dubai, UAE</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#1E1C18">The Culinary by Chef Fady</strong> — Private chef, Dubai, UAE. Book via Instagram DM: @the_culinary_uae.</p>
+    <p>Preview concept prepared for The Culinary by Chef Fady. Photos: the business&rsquo;s own Instagram posts. No prices, phone number or email are published by the business, so none are shown here.</p>
+  </div>
+</footer>
+</body>
+</html>

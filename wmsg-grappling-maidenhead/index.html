@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windsor–Maidenhead Submission Grappling | BJJ, Submission Grappling &amp; Freestyle Wrestling in Maidenhead</title>
+<meta name="description" content="Windsor–Maidenhead Submission Grappling: Brazilian jiu jitsu, submission grappling and freestyle wrestling in Cox Green, Maidenhead. Beginners welcome. Class times and how to get started.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --mat:#111111; --mat2:#1e1e1e; --paper:#f5f1e8; --muted:#b8b3a8;
+    --red:#c1272d; --red-dark:#8f1c21; --line:#2e2e2e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--mat);color:var(--paper);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.65}
+  h1,h2,h3{font-family:Oswald,Arial,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.15;margin:0}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* Header */
+  header{border-bottom:3px solid var(--red);background:var(--mat)}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:Oswald,sans-serif;font-weight:700;font-size:20px;letter-spacing:.03em;text-transform:uppercase}
+  .brand span{color:var(--red)}
+  .topbar nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px;font-weight:600}
+  .topbar nav a{text-decoration:none}
+  .topbar nav a:hover,.topbar nav a:focus{text-decoration:underline}
+  .btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:600;padding:13px 26px;border-radius:4px;font-size:16px}
+  .btn:hover,.btn:focus{background:var(--red-dark)}
+  .btn-outline{background:transparent;border:2px solid var(--paper);color:var(--paper)}
+  /* Hero: source photo is 640x360 (16:9) so the 16:9 frame shows it in full, no crop */
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch}
+  .hero-text{padding:56px 32px 56px 0}
+  .eyebrow{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:14px;color:var(--muted);margin-bottom:14px}
+  .hero h1{font-size:clamp(38px,6vw,64px)}
+  .hero h1 em{font-style:normal;color:var(--red)}
+  .hero p{color:var(--muted);max-width:34em}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+  .hero-media{background:var(--mat2);display:flex;align-items:center;justify-content:center;padding:24px 0}
+  .hero-media img{width:100%;height:auto;max-height:540px;object-fit:contain;display:block}
+  /* Sections */
+  section{padding:56px 0}
+  section h2{font-size:clamp(28px,4vw,40px);margin-bottom:8px}
+  .lede{color:var(--muted);max-width:44em;margin:0 0 28px}
+  .band{background:var(--mat2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  /* Timetable */
+  .times{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .time{border:1px solid var(--line);border-top:4px solid var(--red);padding:20px;background:var(--mat)}
+  .time .day{font-family:Oswald,sans-serif;font-size:22px;text-transform:uppercase}
+  .time .hour{font-size:26px;font-weight:600;margin:4px 0}
+  .time p{color:var(--muted);font-size:15px;margin:0}
+  /* Disciplines */
+  .disc{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .disc article{border:1px solid var(--line);padding:24px;background:var(--mat2)}
+  .disc h3{font-size:22px;margin-bottom:8px}
+  .disc p{color:var(--muted);font-size:16px;margin:0}
+  /* Coach + beginners split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+  .split figure{margin:0;background:var(--mat2);padding:12px}
+  .split img{width:100%;height:auto;max-height:420px;object-fit:contain;display:block}
+  .split figcaption{color:var(--muted);font-size:14px;margin-top:8px}
+  .check{list-style:none;padding:0;margin:0}
+  .check li{padding-left:28px;position:relative;margin-bottom:10px}
+  .check li::before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:700}
+  /* Gallery: full-view — contain on dark ground, frame height capped, no cropping */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .gallery figure{margin:0;background:var(--mat2);padding:10px}
+  .gallery img{width:100%;height:320px;object-fit:contain;display:block}
+  .gallery figcaption{color:var(--muted);font-size:14px;margin-top:8px}
+  /* CTA */
+  .cta{text-align:center}
+  .cta p{color:var(--muted);max-width:40em;margin:0 auto 24px}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+  footer a{color:var(--paper)}
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr}
+    .hero-text{padding:36px 0 8px}
+    .hero-media{padding:0 0 24px}
+    .times{grid-template-columns:repeat(2,1fr)}
+    .disc,.split,.gallery{grid-template-columns:1fr}
+    .gallery img{height:300px}
+  }
+  @media (max-width:480px){
+    body{font-size:16px}
+    .times{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr}
+    .gallery img{height:auto;max-height:340px}
+    .topbar nav{gap:12px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">Windsor–Maidenhead <span>Submission Grappling</span></div>
+    <nav aria-label="Main">
+      <a href="#classes">Class Times</a>
+      <a href="#disciplines">Disciplines</a>
+      <a href="#beginners">Beginners</a>
+      <a href="#gallery">On the Mats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="hero-text">
+      <p class="eyebrow">Cox Green · Maidenhead · Berkshire</p>
+      <h1>Train hard.<br><em>Roll</em> honest.</h1>
+      <p>Brazilian jiu jitsu, submission grappling and freestyle wrestling in Maidenhead — coached by BJJ black belt Keith Ellis. The club is looking for more regular training partners and members, and complete beginners are welcome on the mats.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://ig.me/m/windsor_maidenhead_sub_grapple">Message us on Instagram</a>
+        <a class="btn btn-outline" href="#classes">See class times</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="images/mat-wednesday.webp" alt="Training partners grappling on the mats at a Wednesday session" width="640" height="360" loading="eager">
+    </div>
+  </div>
+
+  <section id="classes" class="band">
+    <div class="wrap">
+      <h2>Class Times</h2>
+      <p class="lede">Regular weekly sessions, as posted by the club. Times are taken from the club's own class posts — message the club to confirm before you travel.</p>
+      <div class="times">
+        <div class="time"><div class="day">Monday</div><div class="hour">6:00 pm</div><p>Evening class — the club's regular Monday session.</p></div>
+        <div class="time"><div class="day">Wednesday</div><div class="hour">Evening</div><p>Midweek session on the mats.</p></div>
+        <div class="time"><div class="day">Friday</div><div class="hour">6:30 am</div><p>Early-morning session for regulars.</p></div>
+        <div class="time"><div class="day">Sunday</div><div class="hour">11:00 am</div><p>Sunday session — a good first visit.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="disciplines">
+    <div class="wrap">
+      <h2>What We Train</h2>
+      <p class="lede">Three disciplines, one room — grappling for competition and for fitness, taught as a single programme.</p>
+      <div class="disc">
+        <article><h3>Brazilian Jiu Jitsu</h3><p>Ground grappling built on leverage, position and submissions — the core of the club's programme, coached to black-belt standard.</p></article>
+        <article><h3>Submission Grappling</h3><p>No-gi grappling with the full submission game: takedowns, control and finishes, trained live with regular partners.</p></article>
+        <article><h3>Freestyle Wrestling</h3><p>Takedowns, movement and mat control — the standing game that rounds out the grappling programme.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="coach" class="band">
+    <div class="wrap split">
+      <div>
+        <h2>Head Coach</h2>
+        <p><strong>Keith Ellis</strong> — BJJ black belt and ADCC European trials master champion, per the club's own bio. Coaching is hands-on: small-room sessions where regular training partners matter, which is why the club is actively looking for more of them.</p>
+        <p style="color:var(--muted)">This site is about the club, not one person — but if you're wondering who'll be coaching your first session, that's Keith.</p>
+      </div>
+      <figure>
+        <img src="images/training-camp.webp" alt="Club members training together at a training camp" width="640" height="480" loading="lazy">
+        <figcaption>Training camp — the club's own photo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="beginners">
+    <div class="wrap split">
+      <figure>
+        <img src="images/sunday-class.webp" alt="Sunday 11am class on the mats" width="640" height="853" loading="lazy">
+        <figcaption>Sunday 11am class — the club's own photo.</figcaption>
+      </figure>
+      <div>
+        <h2>New? You're Welcome Here</h2>
+        <p>The club's sessions are described as a mix "from complete beginners" — you don't need experience, fitness or a gi to come and see a session first.</p>
+        <ul class="check">
+          <li>Complete beginners welcome — sessions include people at every level.</li>
+          <li>Regular training partners wanted — if you stick around, you'll be part of the room, not a spectator.</li>
+          <li>No published membership price — ask the club directly (see below).</li>
+        </ul>
+        <p><a class="btn" href="https://ig.me/m/windsor_maidenhead_sub_grapple">Ask about your first session</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="band">
+    <div class="wrap">
+      <h2>On the Mats</h2>
+      <p class="lede">Real sessions, from the club's own Instagram — no stock photos.</p>
+      <div class="gallery">
+        <figure><img src="images/monday-class.webp" alt="Monday 6pm class training on the mats" width="640" height="360" loading="lazy"><figcaption>Monday class, 6pm</figcaption></figure>
+        <figure><img src="images/monday-class-2.webp" alt="Monday class grappling session" width="640" height="800" loading="lazy"><figcaption>Monday class</figcaption></figure>
+        <figure><img src="images/training-2.webp" alt="Training session on the mats" width="640" height="1138" loading="lazy"><figcaption>On the mats</figcaption></figure>
+        <figure><img src="images/training-3.webp" alt="Training session on the mats" width="640" height="1138" loading="lazy"><figcaption>On the mats</figcaption></figure>
+        <figure><img src="images/training-4.webp" alt="Training session on the mats" width="640" height="1138" loading="lazy"><figcaption>On the mats</figcaption></figure>
+        <figure><img src="images/training-5.webp" alt="Training session on the mats" width="640" height="800" loading="lazy"><figcaption>On the mats</figcaption></figure>
+        <figure><img src="images/training-6.webp" alt="Training session on the mats" width="640" height="800" loading="lazy"><figcaption>On the mats</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta">
+    <div class="wrap">
+      <h2>Get Started</h2>
+      <p>The club has no published phone number or email — Instagram DM is how to reach them. Ask about your first session, what to bring, or the next class time.</p>
+      <p><a class="btn" href="https://ig.me/m/windsor_maidenhead_sub_grapple">Message @windsor_maidenhead_sub_grapple</a></p>
+      <p style="color:var(--muted);font-size:15px">Windsor–Maidenhead Submission Grappling · Cox Green, Maidenhead, Berkshire · <a href="https://www.instagram.com/windsor_maidenhead_sub_grapple/">@windsor_maidenhead_sub_grapple</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Preview site built from the club's own published Instagram posts. No street address, phone number, email, price or review is published here because the club has not published one. Class times are as posted by the club and should be confirmed by message before travelling.</p>
+  </div>
+</footer>
+</body>
+</html>

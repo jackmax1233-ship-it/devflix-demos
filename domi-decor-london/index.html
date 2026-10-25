@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domi Decor — Painting &amp; Decorating, London</title>
+<meta name="description" content="Domi Maintenance Ltd (Domi Decor): painting and decorating in London. Interior and exterior work, with free, no-obligation quotations. Get in touch on Instagram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF6F0; --cream-2:#F1EDE3; --sage-pale:#E8E6DC;
+    --ink:#23281F; --muted:#5C6156; --green:#1E3A2A;
+    --footer-muted:#C9CFC2; --line:#D8D2C4; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.65}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+  /* ---------- header ---------- */
+  header.site{border-bottom:1px solid var(--line);background:var(--cream)}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+  .brand{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:30px;letter-spacing:.01em;line-height:1.1}
+  .brand small{display:block;font-family:"Inter",sans-serif;font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+  .btn{display:inline-block;background:var(--green);color:var(--cream);text-decoration:none;
+    font-weight:600;font-size:16px;padding:13px 22px;border-radius:6px;line-height:1.3;border:2px solid var(--green)}
+  .btn:hover,.btn:focus-visible{background:#16301f;outline:3px solid #9DB8A4;outline-offset:2px}
+  .btn.ghost{background:transparent;color:var(--green)}
+  .btn.ghost:hover,.btn.ghost:focus-visible{background:var(--green);color:var(--cream)}
+  /* ---------- hero ---------- */
+  .hero{padding:52px 0 44px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin:0 0 14px}
+  h1{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:52px;line-height:1.08;margin:0 0 18px;letter-spacing:-.01em}
+  .lede{font-size:19px;line-height:1.6;margin:0 0 12px}
+  .facts{margin:0 0 24px;padding:0;list-style:none;color:var(--ink)}
+  .facts li{padding-left:22px;position:relative;margin:8px 0}
+  .facts li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--green)}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-figure{margin:0;width:min(315px,86vw);justify-self:center}
+  .hero-figure .frame{aspect-ratio:9/16;max-height:560px;background:var(--sage-pale);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .hero-figure img{width:100%;height:100%;object-fit:contain}
+  figcaption{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.5;text-align:center}
+  /* ---------- swatches ---------- */
+  .swatches{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}
+  .swatches-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .swatches p{margin:0;font-size:15px;color:var(--muted);min-width:220px}
+  .sw{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);flex:none}
+  /* ---------- sections ---------- */
+  section.block{padding:56px 0}
+  section.block h2{font-family:"Fraunces",Georgia,serif;font-size:36px;line-height:1.15;margin:0 0 12px}
+  .section-intro{max-width:640px;margin:0 0 28px;color:var(--muted);font-size:18px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .card{border:1px solid var(--line);border-radius:10px;padding:26px;background:var(--white)}
+  .card h3{font-family:"Fraunces",Georgia,serif;font-size:24px;margin:0 0 8px;line-height:1.25}
+  .card p{margin:0;color:var(--muted)}
+  .card p strong{color:var(--ink)}
+  /* ---------- process / prep ---------- */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .split figure{margin:0}
+  .split .frame{height:340px;background:var(--sage-pale);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .split .frame img{height:100%;width:auto;max-width:100%;object-fit:contain}
+  .steps{list-style:none;margin:0;padding:0;counter-reset:step}
+  .steps li{counter-increment:step;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .steps li:last-child{border-bottom:0}
+  .steps .num{width:40px;height:40px;border-radius:50%;background:var(--green);color:var(--cream);
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px}
+  .steps h3{margin:0 0 2px;font-size:18px}
+  .steps p{margin:0;color:var(--muted);font-size:16px}
+  /* ---------- gallery ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .gallery figure{margin:0}
+  .gallery .frame{height:340px;background:var(--sage-pale);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .gallery .frame img{height:100%;width:auto;max-width:100%;object-fit:contain}
+  .gallery figcaption{text-align:left}
+  .gallery figcaption strong{display:block;color:var(--ink);font-size:16px}
+  .note{font-size:15px;color:var(--muted);margin:26px 0 0;max-width:720px}
+  /* ---------- CTA band ---------- */
+  .band{background:var(--green);color:var(--cream);padding:52px 0}
+  .band h2{font-family:"Fraunces",Georgia,serif;font-size:36px;line-height:1.15;margin:0 0 10px}
+  .band p{margin:0 0 22px;color:var(--footer-muted);max-width:600px;font-size:18px}
+  .band .btn{background:var(--cream);color:var(--green);border-color:var(--cream)}
+  .band .btn:hover,.band .btn:focus-visible{background:#FFFFFF;outline-color:#9DB8A4}
+  /* ---------- footer ---------- */
+  footer.site{background:var(--green);color:var(--cream);border-top:1px solid #2E4A38;padding:28px 0 32px}
+  footer.site p{margin:6px 0;color:var(--footer-muted);font-size:15px}
+  footer.site a{color:var(--cream)}
+  footer.site .fname{font-family:"Fraunces",Georgia,serif;font-size:22px;color:var(--cream)}
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .hero-grid,.split{grid-template-columns:1fr;gap:32px}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    h1{font-size:44px}
+    .hero-figure{justify-self:center}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    .wrap{padding:0 18px}
+    .hero{padding:36px 0 32px}
+    h1{font-size:38px}
+    section.block h2,.band h2{font-size:30px}
+    section.block{padding:40px 0}
+    .cols,.gallery{grid-template-columns:1fr}
+    .brand{font-size:26px}
+    .topbar .btn{padding:11px 16px;font-size:15px}
+    .cta-row .btn{width:100%;text-align:center}
+    .split .frame,.gallery .frame{height:340px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap topbar">
+    <div class="brand">Domi Decor<small>Painting &amp; Decorating · London</small></div>
+    <a class="btn" href="https://ig.me/m/domidecor_london">Message on Instagram</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Domi Maintenance Ltd · London</p>
+        <h1>An extremely high standard of painting &amp; decorating.</h1>
+        <p class="lede">Interior and exterior painting and decorating for homes across London — from a single room to a full-house refresh.</p>
+        <ul class="facts">
+          <li><strong>Interior &amp; exterior</strong> painting and decorating</li>
+          <li><strong>9+ years</strong> in painting &amp; decorating</li>
+          <li><strong>Free, no-obligation quotations</strong></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn" href="https://ig.me/m/domidecor_london">Get a free quotation</a>
+          <a class="btn ghost" href="#work">See recent work</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="frame">
+          <img src="images/reel-2026-10-22-barnes.webp" alt="Finished living room with freshly painted pale walls, a fireplace and built-in shelving" width="360" height="640" loading="eager">
+        </div>
+        <figcaption>Finished living room, Barnes — from Domi Decor's recent work.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SWATCHES -->
+  <div class="swatches" aria-label="Colours seen in recent work">
+    <div class="wrap swatches-row">
+      <p>Colours from recent rooms:</p>
+      <span class="sw" style="background:#E9D9CE" title="Pale pink"></span>
+      <span class="sw" style="background:#F4EFE6" title="Warm white"></span>
+      <span class="sw" style="background:#C9C2B4" title="Warm grey"></span>
+      <span class="sw" style="background:#23281F" title="Charcoal"></span>
+      <span class="sw" style="background:#7A8B6F" title="Soft sage"></span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="block">
+    <div class="wrap">
+      <h2>What Domi Decor does</h2>
+      <p class="section-intro">Painting and decorating, inside and out — carried out to the high standard the business is known for on Instagram.</p>
+      <div class="cols">
+        <article class="card">
+          <h3>Interior painting &amp; decorating</h3>
+          <p>Living rooms, kitchens, bathrooms, bedrooms, hallways and staircases — freshly painted walls, woodwork and finishes, as seen in recent work.</p>
+        </article>
+        <article class="card">
+          <h3>Exterior painting &amp; decorating</h3>
+          <p>Exterior woodwork and house fronts, prepared and painted — including the terraced-house exterior work photographed in Barnes.</p>
+        </article>
+        <article class="card">
+          <h3>Preparation done properly</h3>
+          <p>Masking, filling and priming before the finish goes on — the groundwork visible across Domi Decor's recent project videos.</p>
+        </article>
+        <article class="card">
+          <h3>Free, no-obligation quotations</h3>
+          <p><strong>Get in touch to get booked in.</strong> Message Domi Decor on Instagram, describe the room or exterior, and arrange a free quotation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT WORK -->
+  <section class="block" id="work" style="background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Recent work</h2>
+      <p class="section-intro">Stills from Domi Decor's own Instagram reels — finished rooms and work in progress, exactly as posted.</p>
+      <div class="gallery">
+        <figure>
+          <div class="frame"><img src="images/reel-2026-10-21-richmond.webp" alt="Finished open-plan kitchen with black cabinets, a large island and herringbone wood flooring" width="360" height="640" loading="lazy"></div>
+          <figcaption><strong>Finished kitchen</strong>Richmond</figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="images/reel-2026-10-21-c.webp" alt="Finished bathroom with a built-in bath, walk-in shower and grey plaster-effect walls" width="360" height="640" loading="lazy"></div>
+          <figcaption><strong>Finished bathroom</strong>Interior</figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="images/reel-2026-10-01-barnes.webp" alt="Exterior of a terraced house with ladders up to the upper windows during exterior painting preparation" width="360" height="640" loading="lazy"></div>
+          <figcaption><strong>Exterior painting in progress</strong>Barnes</figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="images/reel-2026-10-07.webp" alt="Room being painted in a warm peach colour, with paint buckets and decorators at work" width="360" height="640" loading="lazy"></div>
+          <figcaption><strong>Room being painted</strong>Interior</figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="images/reel-2026-09-24.webp" alt="Finished staircase with white risers and restored wooden treads" width="360" height="640" loading="lazy"></div>
+          <figcaption><strong>Finished staircase</strong>Interior</figcaption>
+        </figure>
+        <figure>
+          <div class="frame"><img src="images/reel-2026-09-23.webp" alt="Staircase restoration in progress, with blue masking tape protecting the treads" width="360" height="640" loading="lazy"></div>
+          <figcaption><strong>Staircase restoration in progress</strong>Interior</figcaption>
+        </figure>
+      </div>
+      <p class="note">Area names shown only where the original Instagram post was tagged with that area. The reel stills above are Domi Decor's own photos; the small play symbol visible on some stills is part of Instagram's reel cover image, not added here.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT + PROCESS -->
+  <section class="block">
+    <div class="wrap split">
+      <div>
+        <h2>About Domi Decor</h2>
+        <p>Domi Maintenance Ltd — known as Domi Decor — is a London painting and decorating business run by John Marku, with 9+ years in the trade. The business's Instagram, <a href="https://www.instagram.com/domidecor_london/">@domidecor_london</a>, is where its recent work is shown, including homes in Barnes, Mortlake &amp; Sheen and Richmond.</p>
+        <p>There is currently no website and no published phone number or email address — Instagram is the way to get in touch.</p>
+        <ol class="steps">
+          <li><span class="num">1</span><div><h3>Get in touch</h3><p>Message Domi Decor on Instagram.</p></div></li>
+          <li><span class="num">2</span><div><h3>Free, no-obligation quotation</h3><p>Describe the job and arrange a quotation.</p></div></li>
+          <li><span class="num">3</span><div><h3>Preparation &amp; painting</h3><p>Masking, filling, priming and painting.</p></div></li>
+          <li><span class="num">4</span><div><h3>A finished room</h3><p>Clean lines, smooth walls, ready to live in.</p></div></li>
+        </ol>
+      </div>
+      <figure>
+        <div class="frame"><img src="images/reel-2026-10-08.webp" alt="Paint and primer cans ready for a decorating job" width="640" height="640" loading="lazy"></div>
+        <figcaption>Materials ready for a job — from Domi Decor's recent posts.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="band">
+    <div class="wrap">
+      <h2>Get in touch to get booked in.</h2>
+      <p>Interior or exterior, one room or a whole house — message Domi Decor on Instagram for a free, no-obligation quotation.</p>
+      <a class="btn" href="https://ig.me/m/domidecor_london">Message @domidecor_london</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="fname">Domi Decor</p>
+    <p>Domi Maintenance Ltd · Painting &amp; decorating · London</p>
+    <p>Instagram: <a href="https://www.instagram.com/domidecor_london/">@domidecor_london</a> · Contact via Instagram DM — no phone or email is published.</p>
+    <p>Photos on this page are Domi Decor's own Instagram work. This preview site was prepared to show how a website could present that work.</p>
+  </div>
+</footer>
+
+</body>
+</html>

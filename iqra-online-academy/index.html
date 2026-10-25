@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iqra Online Academy — Online Quran &amp; Tuition Classes for Kids and Females</title>
+<meta name="description" content="Iqra Online Academy offers online Nazra Quran and tuition classes for kids and females. Admissions open — learn from home.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FDF8EF; --sand:#E8DCC3; --sand-soft:#F5EDD8;
+    --teal:#0E4A47; --teal-deep:#0B3B39; --teal-mid:#14524F;
+    --ink:#1C2B29; --muted:#5A6B68; --gold:#8A6D1B; --white:#FFFFFF;
+    --line:#D8CDB2;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;font-size:17px}
+  img{max-width:100%;display:block}
+  a{color:var(--teal)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  /* Header */
+  header{position:sticky;top:0;background:var(--cream);border-bottom:1px solid var(--line);z-index:10}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.35rem;color:var(--teal);text-decoration:none;line-height:1.2}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .nav-links{display:flex;gap:22px;flex-wrap:wrap}
+  .nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+  .nav-links a:hover,.nav-links a:focus{text-decoration:underline;text-underline-offset:3px}
+  .btn{display:inline-block;background:var(--teal);color:var(--white);text-decoration:none;font-weight:600;padding:12px 22px;border-radius:8px;border:2px solid var(--teal);line-height:1.3;text-align:center}
+  .btn:hover,.btn:focus{background:var(--teal-deep);border-color:var(--teal-deep)}
+  .btn-outline{background:transparent;color:var(--teal)}
+  .btn-outline:hover,.btn-outline:focus{background:var(--teal);color:var(--white)}
+  .btn-gold{background:var(--white);color:var(--teal-deep);border-color:var(--white)}
+  /* Hero */
+  .hero{padding:52px 0 44px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+  h1{font-family:'Fraunces',Georgia,serif;font-size:2.9rem;line-height:1.12;color:var(--teal);margin:0 0 16px;font-weight:700}
+  .lede{font-size:1.15rem;color:var(--ink);margin:0 0 24px;max-width:34rem}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-note{color:var(--muted);font-size:.95rem;margin:20px 0 0}
+  .hero-note a{color:var(--teal);font-weight:600}
+  .hero-media{background:var(--sand-soft);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .hero-media figure{margin:0}
+  /* Portrait flyer: natural ratio 640x853 (0.75) -> 3/4 frame, contain, full text visible */
+  .hero-media img{width:100%;aspect-ratio:3/4;object-fit:contain;background:var(--sand-soft);border-radius:8px;max-height:560px;margin:0 auto}
+  .hero-media figcaption{color:var(--muted);font-size:.85rem;text-align:center;padding-top:10px}
+  /* Strip */
+  .strip{background:var(--teal);color:var(--white)}
+  .strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:22px 0}
+  .strip-item{font-weight:600;font-size:1rem;line-height:1.4}
+  .strip-item span{display:block;font-size:.82rem;font-weight:500;color:var(--sand);margin-top:2px}
+  /* Sections */
+  section{padding:56px 0}
+  h2{font-family:'Fraunces',Georgia,serif;font-size:2rem;line-height:1.2;color:var(--teal);margin:0 0 12px}
+  .section-lede{color:var(--muted);max-width:38rem;margin:0 0 30px;font-size:1.05rem}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  /* Square flyers: natural 640x640 -> 1/1 frame, contain */
+  .card img{width:100%;aspect-ratio:1/1;object-fit:contain;background:var(--sand-soft);max-height:340px}
+  .card-body{padding:22px 24px 26px}
+  .card-body h3{font-family:'Fraunces',Georgia,serif;font-size:1.4rem;color:var(--teal);margin:0 0 8px;line-height:1.3}
+  .card-body p{margin:0 0 16px;color:var(--ink)}
+  .who{background:var(--sand-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .who-box{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:26px 28px}
+  .who-box h3{font-family:'Fraunces',Georgia,serif;font-size:1.35rem;color:var(--teal);margin:0 0 8px}
+  .who-box p{margin:0;color:var(--ink)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .step{border-top:3px solid var(--gold);padding-top:16px}
+  .step-num{font-family:'Fraunces',Georgia,serif;font-size:1.6rem;color:var(--teal);font-weight:700}
+  .step h3{font-size:1.15rem;color:var(--teal);margin:6px 0 6px}
+  .step p{margin:0;color:var(--ink)}
+  /* Gallery: portrait flyers 640x~840 -> 3/4 frame, contain, full view */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .gallery figure{margin:0;background:var(--sand-soft);border:1px solid var(--line);border-radius:12px;padding:10px}
+  .gallery img{width:100%;aspect-ratio:3/4;object-fit:contain;background:var(--sand-soft);border-radius:6px;max-height:340px}
+  .gallery figcaption{color:var(--muted);font-size:.85rem;text-align:center;padding-top:8px}
+  /* CTA band */
+  .cta-band{background:var(--teal);color:var(--white);padding:52px 0}
+  .cta-band h2{color:var(--white)}
+  .cta-band p{color:var(--sand);max-width:36rem;margin:0 0 24px;font-size:1.05rem}
+  .cta-band .phone{font-size:1.25rem;font-weight:700;color:var(--white);text-decoration:none}
+  footer{background:var(--teal-deep);color:var(--white);padding:34px 0}
+  footer p{margin:0 0 8px;color:var(--sand)}
+  footer a{color:var(--white);font-weight:600}
+  .foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  /* Responsive */
+  @media (max-width:768px){
+    body{font-size:16px}
+    h1{font-size:2.2rem}
+    h2{font-size:1.65rem}
+    .hero{padding:36px 0 32px}
+    .hero-grid{grid-template-columns:1fr;gap:28px}
+    .strip-grid{grid-template-columns:1fr 1fr}
+    .cards,.who-grid{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .nav-links{width:100%;gap:16px}
+    section{padding:40px 0}
+  }
+  @media (max-width:390px){
+    .wrap{padding:0 16px}
+    h1{font-size:1.95rem}
+    .strip-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr}
+    .cta-row .btn{width:100%}
+    .brand{font-size:1.2rem}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">Iqra Online Academy<small>Online Quran &amp; Tuition</small></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#courses">Classes</a>
+      <a href="#who">Who It's For</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="https://wa.me/923200449218">WhatsApp Us</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Admissions Open</p>
+        <h1>Quran &amp; tuition classes, from home.</h1>
+        <p class="lede">Iqra Online Academy offers online Nazra Quran and tuition classes — for kids and females only. No travelling, no waiting: students learn from home, online.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://wa.me/923200449218">Message on WhatsApp</a>
+          <a class="btn btn-outline" href="https://ig.me/m/92iqraacademy">Message on Instagram</a>
+        </div>
+        <p class="hero-note">Admissions are open. You can also reach the academy on WhatsApp at <a href="https://wa.me/923200449218">+92 320 0449218</a>.</p>
+      </div>
+      <div class="hero-media">
+        <figure>
+          <img src="images/hero-admissions.webp" alt="Iqra Online Academy admissions announcement flyer" width="640" height="853" loading="eager">
+          <figcaption>Admissions announcement from the academy.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap strip-grid">
+      <div class="strip-item">For kids &amp; females only<span>Classes designed for children and female students.</span></div>
+      <div class="strip-item">Fully online<span>Learn from home, wherever you are.</span></div>
+      <div class="strip-item">Nazra Quran<span>Online Quran classes.</span></div>
+      <div class="strip-item">Tuition classes<span>Online academic tuition.</span></div>
+    </div>
+  </div>
+
+  <section id="courses">
+    <div class="wrap">
+      <h2>Classes offered</h2>
+      <p class="section-lede">Two kinds of online classes — Quran learning and academic tuition — both taught online so students can learn from home.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="images/quran-classes.webp" alt="Iqra Online Academy online Quran classes announcement" width="640" height="640" loading="lazy">
+          <div class="card-body">
+            <h3>Nazra Quran</h3>
+            <p>Online Quran classes for kids and females, taught from home. Message on WhatsApp to ask about classes and enrolment.</p>
+            <a class="btn" href="https://wa.me/923200449218">Ask About Quran Classes</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/tuition-online.webp" alt="Iqra Online Academy online tuition announcement" width="640" height="853" loading="lazy">
+          <div class="card-body">
+            <h3>Tuition Classes</h3>
+            <p>Online tuition classes for kids and females, taught from home. Message on WhatsApp to ask about subjects, timings and enrolment.</p>
+            <a class="btn" href="https://wa.me/923200449218">Ask About Tuition Classes</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="who" class="who">
+    <div class="wrap">
+      <h2>Who it's for</h2>
+      <p class="section-lede">The academy teaches kids and females only — a clear, focused setting for families looking for online learning at home.</p>
+      <div class="who-grid">
+        <div class="who-box">
+          <h3>Kids</h3>
+          <p>Online Nazra Quran and tuition classes for children, learned from home with family nearby.</p>
+        </div>
+        <div class="who-box">
+          <h3>Females</h3>
+          <p>Online Nazra Quran and tuition classes for female students, learned from home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admissions">
+    <div class="wrap">
+      <h2>Admissions</h2>
+      <p class="section-lede">Admissions are open. Enrolment runs through WhatsApp and Instagram DM — the academy's own published contact routes.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Message the academy</h3>
+          <p>Send a message on WhatsApp or Instagram DM saying which class you're interested in.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Get the class details</h3>
+          <p>The academy replies with the details you need to get started.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Learn from home</h3>
+          <p>Join your online class from home — no travelling needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Announcements from the academy">
+    <div class="wrap">
+      <h2>From the academy</h2>
+      <p class="section-lede">Recent announcements from the academy's own Instagram page.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/admissions-open.webp" alt="Iqra Online Academy admissions open announcement" width="640" height="640" loading="lazy">
+          <figcaption>Admissions open — learn from home</figcaption>
+        </figure>
+        <figure>
+          <img src="images/classes-1.webp" alt="Iqra Online Academy class announcement" width="640" height="640" loading="lazy">
+          <figcaption>Online classes</figcaption>
+        </figure>
+        <figure>
+          <img src="images/academy-flyer.webp" alt="Iqra Online Academy flyer with contact number" width="640" height="800" loading="lazy">
+          <figcaption>Academy announcement</figcaption>
+        </figure>
+        <figure>
+          <img src="images/classes-2.webp" alt="Iqra Online Academy class announcement" width="640" height="832" loading="lazy">
+          <figcaption>Online classes</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="contact">
+    <div class="wrap">
+      <h2>Admissions open — message today</h2>
+      <p>Want a place for your child, or for yourself? Message Iqra Online Academy on WhatsApp or Instagram and ask about enrolment.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://wa.me/923200449218">WhatsApp: +92 320 0449218</a>
+        <a class="btn btn-outline" style="color:#fff;border-color:#fff" href="https://ig.me/m/92iqraacademy">Instagram: @92iqraacademy</a>
+      </div>
+      <p style="margin-top:20px"><a class="phone" href="https://wa.me/923200449218">+92 320 0449218</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <p><strong style="color:#fff">Iqra Online Academy</strong> — Online Quran &amp; Tuition Academy</p>
+      <p>Online classes · Learn from home · Pakistan</p>
+    </div>
+    <div>
+      <p>WhatsApp: <a href="https://wa.me/923200449218">+92 320 0449218</a></p>
+      <p>Instagram: <a href="https://ig.me/m/92iqraacademy">@92iqraacademy</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
