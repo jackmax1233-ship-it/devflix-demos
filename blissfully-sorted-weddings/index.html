@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blissfully Sorted Weddings — Wedding Coordination across Northern Ireland</title>
+<meta name="description" content="Blissfully Sorted Weddings: wedding planning and coordination in Lisburn, Co Antrim, across Northern Ireland. Bridal dressing, day coordination and final-weeks coordination. Enquire about your date on Instagram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FDFBF7; --ink:#2B2622; --sage:#3E4A38; --stone:#EFE9DC;
+    --muted:#6B5F55; --line:#DDD5C6; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ivory);color:var(--ink);
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.65}
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--sage)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px;width:100%}
+  /* Header */
+  header{border-bottom:1px solid var(--line);background:var(--ivory)}
+  .nav{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:18px 0}
+  .brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:600;
+    line-height:1.15;color:var(--ink);text-decoration:none}
+  .brand small{display:block;font-family:"Inter",sans-serif;font-size:12px;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .nav-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0;padding:0;list-style:none}
+  .nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+  .nav-links a:hover,.nav-links a:focus{text-decoration:underline}
+  .btn{display:inline-block;background:var(--sage);color:var(--ivory);border:2px solid var(--sage);
+    padding:13px 26px;border-radius:3px;text-decoration:none;font-weight:600;font-size:16px;line-height:1.4}
+  .btn:hover,.btn:focus{background:var(--ink);border-color:var(--ink);color:var(--ivory)}
+  .btn-light{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn-light:hover,.btn-light:focus{background:var(--ink);color:var(--ivory)}
+  /* Hero — editorial split, no text over the photo */
+  .hero{padding:56px 0 48px}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin:0 0 14px}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:52px;line-height:1.08;font-weight:600;margin:0 0 18px}
+  h1 em{font-style:italic;font-weight:500}
+  .lede{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:56ch}
+  .hero-img{max-width:520px;width:100%;margin:0 auto;border:1px solid var(--line)}
+  .hero-img img{width:100%;height:auto;aspect-ratio:1/1}
+  figcaption{font-size:14px;color:var(--muted);padding:10px 0 0;line-height:1.5}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .cta-note{font-size:14px;color:var(--muted);margin:0}
+  /* Sections */
+  section{padding:52px 0}
+  h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:38px;line-height:1.15;font-weight:600;margin:0 0 12px}
+  .section-intro{color:var(--muted);max-width:62ch;margin:0 0 30px}
+  .rule{width:56px;height:2px;background:var(--sage);margin:0 0 18px}
+  /* Services */
+  .services{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cards{display:grid;grid-template-columns:1fr;gap:20px}
+  .card{border:1px solid var(--line);padding:28px 26px;background:var(--ivory)}
+  .card h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:27px;line-height:1.2;margin:0 0 10px}
+  .card p{margin:0;color:var(--muted)}
+  /* Offer */
+  .offer{background:var(--stone)}
+  .offer-box{border:1px solid var(--line);background:var(--ivory);padding:32px 28px;max-width:760px}
+  .offer-box .price{font-family:"Cormorant Garamond",Georgia,serif;font-size:46px;line-height:1.1;margin:0 0 10px}
+  .offer-box p{margin:0 0 14px;color:var(--muted)}
+  .offer-box p:last-of-type{margin-bottom:22px}
+  .offer-meta{font-size:14px;color:var(--muted)}
+  /* Gallery — natural-ratio images, never cropped */
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .gallery-grid figure{margin:0}
+  .gallery-grid img{width:100%;height:auto;border:1px solid var(--line)}
+  .gallery-wide{max-width:600px;margin:24px auto 0}
+  .gallery-wide img{width:100%;height:auto;border:1px solid var(--line)}
+  /* Steps + contact */
+  .steps{display:grid;grid-template-columns:1fr;gap:20px}
+  .step{display:flex;gap:16px}
+  .step-num{font-family:"Cormorant Garamond",Georgia,serif;font-size:34px;line-height:1;color:var(--sage);min-width:44px}
+  .step h3{font-size:18px;margin:2px 0 6px}
+  .step p{margin:0;color:var(--muted)}
+  .contact{background:var(--ink);color:var(--ivory)}
+  .contact h2{color:var(--ivory)}
+  .contact p{color:#E8E2D6;max-width:60ch}
+  .contact .btn{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+  .contact .btn:hover,.contact .btn:focus{background:var(--stone);border-color:var(--stone);color:var(--ink)}
+  footer{border-top:1px solid var(--line);padding:28px 0;font-size:14px;color:var(--muted);line-height:1.6}
+  footer p{margin:0 0 8px;max-width:78ch}
+  /* Reveal: content visible without JS (gated behind .js) */
+  .js .reveal{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+  .js .reveal.visible{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{transition:none;opacity:1;transform:none}
+  }
+  @media (min-width:768px){
+    .hero-grid{grid-template-columns:1.05fr .95fr;gap:44px}
+    h1{font-size:60px}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .steps{grid-template-columns:repeat(3,1fr)}
+    .gallery-grid{grid-template-columns:repeat(4,1fr)}
+    section{padding:64px 0}
+  }
+  @media (max-width:390px){
+    h1{font-size:42px}
+    h2{font-size:32px}
+    body{font-size:16px}
+    .gallery-grid{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">Blissfully Sorted Weddings
+      <small>Wedding Coordination &middot; Northern Ireland</small></a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#offer">Current offer</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#enquire">Enquire</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Lisburn, Co Antrim &middot; Across Northern Ireland</p>
+        <h1>You planned it. <em>Now enjoy it.</em></h1>
+        <p class="lede">Blissfully Sorted Weddings is a wedding coordination service. The little details, the supplier timings, the behind-the-scenes moments are looked after, so you can be fully present for the moments you have been looking forward to.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://www.instagram.com/blissfullysorted.weddings/">Enquire about your date</a>
+          <p class="cta-note">Enquiries via Instagram DM.</p>
+        </div>
+      </div>
+      <figure class="hero-img reveal">
+        <img src="images/hero-bride-sister.webp" alt="A bride laughing beside her sister, both holding autumn bouquets, on a garden path" width="640" height="640" fetchpriority="high">
+        <figcaption>A wedding day, enjoyed — not managed — by the couple.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="rule"></div>
+      <h2>Coordination, not decoration</h2>
+      <p class="section-intro">Blissfully Sorted Weddings coordinates the day; it is a planning and coordination service, not a d&eacute;cor or floristry service. Three services are listed:</p>
+      <div class="cards">
+        <article class="card reveal">
+          <h3>Bridal dressing</h3>
+          <p>Help on the wedding morning, so getting ready is about getting ready — not worrying about getting ready.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Day coordination</h3>
+          <p>Someone bringing everything together on the day itself: supplier timings, details and behind-the-scenes moments, handled for you.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Final-weeks coordination</h3>
+          <p>Support in the final weeks before the wedding, tying the plans together before the day arrives.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer" id="offer">
+    <div class="wrap">
+      <div class="rule"></div>
+      <h2>Current offer</h2>
+      <div class="offer-box reveal">
+        <p class="price">&pound;100 off the next 5 bookings</p>
+        <p>For weddings in 2026, 2027 and 2028, as advertised in the 12 October 2026 Instagram post. Availability is limited to the next five bookings on that offer.</p>
+        <a class="btn" href="https://www.instagram.com/blissfullysorted.weddings/">DM to enquire</a>
+        <p class="offer-meta">Offer details are as stated in that post; please confirm availability for your date when you enquire.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="rule"></div>
+      <h2>From recent weddings</h2>
+      <p class="section-intro">Photographs from Blissfully Sorted Weddings&rsquo; own Instagram posts — coordination work, wedding mornings and the details of the day.</p>
+      <div class="gallery-grid">
+        <figure class="reveal">
+          <img src="images/gallery-cake.webp" alt="A heart-shaped wedding cake piped in cream with pale blue ribbons, reading Just Married" width="640" height="640" loading="lazy">
+          <figcaption>The details of the day.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="images/gallery-wedding-morning.webp" alt="Bridal dressing help on the wedding morning, from the coordinator's own post" width="640" height="640" loading="lazy">
+          <figcaption>Wedding-morning help, getting the dress ready.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="images/gallery-couple.webp" alt="A bride and groom looking at each other in a black-and-white photograph" width="640" height="640" loading="lazy">
+          <figcaption>The moments you have been looking forward to.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="images/gallery-venue-exit.webp" alt="A bride leaving a stone venue building, helped with her dress and bouquet" width="640" height="640" loading="lazy">
+          <figcaption>Stepping out, dress and details in hand.</figcaption>
+        </figure>
+      </div>
+      <figure class="gallery-wide reveal">
+        <img src="images/gallery-reception-wide.webp" alt="A reception room set with long tables, wooden chairs and place settings under draped ceiling fabric" width="640" height="360" loading="lazy">
+        <figcaption>A reception room, set and ready before guests arrive.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="enquire">
+    <div class="wrap">
+      <div class="rule"></div>
+      <h2>How enquiring works</h2>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step-num">01</span>
+          <div><h3>Send a DM</h3><p>Enquiries go through Instagram direct message — there is currently no website booking form.</p></div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">02</span>
+          <div><h3>Mention your date</h3><p>Enquire about your date, as the Instagram page invites couples to do.</p></div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">03</span>
+          <div><h3>Confirm the offer</h3><p>Ask whether one of the five &pound;100-off bookings is still available for your wedding.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <h2>Enquire about your date</h2>
+      <p>Blissfully Sorted Weddings currently takes enquiries via Instagram DM only. The business is also listed on Hitched.co.uk, a third-party wedding directory — that listing is not its own website.</p>
+      <p><a class="btn" href="https://www.instagram.com/blissfullysorted.weddings/">Message @blissfullysorted.weddings on Instagram</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Blissfully Sorted Weddings &middot; Wedding coordination across Northern Ireland &middot; Instagram: @blissfullysorted.weddings</p>
+    <p>Preview concept made by Devflix. This is a concept preview only — the final site is subject to the business&rsquo;s approval, and all service and offer details remain as stated by the business itself.</p>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, {threshold: 0.12});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('visible'); });
+  }
+</script>
+</body>
+</html>

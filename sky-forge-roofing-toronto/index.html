@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sky Forge Roofing — Toronto, Ontario | Metal, Shingle, Flat &amp; Standing-Seam Roofing</title>
+<meta name="description" content="Sky Forge Roofing, Toronto, Ontario. Metal, shingle, flat and standing-seam roofing, shown in finished work from their own Instagram. Preview concept by Devflix.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F3EC; --paper2:#EFE9DD; --ink:#16181B; --ink2:#1F2326;
+    --muted:#3F444A; --rust:#9A3412; --rust-dark:#7C2D12; --line:#D8D0BF; --on-dark:#D9D2C4;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--rust-dark)}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding-left:20px;padding-right:20px}
+  /* Top bar + header */
+  .topbar{background:var(--ink);color:var(--on-dark);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+  .topbar .wrap{padding-top:9px;padding-bottom:9px}
+  header.site{border-bottom:2px solid var(--ink);background:var(--paper)}
+  .head{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+  .brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:clamp(26px,4vw,36px);line-height:1.05;color:var(--ink);text-decoration:none}
+  .brand span{display:block;font-family:Inter,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rust-dark);font-weight:700}
+  nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+  nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+  nav a:hover,nav a:focus{text-decoration:underline}
+  .btn{display:inline-block;background:var(--rust);color:#fff !important;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:4px}
+  .btn:hover,.btn:focus{background:var(--rust-dark)}
+  .btn-dark{background:var(--ink);color:var(--paper) !important}
+  /* Hero */
+  .hero{padding:44px 0 48px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;gap:32px}
+  .eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--rust-dark);font-weight:700;margin:0 0 14px}
+  h1{font-family:Fraunces,Georgia,serif;font-size:clamp(38px,6vw,64px);line-height:1.02;margin:0 0 18px;letter-spacing:-.01em}
+  .lede{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:34em;margin:0 0 24px}
+  .hero-figure{margin:0;max-width:420px;width:100%}
+  .hero-figure .frame{aspect-ratio:3/4;max-height:560px;width:100%;overflow:hidden;background:var(--ink2);border:3px solid var(--ink)}
+  .hero-figure img{width:100%;height:100%;object-fit:cover}
+  figcaption{font-size:14px;color:var(--muted);padding-top:10px;line-height:1.5}
+  .facts{display:flex;flex-wrap:wrap;gap:10px 0;margin:28px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+  .facts li{flex:1 1 160px;padding:16px 18px 0 0}
+  .facts strong{display:block;font-family:Fraunces,Georgia,serif;font-size:28px;line-height:1.1}
+  .facts span{font-size:14px;color:var(--muted)}
+  /* Sections */
+  section{padding:52px 0}
+  h2{font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4.5vw,44px);line-height:1.08;margin:0 0 12px}
+  .section-intro{color:var(--muted);max-width:38em;margin:0 0 28px}
+  .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--rust-dark);font-weight:700;margin:0 0 10px}
+  /* Services */
+  .services{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .service-grid{display:grid;gap:16px}
+  .service{background:var(--paper);border:1.5px solid var(--ink);padding:24px;border-radius:4px}
+  .service h3{font-family:Fraunces,Georgia,serif;font-size:23px;margin:0 0 8px}
+  .service p{margin:0;color:var(--muted);font-size:16px}
+  .service .num{font-size:13px;letter-spacing:.16em;font-weight:700;color:var(--rust-dark)}
+  /* Feature strip */
+  .feature{background:var(--ink);color:var(--paper)}
+  .feature h2{color:var(--paper)}
+  .feature p{color:var(--on-dark);max-width:38em}
+  .feature .btn{background:var(--rust)}
+  /* Gallery */
+  .gallery-grid{display:grid;gap:20px}
+  .card{margin:0;background:#fff;border:1.5px solid var(--line);border-radius:4px;overflow:hidden}
+  .card a{color:inherit;text-decoration:none}
+  .card .frame-l{aspect-ratio:16/9;overflow:hidden;background:var(--paper2)}
+  .card .frame-p{aspect-ratio:3/4;overflow:hidden;background:var(--paper2)}
+  .card img{width:100%;height:100%;object-fit:cover}
+  .card figcaption{padding:14px 16px 16px}
+  .card figcaption strong{display:block;font-size:16px}
+  .card figcaption span{font-size:14px;color:var(--muted)}
+  .note{font-size:15px;color:var(--muted);border-left:4px solid var(--rust);padding:4px 0 4px 16px;max-width:44em}
+  /* Contact */
+  .contact{background:var(--paper2);border-top:1px solid var(--line);text-align:left}
+  .contact .btn{margin-top:6px}
+  footer{background:var(--ink);color:var(--on-dark);font-size:14px;line-height:1.6}
+  footer .wrap{padding-top:28px;padding-bottom:28px}
+  footer a{color:var(--paper)}
+  footer p{margin:0 0 10px;max-width:56em}
+  @media (min-width:768px){
+    .hero-grid{grid-template-columns:1.15fr .85fr;align-items:start}
+    .service-grid{grid-template-columns:1fr 1fr}
+    .gallery-grid{grid-template-columns:1fr 1fr}
+    section{padding:68px 0}
+  }
+  @media (min-width:1024px){
+    .service-grid{grid-template-columns:repeat(4,1fr)}
+    .gallery-grid{grid-template-columns:repeat(3,1fr)}
+    .hero{padding:64px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap">Toronto, Ontario &nbsp;·&nbsp; Metal · Shingles · Flat · Standing Seam</div></div>
+<header class="site"><div class="wrap head">
+  <a class="brand" href="index.html">Sky Forge Roofing<span>Toronto, Ontario</span></a>
+  <nav aria-label="Main">
+    <a href="#services">Services</a>
+    <a href="#work">Finished Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="https://www.instagram.com/sky_forge_roofing/">Message on Instagram</a>
+</div></header>
+
+<main>
+  <section class="hero" style="padding-top:44px"><div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Roofing — Toronto, Ontario, Canada</p>
+      <h1>Roofs, finished properly — and shown as built.</h1>
+      <p class="lede">Sky Forge Roofing works in metal, shingles, flat roofing and standing seam. This page shows finished roofing from the team's own Instagram — no stock photos, no invented projects.</p>
+      <a class="btn" href="https://www.instagram.com/sky_forge_roofing/">Enquire via Instagram DM</a>
+      <ul class="facts">
+        <li><strong>41</strong><span>posts of finished roofing on Instagram</span></li>
+        <li><strong>4</strong><span>roofing services: metal, shingles, flat, standing seam</span></li>
+        <li><strong>Toronto</strong><span>based, serving Ontario — see Instagram for current work</span></li>
+      </ul>
+    </div>
+    <figure class="hero-figure">
+      <div class="frame"><img src="images/roof-portrait-01.webp" alt="Finished roof photographed by Sky Forge Roofing in Toronto, Ontario" width="640" height="853" fetchpriority="high"></div>
+      <figcaption>Finished roofing by Sky Forge Roofing. Photo from <a href="https://www.instagram.com/p/DecVF-8iZ-B/">@sky_forge_roofing on Instagram</a>.</figcaption>
+    </figure>
+  </div></section>
+
+  <section class="feature" id="latest"><div class="wrap">
+    <p class="kicker" style="color:#E8C9B8">Latest work — 13 October 2026</p>
+    <h2>Black standing-seam metal, in 12 slides.</h2>
+    <p>The team's most recent post (13 October 2026) is a 12-slide carousel of a completed black standing-seam metal roof, tagged Mono, Ontario. It is the clearest single example of the standing-seam work on the feed — clean lines, full roof, photographed start to finish.</p>
+    <p><a class="btn" href="https://www.instagram.com/sky_forge_roofing/">See the latest work on Instagram</a></p>
+  </div></section>
+
+  <section class="services" id="services"><div class="wrap">
+    <p class="kicker">What they do</p>
+    <h2>Four roofing services.</h2>
+    <p class="section-intro">The services below are the ones Sky Forge Roofing shows on its Instagram. No prices are listed here — enquiries currently go through Instagram DM, and any quote would come from the business itself.</p>
+    <div class="service-grid">
+      <article class="service"><p class="num">01</p><h3>Metal Roofing</h3><p>Metal roofs, including the standing-seam work featured across the feed.</p></article>
+      <article class="service"><p class="num">02</p><h3>Shingle Roofing</h3><p>Shingle roofing, as listed among the team's services.</p></article>
+      <article class="service"><p class="num">03</p><h3>Flat Roofing</h3><p>Flat roofing, as listed among the team's services.</p></article>
+      <article class="service"><p class="num">04</p><h3>Standing Seam</h3><p>Standing-seam metal roofing — including the completed black roof posted 13 October 2026.</p></article>
+    </div>
+  </div></section>
+
+  <section id="work"><div class="wrap">
+    <p class="kicker">Finished work</p>
+    <h2>From the feed, not a stock library.</h2>
+    <p class="section-intro">Every photo below is the business's own Instagram post, linked to its original. Captions on the feed are hashtag-only, so no project locations, prices or client details are claimed here beyond what the posts themselves show.</p>
+    <div class="gallery-grid">
+      <figure class="card"><a href="https://www.instagram.com/p/DecVF-8iZ-B/">
+        <div class="frame-p"><img src="images/roof-portrait-01.webp" alt="Finished roof photographed by Sky Forge Roofing" width="640" height="853" loading="lazy"></div>
+        <figcaption><strong>Finished roofing</strong><span>Toronto / Ontario — @sky_forge_roofing</span></figcaption></a></figure>
+      <figure class="card"><a href="https://www.instagram.com/p/DdMtEORiesg/">
+        <div class="frame-l"><img src="images/roof-metal-02.webp" alt="Metal roofing work by Sky Forge Roofing in Toronto" width="640" height="360" loading="lazy"></div>
+        <figcaption><strong>Metal work</strong><span>Tagged metalwork, Toronto — @sky_forge_roofing</span></figcaption></a></figure>
+      <figure class="card"><a href="https://www.instagram.com/p/DcjbjxrCTw7/">
+        <div class="frame-p"><img src="images/roof-portrait-03.webp" alt="Finished roof photographed by Sky Forge Roofing" width="640" height="853" loading="lazy"></div>
+        <figcaption><strong>Finished roofing</strong><span>Ontario — @sky_forge_roofing</span></figcaption></a></figure>
+      <figure class="card"><a href="https://www.instagram.com/p/Db8Rnm5DvYb/">
+        <div class="frame-l"><img src="images/roof-metal-04.webp" alt="Metal roofing by Sky Forge Roofing in Toronto" width="640" height="360" loading="lazy"></div>
+        <figcaption><strong>Metal roofing</strong><span>Tagged metal roofing, Toronto — @sky_forge_roofing</span></figcaption></a></figure>
+      <figure class="card"><a href="https://www.instagram.com/p/DbyXxeqidEx/">
+        <div class="frame-l"><img src="images/roof-metal-05.webp" alt="Metal roofing work by Sky Forge Roofing in Toronto" width="640" height="360" loading="lazy"></div>
+        <figcaption><strong>Metal roofing</strong><span>Tagged metal roofing, Toronto — @sky_forge_roofing</span></figcaption></a></figure>
+      <figure class="card"><a href="https://www.instagram.com/p/DbQYpe8jhrF/">
+        <div class="frame-l"><img src="images/roof-06.webp" alt="Finished roofing by Sky Forge Roofing in Toronto" width="640" height="360" loading="lazy"></div>
+        <figcaption><strong>Finished roofing</strong><span>Toronto — @sky_forge_roofing</span></figcaption></a></figure>
+    </div>
+    <p class="note" style="margin-top:28px">Why a website helps here: right now the bio links are only two personal Instagram accounts, with no booking link — so every enquiry has to come through DM. A simple site like this lets a homeowner see the finished work, the four services and how to get in touch, without digging through a feed.</p>
+  </div></section>
+
+  <section class="contact" id="contact"><div class="wrap">
+    <p class="kicker">Get in touch</p>
+    <h2>Enquiries are via Instagram DM for now.</h2>
+    <p class="section-intro">No phone number, email address or booking link is published for this business in the verified facts — so this preview links only to what exists: the Instagram profile. A finished site would add the business's own contact details once they provide them.</p>
+    <a class="btn" href="https://www.instagram.com/sky_forge_roofing/">Message @sky_forge_roofing on Instagram</a>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <p><strong style="color:#F7F3EC">Sky Forge Roofing — Toronto, Ontario.</strong> Preview concept made by Devflix. This is a concept preview only: the final site is subject to the business's approval, and all photos, services and details remain theirs.</p>
+  <p>Name note: this Toronto business is not skyforgerf.com (a different firm in the Pacific Northwest, Portland / Seattle), nor skyroofing.ca or skyriseroofing.ca (other Toronto firms). No affiliation with any of them is claimed or implied.</p>
+  <p>Photos: Sky Forge Roofing's own Instagram, <a href="https://www.instagram.com/sky_forge_roofing/">@sky_forge_roofing</a>. No prices, reviews, ratings or testimonials are shown because none were verified.</p>
+</div></footer>
+</body>
+</html>

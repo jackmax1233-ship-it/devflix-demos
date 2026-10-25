@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio 26 Dance Company — Easterhouse, Glasgow</title>
+<meta name="description" content="Studio 26 Dance Company, a dance studio based in Easterhouse, Glasgow. Lyrical, commercial / hip-hop and freestyle classes, plus a new competition team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFF6E9;color:#1C1A17;font-family:"DM Sans",Arial,sans-serif;font-size:18px;line-height:1.6}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+header{border-bottom:3px solid #1C1A17;background:#FFF6E9;position:sticky;top:0;z-index:10}
+.nav{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:26px;letter-spacing:.01em;text-decoration:none}
+.brand span{color:#A82315}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+nav a{font-weight:700;font-size:16px;text-decoration:none;padding:4px 2px}
+nav a:hover,nav a:focus{text-decoration:underline;text-underline-offset:4px}
+.btn{display:inline-block;background:#A82315;color:#FFFFFF;font-weight:700;text-decoration:none;padding:14px 24px;border:2px solid #1C1A17;box-shadow:4px 4px 0 #1C1A17}
+.btn:hover,.btn:focus{background:#7A1A10}
+.btn-light{background:#F2C14E;color:#1C1A17}
+.btn-light:hover,.btn-light:focus{background:#e8b62e}
+/* Hero: editorial split, portrait frame matched to the photo's 3:4 ratio */
+.hero{padding:52px 0 44px;border-bottom:3px solid #1C1A17}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.eyebrow{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:14px;color:#A82315;margin:0 0 12px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(44px,6.5vw,84px);line-height:.95;letter-spacing:-.02em;margin:0 0 18px}
+h1 em{font-style:normal;color:#A82315}
+.lede{font-size:21px;color:#33302B;max-width:34rem;margin:0 0 14px}
+.note{display:inline-block;background:#F2C14E;color:#1C1A17;font-weight:700;padding:8px 12px;border:2px solid #1C1A17;margin:6px 0 22px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero figure{margin:0}
+.hero img{width:100%;aspect-ratio:3/4;max-height:560px;object-fit:contain;background:#F2C14E;border:3px solid #1C1A17;box-shadow:8px 8px 0 #A82315}
+.hero figcaption{font-size:15px;color:#5A5348;margin-top:10px}
+.strip{background:#1C1A17;color:#FFF6E9;padding:14px 0;font-weight:700;letter-spacing:.04em;text-align:center}
+.strip p{margin:0;font-size:17px}
+section{padding:56px 0}
+h2{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(32px,4.5vw,52px);line-height:1.05;margin:0 0 14px}
+h3{font-family:Fraunces,Georgia,serif;font-size:26px;line-height:1.2;margin:0 0 8px}
+.section-lede{color:#33302B;max-width:42rem;margin:0 0 28px}
+.alt{background:#1C1A17;color:#FFF6E9}
+.alt .section-lede{color:#FFF6E9}
+.alt h2{color:#FFF6E9}
+/* Classes: editorial rows, not a generic card grid */
+.class-list{border-top:3px solid #1C1A17}
+.class-row{display:grid;grid-template-columns:110px 1fr;gap:24px;padding:26px 0;border-bottom:2px solid #1C1A17;align-items:start}
+.class-no{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:44px;color:#A82315;line-height:1}
+.class-row p{margin:0;color:#33302B;max-width:42rem}
+.team{background:#A82315;color:#FFFFFF}
+.team h2,.team p{color:#FFFFFF}
+.team .btn{background:#FFF6E9;color:#1C1A17;border-color:#1C1A17}
+.team .btn:hover,.team .btn:focus{background:#F2C14E}
+/* Gallery: frames matched to each photo's natural orientation, heights capped */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.gallery figure{margin:0}
+.gallery .portrait img{aspect-ratio:3/4;max-height:340px;width:100%;object-fit:contain;background:#FFFFFF;border:2px solid #1C1A17}
+.gallery .square img{aspect-ratio:1/1;max-height:340px;width:100%;object-fit:contain;background:#FFFFFF;border:2px solid #1C1A17}
+.gallery figcaption{font-size:15px;color:#5A5348;margin-top:8px}
+.location-box{border:3px solid #1C1A17;background:#FFFFFF;padding:28px;box-shadow:6px 6px 0 #F2C14E}
+.location-box p{margin:0 0 10px}
+.location-box p:last-child{margin-bottom:0}
+.join{text-align:left}
+.join .btn{margin-top:8px}
+footer{border-top:3px solid #1C1A17;padding:28px 0 36px;font-size:15px;color:#33302B}
+footer p{margin:0 0 8px;max-width:52rem}
+footer a{font-weight:700}
+@media (max-width:768px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero{padding:36px 0 32px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .class-row{grid-template-columns:64px 1fr;gap:16px}
+  .class-no{font-size:34px}
+  section{padding:40px 0}
+  body{font-size:17px}
+}
+@media (max-width:480px){
+  .gallery{grid-template-columns:1fr}
+  .gallery .portrait img,.gallery .square img{max-height:340px}
+  .nav{justify-content:flex-start}
+  .brand{font-size:22px}
+  h1{font-size:46px}
+  .btn{width:100%;text-align:center}
+  .hero-cta .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Studio <span>26</span></a>
+    <nav aria-label="Main">
+      <a href="#classes">Classes</a>
+      <a href="#team">Competition Team</a>
+      <a href="#gallery">In Class</a>
+      <a href="#visit">Find Us</a>
+      <a href="#join">Join</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Dance Company &middot; Easterhouse, Glasgow</p>
+        <h1>Come join our <em>dance family.</em></h1>
+        <p class="lede">Studio 26 Dance Company is a dance studio based in Easterhouse, Glasgow, teaching lyrical, commercial / hip-hop and freestyle.</p>
+        <p><span class="note">Limited spaces available</span></p>
+        <div class="hero-cta">
+          <a class="btn" href="https://www.instagram.com/studio26dancecompany/">Message Studio 26 on Instagram</a>
+          <a class="btn btn-light" href="#classes">See the classes</a>
+        </div>
+      </div>
+      <figure>
+        <img src="images/hero.webp" alt="Dancers from Studio 26 Dance Company in class" width="640" height="853" fetchpriority="high">
+        <figcaption>From Studio 26&rsquo;s own Instagram &mdash; the post that announced limited spaces for new dancers.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="strip"><p>Lyrical &nbsp;&middot;&nbsp; Commercial / Hip-Hop &nbsp;&middot;&nbsp; Freestyle</p></div>
+
+  <section id="classes" aria-labelledby="classes-heading">
+    <div class="wrap">
+      <h2 id="classes-heading">Classes</h2>
+      <p class="section-lede">Three styles, one dance family. No class times or prices are listed here yet &mdash; message the studio on Instagram to ask about joining a class.</p>
+      <div class="class-list">
+        <div class="class-row">
+          <div class="class-no" aria-hidden="true">01</div>
+          <div><h3>Lyrical</h3><p>Expressive, musical dance. The studio has run an open lyrical class for dancers wanting to come along and try it.</p></div>
+        </div>
+        <div class="class-row">
+          <div class="class-no" aria-hidden="true">02</div>
+          <div><h3>Commercial / Hip-Hop</h3><p>High-energy commercial and hip-hop styles, taught as part of the studio&rsquo;s regular class programme.</p></div>
+        </div>
+        <div class="class-row">
+          <div class="class-no" aria-hidden="true">03</div>
+          <div><h3>Freestyle</h3><p>Freestyle dance, alongside lyrical and commercial / hip-hop, in the studio&rsquo;s class line-up.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team" aria-labelledby="team-heading">
+    <div class="wrap">
+      <h2 id="team-heading">A new competition team</h2>
+      <p class="section-lede">Studio 26 launched a new competition team in August 2026. If competing is something you&rsquo;d like to try, message the studio on Instagram to ask about the team and how to get involved.</p>
+      <a class="btn" href="https://www.instagram.com/studio26dancecompany/">Ask about the competition team</a>
+    </div>
+  </section>
+
+  <section id="gallery" aria-labelledby="gallery-heading">
+    <div class="wrap">
+      <h2 id="gallery-heading">In class at Studio 26</h2>
+      <p class="section-lede">Real moments from the studio&rsquo;s own Instagram &mdash; dancers learning routines, celebrating standout dancers, and bringing a friend along.</p>
+      <div class="gallery">
+        <figure class="portrait">
+          <img src="images/lyrical.webp" alt="Studio 26 dancers in a lyrical class" width="640" height="853" loading="lazy">
+          <figcaption>An open lyrical class, as shared by the studio.</figcaption>
+        </figure>
+        <figure class="portrait">
+          <img src="images/class.webp" alt="Studio 26 dancers in class" width="480" height="640" loading="lazy">
+          <figcaption>Dancers learning a routine in class.</figcaption>
+        </figure>
+        <figure class="portrait">
+          <img src="images/bestie.webp" alt="Studio 26 dancers at a bring-a-friend night" width="640" height="853" loading="lazy">
+          <figcaption>A &ldquo;bring a bestie&rdquo; night at the studio.</figcaption>
+        </figure>
+        <figure class="square">
+          <img src="images/group.webp" alt="Studio 26 dancers together in class" width="640" height="640" loading="lazy">
+          <figcaption>A busy class night at Studio 26.</figcaption>
+        </figure>
+        <figure class="portrait">
+          <img src="images/friends.webp" alt="Studio 26 dancers dancing with friends" width="640" height="853" loading="lazy">
+          <figcaption>Dancing with your best friend, at Studio 26.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" aria-labelledby="visit-heading">
+    <div class="wrap">
+      <h2 id="visit-heading">Find us</h2>
+      <div class="location-box">
+        <p><strong>Studio 26 Dance Company</strong></p>
+        <p>Phoenix Community Centre, Easterhouse, Glasgow, UK</p>
+        <p>The studio is based at Phoenix Community Centre in Easterhouse. For directions or to ask about joining, message the studio on Instagram &mdash; there is currently no website or bio link, so Instagram message is how to get in touch.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="alt" aria-labelledby="join-heading">
+    <div class="wrap join">
+      <h2 id="join-heading">Join the dance family</h2>
+      <p class="section-lede">Spaces are limited, so if you&rsquo;d like to come along, send Studio 26 a message on Instagram and they&rsquo;ll tell you about the next step.</p>
+      <a class="btn" href="https://www.instagram.com/studio26dancecompany/">Message @studio26dancecompany</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Studio 26 Dance Company</strong> &mdash; Easterhouse, Glasgow. Classes: lyrical, commercial / hip-hop, freestyle. Based at Phoenix Community Centre, Easterhouse.</p>
+    <p>Preview concept made by Devflix. This is a preview website concept only &mdash; the final site is subject to the business&rsquo;s approval. Photos are the business&rsquo;s own Instagram photos. No class times, prices, ages or teachers are listed because none were verified.</p>
+    <p><a href="https://www.instagram.com/studio26dancecompany/">@studio26dancecompany on Instagram</a></p>
+  </div>
+</footer>
+</body>
+</html>

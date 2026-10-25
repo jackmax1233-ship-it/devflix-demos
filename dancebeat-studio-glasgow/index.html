@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dancebeat Studio — Glasgow Dance Studio, Est. 1999</title>
+<meta name="description" content="Dancebeat Studio, Glasgow. Recreational and competitive dance training since 1999. Message us on Instagram to join.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FFF6EC;--ink:#1A1512;--charcoal:#141210;--red:#B3001B;--red-dark:#8F0015;--yellow:#FFC53D;--muted:#5A4A3F;--line:#E3D3BE}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
+  img{max-width:100%;height:auto;display:block}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+  header{background:var(--charcoal);color:var(--cream)}
+  .nav{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding:16px 20px;max-width:1100px;margin:0 auto}
+  .brand{font-family:"Bebas Neue",sans-serif;font-size:34px;letter-spacing:.04em;line-height:1}
+  .brand span{color:var(--yellow)}
+  nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+  nav a{color:var(--cream);text-decoration:none;font-weight:600;font-size:15px}
+  nav a:hover,nav a:focus{text-decoration:underline}
+  .hero{padding:44px 0 52px}
+  .hero-grid{display:grid;gap:32px;align-items:center}
+  .eyebrow{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--red)}
+  h1{font-family:"Bebas Neue",sans-serif;font-size:clamp(58px,11vw,118px);line-height:.9;margin:12px 0 8px;letter-spacing:.01em}
+  h1 em{font-style:normal;color:var(--red)}
+  .lead{font-size:19px;max-width:560px}
+  .cta{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:6px;margin-top:18px}
+  .cta:hover,.cta:focus{background:var(--red-dark)}
+  .hero-note{color:var(--muted);font-size:15px;margin-top:14px}
+  .hero-photo{background:#EDE3D6;border:4px solid var(--ink);border-radius:10px;padding:10px}
+  .hero-photo img{width:100%;aspect-ratio:4/5;object-fit:contain;max-height:560px;margin:0 auto}
+  .hero-photo figcaption{font-size:14px;color:var(--muted);text-align:center;padding-top:8px}
+  .band{background:var(--charcoal);color:var(--cream);padding:34px 0}
+  .band-grid{display:grid;gap:20px}
+  .band h2{font-family:"Bebas Neue",sans-serif;font-size:40px;line-height:1;margin:0 0 6px}
+  .band h2 span{color:var(--yellow)}
+  .band p{margin:0;max-width:700px}
+  .section{padding:56px 0}
+  h2.sec{font-family:"Bebas Neue",sans-serif;font-size:clamp(42px,7vw,64px);line-height:1;margin:0 0 10px}
+  .sub{color:var(--muted);max-width:680px;margin:0 0 28px}
+  .cards{display:grid;gap:20px}
+  .card{border:2px solid var(--ink);border-radius:10px;padding:24px;background:#fff}
+  .card h3{font-family:"Bebas Neue",sans-serif;font-size:32px;line-height:1;margin:0 0 8px}
+  .card h3 i{font-style:normal;color:var(--red)}
+  .card p{margin:0}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .gallery figure{margin:0;background:#EDE3D6;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+  .gallery img{width:100%;aspect-ratio:4/5;object-fit:contain;max-height:340px}
+  .gallery figcaption{padding:12px 14px;font-size:15px;background:var(--cream)}
+  .visit{background:var(--yellow);border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}
+  .visit-grid{display:grid;gap:24px;align-items:center}
+  address{font-style:normal;font-size:22px;font-weight:700;line-height:1.4}
+  .join{background:var(--charcoal);color:var(--cream);text-align:center}
+  .join h2{font-family:"Bebas Neue",sans-serif;font-size:clamp(44px,8vw,72px);line-height:1;margin:0}
+  .join h2 span{color:var(--yellow)}
+  .join p{max-width:620px;margin:16px auto 0}
+  footer{background:var(--charcoal);color:var(--cream);border-top:1px solid #444;font-size:14px;padding:24px 0 30px}
+  footer p{margin:0 0 8px}
+  @media(min-width:700px){
+    .hero-grid{grid-template-columns:1.15fr .85fr}
+    .band-grid{grid-template-columns:1fr 1fr}
+    .cards{grid-template-columns:1fr 1fr}
+    .gallery{grid-template-columns:repeat(3,1fr)}
+    .visit-grid{grid-template-columns:1fr 1fr}
+    .hero{padding:64px 0 68px}
+  }
+  @media(max-width:399px){
+    body{font-size:16px}
+    .gallery{grid-template-columns:1fr}
+    .brand{font-size:29px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">DANCEBEAT <span>STUDIO</span></div>
+    <nav aria-label="Main">
+      <a href="#classes">Classes</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Find us</a>
+      <a href="#join">Join</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Glasgow &middot; Est. 1999</p>
+        <h1>Move.<br>Perform.<br><em>Belong.</em></h1>
+        <p class="lead">Dancebeat Studio is a Glasgow dance studio offering recreational and competitive training across a range of styles &mdash; dancing together since 1999.</p>
+        <a class="cta" href="https://www.instagram.com/dancebeatstudio1/">Message us on Instagram to join &rarr;</a>
+        <p class="hero-note">New dancers are welcomed by message &mdash; just send the studio a message on Instagram to get started.</p>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/photo-1.webp" alt="Dancer from Dancebeat Studio celebrating at a competition" width="640" height="791" fetchpriority="high">
+        <figcaption>Competition day at Dancebeat Studio.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" aria-label="About the studio">
+    <div class="wrap band-grid">
+      <h2> Dancing in Glasgow <span>since 1999.</span></h2>
+      <p>For over two decades, Dancebeat Studio has been a place to learn, train and perform. Whether dance is a hobby or a competitive pursuit, the studio offers training that fits the dancer &mdash; recreational classes and competitive training, side by side.</p>
+    </div>
+  </section>
+
+  <section class="section" id="classes">
+    <div class="wrap">
+      <h2 class="sec">Classes</h2>
+      <p class="sub">Two ways to dance at Dancebeat &mdash; for fun, fitness and friendship, or for the stage and competition floor.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Recreational <i>training</i></h3>
+          <p>Dance for enjoyment and confidence, in a friendly studio atmosphere. A great way to learn to dance, keep active and be part of the Dancebeat community.</p>
+        </article>
+        <article class="card">
+          <h3>Competitive <i>training</i></h3>
+          <p>Training for dancers who want to compete and perform. Dancebeat dancers take part in competitions, with recent successes celebrated on the studio&rsquo;s Instagram.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="sec">From the studio</h2>
+      <p class="sub">Photos from Dancebeat Studio&rsquo;s own Instagram &mdash; workshops, competitions, seasonal fun and studio life.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/photo-1.webp" alt="Dancebeat dancer celebrating a competition award" width="640" height="791" loading="lazy">
+          <figcaption>Competition celebrations</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo-2.webp" alt="Dancers learning in a Dancebeat workshop" width="480" height="640" loading="lazy">
+          <figcaption>Workshop day</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo-3.webp" alt="Dancebeat workshop announcement photo of dancers in the studio" width="640" height="800" loading="lazy">
+          <figcaption>Learning from guest teachers</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo-4.webp" alt="Dancers in Halloween costumes at Dancebeat Studio" width="640" height="853" loading="lazy">
+          <figcaption>Halloween at the studio</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo-5.webp" alt="Dancebeat dancers posing together in the studio" width="640" height="853" loading="lazy">
+          <figcaption>Studio life, together</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <h2 class="sec">Find us</h2>
+        <p style="margin:0">Dancebeat Studio is based in Glasgow, at:</p>
+      </div>
+      <address>5 Skibo Drive,<br>Glasgow</address>
+    </div>
+  </section>
+
+  <section class="section join" id="join">
+    <div class="wrap">
+      <h2>Ready to dance? <span>Message us.</span></h2>
+      <p>The studio currently takes enquiries by message &mdash; send Dancebeat Studio a message on Instagram to ask about joining.</p>
+      <a class="cta" href="https://www.instagram.com/dancebeatstudio1/">Message @dancebeatstudio1 on Instagram &rarr;</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Dancebeat Studio</strong> &middot; 5 Skibo Drive, Glasgow &middot; Est. 1999</p>
+    <p>Preview concept made by Devflix. This is a design preview only &mdash; the final site is subject to the business&rsquo;s approval. Photos are from Dancebeat Studio&rsquo;s own Instagram.</p>
+  </div>
+</footer>
+</body>
+</html>
