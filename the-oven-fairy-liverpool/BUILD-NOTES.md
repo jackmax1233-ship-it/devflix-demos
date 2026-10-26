@@ -1,0 +1,15 @@
+# The Oven Fairy — Liverpool (oven cleaning / deep cleaning)
+- Handle: @theovenfairy | author_id (instagram-cli profile user_id): 17841452257699668
+- Followers: 478 | Posts: 62 | Country field: GB | Location: Liverpool (profile name)
+- Industry: oven cleaning + house deep cleaning + commercial kitchen cleaning
+- Opportunity: NO own website; bio says "Direct Message for enquiries" — booking lives entirely in Instagram DMs. Work is trapped on Instagram; no public price/service page.
+- Why good prospect: real small business, posted 26 Oct 2026 (today), 9 Oct, 29 Sep — active; a 19-comment post in Aug shows real engagement. Small follower count is fine per brief.
+- Site: index.html + images/hero.webp (640x853, before/after collage, object-fit contain, portrait frame matches orientation) + gallery1.webp (640x853, before/after collage, contain).
+- Photos NOT used: Christmas promo graphic (stale December dates), price-list text image (used its facts in copy instead, not as a photo).
+- Facts used (all business-published): services from bio (house cleans, oven deep cleans, commercial kitchens & restaurants); prices from the business's own price-list post — single oven £50, double £70, range £110, deep cleans 1-bed £110 / 2-bed £135 / 3-bed £155, hourly £18 min 2 hrs, £20 min deposit, commercial quoted individually. FLAG: prices came from a "summer deals" post — coordinator should confirm they are still current before the DM claims them as current; site copy says "prices she has shared" rather than "current prices".
+- No prices/services/reviews invented. No phone published by the business — CTA is Instagram DM only.
+- Contrast (WCAG AA, computed): body #2E2A26 on #FDF6EC 13.26:1 PASS; white on #1E4D3B 9.63:1 PASS; gold #C8963E on #1E4D3B 3.62:1 — used for large headings/decorative only (passes 3:1 large-text threshold, NOT used for body text).
+- Image fit: both images portrait; containers match portrait orientation with object-fit: contain, so nothing is cropped. Full subject visible.
+- Responsive: mobile-first, single column under 760px, viewport meta set. No horizontal fixed widths.
+- Intended URL: https://jackmax1233-ship-it.github.io/devflix-demos/the-oven-fairy-liverpool/
+- Dedupe: zero matches for "theovenfairy" in ~/workspace/instagram/lead-campaign/tracker.md and ~/workspace/hotel-outreach/tracker.md (checked 26 Oct 2026).

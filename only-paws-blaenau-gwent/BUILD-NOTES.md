@@ -1,0 +1,14 @@
+# Only Paws — Blaenau Gwent, Wales (dog walking & pet sitting)
+- Handle: @onlypaws.x | author_id: 17841456503363896
+- Followers: 1,910 | Posts: 135 | Location: Blaenau Gwent area (bio)
+- Industry: dog walking & pet sitting
+- Opportunity: NO own website; only link is a Facebook share link. Booking by message/phone; work trapped on Instagram/Facebook.
+- Why good prospect: very active — posted 25, 23, 22, 21, 20, 18, 16 Oct 2026 with real engagement (up to 35 likes, comments on posts). Clear service gaps a site fills: field-outing offer, credentials, and contact in one place.
+- Site: index.html + hero.webp (640x717, spaniel on grass, contain) + gallery1.webp (640x853, walker with dog, contain — face fully visible, not cropped) + gallery2.webp (640x853, staffy in field, contain) + flyer.webp (640x853, business's own field-outing poster, contain).
+- Facts used (all business-published): bio (dog walking, pop-in visits, overnight stays; pet first aid & CPR qualified; enhanced DBS checked; fully insured; Blaenau Gwent area); field outing £18 per dog, secure field with soft play, half-term, limited spaces — from their own poster; phone 07463 9993198 and "texts preferred over calls" from their own poster; Facebook page name "Only Paws Dog Walking and Pet Sitting" from their poster.
+- No prices/services/reviews invented. No address published by the business — none shown.
+- Contrast (computed): white on #222222 15.91:1 PASS; #C2185B on #FFF8F0 5.58:1 PASS; white on #C2185B 5.87:1 PASS; body #2A2320 on #FFF8F0 14.66:1 PASS.
+- Image fit: contain in ratio-matched frames; dogs' faces fully visible at all widths.
+- Responsive: mobile-first, stacks under 760px, viewport meta set.
+- Intended URL: https://jackmax1233-ship-it.github.io/devflix-demos/only-paws-blaenau-gwent/
+- Dedupe: zero matches for "onlypaws" in both trackers (checked 26 Oct 2026).

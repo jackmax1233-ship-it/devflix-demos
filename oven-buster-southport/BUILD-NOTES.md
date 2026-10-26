@@ -1,0 +1,16 @@
+# Oven Buster — Southport (oven & appliance cleaning)
+- Handle: @oven_buster | author_id: 17841467523422481
+- Followers: 5,826 | Posts: 1,636 | Location: Southport & surrounding areas (from bio)
+- FLAG: instagram-cli profile country field returned "NA" — unreliable; location is bio-sourced ("Southport & Surrounding Areas"), which is consistent with a UK business. Do not cite the country field.
+- Industry: oven & appliance cleaning (+ carpet & upholstery)
+- Opportunity: NO own website; only link is a Facebook share link. Booking by phone/DM; work trapped on Instagram.
+- Why good prospect: very active — posted 25, 24, 23, 22 Oct 2026; large post catalogue; phone published in bio.
+- Site: index.html + hero.webp (640x480, landscape double oven before cleaning, contain in landscape frame) + gallery1.webp (640x640 fan detail) + gallery2.webp (640x640 double oven).
+- Photos NOT used: review-screenshot post (named third-party customer — deliberately not featured to avoid republishing a customer's name/review).
+- FLAG — photos: only "before" shots were available from first slides of recent posts/carousels (oEmbed returns first slide only). Site copy is honest about this ("the kind of job they take on", "real grime") and does NOT claim the photos are after-shots. If the coordinator wants after-shots, later carousel slides would need a browser harvest.
+- Facts used (all business-published): bio services (ovens & appliances, domestic & commercial, carpet & upholstery); phone 07459 179976 (bio); "gleaming, fresh, ready to use immediately, no chemical smell" paraphrased from their own captions; "never call a job finished until superior" paraphrased from their own caption.
+- Contrast (computed): white on #1C1C1E 17.01:1 PASS; dark #1C1C1E on orange #E8641C 5.08:1 PASS; body #222 on #F7F3EC 14.38:1 PASS.
+- Image fit: all images shown with object-fit: contain in ratio-matched frames; nothing cropped.
+- Responsive: mobile-first, stacks under 760px, viewport meta set.
+- Intended URL: https://jackmax1233-ship-it.github.io/devflix-demos/oven-buster-southport/
+- Dedupe: zero matches for "oven_buster" in both trackers (checked 26 Oct 2026).

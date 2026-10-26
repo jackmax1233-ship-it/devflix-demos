@@ -1,0 +1,14 @@
+# Oven Clean Tyrone Fermanagh — Omagh & Fermanagh, Northern Ireland (oven cleaning)
+- Handle: @ovencleantyronefermanagh | author_id: 17841408748185393
+- Followers: 149 | Posts: 150 | Country field: GB | Location: Omagh & Fermanagh, Castlederg & Clogher Valley (bio)
+- Industry: professional oven cleaning
+- Opportunity: NO own website, no bio links at all. Booking by phone/email/DM; work trapped on Instagram.
+- Why good prospect: real one-person local business, posted 24, 17, 15, 14 Oct 2026 — active; returning-customer base (posts about regulars booking Christmas early); small following is fine per brief.
+- Site: index.html + hero.webp (640x800, clean oven interior, contain, portrait frame) + gallery1.webp (640x480, clean Rangemaster) + gallery2.webp (640x472, clean green range cooker).
+- Photos NOT used: a sunset/garden personal post (not business work — excluded deliberately).
+- Facts used (all business-published): areas from bio; phone +447384708672 and email ovencleantf@outlook.com from business profile info; area detail Fintona/Beragh/Carrickmore from their own post; "smart Black Gas Rangemaster in Omagh" from their own post; Christmas-booking-early pattern from their own posts.
+- Contrast (computed): white on #23402E 11.39:1 PASS; body #2B2620 on #FAF6EF 13.92:1 PASS.
+- Image fit: contain in ratio-matched frames; full ovens visible, nothing cropped.
+- Responsive: mobile-first, stacks under 760px, viewport meta set.
+- Intended URL: https://jackmax1233-ship-it.github.io/devflix-demos/oven-clean-tyrone-fermanagh/
+- Dedupe: zero matches for "ovencleantyronefermanagh" in both trackers (checked 26 Oct 2026).
