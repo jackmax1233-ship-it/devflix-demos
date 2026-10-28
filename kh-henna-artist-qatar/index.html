@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KH Henna Artist — Arabic Henna in Doha, Qatar</title>
+<meta name="description" content="Arabic henna designs in Doha, Qatar — wedding henna, parties and events, with home service available. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#4A1522;
+  --maroon-deep:#38101A;
+  --ivory:#FAF4E8;
+  --paper:#FFFDF8;
+  --ink:#2E1B12;
+  --gold:#7D5A16;
+  --gold-soft:#C9A45C;
+  --line:#E4D5BC;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+img{display:block;max-width:100%}
+a{color:var(--maroon)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;line-height:1.12;color:var(--maroon)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.96);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;gap:16px}
+.brand{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:var(--maroon);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--gold)}
+nav{display:flex;align-items:center;gap:26px}
+nav a.navlink{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px}
+.btn{display:inline-block;background:var(--maroon);color:var(--ivory);text-decoration:none;font-weight:600;font-size:15px;padding:11px 22px;border-radius:999px;transition:background .2s ease}
+.btn:hover{background:var(--maroon-deep)}
+.btn.light{background:var(--ivory);color:var(--maroon)}
+.btn.light:hover{background:#fff}
+/* hero */
+.hero{background:var(--ivory);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:56px;padding-bottom:56px}
+.hero h1{font-size:52px;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p.lede{font-size:19px;max-width:30em;margin-bottom:28px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-note{font-size:14px;color:#5C4632}
+.hero-photo{border-radius:200px 200px 14px 14px;overflow:hidden;aspect-ratio:3/4;max-height:560px;width:100%;justify-self:end;max-width:420px;box-shadow:0 24px 48px rgba(74,21,34,.18)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+/* services strip */
+.strip{border-bottom:1px solid var(--line);background:var(--paper)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between;padding-top:18px;padding-bottom:18px;font-family:'Fraunces',serif;font-size:18px;color:var(--maroon)}
+.strip span::before{content:"✦ ";color:var(--gold-soft)}
+/* sections */
+section{padding:72px 0}
+.sec-head{max-width:640px;margin-bottom:40px}
+.sec-head h2{font-size:36px;margin-bottom:12px}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.about-photo{border-radius:14px;overflow:hidden;max-width:360px}
+.about-photo img{width:100%;height:auto}
+.about h2{font-size:36px;margin-bottom:16px}
+.about p{margin-bottom:16px;max-width:34em}
+/* services rows */
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.svc:last-child{border-bottom:1px solid var(--line)}
+.svc-text{padding:44px 48px 44px 0;display:flex;flex-direction:column;justify-content:center}
+.svc-text h3{font-size:27px;margin-bottom:10px}
+.svc-num{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:17px;margin-bottom:8px}
+.svc-photo{display:flex;align-items:center;justify-content:center;padding:28px 0 28px 32px}
+.svc-photo img{max-height:480px;width:auto;max-width:100%;height:auto;border-radius:12px}
+.svc.flip .svc-photo{padding:28px 32px 28px 0}
+.svc.flip .svc-text{order:2;padding:44px 0 44px 48px}
+.svc.flip .svc-photo{order:1}
+/* gallery */
+.designs{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gallery figure{border-radius:12px;overflow:hidden;background:#EFE6D2}
+.gallery img{width:100%;height:auto}
+.gallery figcaption{font-size:13px;color:#5C4632;padding:8px 4px 2px;background:var(--ivory)}
+/* booking */
+.booking{background:var(--maroon);color:var(--ivory);text-align:center}
+.booking h2{color:var(--ivory);font-size:38px;margin-bottom:14px}
+.booking p{max-width:36em;margin:0 auto 28px;color:#F3E7D3}
+.booking .phone{font-family:'Fraunces',serif;font-size:24px;display:block;margin-top:18px;color:var(--ivory);text-decoration:none}
+/* footer */
+footer{padding:30px 0 38px;font-size:14px;color:#5C4632}
+footer a{font-weight:600}
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+/* responsive */
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:40px;padding-bottom:44px}
+  .hero h1{font-size:40px}
+  .hero-photo{justify-self:start;max-width:340px}
+  .about{grid-template-columns:1fr;gap:32px}
+  .svc{grid-template-columns:1fr}
+  .svc-text{padding:30px 0 22px}
+  .svc.flip .svc-text{order:1;padding:30px 0 22px}
+  .svc.flip .svc-photo{order:2}
+  .svc-photo,.svc.flip .svc-photo{padding:0 0 30px}
+  .svc-photo img{max-height:none;width:100%}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  section{padding:52px 0}
+}
+@media(max-width:480px){
+  nav a.navlink{display:none}
+  .brand{font-size:19px}
+  .hero h1{font-size:34px}
+  .sec-head h2,.about h2{font-size:29px}
+  .booking h2{font-size:30px}
+  .strip .wrap{gap:8px 22px;font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">KH <span>Henna Artist</span></a>
+    <nav>
+      <a class="navlink" href="#designs">Designs</a>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#book">Book</a>
+      <a class="btn" href="https://wa.me/97433272697">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Arabic Henna · Doha, Qatar</p>
+      <h1>Fine Arabic henna, <em>drawn by hand</em> for your day</h1>
+      <p class="lede">Wedding henna, parties and events across Doha — with home service available, so the designs come to you. Every pattern is drawn freehand, from full bridal work to delicate Eid designs.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/97433272697">Book on WhatsApp</a>
+        <a href="#designs" style="font-weight:600;text-decoration:none">See recent designs ↓</a>
+      </div>
+      <p class="hero-note" style="margin-top:18px">Bookings are taken on WhatsApp: +974 3327 2697</p>
+    </div>
+    <div class="hero-photo">
+      <img src="images/hero.webp" alt="Hand decorated with an intricate Arabic henna design by KH Henna Artist" width="640" height="853" fetchpriority="high">
+    </div>
+  </div>
+</div>
+
+<div class="strip" aria-hidden="true">
+  <div class="wrap">
+    <span>Wedding Henna</span><span>Parties</span><span>Events</span><span>Eid Designs</span><span>Home Service</span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap about">
+    <div class="about-photo reveal">
+      <img src="images/about.webp" alt="Detailed henna pattern covering a client's hand and forearm" width="640" height="779" loading="lazy">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">About</p>
+      <h2>Henna art from Doha, shared design by design</h2>
+      <p>KH Henna Artist is a Doha-based henna artist specialising in Arabic designs — the flowing florals, vines and fine linework her Instagram feed is full of. New designs are posted there regularly, from deep-staining bridal pieces to light, simple patterns.</p>
+      <p>She takes bookings for weddings, parties and events, and offers home service, so you can have your henna done where the celebration is happening.</p>
+      <p><a href="https://www.instagram.com/kh_henna_artist/" style="font-weight:600">Follow @kh_henna_artist on Instagram</a> to see the latest work.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Services</p>
+      <h2>Henna for the days that matter</h2>
+    </div>
+
+    <div class="svc reveal">
+      <div class="svc-text">
+        <p class="svc-num">— 01</p>
+        <h3>Wedding Henna</h3>
+        <p>Full bridal henna drawn with patience and detail — hands, arms and feet in the rich, dark stain a wedding day deserves. Book ahead on WhatsApp so your date is held.</p>
+      </div>
+      <div class="svc-photo"><img src="images/svc-wedding.webp" alt="Elaborate bridal-style henna covering both hands" width="640" height="854" loading="lazy"></div>
+    </div>
+
+    <div class="svc flip reveal">
+      <div class="svc-text">
+        <p class="svc-num">— 02</p>
+        <h3>Parties &amp; Events</h3>
+        <p>Henna for parties, gatherings and events of every size — pretty designs for guests, from quick simple patterns to fuller pieces, including seasonal Eid designs.</p>
+      </div>
+      <div class="svc-photo"><img src="images/svc-party.webp" alt="Decorative henna design on a hand, suited to parties and events" width="640" height="782" loading="lazy"></div>
+    </div>
+
+    <div class="svc reveal">
+      <div class="svc-text">
+        <p class="svc-num">— 03</p>
+        <h3>Home Service</h3>
+        <p>No salon trip needed — home service is available in Doha. Message on WhatsApp with your date and what you have in mind, and the henna comes to your home.</p>
+      </div>
+      <div class="svc-photo"><img src="images/svc-home.webp" alt="Henna design photographed during a home appointment" width="640" height="629" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="designs" id="designs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Recent Work</p>
+      <h2>Designs from the feed</h2>
+      <p>A few recent pieces from her Instagram — every photo below is her own work.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="images/gallery-1.webp" alt="Arabic henna design with fine floral linework" width="640" height="853" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-2.webp" alt="Henna pattern across the back of a hand" width="640" height="731" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-3.webp" alt="Full-hand henna with dense traditional motifs" width="640" height="853" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-4.webp" alt="Elegant henna design with trailing vines" width="640" height="780" loading="lazy"></figure>
+    </div>
+    <figure class="reveal" style="max-width:300px;margin:22px auto 0">
+      <img src="images/gallery-5.webp" alt="Deep, dark henna stain result" width="640" height="853" loading="lazy" style="border-radius:12px;width:100%;height:auto">
+      <figcaption style="font-size:13px;color:#5C4632;padding-top:8px;text-align:center">The dark stain her clients ask for — from her own post.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="booking" id="book">
+  <div class="wrap reveal">
+    <p class="eyebrow" style="color:var(--gold-soft)">Book Your Date</p>
+    <h2>Planning a wedding, party or event in Doha?</h2>
+    <p>Send a WhatsApp message with your date and the kind of design you'd like. Home service is available — and wedding dates fill first, so earlier is better.</p>
+    <a class="btn light" href="https://wa.me/97433272697">Message on WhatsApp</a>
+    <a class="phone" href="tel:+97433272697">+974 3327 2697</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Preview site made for KH Henna Artist (Doha, Qatar) by Devflix. Photos are the business's own Instagram photos. No prices are listed here — ask for a current quote when you book.</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
