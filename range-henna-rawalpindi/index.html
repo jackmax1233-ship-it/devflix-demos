@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rang-e-Henna by Bismah — Bridal Mehndi, Rawalpindi &amp; Islamabad</title>
+<meta name="description" content="Bridal mehndi by Bismah in Rawalpindi and Islamabad. Full bridal henna, mehendi lagayi and event mehndi — bookings and inquiries by Instagram DM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#173F2C;
+  --green-deep:#0F2D1F;
+  --cream:#FBF7EE;
+  --paper:#FFFDF7;
+  --ink:#22302A;
+  --gold:#8A5E14;
+  --gold-soft:#C9A45C;
+  --line:#DFD3B8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+h1,h2{font-family:'Marcellus',serif;font-weight:400;line-height:1.15;color:var(--green)}
+.italic{font-family:'Cormorant Garamond',serif;font-style:italic}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;text-align:center}
+.btn{display:inline-block;background:var(--green);color:var(--cream);text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.04em;padding:13px 30px;border-radius:999px;transition:background .2s ease}
+.btn:hover{background:var(--green-deep)}
+.btn.light{background:var(--cream);color:var(--green)}
+.btn.light:hover{background:#fff}
+/* header */
+header{border-bottom:1px solid var(--line);background:var(--paper)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:15px;padding-bottom:15px;gap:14px}
+.brand{font-family:'Marcellus',serif;font-size:21px;color:var(--green);text-decoration:none;white-space:nowrap}
+.brand small{display:block;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+nav{display:flex;align-items:center;gap:24px}
+nav a.navlink{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px}
+/* hero */
+.hero{background:var(--cream);text-align:center;padding:60px 0 64px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:54px;max-width:16em;margin:0 auto 18px}
+.hero h1 .italic{color:var(--gold);font-size:1.06em}
+.hero p.lede{font-size:19px;max-width:38em;margin:0 auto 30px}
+.hero-photo{margin:40px auto 0;max-width:400px;aspect-ratio:3/4;max-height:540px;border-radius:200px 200px 14px 14px;overflow:hidden;box-shadow:0 24px 48px rgba(23,63,44,.20)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
+/* brides strip */
+.brides{padding:26px 0;border-bottom:1px solid var(--line);text-align:center}
+.brides p{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
+.brides .names{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:23px;color:var(--green)}
+/* sections */
+section{padding:72px 0}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 42px}
+.sec-head h2{font-size:37px;margin-bottom:12px}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.about-photo{border-radius:14px;overflow:hidden;max-width:350px}
+.about-photo img{width:100%;height:auto}
+.about h2{font-size:34px;margin-bottom:16px;text-align:left}
+.about .eyebrow{text-align:left}
+.about p{margin-bottom:16px;max-width:34em}
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.svc-card{border-top:2px solid var(--gold-soft);padding-top:22px}
+.svc-card .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--gold);display:block;margin-bottom:8px}
+.svc-card h3{font-family:'Marcellus',serif;font-weight:400;font-size:23px;color:var(--green);margin-bottom:10px}
+/* gallery */
+.designs{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery figure{border-radius:12px;overflow:hidden;background:#EFE7D0}
+.gallery img{width:100%;height:auto}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;counter-reset:step}
+.step{text-align:center;padding:0 8px}
+.step .n{font-family:'Marcellus',serif;font-size:30px;color:var(--gold);display:block;margin-bottom:8px}
+.step h3{font-family:'Marcellus',serif;font-weight:400;font-size:21px;color:var(--green);margin-bottom:8px}
+/* booking */
+.booking{background:var(--green);color:var(--cream);text-align:center}
+.booking h2{color:var(--cream);font-size:38px;margin-bottom:14px}
+.booking p{max-width:37em;margin:0 auto 28px;color:#EDE4CB}
+.booking .eyebrow{color:var(--gold-soft)}
+/* footer */
+footer{padding:30px 0 38px;font-size:14px;color:#5A5344}
+footer a{font-weight:600;color:var(--green)}
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+/* responsive */
+@media(max-width:900px){
+  .about{grid-template-columns:1fr;gap:32px}
+  .svc-grid,.steps{grid-template-columns:1fr;gap:30px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:42px}
+  section{padding:52px 0}
+}
+@media(max-width:480px){
+  nav a.navlink{display:none}
+  .hero{padding:44px 0 48px}
+  .hero h1{font-size:34px}
+  .hero-photo{max-width:320px}
+  .sec-head h2{font-size:29px}
+  .booking h2{font-size:30px}
+  .brides .names{font-size:20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Rang-e-Henna<small>by Bismah</small></a>
+    <nav>
+      <a class="navlink" href="#designs">Designs</a>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#book">Book</a>
+      <a class="btn" href="https://www.instagram.com/rangehennabybismah/">DM to Book</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Bridal Mehndi · Rawalpindi &amp; Islamabad</p>
+    <h1>Mehndi that tells <span class="italic">your love story</span></h1>
+    <p class="lede">Bismah's bridal henna is known across Rawalpindi and Islamabad for its fine detail and deep stain — full bridal mehndi, mehendi lagayi celebrations and event henna, booked personally through her Instagram.</p>
+    <a class="btn" href="https://www.instagram.com/rangehennabybismah/">DM for Bookings &amp; Inquiries</a>
+    <div class="hero-photo">
+      <img src="images/hero.webp" alt="Ramaha's bridal mehndi by Rang-e-Henna by Bismah" width="640" height="853" fetchpriority="high">
+    </div>
+  </div>
+</div>
+
+<div class="brides">
+  <div class="wrap">
+    <p>Recent brides</p>
+    <div class="names">Ramaha &nbsp;·&nbsp; Fatima &nbsp;·&nbsp; Mehreen &nbsp;·&nbsp; Maria &nbsp;·&nbsp; Museera &nbsp;·&nbsp; Mahnoor &nbsp;·&nbsp; Laiba &nbsp;·&nbsp; Khushi</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap about">
+    <div class="about-photo reveal">
+      <img src="images/about.webp" alt="Bridal henna drawn for Fatima by Bismah" width="640" height="853" loading="lazy">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">About Bismah</p>
+      <h2>A wedding-season favourite in the twin cities</h2>
+      <p>Rang-e-Henna is the bridal mehndi practice of Bismah, working across Rawalpindi and Islamabad. Her feed is a diary of wedding seasons — one bride after another, each design drawn to suit the bride wearing it, from classic full-hand bridal work to Mughal-inspired art.</p>
+      <p>Clients give her creative freedom and, as she puts it, end up becoming family by the end of the wedding. Bookings and inquiries are handled by DM on Instagram.</p>
+      <p><a href="https://www.instagram.com/rangehennabybismah/" style="font-weight:600;color:var(--green)">Follow @rangehennabybismah</a> for her latest brides.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Services</p>
+      <h2>For the bride, and everyone celebrating her</h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <span class="num">No. 1</span>
+        <h3>Bridal Mehndi</h3>
+        <p>The full bridal work her name is known for — intricate front and back hand designs, drawn with the patience a wedding morning deserves, in a rich natural stain.</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="num">No. 2</span>
+        <h3>Mehendi Lagayi</h3>
+        <p>The celebration itself: mehndi for the bride's family and friends at mehendi lagayi gatherings — pretty, festive designs for everyone joining the dholki.</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="num">No. 3</span>
+        <h3>Events &amp; Occasions</h3>
+        <p>Henna for engagements, Eid and special occasions across Rawalpindi and Islamabad — from a single statement design to a full set for your event.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="designs" id="designs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Recent Work</p>
+      <h2>From this wedding season</h2>
+      <p>Real brides, real designs — every photo is Bismah's own work from her Instagram.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="images/gallery-1.webp" alt="Fatima's mehendi lagayi design" width="640" height="853" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-2.webp" alt="Mehreen's mehendi lagayi henna" width="640" height="853" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-3.webp" alt="Henna design made for Maria" width="640" height="853" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-4.webp" alt="Museera's mehendi lagayi design" width="640" height="853" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-5.webp" alt="Henna design made for Mahnoor" width="640" height="853" loading="lazy"></figure>
+      <figure class="reveal"><img src="images/gallery-6.webp" alt="Detailed bridal-style henna pattern" width="640" height="853" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">How Booking Works</p>
+      <h2>Three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="n">1</span><h3>Send a DM</h3><p>Message @rangehennabybismah on Instagram with your date and city — Rawalpindi or Islamabad.</p></div>
+      <div class="step reveal"><span class="n">2</span><h3>Talk designs</h3><p>Share the style you love — full bridal, something classic, or a design with a story in it — and plan your mehndi together.</p></div>
+      <div class="step reveal"><span class="n">3</span><h3>Your mehndi day</h3><p>Bismah draws your henna while you enjoy the celebration with your favourite people around you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="book">
+  <div class="wrap reveal">
+    <p class="eyebrow">Bookings &amp; Inquiries</p>
+    <h2>Your date could be next</h2>
+    <p>Wedding season dates go quickly. Send Bismah a DM on Instagram with your wedding date to ask about availability for bridal mehndi, mehendi lagayi or event henna.</p>
+    <a class="btn light" href="https://www.instagram.com/rangehennabybismah/">DM @rangehennabybismah</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Preview site made for Rang-e-Henna by Bismah (Rawalpindi / Islamabad) by Devflix. Photos are the business's own Instagram photos. No prices are listed here — ask for a current quote when you book.</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
