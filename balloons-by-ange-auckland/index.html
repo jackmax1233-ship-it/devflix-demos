@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balloons by Ange — Balloon Garlands, Backdrops &amp; Decals in West Auckland</title>
+<meta name="description" content="Balloons by Ange — balloon garlands, backdrops and decals in West Auckland, New Zealand. Corporate installs, themed celebrations, and December event enquiries now open.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFFBF4; --blush:#FBE3D8; --ink:#33182B; --muted:#6E4A52;
+  --coral:#D93A2B; --coral-deep:#B92E22; --coral-deep-hi:#9E271D;
+  --teal:#0E6B6A; --sunny:#F2A93B; --plum:#33182B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:1.0625rem;overflow-x:hidden}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.08;letter-spacing:-0.01em}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+.skip{position:absolute;left:-999px;top:0;background:var(--coral-deep);color:#fff;padding:.6rem 1rem;z-index:99}
+.skip:focus{left:0}
+
+/* reveal: content visible without JS */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:2px solid var(--ink)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.5rem;max-width:72rem;margin:0 auto;gap:1rem}
+.brand{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.35rem;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--coral-deep)}
+.nav-links{display:flex;gap:1.4rem;align-items:center}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:700}
+.nav-links a:hover{color:var(--coral-deep)}
+.btn{display:inline-block;background:var(--coral-deep);color:#fff;text-decoration:none;font-weight:800;font-size:1rem;padding:.85rem 1.7rem;border-radius:999px;border:0;cursor:pointer;transition:background .2s ease,transform .2s ease}
+.btn:hover{background:var(--coral-deep-hi);color:#fff}
+.btn:focus-visible{outline:3px solid var(--sunny);outline-offset:3px}
+.nav-cta{padding:.6rem 1.2rem;font-size:.9rem}
+@media (max-width:640px){.nav-links a.hide-m{display:none}.brand{font-size:1.15rem}}
+
+/* hero — asymmetric: copy left, tall photo right */
+.hero{position:relative;overflow:hidden}
+.hero-dots{position:absolute;top:1.5rem;right:6%;width:11rem;height:7rem;pointer-events:none;opacity:.9;
+  background-image:radial-gradient(var(--sunny) 3.5px,transparent 3.6px),radial-gradient(var(--teal) 3.5px,transparent 3.6px),radial-gradient(var(--coral) 3.5px,transparent 3.6px);
+  background-size:2.2rem 2.2rem;background-position:0 0,.8rem 1.1rem,1.6rem .4rem;background-repeat:repeat}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center;padding:3.2rem 0 3.5rem;position:relative}
+@media (min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:3.5rem;padding:4.2rem 0 4.5rem}}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--coral-deep);margin-bottom:1.1rem}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:700;margin-bottom:1.3rem}
+.hero h1 em{font-style:italic;color:var(--coral-deep)}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34rem;margin-bottom:2rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.ghost{display:inline-block;color:var(--teal);font-weight:800;text-decoration:none;border-bottom:2px solid var(--teal);padding-bottom:.15rem}
+.ghost:hover{color:var(--ink)}
+.hero-chips{display:flex;gap:.6rem;margin-top:2.2rem;flex-wrap:wrap}
+.hero-chips span{border:2px solid var(--ink);border-radius:999px;padding:.35rem 1rem;font-size:.85rem;font-weight:800}
+.hero-chips span:nth-child(2){background:var(--blush)}
+.hero-chips span:nth-child(3){background:#DDEEEB}
+.hero-photo{justify-self:center;width:100%;max-width:26rem}
+.hero-photo figure{position:relative}
+.hero-photo img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 50%;border-radius:1.4rem 1.4rem 1.4rem 0;border:3px solid var(--ink);max-height:560px;background:var(--blush)}
+.hero-badge{position:absolute;left:-1rem;bottom:1.4rem;background:var(--plum);color:var(--cream);padding:.9rem 1.2rem;border-radius:1rem;font-size:.85rem;max-width:15rem;border:2px solid var(--cream)}
+.hero-badge strong{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.05rem}
+@media (max-width:640px){.hero-badge{left:.5rem;bottom:.8rem}}
+
+/* strip */
+.strip{background:var(--coral-deep);color:#fff;padding:1rem 0;overflow:hidden}
+.strip p{text-align:center;font-family:'Fraunces',Georgia,serif;font-size:1.05rem;letter-spacing:.03em}
+.strip span{margin:0 .9rem;opacity:.6}
+
+/* sections */
+.section{padding:4.5rem 0}
+.sec-head{margin-bottom:2.4rem;max-width:40rem}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700;margin-bottom:.6rem}
+.sec-head p{color:var(--muted)}
+.sec-head .eyebrow{margin-bottom:.7rem}
+
+/* gallery — frames matched to each photo's natural ratio, so nothing is cropped */
+.gallery{display:grid;grid-template-columns:1fr;gap:1.2rem}
+@media (min-width:640px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.tile{background:var(--blush);border:3px solid var(--ink);border-radius:1rem;overflow:hidden}
+.tile img{width:100%;height:auto;background:var(--blush)}
+.tile img.ratio-landscape{aspect-ratio:3/2;object-fit:cover;object-position:50% 50%}
+.tile img.ratio-portrait{aspect-ratio:3/4;object-fit:cover;object-position:50% 50%}
+.tile figcaption{padding:.9rem 1rem;font-size:.9rem;font-weight:800;border-top:3px solid var(--ink);background:var(--cream)}
+.tile figcaption small{display:block;font-weight:600;color:var(--muted);font-size:.85rem}
+@media (min-width:900px){.tile-wide{grid-column:span 2}.tile-wide img.ratio-landscape{max-height:340px}}
+
+/* services */
+.services{background:var(--blush);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.2rem}
+@media (min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--cream);border:3px solid var(--ink);border-radius:1rem;padding:1.6rem}
+.svc h3{font-size:1.35rem;margin-bottom:.4rem}
+.svc h3 .dot{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;margin-right:.5rem;vertical-align:middle}
+.svc p{color:var(--muted);font-size:.98rem}
+.svc p strong{color:var(--ink)}
+.palette{margin-top:2.4rem;background:var(--cream);border:3px solid var(--ink);border-radius:1rem;padding:1.4rem 1.6rem}
+.palette p{color:var(--muted);font-size:.98rem}
+.palette p strong{color:var(--ink)}
+.palette .swatches{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+.palette .swatches span{padding:.4rem 1rem;border-radius:999px;font-size:.85rem;font-weight:800;border:2px solid var(--ink)}
+
+/* corporate feature */
+.corp-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
+@media (min-width:900px){.corp-grid{grid-template-columns:1.1fr .9fr;gap:4rem}}
+.corp-photo img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 50%;border-radius:1.4rem;border:3px solid var(--ink);max-height:480px;background:var(--blush)}
+.corp h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700;margin-bottom:1rem}
+.corp p{color:var(--muted);margin-bottom:1.4rem}
+.corp-list{list-style:none}
+.corp-list li{display:flex;gap:1rem;padding:1rem 0;border-top:2px solid var(--ink)}
+.corp-list li:last-child{border-bottom:2px solid var(--ink)}
+.corp-list strong{font-family:'Fraunces',Georgia,serif;font-size:1.4rem;color:var(--coral-deep);flex-shrink:0;min-width:4.5rem}
+.corp-list span{color:var(--muted);font-size:.98rem}
+.corp-list span b{color:var(--ink)}
+
+/* process */
+.process{background:var(--plum);color:var(--cream)}
+.process .sec-head p{color:#E8D9DE}
+.proc-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
+@media (min-width:900px){.proc-grid{grid-template-columns:.95fr 1.05fr;gap:4rem}}
+.proc-photo img{width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;object-position:50% 50%;border-radius:1.4rem;background:#fff;border:3px solid var(--cream);max-height:480px}
+.step{display:flex;gap:1.2rem;padding:1.3rem 0;border-top:1px solid rgba(255,251,244,.25)}
+.step:last-child{border-bottom:1px solid rgba(255,251,244,.25)}
+.step .num{font-family:'Fraunces',Georgia,serif;font-size:1.6rem;font-weight:700;color:var(--sunny);flex-shrink:0;width:2.6rem}
+.step h3{font-size:1.25rem;margin-bottom:.3rem}
+.step p{color:#E8D9DE;font-size:.98rem}
+
+/* december CTA */
+.dec-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
+@media (min-width:900px){.dec-grid{grid-template-columns:.9fr 1.1fr;gap:4rem}}
+.dec-photo img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;object-position:50% 50%;border-radius:1.4rem;background:#fff;border:3px solid var(--ink);max-height:480px}
+.dec h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700;margin-bottom:1rem}
+.dec p{color:var(--muted);margin-bottom:1rem}
+.dec .notice{background:var(--blush);border:3px solid var(--ink);border-radius:1rem;padding:1.2rem 1.4rem;font-weight:800;margin:1.6rem 0}
+.dec .notice small{display:block;font-weight:600;color:var(--muted);margin-top:.3rem}
+
+/* booking band */
+.cta{background:var(--teal);color:#fff;text-align:center;padding:4.5rem 1.5rem;border-radius:2rem;margin:0 1.5rem 5rem;max-width:72rem}
+.cta h2{font-size:clamp(2rem,4vw,3rem);font-weight:700;margin-bottom:1rem}
+.cta p{color:#E4F2F1;max-width:32rem;margin:0 auto 2.2rem}
+.cta .btn{background:var(--cream);color:var(--plum)}
+.cta .btn:hover{background:#fff;color:var(--plum)}
+.cta small{display:block;margin-top:1.4rem;color:#CDE6E4;font-size:.88rem}
+.cta small a{color:#fff}
+@media (min-width:76rem){.cta{margin-left:auto;margin-right:auto}}
+
+/* footer */
+footer{border-top:3px solid var(--ink);padding:2rem 1.5rem}
+.foot{max-width:72rem;margin:0 auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.foot a{color:var(--coral-deep);text-decoration:none;font-weight:800}
+.foot .preview-note{font-size:.85rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#top">Balloons <span>by Ange</span></a>
+    <div class="nav-links">
+      <a class="hide-m" href="#work">Recent work</a>
+      <a class="hide-m" href="#services">What we do</a>
+      <a class="hide-m" href="#corporate">Corporate</a>
+      <a class="hide-m" href="#december">December</a>
+      <a class="btn nav-cta" href="https://ig.me/m/balloonsbyange" target="_blank" rel="noopener">DM to book</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-dots" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">West Auckland &middot; Balloon Styling</span>
+      <h1>Balloon garlands that <em>steal the show.</em></h1>
+      <p class="lead">Balloons by Ange creates balloon garlands, backdrops and decals for birthdays, brand events and everything worth celebrating — designed, built and installed so you can simply show up and enjoy.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://ig.me/m/balloonsbyange" target="_blank" rel="noopener">DM to book your event</a>
+        <a class="ghost" href="#work">See recent installs</a>
+      </div>
+      <div class="hero-chips">
+        <span>Balloon garlands</span>
+        <span>Backdrops</span>
+        <span>Decals</span>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <figure>
+        <img src="img/tropical-garland.webp" alt="Tropical balloon garland in Caribbean blue, purple, raspberry and coral framing an Aloha birthday backdrop" width="640" height="853" fetchpriority="high">
+        <div class="hero-badge"><strong>Tropical, turned up</strong>A custom 7th-birthday install, full of colour and texture</div>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<!-- STRIP -->
+<div class="strip" role="note">
+  <p>Garlands <span>&middot;</span> Backdrops <span>&middot;</span> Decals <span>&middot;</span> Corporate installs <span>&middot;</span> West Auckland</p>
+</div>
+
+<!-- GALLERY -->
+<section class="section" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Recent installs</span>
+      <h2 id="work-h">Big colour, bigger moments.</h2>
+      <p>Real installs from Balloons by Ange — from a 3&nbsp;m statement arch for a brand event to a tropical birthday bursting with colour.</p>
+    </div>
+    <div class="gallery">
+      <figure class="tile tile-wide reveal">
+        <img class="ratio-landscape" src="img/corporate-arch.webp" alt="Red and white balloon statement arch with starburst balloons framing a brand event entrance" width="640" height="427" loading="lazy">
+        <figcaption>Statement arch, corporate event<small>One of our biggest corporate installs to date</small></figcaption>
+      </figure>
+      <figure class="tile reveal">
+        <img class="ratio-portrait" src="img/warehouse-arch.webp" alt="Red and white balloon arch with freestanding pillars at a brand entrance with a red carpet" width="640" height="853" loading="lazy">
+        <figcaption>Arch &amp; freestanding pillars<small>Custom branded details throughout</small></figcaption>
+      </figure>
+      <figure class="tile reveal">
+        <img class="ratio-portrait" src="img/tropical-garland.webp" alt="Tropical balloon garland with foliage, bubble balloons and custom signage around an Aloha birthday backdrop" width="640" height="853" loading="lazy">
+        <figcaption>Tropical colour explosion<small>Custom setup for a 7th birthday</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services" aria-labelledby="services-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2 id="services-h">Everything your event needs to pop.</h2>
+      <p>Garlands, backdrops and decals — styled around your theme, colours and venue, and installed on the day.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <h3><span class="dot" style="background:var(--coral)"></span>Balloon garlands</h3>
+        <p>Full, layered garlands in your palette — from soft pastels to full tropical colour explosions, with foliage, texture and detail packed in.</p>
+      </div>
+      <div class="svc reveal">
+        <h3><span class="dot" style="background:var(--teal)"></span>Backdrops</h3>
+        <p>Custom backdrops that anchor the whole setup — the photo moment your guests will actually gather around.</p>
+      </div>
+      <div class="svc reveal">
+        <h3><span class="dot" style="background:var(--sunny)"></span>Decals &amp; signage</h3>
+        <p>Custom signage and decals that tie the theme together — names, ages, messages and branded details, made for your event.</p>
+      </div>
+      <div class="svc reveal">
+        <h3><span class="dot" style="background:var(--coral-deep)"></span>Corporate &amp; brand installs</h3>
+        <p><strong>Statement arches, freestanding pillars and branded tablescape pieces</strong> that carry a theme through the whole venue — built for brands that want to be remembered.</p>
+      </div>
+      <div class="svc reveal">
+        <h3><span class="dot" style="background:var(--teal)"></span>Themed celebrations</h3>
+        <p>Birthdays and parties styled end to end — tell us the theme and we build the world around it, down to the smallest detail.</p>
+      </div>
+      <div class="svc reveal">
+        <h3><span class="dot" style="background:var(--sunny)"></span>Designed, built &amp; installed</h3>
+        <p>From the first idea to the final setup, we handle the whole install — <strong>you simply show up and enjoy.</strong></p>
+      </div>
+    </div>
+    <div class="palette reveal">
+      <p><strong>A palette we love:</strong> one recent tropical install mixed Caribbean Blue, Purple Orchid, Raspberry, Goldenrod, Coral and Romey — with tropical foliage, bubble balloons and custom signage.</p>
+      <div class="swatches">
+        <span style="background:#1E9FD9;color:#fff">Caribbean Blue</span>
+        <span style="background:#8E4FA3;color:#fff">Purple Orchid</span>
+        <span style="background:#C81E5B;color:#fff">Raspberry</span>
+        <span style="background:#D9A41B;color:#33182B">Goldenrod</span>
+        <span style="background:#E86A5A;color:#fff">Coral</span>
+        <span style="background:#E8C5C0;color:#33182B">Romey</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORPORATE -->
+<section class="section corp" id="corporate" aria-labelledby="corp-h">
+  <div class="wrap corp-grid">
+    <div class="corp-photo reveal">
+      <img src="img/warehouse-arch.webp" alt="Red and white balloon arch with freestanding pillars installed at a brand event entrance" width="640" height="853" loading="lazy">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">For brands &amp; businesses</span>
+      <h2 id="corp-h">When your event needs to make an entrance.</h2>
+      <p>We love when brands trust us to bring their vision to life. Our corporate installs scale from a single statement piece to a full venue takeover.</p>
+      <ul class="corp-list">
+        <li><strong>3 m &times; 3 m</strong><span><b>Statement arch</b> — the centrepiece of one of our biggest corporate installs to date</span></li>
+        <li><strong>3 m pillars</strong><span><b>Freestanding pillars</b> — framing entrances and stages with real presence</span></li>
+        <li><strong>Branded</strong><span><b>Custom branded details</b> — colours, decals and details that carry your brand through the venue</span></li>
+        <li><strong>20 pieces</strong><span><b>Custom tablescape pieces</b> — the theme, carried through to every table</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process" id="process" aria-labelledby="process-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2 id="process-h" style="color:var(--cream)">From first idea to final setup.</h2>
+      <p>Ever wondered what actually goes into bringing a balloon install to life? Here is the short version — and we keep you in the loop the whole way.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-photo reveal">
+        <img src="img/behind-scenes.webp" alt="Behind-the-scenes look at a tropical balloon install coming to life" width="640" height="853" loading="lazy">
+      </div>
+      <div class="reveal">
+        <div class="step">
+          <span class="num">01</span>
+          <div><h3>Share your event</h3><p>DM us with your date, theme and venue — the wilder the idea, the better.</p></div>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <div><h3>We design it with you</h3><p>Colours, shapes and details, worked through together — so you can build the excitement right up until event day.</p></div>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <div><h3>We build &amp; install</h3><p>Designed, built and installed by us, on the day. You simply show up and enjoy.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DECEMBER -->
+<section class="section dec" id="december" aria-labelledby="dec-h">
+  <div class="wrap dec-grid">
+    <div class="dec-photo reveal">
+      <img src="img/december-events.webp" alt="Notice: October and November 2026 fully booked — please get in touch now for December events, minimum three weeks notice" width="640" height="640" loading="lazy">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Now booking</span>
+      <h2 id="dec-h">December events are open.</h2>
+      <p>October and November 2026 are fully booked — so if you have a December celebration, party or brand event in mind, now is the time to get in touch.</p>
+      <div class="notice">December enquiries are open now.<small>Please allow a minimum of 3 weeks&rsquo; notice for your event.</small></div>
+      <a class="btn" href="https://ig.me/m/balloonsbyange" target="_blank" rel="noopener">DM about your December event</a>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+<section class="cta reveal" aria-labelledby="cta-h">
+  <h2 id="cta-h">Let&rsquo;s talk about your event.</h2>
+  <p>Booking starts with a message. Tell us about your celebration and we will take it from there — garlands, backdrops, decals and all.</p>
+  <a class="btn" href="https://ig.me/m/balloonsbyange" target="_blank" rel="noopener">Message @balloonsbyange</a>
+  <small>Booking via DM or email &middot; Based in West Auckland, New Zealand &middot; See more work on <a href="https://www.instagram.com/balloonsbyange" target="_blank" rel="noopener">Instagram</a></small>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <span>&copy; 2026 Balloons by Ange &middot; Balloon styling, West Auckland, New Zealand</span>
+    <span><a href="https://www.instagram.com/balloonsbyange" target="_blank" rel="noopener">@balloonsbyange on Instagram</a></span>
+    <span class="preview-note">Preview concept by Devflix</span>
+  </div>
+</footer>
+
+<script>
+var QA_STATIC = location.search.indexOf('static=1')>-1;
+if(!QA_STATIC){document.documentElement.classList.add('js');}
+(function(){
+  if(QA_STATIC){return;}
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

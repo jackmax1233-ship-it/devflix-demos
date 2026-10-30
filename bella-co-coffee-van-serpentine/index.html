@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella &amp; Co Coffee Van — Mobile Coffee &amp; Cocktails, Serpentine VIC</title>
+<meta name="description" content="Bella & Co Coffee Van is a mobile coffee and cocktail van based in Serpentine, Victoria — serving coffee, toasties and frappes at community and sporting events, and available for private events.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF6EE; --sand:#F3E6D3; --sand-deep:#EAD9BE;
+  --ink:#2E1D12; --body:#5C4232; --terra:#A63A22; --terra-deep:#8C2F1B;
+  --sage:#3F5A38; --white:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:1.05rem;overflow-x:hidden}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.12}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.25rem}
+.skip{position:absolute;left:-999px;top:0;background:var(--terra);color:#fff;padding:.6rem 1rem;z-index:99}
+.skip:focus{left:0}
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:2px solid var(--ink)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1.25rem;max-width:70rem;margin:0 auto}
+.brand{font-family:'DM Serif Display',Georgia,serif;font-size:1.45rem;color:var(--ink);text-decoration:none;line-height:1}
+.brand span{color:var(--terra)}
+.nav-links{display:flex;gap:1.4rem;align-items:center}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:600}
+.nav-links a:hover{color:var(--terra)}
+.btn{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-weight:700;font-size:1rem;padding:.85rem 1.7rem;border-radius:999px;border:0;cursor:pointer;transition:background .2s ease}
+.btn:hover{background:var(--terra-deep);color:#fff}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.nav-cta{padding:.55rem 1.15rem;font-size:.9rem}
+@media (max-width:680px){.nav-links a.hide-m{display:none}.brand{font-size:1.25rem}}
+
+/* hero */
+.hero{border-bottom:2px solid var(--ink)}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:2.25rem;align-items:center;padding:3rem 0 3.5rem}
+@media (min-width:900px){.hero-grid{grid-template-columns:1.02fr .98fr;gap:3.5rem;padding:4rem 0 4.5rem}}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.2rem);margin-bottom:1.2rem}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero p.lead{font-size:1.15rem;color:var(--body);max-width:33rem;margin-bottom:2rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.ghost{display:inline-block;color:var(--terra);font-weight:700;text-decoration:none;border-bottom:2px solid var(--terra);padding-bottom:.15rem}
+.ghost:hover{color:var(--ink)}
+.hero-photo{justify-self:center;width:100%;max-width:26rem}
+.hero-photo figure{position:relative}
+.hero-photo img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 40%;border:2px solid var(--ink);border-radius:1.2rem;max-height:560px;background:var(--sand)}
+.hero-note{position:absolute;left:1rem;bottom:1rem;background:var(--ink);color:var(--cream);padding:.7rem 1rem;border-radius:.7rem;font-size:.85rem;font-weight:600;max-width:16rem}
+.hero-note small{display:block;font-weight:400;color:#EAD9BE;margin-top:.15rem}
+
+/* strip */
+.strip{background:var(--terra);color:#fff;padding:.95rem 0;overflow:hidden;border-bottom:2px solid var(--ink)}
+.strip p{text-align:center;font-family:'DM Serif Display',Georgia,serif;font-size:1.1rem;letter-spacing:.03em}
+.strip span{margin:0 .8rem;opacity:.6}
+
+/* sections */
+.section{padding:4rem 0}
+.sec-head{max-width:38rem;margin-bottom:2.2rem}
+.sec-head h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:.8rem}
+.sec-head p{color:var(--body)}
+.menu-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
+@media (min-width:700px){.menu-grid{grid-template-columns:1fr 1fr}}
+.card{border:2px solid var(--ink);border-radius:1.2rem;overflow:hidden;background:var(--white)}
+.card img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;background:var(--sand);max-height:520px}
+.card img.frappes{object-position:50% 52%}
+.card img.toasties{object-position:50% 46%}
+.card-body{padding:1.4rem 1.5rem 1.6rem}
+.card-body h3{font-size:1.55rem;margin-bottom:.5rem}
+.card-body p{color:var(--body);font-size:.98rem;margin-bottom:.8rem}
+.tag{display:inline-block;background:var(--sand);color:var(--ink);font-size:.8rem;font-weight:700;padding:.3rem .8rem;border-radius:999px;margin:0 .35rem .35rem 0}
+.note{font-size:.9rem;color:var(--body);margin-top:2rem;max-width:38rem}
+
+/* on the road */
+.road{background:var(--sand);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.road-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
+@media (min-width:900px){.road-grid{grid-template-columns:.95fr 1.05fr;gap:3.5rem}}
+.road-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 52%;border:2px solid var(--ink);border-radius:1.2rem;max-height:480px;background:var(--cream)}
+.road h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:1.2rem}
+.road p{color:var(--body);margin-bottom:1rem;max-width:33rem}
+.road ul{list-style:none;margin-top:1.4rem}
+.road li{padding:.8rem 0 .8rem 2rem;position:relative;border-top:1px solid rgba(46,29,21,.2);font-weight:600}
+.road li:last-child{border-bottom:1px solid rgba(46,29,21,.2)}
+.road li::before{content:"☕";position:absolute;left:0;top:.8rem}
+
+/* community / fundraiser */
+.fund-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
+@media (min-width:900px){.fund-grid{grid-template-columns:1.05fr .95fr;gap:3.5rem}}
+.fund h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:1.2rem}
+.fund p{color:var(--body);margin-bottom:1rem;max-width:33rem}
+.fund-poster{background:var(--sand);border:2px solid var(--ink);border-radius:1.2rem;padding:1rem}
+.fund-poster img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;border-radius:.6rem;background:#fff}
+.fund-poster figcaption{font-size:.85rem;color:var(--body);text-align:center;padding-top:.8rem}
+
+/* cta */
+.cta{background:var(--ink);color:var(--cream);text-align:center;padding:4.5rem 1.5rem;border-radius:1.5rem;margin:0 1.25rem 4.5rem;max-width:70rem}
+.cta h2{font-size:clamp(2rem,4.2vw,3rem);margin-bottom:1rem}
+.cta p{color:#EAD9BE;max-width:32rem;margin:0 auto 2rem}
+.cta .btn{background:var(--terra)}
+.cta .btn:hover{background:var(--terra-deep)}
+.cta small{display:block;margin-top:1.4rem;color:#CBB79D;font-size:.88rem}
+.cta small a{color:var(--cream)}
+@media (min-width:72.5rem){.cta{margin-left:auto;margin-right:auto}}
+
+/* footer */
+footer{border-top:2px solid var(--ink);padding:2rem 1.25rem}
+.foot{max-width:70rem;margin:0 auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--body);font-size:.9rem}
+.foot a{color:var(--terra);text-decoration:none;font-weight:700}
+.foot .devflix{font-size:.85rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#top">Bella <span>&amp;</span> Co</a>
+    <div class="nav-links">
+      <a class="hide-m" href="#menu">From the van</a>
+      <a class="hide-m" href="#road">On the road</a>
+      <a class="hide-m" href="#community">Community</a>
+      <a class="btn nav-cta" href="mailto:bellandco24@gmail.com">Email us</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Serpentine, Victoria &middot; Mobile coffee &amp; cocktail van</span>
+      <h1>Good coffee, <em>wherever</em> the day takes you.</h1>
+      <p class="lead">Bella &amp; Co is a coffee and cocktail van on wheels — pouring at community and sporting events around Serpentine, and available to roll up to your private event.</p>
+      <div class="hero-actions">
+        <a class="btn" href="mailto:bellandco24@gmail.com">Book the van — email us</a>
+        <a class="ghost" href="#menu">See what's on board</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <figure>
+        <img src="img/hero-van.webp" alt="The Bella &amp; Co team smiling at the van's serving window, holding colourful takeaway cups" width="640" height="853" fetchpriority="high">
+        <div class="hero-note">The van, at work<small>Serving at local events across the region</small></div>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<!-- STRIP -->
+<div class="strip" role="note">
+  <p>Coffee <span>&middot;</span> Cocktails <span>&middot;</span> Toasties <span>&middot;</span> Frappes <span>&middot;</span> Private events</p>
+</div>
+
+<!-- MENU -->
+<section class="section" id="menu" aria-labelledby="menu-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">From the van</span>
+      <h2 id="menu-h">More than just a coffee stop.</h2>
+      <p>Alongside the coffee and cocktails, the van serves up sourdough toasties and icy frappes — the kind of thing that keeps a crowd at a game or a gathering happily fed.</p>
+    </div>
+    <div class="menu-grid">
+      <article class="card reveal">
+        <img class="toasties" src="img/toasties.webp" alt="Bella &amp; Co's chalkboard listing its sourdough toastie flavours" width="640" height="853" loading="lazy">
+        <div class="card-body">
+          <h3>Sourdough toasties</h3>
+          <p>Toasted to order at the van — the board's regulars include chicken, avo &amp; cheese; ham, cheese &amp; tomato; salami, pineapple &amp; cheese; and classic ham &amp; cheese.</p>
+          <span class="tag">Sourdough</span><span class="tag">Made to order</span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img class="frappes" src="img/frappes.webp" alt="Four iced frappes lined up on the Bella &amp; Co van counter" width="640" height="853" loading="lazy">
+        <div class="card-body">
+          <h3>Frappes, icy &amp; sweet</h3>
+          <p>Blended iced drinks for warm days at the oval or the markets — chocolate-drizzled favourites and fruity blends, served cold from the van window.</p>
+          <span class="tag">Iced drinks</span><span class="tag">Warm-day favourite</span>
+        </div>
+      </article>
+    </div>
+    <p class="note">Cocktails are part of the van's event offering — ask when you enquire about a private event and the team will talk through what they can pour for your day.</p>
+  </div>
+</section>
+
+<!-- ON THE ROAD -->
+<section class="section road" id="road" aria-labelledby="road-h">
+  <div class="wrap road-grid">
+    <div class="road-photo reveal">
+      <img src="img/events.webp" alt="View from inside the Bella &amp; Co van out over a crowd gathered at an outdoor community event" width="640" height="800" loading="lazy">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">On the road</span>
+      <h2 id="road-h">Where you'll find the van.</h2>
+      <p>Bella &amp; Co is based around Serpentine in Victoria and sets up where the community gathers — from local sporting fixtures to community days.</p>
+      <ul>
+        <li>Community &amp; sporting events</li>
+        <li>Set up at grounds like the Inglewood football oval</li>
+        <li>Private events — enquire by email</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="section fund" id="community" aria-labelledby="community-h">
+  <div class="wrap fund-grid">
+    <div class="reveal">
+      <span class="eyebrow">Community</span>
+      <h2 id="community-h">A van with a big heart.</h2>
+      <p>Bella &amp; Co isn't just a coffee stop — the team runs community fundraisers too. Their Walk for Bell rubber duck race raised funds for the Code 9 Foundation, honouring the memory of their beautiful Bell, with ducks adopted by family and friends for a fun day by the river.</p>
+      <p>It's the same spirit they bring to every event they set up at: local, friendly, and for the community.</p>
+    </div>
+    <figure class="fund-poster reveal">
+      <img src="img/duck-race.webp" alt="Poster for Bella &amp; Co's Walk for Bell rubber duck race, raising funds for the Code 9 Foundation" width="640" height="640" loading="lazy">
+      <figcaption>The Walk for Bell rubber duck race — in support of the Code 9 Foundation.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta reveal" aria-labelledby="cta-h">
+  <h2 id="cta-h">Bring the van to your event.</h2>
+  <p>Planning a private event, a game day or a community gathering? Tell Bella &amp; Co about it — enquiries come straight to the team by email or Instagram DM.</p>
+  <a class="btn" href="mailto:bellandco24@gmail.com">Email bellandco24@gmail.com</a>
+  <small>Prefer Instagram? Find the van at <a href="https://www.instagram.com/bellandco_coffeevan" target="_blank" rel="noopener">@bellandco_coffeevan</a></small>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <span>&copy; 2026 Bella &amp; Co Coffee Van &middot; Serpentine, Victoria</span>
+    <span class="devflix">Preview concept by Devflix &middot; <a href="https://www.instagram.com/bellandco_coffeevan" target="_blank" rel="noopener">@bellandco_coffeevan</a></span>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
